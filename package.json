@@ -1,7 +1,7 @@
 {
   "name": "kalender-jawa",
   "version": "1.0.0",
-  "description": "Pustaka untuk perhitungan di dalam kalendar jawa",
+  "description": "Pustaka penanggalan dan perhitungan di dalam kalendar jawa",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,25 @@
     "type": "git",
     "url": "git+https://github.com/junwatu/kalender-jawa.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "kalender",
+    "jawa",
+    "lambang",
+    "wuku",
+    "windu"
+  ],
+  "author": "Equan Pr.",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/junwatu/kalender-jawa/issues"
   },
-  "homepage": "https://github.com/junwatu/kalender-jawa#readme"
+  "homepage": "https://github.com/junwatu/kalender-jawa#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  }
 }
