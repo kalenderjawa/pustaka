@@ -1,0 +1,20 @@
+{
+  "name": "kalender-jawa",
+  "version": "1.0.0",
+  "description": "Pustaka untuk perhitungan di dalam kalendar jawa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junwatu/kalender-jawa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junwatu/kalender-jawa/issues"
+  },
+  "homepage": "https://github.com/junwatu/kalender-jawa#readme"
+}
