@@ -13,4 +13,4 @@ const BE = 'be'
 const WAWU = 'wawu'
 const JIMAKIR = 'jimakir'
 
-export { ALIP, EHE, JIMAWAL, JE, DAL, BE, WAWU, JIMAKIR }
+export default { ALIP, EHE, JIMAWAL, JE, DAL, BE, WAWU, JIMAKIR }

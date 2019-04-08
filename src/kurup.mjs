@@ -7,4 +7,4 @@
 const ASAPON = 'alif selasa pon'
 const ANENHING = 'alip senin pahing'
 
-export { ASAPON, ANENHING }
+export default { ASAPON, ANENHING }
