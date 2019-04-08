@@ -1,12 +1,15 @@
 /**
- * ES
+ * 📁 index.mjs
+ * Pustaka Kalender Jawa
+ *
+ *
  */
 
-import path from 'path'
+import Neptu from './neptu.mjs'
 
-function exo () {
-  let ja = path.join(__dirname)
-  console.log(`Hello ${ja}`)
+function test () {
+  console.log(`Hello ${Neptu.ALIP}`)
 }
 
-module.exports = { exo }
+test()
+//module.exports = { test }
