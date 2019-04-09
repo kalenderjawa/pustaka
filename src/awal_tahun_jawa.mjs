@@ -67,3 +67,74 @@ const JIMAKIR_ASAPON = {
 
 }
 
+/**
+ * Kurup Alip Senin Pahing
+ */
+
+const ALIP_ANENHING = {
+  neptu: Neptu.ALIP,
+  kurup: Kurup.ANENHING,
+  tahun: [1987, 1995, 2003, 2011, 2019, 2027, 2035, 2043, 2051, 2059, 2067, 2075, 2083, 2091, 2099]
+}
+
+const EHE_ANENHING = {
+  neptu: Neptu.EHE,
+  kurup: Kurup.ANENHING,
+  tahun: [1988, 1996, 2004, 2012, 2020, 2028, 2036, 2044, 2052, 2060, 2068, 2076, 2084, 2092, 2100]
+}
+
+const JIMAWAL_ANENHING = {
+  neptu: Neptu.JIMAWAL,
+  kurup: Kurup.ANENHING,
+  tahun: [1989, 1997, 2005, 2013, 2021, 2029, 2037, 2045, 2053, 2061, 2069, 2077, 2085, 2093, 2101]
+}
+
+const JE_ANENHING = {
+  neptu: Neptu.JE,
+  kurup: Kurup.ANENHING,
+  tahun: [1990, 1998, 2006, 2014, 2022, 2030, 2038, 2046, 2054, 2062, 2070, 2078, 2086, 2094, 2102]
+}
+
+const DAL_ANENHING = {
+  neptu: Neptu.DAL,
+  kurup: Kurup.ANENHING,
+  tahun: [1991, 1999, 2007, 2015, 2023, 2031, 2039, 2047, 2055, 2063, 2071, 2079, 2087, 2095, 2103]
+}
+
+const BE_ANENHING = {
+  neptu: Neptu.BE,
+  kurup: Kurup.ANENHING,
+  tahun: [1992, 2000, 2008, 2016, 2024, 2032, 2040, 2048, 2056, 2064, 2072, 2080, 2088, 2096, 2104]
+}
+
+const WAWU_ANENHING = {
+  neptu: Neptu.WAWU,
+  kurup: Kurup.ANENHING,
+  tahun: [1993, 2001, 2009, 2017, 2025, 2033, 2041, 2049, 2057, 2065, 2073, 2081, 2089, 2097, 2105]
+}
+
+const JIMAKIR_ANENHING = {
+  neptu: Neptu.JIMAKIR,
+  kurup: Kurup.ANENHING,
+  tahun: [1994, 2002, 2010, 2018, 2026, 2034, 2042, 2050, 2058, 2066, 2074, 2081, 2089, 2098, 2106]
+}
+
+export default {
+  ALIP_ASAPON,
+  EHE_ASAPON,
+  JIMAWAL_ASAPON,
+  JE_ASAPON,
+  DAL_ASAPON,
+  BE_ASAPON,
+  WAWU_ASAPON,
+  JIMAKIR_ASAPON,
+
+  ALIP_ANENHING,
+  EHE_ANENHING,
+  JIMAWAL_ANENHING,
+  JE_ANENHING,
+  DAL_ANENHING,
+  BE_ANENHING,
+  WAWU_ANENHING,
+  JIMAKIR_ANENHING
+}
