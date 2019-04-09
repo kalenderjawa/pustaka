@@ -9,7 +9,7 @@
  */
 
 /** @const {string} */
-const ASAPON = 'alif selasa pon'
+const ASAPON = 'alip selasa pon'
 
 /** @const {string} */
 const ANENHING = 'alip senin pahing'
