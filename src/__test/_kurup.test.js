@@ -1,7 +1,14 @@
 import Kurup from '../kurup.mjs'
 
-describe('kurup.js test', () => {
-  test('two plus two is four', () => {
-    expect(2 + 2).toBe(4)
+const SAMPLE_ASAPON = 'alip selasa pon'
+const SAMPLE_ANENHING = 'alip senin pahing'
+
+describe('TEST KURUP', () => {
+  test('ASAPON', () => {
+    expect(Kurup.ASAPON).toBe(SAMPLE_ASAPON)
+  })
+
+  test('ANENHING', () => {
+    expect(Kurup.ANENHING).toBe(SAMPLE_ANENHING)
   })
 })
