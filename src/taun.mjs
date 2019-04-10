@@ -3,33 +3,33 @@
  * @desc Araning Tahun Ing Dalem Sewindu
  */
 
-const _ALIP = ['alip', 1]
-const _EHE = ['ehe', 5]
-const _JIMAWAL = ['jimawal', 3]
-const _JE = ['je', 7]
-const _DAL = ['dal', 4]
-const _BE = ['be', 2]
-const _WAWU = ['wawu', 6]
-const _JIMAKIR = ['jimakir', 3]
+const _ALIP = 'alip'
+const _EHE = 'ehe'
+const _JIMAWAL = 'jimawal'
+const _JE = 'je'
+const _DAL = 'dal'
+const _BE = 'be'
+const _WAWU = 'wawu'
+const _JIMAKIR = 'jimakir'
 
-const ALIP = new Map(_ALIP)
-const EHE = new Map(_EHE)
-const JIMAWAL = new Map(_JIMAWAL)
-const JE = new Map(_JE)
-const DAL = new Map(_DAL)
-const BE = new Map(_BE)
-const WAWU = new Map(_WAWU)
-const JIMAKIR = new Map(_JIMAKIR)
+const ALIP = { taun: _ALIP, neptu: 1, urutan: 1 }
+const EHE = { taun: _EHE, neptu: 5, urutan: 2 }
+const JIMAWAL = { taun: _JIMAWAL, neptu: 3, urutan: 3 }
+const JE = { taun: _JE, neptu: 7, urutan: 4 }
+const DAL = { taun: _DAL, neptu: 4, urutan: 5 }
+const BE = { taun: _BE, neptu: 2, urutan: 6 }
+const WAWU = { taun: _WAWU, neptu: 6, urutan: 7 }
+const JIMAKIR = { taun: _JIMAKIR, neptu: 3, urutan: 8 }
 
 const ARANING_TAHUN_SEWINDU = new Map()
 
-ARANING_TAHUN_SEWINDU.set(1, _ALIP)
-ARANING_TAHUN_SEWINDU.set(2, _EHE)
-ARANING_TAHUN_SEWINDU.set(3, _JIMAWAL)
-ARANING_TAHUN_SEWINDU.set(4, _JE)
-ARANING_TAHUN_SEWINDU.set(5, _DAL)
-ARANING_TAHUN_SEWINDU.set(6, _BE)
-ARANING_TAHUN_SEWINDU.set(7, _WAWU)
-ARANING_TAHUN_SEWINDU.set(8, JIMAKIR)
+ARANING_TAHUN_SEWINDU.set(_ALIP, ALIP)
+ARANING_TAHUN_SEWINDU.set(_EHE, EHE)
+ARANING_TAHUN_SEWINDU.set(_JIMAWAL, JIMAWAL)
+ARANING_TAHUN_SEWINDU.set(_JE, JE)
+ARANING_TAHUN_SEWINDU.set(_DAL, DAL)
+ARANING_TAHUN_SEWINDU.set(_BE, BE)
+ARANING_TAHUN_SEWINDU.set(_WAWU, WAWU)
+ARANING_TAHUN_SEWINDU.set(_JIMAKIR, JIMAKIR)
 
 export default { ALIP, EHE, JIMAWAL, JE, DAL, BE, WAWU, JIMAKIR, ARANING_TAHUN_SEWINDU }
