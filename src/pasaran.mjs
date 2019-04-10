@@ -1,21 +1,25 @@
 /**
  * 📁pasaran.mjs
- * @desc Nama Pasaran
+ * @desc Pasaran & Neptu
  */
+const _LEGI = 'legi'
+const _PAHING = 'pahing'
+const _PON = 'pon'
+const _WAGE = 'wage'
+const _KLIWON = 'kliwon'
 
-const LEGI = new Map(['legi', 5])
+const LEGI = { pasaran: _LEGI, neptu: 5, urutan: 1 }
+const PAHING = { pasaran: _PAHING, neptu: 9, urutan: 2 }
+const PON = { pasaran: _PON, neptu: 7, urutan: 3 }
+const WAGE = { pasaran: _WAGE, neptu: 4, urutan: 4 }
+const KLIWON = { pasaran: _KLIWON, neptu: 8, urutan: 5 }
 
-const PAHING = new Map(['pahing', 9])
+const PASARAN = new Map()
 
-const PON = new Map(['pon', 7])
+PASARAN.set(_LEGI, LEGI)
+PASARAN.set(_PAHING, PAHING)
+PASARAN.set(_PON, PON)
+PASARAN.set(_WAGE, WAGE)
+PASARAN.set(_KLIWON, KLIWON)
 
-const WAGE = new Map(['wage', 4])
-
-const KLIWON = new Map(['kliwon', 8])
-
-/**
- * @desc Urutan Pasaran
- */
-const PASARAN = [{ '1': LEGI }, { '2': PAHING }, { '3': PON }, { '4': WAGE }, { '5': KLIWON }]
-
-export default { PASARAN }
+export default { LEGI, PAHING, PON, WAGE, KLIWON, PASARAN }
