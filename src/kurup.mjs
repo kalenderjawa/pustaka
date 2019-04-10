@@ -8,10 +8,8 @@
  * console.log(siji) // 'alif selasa pon'
  */
 
-/** @const {string} */
 const ASAPON = 'alip selasa pon'
 
-/** @const {string} */
 const ANENHING = 'alip senin pahing'
 
 export default { ASAPON, ANENHING }
