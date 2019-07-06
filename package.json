@@ -1,6 +1,6 @@
 {
   "name": "kalender-jawa",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "Pustaka penanggalan dan perhitungan di dalam kalendar jawa",
   "main": "index.js",
   "scripts": {
@@ -49,7 +49,7 @@
     "moduleFileExtensions": [
       "js",
       "json",
-	  "mjs"
+      "mjs"
     ],
     "transform": {
       "^.+\\.m?js?$": "babel-jest"
