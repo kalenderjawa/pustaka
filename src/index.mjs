@@ -7,9 +7,9 @@
  * 
  */
 
-import Taun from './taun.mjs'
-import Kurup from './kurup.mjs'
-import Pasaran from './pasaran.mjs'
+import * as Taun from './taun.mjs'
+import * as Kurup from './kurup.mjs'
+import * as Pasaran from './pasaran.mjs'
 
 export function test () {
   console.log(`Hello ${Taun.ALIP}`)
