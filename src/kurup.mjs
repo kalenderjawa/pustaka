@@ -1,15 +1,12 @@
 /**
  * 📁 kurup.mjs
  * @desc Kurup Konstan
- *
- * @example
- * import Kurup from './kurup.mjs'
- * let siji = Kurup.ASAPON
- * console.log(siji) // 'alif selasa pon'
  */
 
-const ASAPON = 'alip selasa pon'
+import * as P from './pasaran.mjs'
+import * as D from './dinten.mjs'
 
-const ANENHING = 'alip senin pahing'
+const ASAPON = { taun: 'alip', dinten: D.DINTEN.get(D._SELASA).dino, pasaran: P.PASARAN.get(P._PON).pasaran }
+const ANENHING = { taun: 'alip', dinten: D.DINTEN.get(D._SENEN).dino, pasaran: P.PASARAN.get(P._PAHING).pasaran }
 
-export default { ASAPON, ANENHING }
+export { ASAPON, ANENHING }
