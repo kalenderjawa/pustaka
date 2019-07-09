@@ -1,9 +1,14 @@
-import * as Entry from '../index.mjs'
+/**
+ * Testing dengan Jest
+ */
 
-describe('Pustaka Sengkala', () => {
+import * as KalenderJawa from '../index.mjs'
+
+describe('Sengkala', () => {
     test("cariTaunSengkala", () => {
-        return Entry.findSengkalaYear(1994).then(r => {
+        return KalenderJawa.cariTaunSengkala(1994).then(r => {
             expect(r.taun).toBe("jimakir")
+            expect(r.kurup.pasaran).toBe("pahing")
         }, e => {
             expect(e).toMatch('error')
         })
