@@ -5,10 +5,10 @@ const SAMPLE_ANENHING = 'alip senen pahing'
 
 describe('TEST KURUP', () => {
   test('ASAPON', () => {
-    expect(`${Kurup.ASAPON.taun} ${Kurup.ASAPON.dinten} ${Kurup.ASAPON.pasaran}`).toBe(SAMPLE_ASAPON)
+    expect(`${Kurup.ASAPON.taun} ${Kurup.ASAPON.dinten.dino} ${Kurup.ASAPON.pasaran.pasaran}`).toBe(SAMPLE_ASAPON)
   })
 
   test('ANENHING', () => {
-    expect(`${Kurup.ANENHING.taun} ${Kurup.ANENHING.dinten} ${Kurup.ANENHING.pasaran}`).toBe(SAMPLE_ANENHING)
+    expect(`${Kurup.ANENHING.taun} ${Kurup.ANENHING.dinten.dino} ${Kurup.ANENHING.pasaran.pasaran}`).toBe(SAMPLE_ANENHING)
   })
 })
