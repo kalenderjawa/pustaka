@@ -16,18 +16,18 @@ const _SAWAL = "sawal"
 const _DULKODAH = "dulkodah"
 const _DULKIJAH = "dulkijah"
 
-const MUKAROM = { wulan: _MUKAROM, urutan: 1 }
-const SAPAR = { wulan: _SAPAR, urutan: 2 }
-const ROBIULAWAL = { wulan: _ROBIULAWAL, urutan: 3 }
-const ROBIULAKIR = { wulan: _ROBIULAKIR, urutan: 4 }
-const JUMADILAWAL = { wulan: _JUMADILAWAL, urutan: 5 }
-const JUMADILAKIR = { wulan: _JUMADILAKIR, urutan: 6 }
-const ROJAB = { wulan: _ROJAB, urutan: 7 }
-const SAKBAN = { wulan: _SAKBAN, urutan: 8 }
-const ROMADON = { wulan: _ROMADON, urutan: 9 }
-const SAWAL = { wulan: _SAWAL, urutan: 10 }
-const DULKODAH = { wulan: _DULKODAH, urutan: 11 }
-const DULKIJAH = { wulan: _DULKIJAH, urutan: 12 }
+const MUKAROM = { wulan: _MUKAROM, celukan: "rom", urutan: 1 }
+const SAPAR = { wulan: _SAPAR, celukan: "par", urutan: 2 }
+const ROBIULAWAL = { wulan: _ROBIULAWAL, celukan: "rowal", urutan: 3 }
+const ROBIULAKIR = { wulan: _ROBIULAKIR, celukan: "rokir", urutan: 4 }
+const JUMADILAWAL = { wulan: _JUMADILAWAL, celukan: "juwal", urutan: 5 }
+const JUMADILAKIR = { wulan: _JUMADILAKIR, celukan: "jukir", urutan: 6 }
+const ROJAB = { wulan: _ROJAB, celukan: "jab", urutan: 7 }
+const SAKBAN = { wulan: _SAKBAN, celukan: "ban", urutan: 8 }
+const ROMADON = { wulan: _ROMADON, celukan: "don". urutan: 9 }
+const SAWAL = { wulan: _SAWAL, celukan: "wal", urutan: 10 }
+const DULKODAH = { wulan: _DULKODAH, celukan: "dah", urutan: 11 }
+const DULKIJAH = { wulan: _DULKIJAH, celukan: "jah", urutan: 12 }
 
 const ARANING_WULAN_SETAUN = new Map()
 
