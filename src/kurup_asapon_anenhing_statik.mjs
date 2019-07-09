@@ -7,12 +7,16 @@
 import * as Taun from './taun.mjs'
 import * as Kurup from './kurup.mjs'
 
+import { _ALIP, ARANING_TAHUN_SEWINDU } from './taun.mjs'
+import { _JIMAKIR } from './taun.mjs';
+
+
 /**
  * Kurup Alip Selasa Pon (A-SA-PON)
  */
 
 const ALIP_ASAPON = {
-  taun: Taun._ALIP,
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   kurup: Kurup.ASAPON,
   awal: [1867, 1875, 1883, 1891, 1899, 1907, 1915, 1923, 1931, 1939, 1947, 1955, 1963, 1971, 1979]
 }
@@ -107,7 +111,7 @@ const WAWU_ANENHING = {
 }
 
 const JIMAKIR_ANENHING = {
-  taun: Taun._JIMAKIR,
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   kurup: Kurup.ANENHING,
   awal: [1994, 2002, 2010, 2018, 2026, 2034, 2042, 2050, 2058, 2066, 2074, 2081, 2089, 2098, 2106]
 }
