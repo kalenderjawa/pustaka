@@ -1,4 +1,4 @@
-# Sengkala (Kalender Jawa)
+# Pustaka Kalender Jawa
 
 [![Build Status](https://travis-ci.com/junwatu/kalender-jawa.svg?token=ygQgbKk8uMU72qsetYYB&branch=master)](https://travis-ci.com/junwatu/kalender-jawa)
 
@@ -6,8 +6,10 @@ Pustaka JavaScript untuk perhitungan kalender jawa.
 
 
 ## Sistematis
+Berikut aturan atau sistematis utama dari kalender Jawa yang perlu menjadi acuan:
+
 - Kalender jawa mempunyai siklus 8 tahunan (satu windu).
-- Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (+1 hari tiap 120 tahun).
+- Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (koreksi yaitu dengan menambah 1 hari tiap 120 tahun).
 
 
 ## Referensi
