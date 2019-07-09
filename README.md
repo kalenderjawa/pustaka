@@ -15,3 +15,8 @@ Berikut aturan atau sistematis utama dari kalender Jawa yang perlu menjadi acuan
 ## Referensi
 
 - https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
+
+## Lisensi
+[MIT License](https://choosealicense.com/licenses/mit/)
+
+Copyright © 2019 [Junwatu](https://github.com/junwatu)
