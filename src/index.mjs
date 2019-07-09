@@ -1,16 +1,28 @@
+// Pustaka Kalender Jawa
+// Perhtungan, pengkonversian dan penanggalan Jawa
+// 📁 index.mjs
+// :ES6
+
+import '@babel/polyfill'
+import * as Kurup from './kurup_asapon_anenhing_statik.mjs'
+
 /**
- * ************************
- * SENGKALA - Kalender Jawa
- * ************************
- * 📁 index.mjs
- * Pustaka Kalender Jawa
- * 
+ * Mencari Taun Jawa
+ * @param { number } input - 4 digit integer
+ * @returns { Promise } data - hasil promise adalah object 
  */
 
-import * as Taun from './taun.mjs'
-import * as Kurup from './kurup.mjs'
-import * as Pasaran from './pasaran.mjs'
+async function cariTaunSengkala(_q) {
+  let find_async = new Promise((resolve, reject) => {
+    for (let _kurup of Kurup.KURUP_ASAPON_ANENHING) {
+      _kurup.awal.find(query => {
+        if (query == _q) resolve(_kurup)
+      })
+    }
+  })
 
-export function test () {
-  console.log(`Hello ${Taun.ALIP}`)
+  let query_result = await find_async
+  return query_result
 }
+
+export { cariTaunSengkala }
