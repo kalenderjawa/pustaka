@@ -10,7 +10,9 @@ Berikut aturan atau sistematis utama dari kalender Jawa yang perlu menjadi acuan
 
 - Kalender jawa mempunyai siklus 8 tahunan (satu windu).
 - Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (koreksi yaitu dengan menambah 1 hari tiap 120 tahun).
+ ### Rumus Hafalan Awal Bulan Kalender Jawa Abadi
 
+ ![rumus_awal_taun](images/20190102-menek-kalender-4.jpg)
 
 ## Referensi
 
