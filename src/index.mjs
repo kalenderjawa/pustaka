@@ -5,6 +5,7 @@
 
 import '@babel/polyfill'
 import * as Kurup from './kurup_asapon_anenhing_statik.mjs'
+import * as RumusAbadi from './rumus_apalan_awal_taun_abadi.mjs'
 
 /**
  * Mencari Taun Jawa
@@ -25,4 +26,19 @@ async function cariTaunSengkala(_q) {
   return query_result
 }
 
-export { cariTaunSengkala }
+async function cariRumusAbadi(wulan, taun) {
+  let cariTaunPromise = new Promise((resolve, reject) => {
+    cariTaunSengkala(taun).then(r => {
+      console.log(r)
+
+    })
+  })
+
+  let q_cariTaun = await cariTaunPromise
+
+  // mock test
+  let const_dumb = "don tu pat"
+  return const_dumb
+}
+
+export { cariTaunSengkala, cariRumusAbadi }
