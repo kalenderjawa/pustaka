@@ -16,4 +16,9 @@ describe('Sengkala', () => {
             expect(e).toMatch('error')
         })
     })
+
+    test("cariRumusAbadi", () => {
+        let q = KalenderJawa.cariRumusAbadi('romadon', 1952)
+        expect(q).toBe("don tu pat")
+    })
 })
