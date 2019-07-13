@@ -4,9 +4,13 @@
 // :ES6
 
 import '@babel/polyfill'
-import * as Kurup from './kurup_asapon_anenhing_statik.js'
+
 import * as RumusAbadi from './rumus_apalan_awal_taun_abadi.js'
 import * as Wulan from './wulan.js'
+import * as Dinten from './dinten.js'
+import * as Pasaran from './pasaran.js'
+import * as Kurup from './kurup_asapon_anenhing_statik.js'
+
 import { ARANING_WULAN_SETAUN } from './wulan.js';
 import { ARANING_TAHUN_SEWINDU } from './taun.js';
 import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_abadi.js';
@@ -58,11 +62,24 @@ function cariWulanRegistry(wulan) {
 }
 
 function konversiHariPasaran(h, p, k) {
-  //TODO: Implementasi
-  let xH = k.dinten + h //MAX=7
-  let xP = k.pasaran + p //MAX=5
+  let xP = (k.pasaran + p) % 5 //Pasaran MAX=5
+  
+  let d = k.dinten
+  konversiHari(h, d).then(d => console.log(d), e => console.log(e))
 
   return { h: 'senen', p: 'legi' }
+}
+
+async function konversiHari(h, d) {
+  let xH = (d + h) % 7 //Dinten MAX=7
+  
+  let d_promise = new Promise((resolve, reject) => {
+    Dinten.DINTEN.forEach((value, key, map) => {
+      (value.urutan == xH) ? resolve(value) : reject(new Error('error'))
+    })
+  })
+
+  return await d_promise
 }
 
 export {
