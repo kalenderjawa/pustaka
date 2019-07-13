@@ -6,6 +6,9 @@
 import '@babel/polyfill'
 import * as Kurup from './kurup_asapon_anenhing_statik.mjs'
 import * as RumusAbadi from './rumus_apalan_awal_taun_abadi.mjs'
+import * as Wulan from './wulan.mjs'
+import { ARANING_WULAN_SETAUN } from './wulan.mjs';
+import { ARANING_TAHUN_SEWINDU } from './taun.mjs';
 
 /**
  * Mencari Taun Jawa
@@ -29,16 +32,25 @@ async function cariTaunSengkala(_q) {
 async function cariRumusAbadi(wulan, taun) {
   let cariTaunPromise = new Promise((resolve, reject) => {
     cariTaunSengkala(taun).then(r => {
-      console.log(r)
-
+      let wulanMap = cariWulanRegistry(wulan) // boolean
+      //console.log(wulanMap)
+      let taunMap = cariTaunRegistry(r.taun.taun) // boolean
+      //console.log(r.taun.taun)
+      //console.log(taunMap)
+      resolve(r)
     })
   })
 
   let q_cariTaun = await cariTaunPromise
-
-  // mock test
-  let const_dumb = "don tu pat"
-  return const_dumb
+  return q_cariTaun
 }
 
-export { cariTaunSengkala, cariRumusAbadi }
+function cariTaunRegistry(taun) {
+  return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun))
+}
+
+function cariWulanRegistry(wulan) {
+  return ARANING_WULAN_SETAUN.has.has(Symbol.for(wulan))
+}
+
+export { cariTaunSengkala, cariRumusAbadi, cariWulanRegistry, cariTaunRegistry }
