@@ -7,7 +7,7 @@ import { ANENHING } from '../kurup.js'
 
 describe('Sengkala', () => {
     test("cariTaunSengkala", () => {
-        return KalenderJawa.cariTaunSengkala(1994).then(r => {
+        return KalenderJawa.cariTaunSengkalaAwait(1994).then(r => {
             expect(r.taun.taun).toBe("jimakir")
             expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
         }, e => {
