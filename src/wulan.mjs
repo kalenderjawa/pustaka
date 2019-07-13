@@ -8,15 +8,15 @@
  * @constant
  * @type {Symbol}
  */
-const _MUKAROM = Symbol("mukarom")
-const _SAPAR = Symbol("sapar")
+const _MUKAROM = Symbol.for("mukarom")
+const _SAPAR = Symbol.for("sapar")
 const _ROBIULAWAL = "robiulawal"
 const _ROBIULAKIR = "robiulakir"
 const _JUMADILAWAL = "jumadilawal"
 const _JUMADILAKIR = "jumadilakir"
 const _ROJAB = "rojab"
 const _SAKBAN = "sakban"
-const _ROMADON = "romadon"
+const _ROMADON = Symbol.for("romadon")
 const _SAWAL = "sawal"
 const _DULKODAH = "dulkodah"
 const _DULKIJAH = "dulkijah"
@@ -30,7 +30,7 @@ const JUMADILAWAL = { wulan: _JUMADILAWAL, celukan: "juwal", urutan: 5 }
 const JUMADILAKIR = { wulan: _JUMADILAKIR, celukan: "jukir", urutan: 6 }
 const ROJAB = { wulan: _ROJAB, celukan: "jab", urutan: 7 }
 const SAKBAN = { wulan: _SAKBAN, celukan: "ban", urutan: 8 }
-const ROMADON = { wulan: _ROMADON, celukan: "don", urutan: 9 }
+const ROMADON = { wulan: "romadon", celukan: "don", urutan: 9 }
 const SAWAL = { wulan: _SAWAL, celukan: "wal", urutan: 10 }
 const DULKODAH = { wulan: _DULKODAH, celukan: "dah", urutan: 11 }
 const DULKIJAH = { wulan: _DULKIJAH, celukan: "jah", urutan: 12 }
