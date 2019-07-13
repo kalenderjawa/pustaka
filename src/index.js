@@ -34,6 +34,11 @@ async function cariTaunSengkalaAwait(_q) {
   return qTaun
 }
 
+/**
+ * Fungsi untuk mencari rumus perhitungan abadi
+ * @param {string} wulan 
+ * @param {string} taun 
+ */
 async function cariRumusAbadi(wulan, taun) {
   return new Promise((resolve, reject) => {
     cariTaunSengkalaAwait(taun).then(r => {
@@ -70,8 +75,7 @@ async function konversiHariPasaran(h, p, k) {
 }
 
 async function konversiHari(h, dn) {
-  let xH = (dn + h) % 7 //Dinten MAX=7
-
+  let xH = ((dn + h) % 7) - 1 //Dinten MAX=7
   return new Promise((resolve, reject) => {
     Dinten.DINTEN.forEach((value, key, map) => {
       (value.urutan == xH) ? resolve(value) : reject(new Error('error'))
@@ -80,7 +84,7 @@ async function konversiHari(h, dn) {
 }
 
 async function konversiPasaran(p, ps) {
-  let xP = (ps + p) % 5 //Pasaran MAX=5
+  let xP = ((ps + p) % 5) - 1 //Pasaran MAX=5
   return new Promise((resolve, reject) => {
     Pasaran.PASARAN.forEach((value, key, map) => {
       (value.urutan == xP) ? resolve(value) : reject(new Error('error'))
@@ -90,8 +94,11 @@ async function konversiPasaran(p, ps) {
 
 async function cariHariAwalBulan(w, t) {
   let sengkalaTaun = await cariTaunSengkala(t)
-  let sengkalaWulan = cariWulanRegistry(w)
-  return {  sW: sengkalaWulan, sT: sengkalaTaun }
+  let sengkalaRumus = await cariRumusAbadi(w, t)
+  let kH = await konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan)
+  let kP = await konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)
+
+  return { kH, kP }
 }
 
 export {
