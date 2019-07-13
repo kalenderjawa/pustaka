@@ -50,7 +50,7 @@ function cariTaunRegistry(taun) {
 }
 
 function cariWulanRegistry(wulan) {
-  return ARANING_WULAN_SETAUN.has.has(Symbol.for(wulan))
+  return ARANING_WULAN_SETAUN.has(Symbol.for(wulan))
 }
 
 export { cariTaunSengkala, cariRumusAbadi, cariWulanRegistry, cariTaunRegistry }
