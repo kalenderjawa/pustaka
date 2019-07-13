@@ -3,7 +3,7 @@
 // 📁 index.js
 // :ES6
 
-//import '@babel/polyfill'
+import '@babel/polyfill'
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
 import * as RumusAbadi from './rumus_apalan_awal_taun_abadi.js'
 import * as Wulan from './wulan.js'
