@@ -10,73 +10,76 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 // Wulan Romadon Sewindu (8 Taun)
 
 /**
- * Rom Alip
+ * Don Alip
  * Wulan Romadon Taun Alip
  */
-const ROM_ALIP = {
+const DON_ALIP = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
     taun: ARANING_TAHUN_SEWINDU.get(_ALIP)
 }
 
 /**
- * Rom Ehe
+ * Don Ehe
  * Wulan Romadon Taun Ehe
  */
-const ROM_EHE = {
+const DON_EHE = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
     taun: ARANING_TAHUN_SEWINDU.get(_EHE)
 }
 
 /**
- * Rom Jimawal
+ * Don Jimawal
  * Wulan Romadon Taun Jimawal
  */
-const ROM_JIMAWAL = {
+const DON_JIMAWAL = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
     taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL)
 }
 
 /**
- * Rom Je
+ * Don Je
  * Wulan Romadon Taun Je
  */
-const ROM_JE = {
+const DON_JE = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
     taun: ARANING_TAHUN_SEWINDU.get(_JE)
 }
 
 /**
- * Rom Dal
+ * Don Dal
  * Wulan Romadon Taun Dal
  */
-const ROM_DAL = {
+const DON_DAL = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
     taun: ARANING_TAHUN_SEWINDU.get(_DAL)
 }
 
+
+let _DON_BE = Symbol.for("don_be")
 /**
- * Rom Be 
+ * Don Be 
  * Wulan Romadon Taun Be
  */
-const ROM_BE = {
+const DON_BE = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_BE)
+    taun: ARANING_TAHUN_SEWINDU.get(_BE),
+    rumus: DON_TU_PAT
 }
 
 /**
- * Rom Wawu
+ * Don Wawu
  * Wulan Romadon Taun Wawu
  */
-const ROM_WAWU = {
+const DON_WAWU = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
     taun: ARANING_TAHUN_SEWINDU.get(_WAWU)
 }
 
 /**
- * Rom Jimakir
+ * Don Jimakir
  * Wulan Romadon Taun Jimakir
  */
-const ROM_JIMAKIR = {
+const DON_JIMAKIR = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
     taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR)
 }
@@ -105,6 +108,6 @@ const DON_TU_PAT = {
 
 const RUMUS_APALAN_AWAL_TAUN_ABADI = new Map()
 
-RUMUS_APALAN_AWAL_TAUN_ABADI.set(ROM_BE, DON_TU_PAT)
+RUMUS_APALAN_AWAL_TAUN_ABADI.set(_DON_BE, DON_BE)
 
 export { RUMUS_APALAN_AWAL_TAUN_ABADI }
