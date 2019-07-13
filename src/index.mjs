@@ -33,9 +33,9 @@ async function cariTaunSengkala(_q) {
 async function cariRumusAbadi(wulan, taun) {
   let cariRumusPromise = new Promise((resolve, reject) => {
     cariTaunSengkala(taun).then(r => {
-      let wulanMap = cariWulanRegistry(wulan) 
+      let wulanMap = cariWulanRegistry(wulan)
       let taunMap = cariTaunRegistry(r.taun.taun)
-     
+
       // fungsi untuk cari rumus abadi disini
       const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
 
@@ -47,14 +47,16 @@ async function cariRumusAbadi(wulan, taun) {
   return q_cariRumus
 }
 
-
+function cariRumusWulanTaun(key) {
+  return RUMUS_APALAN_AWAL_TAUN_ABADI.has(Symbol.for(key)) ? RUMUS_APALAN_AWAL_TAUN_ABADI.get(Symbol.for(key)) : null
+}
 
 function cariTaunRegistry(taun) {
-    return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : null
+  return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : null
 }
 
 function cariWulanRegistry(wulan) {
-    return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : null
+  return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : null
 }
 
-export { cariTaunSengkala, cariRumusAbadi, cariWulanRegistry, cariTaunRegistry }
+export { cariTaunSengkala, cariRumusAbadi, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun }
