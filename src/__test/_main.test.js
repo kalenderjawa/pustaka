@@ -20,6 +20,10 @@ describe('Sengkala', () => {
         expect(KalenderJawa.cariWulanRegistry("romadon")).toBeTruthy()
     })
 
+    test("cariTaunRegistry", () => {
+        expect(KalenderJawa.cariTaunRegistry("be")).toBeTruthy()
+    })
+
     test("cariRumusAbadi", () => {
         return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
             expect(d.taun.taun).toBe('be')
