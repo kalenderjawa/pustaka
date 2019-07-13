@@ -36,10 +36,8 @@ async function cariRumusAbadi(wulan, taun) {
       let wulanMap = cariWulanRegistry(wulan)
       let taunMap = cariTaunRegistry(r.taun.taun)
 
-      // fungsi untuk cari rumus abadi disini
       const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
-
-      resolve(r)
+      resolve(cariRumusWulanTaun(KEY_RUMUS))
     })
   })
 
