@@ -8,7 +8,6 @@ import { ANENHING } from '../kurup.js'
 describe('Sengkala', () => {
     test("cariTaunSengkala", () => {
         return KalenderJawa.cariTaunSengkala(1994).then(r => {
-            console.log(r)
             expect(r.taun.taun).toBe("jimakir")
             expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
         }, e => {
@@ -57,8 +56,10 @@ describe('Sengkala', () => {
          }
          */
         let kurup = { dinten: 1, pasaran: 2 }
-        let { h, p } = KalenderJawa.konversiHariPasaran(7, 4, kurup)
-        expect(h).toBe('senen')
-        expect(p).toBe('legi')
+        
+        return KalenderJawa.konversiHariPasaran(7, 4, kurup).then(({ h, p }) => {
+            expect(h.dino).toBe('senen')
+            expect(p.pasaran).toBe('legi')
+        })
     })
 })
