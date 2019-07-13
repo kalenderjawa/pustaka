@@ -8,6 +8,7 @@ import { ANENHING } from '../kurup.js'
 describe('Sengkala', () => {
     test("cariTaunSengkala", () => {
         return KalenderJawa.cariTaunSengkala(1994).then(r => {
+            console.log(r)
             expect(r.taun.taun).toBe("jimakir")
             expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
         }, e => {
@@ -33,6 +34,31 @@ describe('Sengkala', () => {
     test("cariRumusAbadi", () => {
         return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
             expect(d.rumus.pasaran).toBe(4)
-        }) 
+        })
+    })
+
+    test("konversiHariPasaran", () => {
+        /**
+         * 
+         {
+             taun: { taun: 'jimakir', neptu: 3, urutan: 8 },
+             kurup: {
+             taun: 'alip',
+             dinten: { dino: 'senen', urutan: 1 },
+             pasaran: { pasaran: 'pahing', neptu: 9, urutan: 2 }
+             },
+             awal: [
+             1994, 2002, 2010,
+             2018, 2026, 2034,
+             2042, 2050, 2058,
+             2066, 2074, 2081,
+             2089, 2098, 2106
+             ]
+         }
+         */
+        let kurup = { dinten: 1, pasaran: 2 }
+        let { h, p } = KalenderJawa.konversiHariPasaran(7, 4, kurup)
+        expect(h).toBe('senen')
+        expect(p).toBe('legi')
     })
 })

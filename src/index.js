@@ -57,4 +57,19 @@ function cariWulanRegistry(wulan) {
   return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : null
 }
 
-export { cariTaunSengkala, cariRumusAbadi, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun }
+function konversiHariPasaran(h, p, k) {
+  //TODO: Implementasi
+  let xH = k.dinten + h //MAX=7
+  let xP = k.pasaran + p //MAX=5
+
+  return { h: 'senen', p: 'legi' }
+}
+
+export {
+  cariTaunSengkala,
+  cariRumusAbadi,
+  cariWulanRegistry,
+  cariTaunRegistry,
+  cariRumusWulanTaun,
+  konversiHariPasaran
+}
