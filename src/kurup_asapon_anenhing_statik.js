@@ -1,5 +1,5 @@
 /**
- * 📁 kurup_asapon_anenhing_statik.mjs
+ * 📁 kurup_asapon_anenhing_statik.js
  * @desc Hari Awal awal Kalender Jawa 1867 -2106 (1355-1594 H, 1936-2169 M)
  * @desc Kurup A-Sa-Pon & Kurup A-Nen-Hing
  */

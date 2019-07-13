@@ -1,5 +1,5 @@
 /**
- * 📁wulan.mjs
+ * 📁wulan.js
  * @desc Araning Wulan Ing Setaun
  */
 

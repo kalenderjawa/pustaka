@@ -1,5 +1,5 @@
 /**
- * 📁pasaran.mjs
+ * 📁pasaran.js
  * @desc Pasaran & Neptu
  */
 const _LEGI = 'legi'

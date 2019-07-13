@@ -1,5 +1,5 @@
 /**
- * 📁angka.mjs
+ * 📁angka.js
  * Angka Rumus Itung
  */
 

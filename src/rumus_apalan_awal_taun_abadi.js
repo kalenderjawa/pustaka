@@ -1,5 +1,5 @@
 /**
- * 📁rumus_apalan_awal_taun_abadi.mjs
+ * 📁rumus_apalan_awal_taun_abadi.js
  */
 
 import { _MUKAROM, _SAPAR, _ROBIULAWAL, _ROBIULAKIR, _JUMADILAWAL, _JUMADILAKIR, _ROJAB, _SAKBAN, _ROMADON, _SAWAL, _DULKODAH, _DULKIJAH, ARANING_WULAN_SETAUN

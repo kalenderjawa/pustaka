@@ -1,6 +1,6 @@
 /**
  * Arane Kurup
- * 📁 kurup.mjs
+ * 📁 kurup.js
  */
 
 import * as P from './pasaran.js'

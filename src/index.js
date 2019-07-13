@@ -1,6 +1,6 @@
 // Pustaka Kalender Jawa
 // Perhtungan, pengkonversian dan penanggalan Jawa
-// 📁 index.mjs
+// 📁 index.js
 // :ES6
 
 //import '@babel/polyfill'
