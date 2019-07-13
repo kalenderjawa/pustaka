@@ -23,16 +23,16 @@ const _DULKIJAH = Symbol.for("dulkijah")
 
 const MUKAROM = { wulan: "mukarom", celukan: "rom", urutan: 1 }
 const SAPAR = { wulan: "sapar", celukan: "par", urutan: 2 }
-const ROBIULAWAL = { wulan: _ROBIULAWAL, celukan: "rowal", urutan: 3 }
-const ROBIULAKIR = { wulan: _ROBIULAKIR, celukan: "rokir", urutan: 4 }
-const JUMADILAWAL = { wulan: _JUMADILAWAL, celukan: "juwal", urutan: 5 }
-const JUMADILAKIR = { wulan: _JUMADILAKIR, celukan: "jukir", urutan: 6 }
-const ROJAB = { wulan: _ROJAB, celukan: "jab", urutan: 7 }
-const SAKBAN = { wulan: _SAKBAN, celukan: "ban", urutan: 8 }
+const ROBIULAWAL = { wulan: 'robiulawal', celukan: "rowal", urutan: 3 }
+const ROBIULAKIR = { wulan: 'robiulakir', celukan: "rokir", urutan: 4 }
+const JUMADILAWAL = { wulan: 'jumadilawal', celukan: "juwal", urutan: 5 }
+const JUMADILAKIR = { wulan: 'jumadilakir', celukan: "jukir", urutan: 6 }
+const ROJAB = { wulan: 'rojab', celukan: "jab", urutan: 7 }
+const SAKBAN = { wulan: 'sakban', celukan: "ban", urutan: 8 }
 const ROMADON = { wulan: "romadon", celukan: "don", urutan: 9 }
-const SAWAL = { wulan: _SAWAL, celukan: "wal", urutan: 10 }
-const DULKODAH = { wulan: _DULKODAH, celukan: "dah", urutan: 11 }
-const DULKIJAH = { wulan: _DULKIJAH, celukan: "jah", urutan: 12 }
+const SAWAL = { wulan: 'sawal', celukan: "wal", urutan: 10 }
+const DULKODAH = { wulan: 'dulkodah', celukan: "dah", urutan: 11 }
+const DULKIJAH = { wulan: 'dulkijah', celukan: "jah", urutan: 12 }
 
 const ARANING_WULAN_SETAUN = new Map()
 
