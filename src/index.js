@@ -27,9 +27,6 @@ async function cariTaunSengkala(_q) {
       })
     }
   })
-
-  //let query_result = await find_async
-  //return query_result
 }
 
 async function cariTaunSengkalaAwait(_q) {
@@ -38,8 +35,8 @@ async function cariTaunSengkalaAwait(_q) {
 } 
 
 async function cariRumusAbadi(wulan, taun) {
-  let cariRumusPromise = new Promise((resolve, reject) => {
-    cariTaunSengkala(taun).then(r => {
+  return new Promise((resolve, reject) => {
+    cariTaunSengkalaAwait(taun).then(r => {
       let wulanMap = cariWulanRegistry(wulan)
       let taunMap = cariTaunRegistry(r.taun.taun)
 
@@ -47,9 +44,11 @@ async function cariRumusAbadi(wulan, taun) {
       resolve(cariRumusWulanTaun(KEY_RUMUS))
     })
   })
+}
 
-  let q_cariRumus = await cariRumusPromise
-  return q_cariRumus
+async function cariRumusAbadiAwait(wulan, taun) {
+  let qWT = await cariRumusAbadi(wulan, taun)
+  return qWT
 }
 
 function cariRumusWulanTaun(key) {
@@ -95,7 +94,7 @@ async function konversiHariAwalBulan(w, t) {
 
 export {
   cariTaunSengkalaAwait,
-  cariRumusAbadi,
+  cariRumusAbadiAwait,
   cariWulanRegistry,
   cariTaunRegistry,
   cariRumusWulanTaun,
