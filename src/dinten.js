@@ -3,21 +3,21 @@
  * @desc Araning Dinten Ing Jawa
  */
 
-const _SENEN = "senen"
-const _SELASA = "selasa"
-const _REBO = "rebo"
-const _KEMIS = "kemis"
-const _JEMAH = "jemah"
-const _SEBTU = "sebtu"
-const _AKAD = "akad"
+const _SENEN = Symbol.for("senen")
+const _SELASA = Symbol.for("selasa")
+const _REBO = Symbol.for("rebo")
+const _KEMIS = Symbol.for("kemis")
+const _JEMAH = Symbol.for("jemah")
+const _SEBTU = Symbol.for("sebtu")
+const _AKAD = Symbol.for("akad")
 
-const SENEN = { dino: _SENEN, urutan: 1 }
-const SELASA = { dino: _SELASA, urutan: 2 }
-const REBO = { dino: _REBO, urutan: 3 }
-const KEMIS = { dino: _KEMIS, urutan: 4 }
-const JEMAH = { dino: _JEMAH, urutan: 5 }
-const SEBTU = { dino: _SEBTU, urutan: 6 }
-const AKAD = { dino: _AKAD, urutan: 7 }
+const SENEN = { dino: 'senen', urutan: 1 }
+const SELASA = { dino: 'selasa', urutan: 2 }
+const REBO = { dino: 'rebo', urutan: 3 }
+const KEMIS = { dino: 'kemis', urutan: 4 }
+const JEMAH = { dino: 'jemah', urutan: 5 }
+const SEBTU = { dino: 'sebtu', urutan: 6 }
+const AKAD = { dino: 'akad', urutan: 7 }
 
 const DINTEN = new Map()
 
