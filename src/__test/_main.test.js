@@ -36,36 +36,10 @@ describe('Sengkala', () => {
         })
     })
 
-    test("konversiHariPasaran", () => {
-        /**
-         * 
-         {
-             taun: { taun: 'jimakir', neptu: 3, urutan: 8 },
-             kurup: {
-             taun: 'alip',
-             dinten: { dino: 'senen', urutan: 1 },
-             pasaran: { pasaran: 'pahing', neptu: 9, urutan: 2 }
-             },
-             awal: [
-             1994, 2002, 2010,
-             2018, 2026, 2034,
-             2042, 2050, 2058,
-             2066, 2074, 2081,
-             2089, 2098, 2106
-             ]
-         }
-         */
+    test("konversiHariPasaran", async () => {
         let kurup = { dinten: 2, pasaran: 3 }
-
-        return KalenderJawa.konversiHariPasaran(7, 4, kurup).then(({ h, p }) => {
-            expect(h.dino).toBe('senen')
-            expect(p.pasaran).toBe('legi')
-        })
-    })
-
-    test("cariHariAwalBulan", () => {
-        return KalenderJawa.cariHariAwalBulan('romadon', 1952).then(({ w, t, i, kH, kP }) => {
-            console.log(`1 ${w} ${t} (${i.taun}, ${i.kurup}) - ${kH.dino} ${kP.pasaran}`)
-        })
+        const {h, p} = await KalenderJawa.konversiHariPasaran(7, 4, kurup)
+        expect(h.dino).toBe('senen')
+        expect(p.pasaran).toBe('legi')
     })
 })
