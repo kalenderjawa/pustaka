@@ -25,6 +25,11 @@ describe('Sengkala', () => {
         expect(KalenderJawa.cariTaunRegistry("kabisat")).toBeNull()
     })
 
+    test("cariRumusWulanTaun", () => {
+        console.log(KalenderJawa.cariRumusWulanTaun('don_be'))
+        expect(KalenderJawa.cariRumusWulanTaun('don_be').rumus.dino).toBe(7)
+    })
+
     test("cariRumusAbadi", () => {
         return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
             expect(d.taun.taun).toBe('be')
