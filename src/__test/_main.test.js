@@ -64,8 +64,8 @@ describe('Sengkala', () => {
     })
 
     test("cariHariAwalBulan", () => {
-        return KalenderJawa.cariHariAwalBulan('romadon', 1952).then(({ w, t, kH, kP }) => {
-            console.log(`1 ${w} ${t} -> ${kH.dino} ${kP.pasaran}`)
+        return KalenderJawa.cariHariAwalBulan('romadon', 1952).then(({ w, t, i, kH, kP }) => {
+            console.log(`1 ${w} ${t} (${i.taun}, ${i.kurup}) - ${kH.dino} ${kP.pasaran}`)
         })
     })
 })
