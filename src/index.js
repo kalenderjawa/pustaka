@@ -6,12 +6,13 @@
 import '@babel/polyfill'
 
 import * as Dinten from './dinten.js'
-import * as Pasaran from './pasaran.js'
+import { PASARAN } from './pasaran.js'
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
 
 import { ARANING_WULAN_SETAUN } from './wulan.js';
 import { ARANING_TAHUN_SEWINDU } from './taun.js';
 import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_abadi.js';
+
 
 /**
  * Mencari Taun Jawa
@@ -75,7 +76,8 @@ async function konversiHariPasaran(h, p, k) {
 }
 
 async function konversiHari(h, dn) {
-  let xH = ((dn + h) % 7) - 1 //Dinten MAX=7
+  let xH = (dn + h) % 7 //Dinten MAX=7
+  if (xH == 1) { xH } else { xH = xH - 1 }
   return new Promise((resolve, reject) => {
     Dinten.DINTEN.forEach((value, key, map) => {
       (value.urutan == xH) ? resolve(value) : reject(new Error('error'))
@@ -84,14 +86,20 @@ async function konversiHari(h, dn) {
 }
 
 async function konversiPasaran(p, ps) {
-  let xP = ((ps + p) % 5) - 1 //Pasaran MAX=5
+  let xP = (ps + p) % 5 //Pasaran MAX=5
+  if (xP == 1) { xP } else { xP = xP - 1 }
   return new Promise((resolve, reject) => {
-    Pasaran.PASARAN.forEach((value, key, map) => {
+    PASARAN.forEach((value, key, map) => {
       (value.urutan == xP) ? resolve(value) : reject(new Error('error'))
     })
   })
 }
 
+/**
+ * 
+ * @param {string} w - string wulan (bulan)
+ * @param {number} t - 4 digit integer 
+ */
 async function cariHariAwalBulan(w, t) {
   let sengkalaTaun = await cariTaunSengkala(t)
   let sengkalaRumus = await cariRumusAbadi(w, t)
@@ -102,6 +110,7 @@ async function cariHariAwalBulan(w, t) {
 
   return { w, t, i, kH, kP }
 }
+
 
 export {
   cariTaunSengkalaAwait,
