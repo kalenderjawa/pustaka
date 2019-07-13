@@ -32,14 +32,15 @@ const DON_TU_PAT = {
 
 // Wulan Romadon Sewindu (8 Taun)
 let _DON_BE = Symbol.for("don_be")
-
+let _DON_ALIP = Symbol.for("don_alip")
 /**
  * Don Alip
  * Wulan Romadon Taun Alip
  */
 const DON_ALIP = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_ALIP)
+    taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+    rumus: DON_NEM_RO
 }
 
 /**
@@ -109,5 +110,6 @@ const DON_JIMAKIR = {
 const RUMUS_APALAN_AWAL_TAUN_ABADI = new Map()
 
 RUMUS_APALAN_AWAL_TAUN_ABADI.set(_DON_BE, DON_BE)
+RUMUS_APALAN_AWAL_TAUN_ABADI.set(_DON_ALIP, DON_ALIP)
 
 export { RUMUS_APALAN_AWAL_TAUN_ABADI }
