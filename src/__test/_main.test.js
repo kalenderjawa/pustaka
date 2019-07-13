@@ -31,7 +31,7 @@ describe('Sengkala', () => {
     })
 
     test("cariRumusAbadi", () => {
-        return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
+        return KalenderJawa.cariRumusAbadiAwait('romadon', 1952).then(d => {
             expect(d.rumus.pasaran).toBe(4)
         })
     })
