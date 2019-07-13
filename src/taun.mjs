@@ -3,14 +3,14 @@
  * @desc Araning Tahun Ing Dalem Sewindu
  */
 
-const _ALIP = 'alip'
-const _EHE = 'ehe'
-const _JIMAWAL = 'jimawal'
-const _JE = 'je'
-const _DAL = 'dal'
+const _ALIP = Symbol.for('alip')
+const _EHE = Symbol.for('ehe')
+const _JIMAWAL = Symbol.for('jimawal')
+const _JE = Symbol.for('je')
+const _DAL = Symbol.for('dal')
 const _BE = Symbol.for('be')
-const _WAWU = 'wawu'
-const _JIMAKIR = 'jimakir'
+const _WAWU = Symbol.for('wawu')
+const _JIMAKIR = Symbol.for('jimakir')
 
 const ALIP = { taun: _ALIP, neptu: 1, urutan: 1 }
 const EHE = { taun: _EHE, neptu: 5, urutan: 2 }
