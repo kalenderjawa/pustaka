@@ -3,7 +3,6 @@
  */
 
 import * as KalenderJawa from '../index.mjs'
-
 import { ANENHING } from '../kurup.mjs';
 import { _JIMAKIR } from '../taun.mjs';
 
@@ -17,8 +16,13 @@ describe('Sengkala', () => {
         })
     })
 
+    test("cariWulanRegistry", () => {
+        expect(KalenderJawa.cariWulanRegistry("romadon")).toBeTruthy()
+    })
+
     test("cariRumusAbadi", () => {
-        let q = KalenderJawa.cariRumusAbadi('romadon', 1952)
-        expect(q).toBe("don tu pat")
+        return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
+            expect(d.taun.taun).toBe('be')
+        }) 
     })
 })
