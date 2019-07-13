@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "npx webpack",
+    "build-node": "npx webpack",
+    "build-native-browser": "rollup src/index.js --file lib/bundle.js --format esm --name 'Sengkala'",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
     "test": "npx jest --no-cache"
   },
