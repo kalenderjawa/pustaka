@@ -3,9 +3,9 @@
  */
 
 import { _MUKAROM, _SAPAR, _ROBIULAWAL, _ROBIULAKIR, _JUMADILAWAL, _JUMADILAKIR, _ROJAB, _SAKBAN, _ROMADON, _SAWAL, _DULKODAH, _DULKIJAH, ARANING_WULAN_SETAUN
-} from './wulan.mjs'
-import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.mjs'
-import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.mjs'
+} from './wulan.js'
+import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
+import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
 
 // Rumus Matematis
@@ -31,6 +31,7 @@ const DON_TU_PAT = {
 
 
 // Wulan Romadon Sewindu (8 Taun)
+let _DON_BE = Symbol.for("don_be")
 
 /**
  * Don Alip
@@ -77,8 +78,6 @@ const DON_DAL = {
     taun: ARANING_TAHUN_SEWINDU.get(_DAL)
 }
 
-
-let _DON_BE = Symbol.for("don_be")
 /**
  * Don Be 
  * Wulan Romadon Taun Be
@@ -106,7 +105,6 @@ const DON_JIMAKIR = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
     taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR)
 }
-
 
 const RUMUS_APALAN_AWAL_TAUN_ABADI = new Map()
 

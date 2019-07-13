@@ -3,6 +3,7 @@
   "version": "1.0.0-alpha",
   "description": "Pustaka penanggalan dan perhitungan di dalam kalendar jawa",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "npx webpack",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",

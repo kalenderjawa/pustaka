@@ -1,4 +1,4 @@
-import * as Wulan from '../wulan.mjs'
+import * as Wulan from '../wulan.js'
 
 describe('WULAN', () => {
     test('_1', () => {

@@ -2,8 +2,8 @@
  * Testing dengan Jest
  */
 
-import * as KalenderJawa from '../index.mjs'
-import { ANENHING } from '../kurup.mjs'
+import * as KalenderJawa from '../index.js'
+import { ANENHING } from '../kurup.js'
 
 describe('Sengkala', () => {
     test("cariTaunSengkala", () => {
@@ -26,8 +26,8 @@ describe('Sengkala', () => {
     })
 
     test("cariRumusWulanTaun", () => {
-        console.log(KalenderJawa.cariRumusWulanTaun('don_be'))
         expect(KalenderJawa.cariRumusWulanTaun('don_be').rumus.dino).toBe(7)
+        expect(KalenderJawa.cariRumusWulanTaun('ora_ono')).toBeNull()
     })
 
     test("cariRumusAbadi", () => {

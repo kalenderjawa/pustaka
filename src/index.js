@@ -3,13 +3,13 @@
 // 📁 index.mjs
 // :ES6
 
-import '@babel/polyfill'
-import * as Kurup from './kurup_asapon_anenhing_statik.mjs'
-import * as RumusAbadi from './rumus_apalan_awal_taun_abadi.mjs'
-import * as Wulan from './wulan.mjs'
-import { ARANING_WULAN_SETAUN } from './wulan.mjs';
-import { ARANING_TAHUN_SEWINDU } from './taun.mjs';
-import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_abadi.mjs';
+//import '@babel/polyfill'
+import * as Kurup from './kurup_asapon_anenhing_statik.js'
+import * as RumusAbadi from './rumus_apalan_awal_taun_abadi.js'
+import * as Wulan from './wulan.js'
+import { ARANING_WULAN_SETAUN } from './wulan.js';
+import { ARANING_TAHUN_SEWINDU } from './taun.js';
+import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_abadi.js';
 
 /**
  * Mencari Taun Jawa

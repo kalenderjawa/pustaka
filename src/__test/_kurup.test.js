@@ -1,4 +1,4 @@
-import * as Kurup from '../kurup.mjs'
+import * as Kurup from '../kurup.js'
 
 const SAMPLE_ASAPON = 'alip selasa pon'
 const SAMPLE_ANENHING = 'alip senen pahing'

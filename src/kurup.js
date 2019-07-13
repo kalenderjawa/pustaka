@@ -3,8 +3,8 @@
  * 📁 kurup.mjs
  */
 
-import * as P from './pasaran.mjs'
-import * as D from './dinten.mjs'
+import * as P from './pasaran.js'
+import * as D from './dinten.js'
 
 /**
  * @constant
