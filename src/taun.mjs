@@ -12,14 +12,14 @@ const _BE = Symbol.for('be')
 const _WAWU = Symbol.for('wawu')
 const _JIMAKIR = Symbol.for('jimakir')
 
-const ALIP = { taun: _ALIP, neptu: 1, urutan: 1 }
-const EHE = { taun: _EHE, neptu: 5, urutan: 2 }
-const JIMAWAL = { taun: _JIMAWAL, neptu: 3, urutan: 3 }
-const JE = { taun: _JE, neptu: 7, urutan: 4 }
-const DAL = { taun: _DAL, neptu: 4, urutan: 5 }
+const ALIP = { taun: 'alip', neptu: 1, urutan: 1 }
+const EHE = { taun: 'ehe', neptu: 5, urutan: 2 }
+const JIMAWAL = { taun: 'jimawal', neptu: 3, urutan: 3 }
+const JE = { taun: 'je', neptu: 7, urutan: 4 }
+const DAL = { taun: 'dal', neptu: 4, urutan: 5 }
 const BE = { taun: 'be' , neptu: 2, urutan: 6 }
-const WAWU = { taun: _WAWU, neptu: 6, urutan: 7 }
-const JIMAKIR = { taun: _JIMAKIR, neptu: 3, urutan: 8 }
+const WAWU = { taun: 'wawu', neptu: 6, urutan: 7 }
+const JIMAKIR = { taun: 'jimakir', neptu: 3, urutan: 8 }
 
 const ARANING_TAHUN_SEWINDU = new Map()
 
