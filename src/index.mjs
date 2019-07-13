@@ -9,6 +9,7 @@ import * as RumusAbadi from './rumus_apalan_awal_taun_abadi.mjs'
 import * as Wulan from './wulan.mjs'
 import { ARANING_WULAN_SETAUN } from './wulan.mjs';
 import { ARANING_TAHUN_SEWINDU } from './taun.mjs';
+import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_abadi.mjs';
 
 /**
  * Mencari Taun Jawa
@@ -36,6 +37,7 @@ async function cariRumusAbadi(wulan, taun) {
       let taunMap = cariTaunRegistry(r.taun.taun)
      
       // fungsi untuk cari rumus abadi disini
+      const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
 
       resolve(r)
     })
@@ -44,6 +46,8 @@ async function cariRumusAbadi(wulan, taun) {
   let q_cariRumus = await cariRumusPromise
   return q_cariRumus
 }
+
+
 
 function cariTaunRegistry(taun) {
     return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : null
