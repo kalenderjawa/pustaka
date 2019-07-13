@@ -61,25 +61,33 @@ function cariWulanRegistry(wulan) {
   return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : null
 }
 
-function konversiHariPasaran(h, p, k) {
-  let xP = (k.pasaran + p) % 5 //Pasaran MAX=5
-  
-  let d = k.dinten
-  konversiHari(h, d).then(d => console.log(d), e => console.log(e))
-
-  return { h: 'senen', p: 'legi' }
+async function konversiHariPasaran(h, p, k) {
+  let qH = await konversiHari(h, k.dinten)
+  let qP = await konversiPasaran(p, k.pasaran)
+  return { h: qH, p: qP }
 }
 
-async function konversiHari(h, d) {
-  let xH = (d + h) % 7 //Dinten MAX=7
+async function konversiHari(h, dn) {
+  let xH = (dn + h) % 7 //Dinten MAX=7
   
-  let d_promise = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     Dinten.DINTEN.forEach((value, key, map) => {
       (value.urutan == xH) ? resolve(value) : reject(new Error('error'))
     })
   })
 
-  return await d_promise
+  //return await xH_Promise
+}
+
+async function konversiPasaran(p, ps) {
+  let xP = (ps + p) % 5 //Pasaran MAX=5
+  return new Promise((resolve, reject) => {
+    Pasaran.PASARAN.forEach((value, key, map) => {
+      (value.urutan == xP) ? resolve(value) : reject(new Error('error'))
+    })
+  })
+
+  //return await xP_Promise
 }
 
 export {
