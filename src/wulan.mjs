@@ -3,23 +3,22 @@
  * @desc Araning Wulan Ing Setaun
  */
 
-//const _MUKAROM = "mukarom"
 /**
  * @constant
  * @type {Symbol}
  */
 const _MUKAROM = Symbol.for("mukarom")
 const _SAPAR = Symbol.for("sapar")
-const _ROBIULAWAL = "robiulawal"
-const _ROBIULAKIR = "robiulakir"
-const _JUMADILAWAL = "jumadilawal"
-const _JUMADILAKIR = "jumadilakir"
-const _ROJAB = "rojab"
-const _SAKBAN = "sakban"
+const _ROBIULAWAL = Symbol.for("robiulawal")
+const _ROBIULAKIR = Symbol.for("robiulakir")
+const _JUMADILAWAL = Symbol.for("jumadilawal")
+const _JUMADILAKIR = Symbol.for("jumadilakir")
+const _ROJAB = Symbol.for("rojab")
+const _SAKBAN = Symbol.for("sakban")
 const _ROMADON = Symbol.for("romadon")
-const _SAWAL = "sawal"
-const _DULKODAH = "dulkodah"
-const _DULKIJAH = "dulkijah"
+const _SAWAL = Symbol.for("sawal")
+const _DULKODAH = Symbol.for("dulkodah")
+const _DULKIJAH = Symbol.for("dulkijah")
 
 
 const MUKAROM = { wulan: "mukarom", celukan: "rom", urutan: 1 }
