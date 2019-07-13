@@ -97,8 +97,10 @@ async function cariHariAwalBulan(w, t) {
   let sengkalaRumus = await cariRumusAbadi(w, t)
   let kH = await konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan)
   let kP = await konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)
-  
-  return { w, t, kH, kP }
+
+  const i = { taun: sengkalaTaun.taun.taun, kurup: `${sengkalaTaun.kurup.taun} ${sengkalaTaun.kurup.dinten.dino} ${sengkalaTaun.kurup.pasaran.pasaran}` }
+
+  return { w, t, i, kH, kP }
 }
 
 export {
