@@ -32,7 +32,7 @@ describe('Sengkala', () => {
 
     test("cariRumusAbadi", () => {
         return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
-            expect(d.taun.taun).toBe('be')
+            expect(d.rumus.pasaran).toBe(4)
         }) 
     })
 })
