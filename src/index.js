@@ -5,8 +5,6 @@
 
 import '@babel/polyfill'
 
-import * as RumusAbadi from './rumus_apalan_awal_taun_abadi.js'
-import * as Wulan from './wulan.js'
 import * as Dinten from './dinten.js'
 import * as Pasaran from './pasaran.js'
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
@@ -22,7 +20,7 @@ import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_abadi.js'
  */
 
 async function cariTaunSengkala(_q) {
-  let find_async = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     for (let _kurup of Kurup.KURUP_ASAPON_ANENHING) {
       _kurup.awal.find(query => {
         if (query == _q) resolve(_kurup)
@@ -30,9 +28,14 @@ async function cariTaunSengkala(_q) {
     }
   })
 
-  let query_result = await find_async
-  return query_result
+  //let query_result = await find_async
+  //return query_result
 }
+
+async function cariTaunSengkalaAwait(_q) {
+  let qTaun = await cariTaunSengkala(_q)
+  return qTaun
+} 
 
 async function cariRumusAbadi(wulan, taun) {
   let cariRumusPromise = new Promise((resolve, reject) => {
@@ -75,8 +78,6 @@ async function konversiHari(h, dn) {
       (value.urutan == xH) ? resolve(value) : reject(new Error('error'))
     })
   })
-
-  //return await xH_Promise
 }
 
 async function konversiPasaran(p, ps) {
@@ -86,12 +87,14 @@ async function konversiPasaran(p, ps) {
       (value.urutan == xP) ? resolve(value) : reject(new Error('error'))
     })
   })
+}
 
-  //return await xP_Promise
+async function konversiHariAwalBulan(w, t) {
+  
 }
 
 export {
-  cariTaunSengkala,
+  cariTaunSengkalaAwait,
   cariRumusAbadi,
   cariWulanRegistry,
   cariTaunRegistry,
