@@ -55,7 +55,7 @@ describe('Sengkala', () => {
              ]
          }
          */
-        let kurup = { dinten: 1, pasaran: 2 }
+        let kurup = { dinten: 2, pasaran: 3 }
         
         return KalenderJawa.konversiHariPasaran(7, 4, kurup).then(({ h, p }) => {
             expect(h.dino).toBe('senen')
@@ -64,9 +64,8 @@ describe('Sengkala', () => {
     })
 
     test("cariHariAwalBulan", () => {
-        return KalenderJawa.cariHariAwalBulan('romadon', 1952).then(({sW, sT}) => {
-            console.log(sW)
-            console.log(sT)
+        return KalenderJawa.cariHariAwalBulan('romadon', 1952).then(({kH, kP}) => {
+           //console.log(sT)
         })
     })
 })
