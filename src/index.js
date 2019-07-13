@@ -32,7 +32,7 @@ async function cariTaunSengkala(_q) {
 async function cariTaunSengkalaAwait(_q) {
   let qTaun = await cariTaunSengkala(_q)
   return qTaun
-} 
+}
 
 async function cariRumusAbadi(wulan, taun) {
   return new Promise((resolve, reject) => {
@@ -71,7 +71,7 @@ async function konversiHariPasaran(h, p, k) {
 
 async function konversiHari(h, dn) {
   let xH = (dn + h) % 7 //Dinten MAX=7
-  
+
   return new Promise((resolve, reject) => {
     Dinten.DINTEN.forEach((value, key, map) => {
       (value.urutan == xH) ? resolve(value) : reject(new Error('error'))
@@ -88,8 +88,10 @@ async function konversiPasaran(p, ps) {
   })
 }
 
-async function konversiHariAwalBulan(w, t) {
-  
+async function cariHariAwalBulan(w, t) {
+  let sengkalaTaun = await cariTaunSengkala(t)
+  let sengkalaWulan = cariWulanRegistry(w)
+  return {  sW: sengkalaWulan, sT: sengkalaTaun }
 }
 
 export {
@@ -98,5 +100,6 @@ export {
   cariWulanRegistry,
   cariTaunRegistry,
   cariRumusWulanTaun,
-  konversiHariPasaran
+  konversiHariPasaran,
+  cariHariAwalBulan
 }

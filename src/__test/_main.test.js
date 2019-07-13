@@ -62,4 +62,11 @@ describe('Sengkala', () => {
             expect(p.pasaran).toBe('legi')
         })
     })
+
+    test("cariHariAwalBulan", () => {
+        return KalenderJawa.cariHariAwalBulan('romadon', 1952).then(({sW, sT}) => {
+            console.log(sW)
+            console.log(sT)
+        })
+    })
 })
