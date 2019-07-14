@@ -1,3 +1,4 @@
+// @flow
 // Pustaka Kalender Jawa
 // Perhtungan, pengkonversian dan penanggalan Jawa
 // 📁 index.js
@@ -38,7 +39,7 @@ async function cariTaunSengkalaAwait(_q) {
 /**
  * Fungsi untuk mencari rumus perhitungan abadi
  * @param {string} wulan 
- * @param {string} taun 
+ * @param {number} taun 
  */
 async function cariRumusAbadi(wulan, taun) {
   return new Promise((resolve, reject) => {
