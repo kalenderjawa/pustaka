@@ -11,9 +11,10 @@ module.exports = {
           edge: 75,
           firefox: 69
         },
-        useBuiltIns : 'entry',
+        useBuiltIns: 'entry',
         ignoreBrowserslistConfig: true
       }
     ],
+    ['@babel/preset-flow']
   ],
 };
