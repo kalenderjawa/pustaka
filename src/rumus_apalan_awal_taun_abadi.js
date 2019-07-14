@@ -148,12 +148,13 @@ const DON_WAWU = {
 }
 
 /**
- * Don Jimakir
+ * Don Jimakir -> Don Ji Ro
  * Wulan Romadon Taun Jimakir
  */
 const DON_JIMAKIR = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR)
+    taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+    rumus: DON_JI_RO
 }
 
 const RUMUS_APALAN_AWAL_TAUN_ABADI = new Map()
