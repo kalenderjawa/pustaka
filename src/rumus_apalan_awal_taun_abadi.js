@@ -19,6 +19,30 @@ const DON_NEM_RO = {
     pasaran: 2
 }
 
+const DON_LU_JI = {
+    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+    dino: 3,
+    pasaran: 1
+}
+
+const DON_JI_JI = {
+    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+    dino: 1,
+    pasaran: 1
+}
+
+const DON_MO_MO = {
+    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+    dino: 5,
+    pasaran: 5
+}
+
+const DON_RO_PAT = {
+    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+    dino: 2,
+    pasaran: 4
+}
+
 /**
  * Don Tu Pat - Romadon Pitu Papat
  * Wulan Romadon Dino ke-Pitu (7) Pasaran ke-papat (4) 
@@ -29,8 +53,19 @@ const DON_TU_PAT = {
     pasaran: 4
 }
 
-// Wulan Romadon Sewindu (8 Taun)
+const DON_PAT_LU = {
+    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+    dino: 4,
+    pasaran: 3
+}
 
+const DON_JI_RO = {
+    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+    dino: 1,
+    pasaran: 2
+}
+
+// Wulan Romadon Sewindu (8 Taun)
 const _DON_ALIP = Symbol.for("don_alip")
 const _DON_EHE = Symbol.for("don_ehe")
 const _DON_JIMAWAL = Symbol.for("don_jimawal")
