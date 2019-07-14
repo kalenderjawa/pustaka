@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build-node": "npx webpack",
-    "build-native-browser": "rollup src/index.js --file lib/bundle.js --format esm --name 'Sengkala'",
+    "build": "npx babel src --out-dir lib --ignore 'src/**/*.spec.js','src/**/*.test.js'",
+    "build-browser": "rollup src/index.js --file lib/bundle.js --format esm --name 'Sengkala'",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
     "test": "npx jest --no-cache"
   },
@@ -44,13 +44,9 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.2.5"
+    "core-js": "^3.1.4",
+    "regenerator-runtime": "^0.13.2"
   },
-  "browserslist": [
-    "> 5%",
-    "> 1% in ID",
-    "not dead"
-  ],
   "jest": {
     "moduleFileExtensions": [
       "js",
