@@ -138,12 +138,13 @@ const DON_BE = {
 }
 
 /**
- * Don Wawu
+ * Don Wawu -> Don Pat Lu
  * Wulan Romadon Taun Wawu
  */
 const DON_WAWU = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_WAWU)
+    taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
+    rumus: DON_PAT_LU
 }
 
 /**
