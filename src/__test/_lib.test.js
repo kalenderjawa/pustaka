@@ -1,4 +1,4 @@
-import * as Lib from '../lib/index.js'
+import * as Lib from '../../lib/index.js'
 
 describe('Lib', () => {
     it('Test Lib', () => {
