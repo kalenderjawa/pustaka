@@ -21,6 +21,26 @@ Berikut aturan atau sistematis utama dari kalender Jawa yang perlu menjadi acuan
 
  ![rumus_awal_taun](images/20190102-menek-kalender-4.jpg)
 
+## API
+### `cariHariPasaranAwalBulan(w, t)`
+Contoh penggunaan:
+
+Untuk mencari hari dan pasaran jatuhnya awal bulan puasa Romadon, 1952 Jawa maka parameternya adalah
+
+`w` = "romadon"
+
+`t` = 1952
+
+Snippet kode bisa seperti berikut
+
+```
+import * as KalenderJawa from '@junwatu/kalender-jawa'
+
+let {kH, kP} = KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952)
+console.log(`${kH.dino} ${kP.pasaran}`) // senen legi
+
+```
+
 ## Referensi
 
 - https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
