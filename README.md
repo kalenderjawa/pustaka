@@ -1,7 +1,11 @@
-# Pustaka Kalender Jawa
+<h1 align="center">Pustaka Kalender Jawa</h1>
 
-[![Build Status](https://travis-ci.com/junwatu/kalender-jawa.svg?token=ygQgbKk8uMU72qsetYYB&branch=master)](https://travis-ci.com/junwatu/kalender-jawa)
+<p align="center">
+<a href="https://travis-ci.com/junwatu/kalender-jawa" alt="Travis CI"><img src="https://travis-ci.com/junwatu/kalender-jawa.svg?token=ygQgbKk8uMU72qsetYYB&branch=master" alt="Build Status"/></a>
+<a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
+</p>
 
+## Pengenalan
 Pustaka JavaScript untuk perhitungan kalender jawa.
 
 
