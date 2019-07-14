@@ -98,12 +98,13 @@ const DON_EHE = {
 }
 
 /**
- * Don Jimawal
+ * Don Jimawal -> Don Ji Ji
  * Wulan Romadon Taun Jimawal
  */
 const DON_JIMAWAL = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL)
+    taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
+    rumus: DON_JI_JI
 }
 
 /**
