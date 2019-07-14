@@ -7,6 +7,16 @@ import { _MUKAROM, _SAPAR, _ROBIULAWAL, _ROBIULAKIR, _JUMADILAWAL, _JUMADILAKIR,
 import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
 import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
+// Registry Wulan Romadon Sewindu (8 Taun)
+const _DON_ALIP = Symbol.for("don_alip")
+const _DON_EHE = Symbol.for("don_ehe")
+const _DON_JIMAWAL = Symbol.for("don_jimawal")
+const _DON_JE = Symbol.for("don_je")
+const _DON_DAL = Symbol.for("don_dal")
+const _DON_BE = Symbol.for("don_be")
+const _DON_WAWU = Symbol.for("don_wawu")
+const _DON_JIMAKIR = Symbol.for("don_jimakir")
+
 
 // Rumus Matematis
 
@@ -65,19 +75,10 @@ const DON_JI_RO = {
     pasaran: 2
 }
 
-// Wulan Romadon Sewindu (8 Taun)
-const _DON_ALIP = Symbol.for("don_alip")
-const _DON_EHE = Symbol.for("don_ehe")
-const _DON_JIMAWAL = Symbol.for("don_jimawal")
-const _DON_JE = Symbol.for("don_je")
-const _DON_DAL = Symbol.for("don_dal")
-const _DON_BE = Symbol.for("don_be")
-const _DON_WAWU = Symbol.for("don_wawu")
-const _DON_JIMAKIR = Symbol.for("don_jimakir")
-
+// Intersection [row x column -> rumus]
 
 /**
- * Don Alip
+ * Don Alip -> Don Nem Ro
  * Wulan Romadon Taun Alip
  */
 const DON_ALIP = {
