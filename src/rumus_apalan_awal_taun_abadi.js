@@ -29,10 +29,18 @@ const DON_TU_PAT = {
     pasaran: 4
 }
 
-
 // Wulan Romadon Sewindu (8 Taun)
-let _DON_BE = Symbol.for("don_be")
-let _DON_ALIP = Symbol.for("don_alip")
+
+const _DON_ALIP = Symbol.for("don_alip")
+const _DON_EHE = Symbol.for("don_ehe")
+const _DON_JIMAWAL = Symbol.for("don_jimawal")
+const _DON_JE = Symbol.for("don_je")
+const _DON_DAL = Symbol.for("don_dal")
+const _DON_BE = Symbol.for("don_be")
+const _DON_WAWU = Symbol.for("don_wawu")
+const _DON_JIMAKIR = Symbol.for("don_jimakir")
+
+
 /**
  * Don Alip
  * Wulan Romadon Taun Alip
