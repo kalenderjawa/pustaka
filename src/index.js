@@ -112,6 +112,10 @@ async function cariHariAwalBulan(w, t) {
   return { w, t, i, kH, kP }
 }
 
+async function cariHariPasaranAwalBulan(w, t) {
+  return await cariHariAwalBulan(w, t)
+}
+
 export {
   cariTaunSengkalaAwait,
   cariRumusAbadiAwait,
@@ -119,5 +123,6 @@ export {
   cariTaunRegistry,
   cariRumusWulanTaun,
   konversiHariPasaran,
-  cariHariAwalBulan
+  cariHariAwalBulan,
+  cariHariPasaranAwalBulan
 }
