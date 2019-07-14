@@ -8,7 +8,7 @@
     "build": "npx babel src --out-dir lib --ignore 'src/**/*.spec.js','src/**/*.test.js'",
     "build-browser": "rollup src/index.js --file lib/bundle.js --format esm --name 'Sengkala'",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
-    "test": "npx jest --no-cache"
+    "test": "npm run build && npx jest --no-cache"
   },
   "repository": {
     "type": "git",
@@ -35,9 +35,11 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
+    "@babel/preset-flow": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.5",
+    "flow-bin": "^0.102.0",
     "jest": "^24.7.1",
     "jsdoc": "^3.6.2",
     "webpack": "^4.29.6",
