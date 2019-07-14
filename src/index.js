@@ -3,7 +3,9 @@
 // 📁 index.js
 // :ES6
 
-import '@babel/polyfill'
+//import '@babel/polyfill'
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 import * as Dinten from './dinten.js'
 import { PASARAN } from './pasaran.js'
@@ -12,7 +14,6 @@ import * as Kurup from './kurup_asapon_anenhing_statik.js'
 import { ARANING_WULAN_SETAUN } from './wulan.js';
 import { ARANING_TAHUN_SEWINDU } from './taun.js';
 import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_abadi.js';
-
 
 /**
  * Mencari Taun Jawa
@@ -110,7 +111,6 @@ async function cariHariAwalBulan(w, t) {
 
   return { w, t, i, kH, kP }
 }
-
 
 export {
   cariTaunSengkalaAwait,
