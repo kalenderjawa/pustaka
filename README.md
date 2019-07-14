@@ -1,4 +1,8 @@
-<h1 align="center">Pustaka Kalender Jawa</h1>
+<h1 align="center">
+<p align="center">Pustaka Kalender Jawa</p>
+
+<img src="images/sengkala.svg" width="80%">
+</h1>
 
 <p align="center">
 <a href="https://travis-ci.com/junwatu/kalender-jawa" alt="Travis CI"><img src="https://travis-ci.com/junwatu/kalender-jawa.svg?token=ygQgbKk8uMU72qsetYYB&branch=master" alt="Build Status"/></a>
