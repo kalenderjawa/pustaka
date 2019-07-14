@@ -88,12 +88,13 @@ const DON_ALIP = {
 }
 
 /**
- * Don Ehe
+ * Don Ehe -> Don Lu Ji
  * Wulan Romadon Taun Ehe
  */
 const DON_EHE = {
     wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_EHE)
+    taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+    rumus: DON_LU_JI
 }
 
 /**
