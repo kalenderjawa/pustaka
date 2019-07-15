@@ -39,3 +39,10 @@ const WAL_JI_RO = {
     dino: 1,
     pasaran: 2
 }
+
+const WAL_MO_JI = {
+    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    dino: 5,
+    pasaran: 1
+}
+
