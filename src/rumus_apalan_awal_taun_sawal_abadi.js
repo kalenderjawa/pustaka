@@ -75,3 +75,9 @@ const WAL_NEM_LU = {
     dino: 6,
     pasaran: 3
 }
+
+const WAL_LU_RO = {
+    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    dino: 3,
+    pasaran: 2
+}
