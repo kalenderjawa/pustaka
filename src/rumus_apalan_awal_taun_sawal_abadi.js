@@ -24,7 +24,7 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 const _WAL_ALIP = Symbol.for("wal_alip")
 const _WAL_EHE = Symbol.for("wal_ehe")
 const _WAL_JIMAWAL = Symbol.for("wal_jimawal")
-const _WAL_JE = SYmbol.for("wal_je")
+const _WAL_JE = Symbol.for("wal_je")
 const _WAL_DAL = Symbol.for("wal_dal")
 const _WAL_BE = Symbol.for("wal_be")
 const _WAL_WAWU = Symbol.for("wal_wawu")
