@@ -89,3 +89,9 @@ const WAL_ALIP = {
     taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
     rumus: WAL_JI_RO
 }
+
+const WAL_EHE = {
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+    taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+    rumus: WAL_MO_JI
+}
