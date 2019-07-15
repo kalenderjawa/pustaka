@@ -114,3 +114,8 @@ const WAL_DAL = {
     rumus: WAL_PAT_PAT
 }
 
+const WAL_BE = {
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+    taun: ARANING_TAHUN_SEWINDU.get(_BE),
+    rumus: WAL_RO_PAT
+}
