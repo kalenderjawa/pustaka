@@ -46,3 +46,8 @@ const WAL_MO_JI = {
     pasaran: 1
 }
 
+const WAL_LU_JI = {
+    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    dino: 3,
+    pasaran: 1
+}
