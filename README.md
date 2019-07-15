@@ -23,13 +23,18 @@ Berikut aturan atau sistematis utama dari kalender Jawa yang perlu menjadi acuan
 
 ## API
 ### `cariHariPasaranAwalBulan(w, t)`
+**Argumen**:
+- Bulan `w` `string`
+- Tahun `t` `number`
+
 Contoh penggunaan:
 
 Untuk mencari hari dan pasaran awal bulan puasa Romadon pada tahun 1952 Jawa maka parameternya adalah
 
-Bulan `w` = "romadon"
-
-Tahun `t` = 1952
+| Argumen | Value 
+| --- | --- |
+| `w` | "romadon"
+| `t` | 1952
 
 dan kode javascript (ES6) untuk mencari hari dan pasaran tersebut bisa ditulis seperti berikut
 
