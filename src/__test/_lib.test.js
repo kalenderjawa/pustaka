@@ -1,4 +1,4 @@
-import * as Lib from '../../lib/index.js'
+import * as Lib from '../../lib/bundle.js'
 
 const _TEST = {
     wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
@@ -11,7 +11,7 @@ const _TEST = {
   }
 
 describe('Lib', () => {
-    it('Test Lib', () => {
+    test('Test Lib', () => {
         expect(Lib.cariRumusWulanTaun('don_be')).toEqual(_TEST)
     })
 })
