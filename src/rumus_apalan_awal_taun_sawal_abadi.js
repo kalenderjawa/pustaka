@@ -22,3 +22,5 @@ import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_S
 import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
 const _WAL_ALIP = Symbol.for("wal_alip")
+const _WAL_EHE = Symbol.for("wal_ehe")
+const _WAL_JIMAWAL = Symbol.for("wal_jimawal")
