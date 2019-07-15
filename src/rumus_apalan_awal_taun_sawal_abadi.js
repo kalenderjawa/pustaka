@@ -31,3 +31,11 @@ const _WAL_DAL = Symbol.for("wal_dal")
 const _WAL_BE = Symbol.for("wal_be")
 const _WAL_WAWU = Symbol.for("wal_wawu")
 const _WAL_JIMAKIR = Symbol.for("wal_jimakir")
+
+// Rumus matematis
+
+const WAL_JI_RO = {
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+    dino: 1,
+    pasaran: 2
+}
