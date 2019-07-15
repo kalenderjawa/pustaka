@@ -107,3 +107,10 @@ const WAL_JE = {
     taun: ARANING_TAHUN_SEWINDU.get(_JE),
     rumus: WAL_TU_MO
 }
+
+const WAL_DAL = {
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+    taun: ARANING_TAHUN_SEWINDU.get(_DAL),
+    rumus: WAL_PAT_PAT
+}
+
