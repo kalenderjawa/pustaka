@@ -41,43 +41,44 @@ const WAL_JI_RO = {
 }
 
 const WAL_MO_JI = {
-    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
     dino: 5,
     pasaran: 1
 }
 
 const WAL_LU_JI = {
-    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
     dino: 3,
     pasaran: 1
 }
 
 const WAL_TU_MO = {
-    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
     dino: 3,
     pasaran: 1
 }
 
 const WAL_PAT_PAT = {
-    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
     dino: 4,
     pasaran: 4
 }
 
 const WAL_RO_PAT = {
-    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
     dino: 2,
     pasaran: 4
 }
 
 const WAL_NEM_LU = {
-    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
     dino: 6,
     pasaran: 3
 }
 
 const WAL_LU_RO = {
-    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
     dino: 3,
     pasaran: 2
 }
+
