@@ -32,7 +32,7 @@ Contoh penggunaan:
 Untuk mencari hari dan pasaran awal bulan puasa Romadon pada tahun 1952 Jawa maka parameternya adalah
 
 | Argumen | Value 
-| --- | --- |
+| :---: | --- |
 | `w` | "romadon"
 | `t` | 1952
 
