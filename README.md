@@ -31,7 +31,7 @@ Untuk mencari hari dan pasaran jatuhnya awal bulan puasa Romadon, 1952 Jawa maka
 
 `t` = 1952
 
-Snippet kode bisa seperti berikut
+kode javascript (ES6) bisa ditulis seperti berikut
 
 ```
 import * as KalenderJawa from '@junwatu/kalender-jawa'
