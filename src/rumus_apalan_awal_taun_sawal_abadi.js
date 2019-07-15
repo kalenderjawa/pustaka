@@ -119,3 +119,9 @@ const WAL_BE = {
     taun: ARANING_TAHUN_SEWINDU.get(_BE),
     rumus: WAL_RO_PAT
 }
+
+const WAL_WAWU = {
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+    taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
+    rumus: WAL_NEM_LU
+}
