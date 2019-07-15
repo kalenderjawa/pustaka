@@ -82,3 +82,10 @@ const WAL_LU_RO = {
     pasaran: 2
 }
 
+// Intersection [row x column -> rumus]
+
+const WAL_ALIP = {
+    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+    taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+    rumus: WAL_JI_RO
+}
