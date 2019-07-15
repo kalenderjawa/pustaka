@@ -63,3 +63,9 @@ const WAL_PAT_PAT = {
     dino: 4,
     pasaran: 4
 }
+
+const WAL_RO_PAT = {
+    wulan: ARANING_WULAN_SETAUN.set(_SAWAL),
+    dino: 2,
+    pasaran: 4
+}
