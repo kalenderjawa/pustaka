@@ -1,6 +1,6 @@
 import * as Lib from '../../lib/bundle.js'
 
-const _TEST = {
+const _TESTDAT = {
     wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
     taun: { taun: 'be', neptu: 2, urutan: 6 },
     rumus: {
@@ -12,6 +12,6 @@ const _TEST = {
 
 describe('Lib', () => {
     test('Test Lib', () => {
-        expect(Lib.cariRumusWulanTaun('don_be')).toEqual(_TEST)
+        expect(Lib.cariRumusWulanTaun('don_be')).toEqual(_TESTDAT)
     })
 })
