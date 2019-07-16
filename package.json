@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "npx babel src --out-dir lib --ignore 'src/**/*.spec.js','src/**/*.test.js'",
+    "build": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
     "build-browser": "npx rollup src/index.js --file lib/bundle.js --format esm --name 'Sengkala'",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
     "test": "npm run build && npx jest --no-cache"
