@@ -21,7 +21,7 @@ import {
 import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
 import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
-// Regisrty Symbol untuk Sawal Sewindu
+// Registry Symbol untuk Sawal Sewindu
 
 const _WAL_ALIP = Symbol.for("wal_alip")
 const _WAL_EHE = Symbol.for("wal_ehe")
@@ -142,3 +142,5 @@ RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI.set(_WAL_DAL, WAL_DAL)
 RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI.set(_WAL_BE, WAL_BE)
 RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI.set(_WAL_WAWU, WAL_WAWU)
 RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI.set(_WAL_JIMAKIR, WAL_JIMAKIR)
+
+export { RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI }
