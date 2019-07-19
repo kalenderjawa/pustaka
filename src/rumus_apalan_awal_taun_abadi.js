@@ -3,19 +3,19 @@
  */
 
 import {
-    _MUKAROM,
-    _SAPAR,
-    _ROBIULAWAL,
-    _ROBIULAKIR,
-    _JUMADILAWAL,
-    _JUMADILAKIR,
-    _ROJAB,
-    _SAKBAN,
-    _ROMADON,
-    _SAWAL,
-    _DULKODAH,
-    _DULKIJAH,
-    ARANING_WULAN_SETAUN
+  _MUKAROM,
+  _SAPAR,
+  _ROBIULAWAL,
+  _ROBIULAKIR,
+  _JUMADILAWAL,
+  _JUMADILAKIR,
+  _ROJAB,
+  _SAKBAN,
+  _ROMADON,
+  _SAWAL,
+  _DULKODAH,
+  _DULKIJAH,
+  ARANING_WULAN_SETAUN
 } from './wulan.js'
 
 import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
@@ -38,33 +38,33 @@ const _DON_JIMAKIR = Symbol.for("don_jimakir")
  * Don Nem Ro - Romadon Enem Loro
  */
 const DON_NEM_RO = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    dino: 6,
-    pasaran: 2
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  dino: 6,
+  pasaran: 2
 }
 
 const DON_LU_JI = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    dino: 3,
-    pasaran: 1
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  dino: 3,
+  pasaran: 1
 }
 
 const DON_JI_JI = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    dino: 1,
-    pasaran: 1
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  dino: 1,
+  pasaran: 1
 }
 
 const DON_MO_MO = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    dino: 5,
-    pasaran: 5
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  dino: 5,
+  pasaran: 5
 }
 
 const DON_RO_PAT = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    dino: 2,
-    pasaran: 4
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  dino: 2,
+  pasaran: 4
 }
 
 /**
@@ -72,33 +72,32 @@ const DON_RO_PAT = {
  * Wulan Romadon Dino ke-Pitu (7) Pasaran ke-papat (4) 
  */
 const DON_TU_PAT = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    dino: 7,
-    pasaran: 4
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  dino: 7,
+  pasaran: 4
 }
 
 const DON_PAT_LU = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    dino: 4,
-    pasaran: 3
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  dino: 4,
+  pasaran: 3
 }
 
 const DON_JI_RO = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    dino: 1,
-    pasaran: 2
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  dino: 1,
+  pasaran: 2
 }
 
-// Intersection [row x column -> rumus]
 
 /**
  * Don Alip -> Don Nem Ro
  * Wulan Romadon Taun Alip
  */
 const DON_ALIP = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
-    rumus: DON_NEM_RO
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: DON_NEM_RO
 }
 
 /**
@@ -106,9 +105,9 @@ const DON_ALIP = {
  * Wulan Romadon Taun Ehe
  */
 const DON_EHE = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_EHE),
-    rumus: DON_LU_JI
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: DON_LU_JI
 }
 
 /**
@@ -116,9 +115,9 @@ const DON_EHE = {
  * Wulan Romadon Taun Jimawal
  */
 const DON_JIMAWAL = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
-    rumus: DON_JI_JI
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
+  rumus: DON_JI_JI
 }
 
 /**
@@ -126,9 +125,9 @@ const DON_JIMAWAL = {
  * Wulan Romadon Taun Je
  */
 const DON_JE = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_JE),
-    rumus: DON_MO_MO
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  taun: ARANING_TAHUN_SEWINDU.get(_JE),
+  rumus: DON_MO_MO
 }
 
 /**
@@ -136,9 +135,9 @@ const DON_JE = {
  * Wulan Romadon Taun Dal
  */
 const DON_DAL = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_DAL),
-    rumus: DON_RO_PAT
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  taun: ARANING_TAHUN_SEWINDU.get(_DAL),
+  rumus: DON_RO_PAT
 }
 
 /**
@@ -146,9 +145,9 @@ const DON_DAL = {
  * Wulan Romadon Taun Be
  */
 const DON_BE = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_BE),
-    rumus: DON_TU_PAT
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  taun: ARANING_TAHUN_SEWINDU.get(_BE),
+  rumus: DON_TU_PAT
 }
 
 /**
@@ -156,9 +155,9 @@ const DON_BE = {
  * Wulan Romadon Taun Wawu
  */
 const DON_WAWU = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
-    rumus: DON_PAT_LU
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
+  rumus: DON_PAT_LU
 }
 
 /**
@@ -166,9 +165,9 @@ const DON_WAWU = {
  * Wulan Romadon Taun Jimakir
  */
 const DON_JIMAKIR = {
-    wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
-    taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
-    rumus: DON_JI_RO
+  wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+  rumus: DON_JI_RO
 }
 
 // Mapping
