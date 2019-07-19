@@ -8,7 +8,7 @@
     "build": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
     "build-browser": "npx rollup src/index.js --file lib/bundle.js --format esm --name 'Sengkala'",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
-    "test": "npm run build && npx jest --no-cache"
+    "test": "npm run build && npx jest --no-cache --coverage"
   },
   "repository": {
     "type": "git",
@@ -51,6 +51,7 @@
     "regenerator-runtime": "^0.13.2"
   },
   "jest": {
+    "coveragePathIgnorePatterns": ["/node_modules/", "/lib/"],
     "moduleFileExtensions": [
       "js",
       "json",
