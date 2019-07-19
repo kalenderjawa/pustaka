@@ -3,19 +3,19 @@
  */
 
 import {
-    _MUKAROM,
-    _SAPAR,
-    _ROBIULAWAL,
-    _ROBIULAKIR,
-    _JUMADILAWAL,
-    _JUMADILAKIR,
-    _ROJAB,
-    _SAKBAN,
-    _ROMADON,
-    _SAWAL,
-    _DULKODAH,
-    _DULKIJAH,
-    ARANING_WULAN_SETAUN
+  _MUKAROM,
+  _SAPAR,
+  _ROBIULAWAL,
+  _ROBIULAKIR,
+  _JUMADILAWAL,
+  _JUMADILAKIR,
+  _ROJAB,
+  _SAKBAN,
+  _ROMADON,
+  _SAWAL,
+  _DULKODAH,
+  _DULKIJAH,
+  ARANING_WULAN_SETAUN
 } from './wulan.js'
 
 import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
@@ -35,101 +35,103 @@ const _WAL_JIMAKIR = Symbol.for("wal_jimakir")
 // Rumus matematis
 
 const WAL_JI_RO = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    dino: 1,
-    pasaran: 2
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  dino: 1,
+  pasaran: 2
 }
 
 const WAL_MO_JI = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    dino: 5,
-    pasaran: 1
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  dino: 5,
+  pasaran: 1
 }
 
 const WAL_LU_JI = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    dino: 3,
-    pasaran: 1
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  dino: 3,
+  pasaran: 1
 }
 
 const WAL_TU_MO = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    dino: 3,
-    pasaran: 1
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  dino: 3,
+  pasaran: 1
 }
 
 const WAL_PAT_PAT = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    dino: 4,
-    pasaran: 4
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  dino: 4,
+  pasaran: 4
 }
 
 const WAL_RO_PAT = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    dino: 2,
-    pasaran: 4
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  dino: 2,
+  pasaran: 4
 }
 
 const WAL_NEM_LU = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    dino: 6,
-    pasaran: 3
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  dino: 6,
+  pasaran: 3
 }
 
 const WAL_LU_RO = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    dino: 3,
-    pasaran: 2
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  dino: 3,
+  pasaran: 2
 }
 
 // Intersection [row x column -> rumus]
 
 const WAL_ALIP = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
-    rumus: WAL_JI_RO
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: WAL_JI_RO
 }
 
 const WAL_EHE = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
-    rumus: WAL_MO_JI
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: WAL_MO_JI
 }
 
 const WAL_JIMAWAL = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
-    rumus: WAL_LU_JI
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
+  rumus: WAL_LU_JI
 }
 
 const WAL_JE = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    taun: ARANING_TAHUN_SEWINDU.get(_JE),
-    rumus: WAL_TU_MO
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_JE),
+  rumus: WAL_TU_MO
 }
 
 const WAL_DAL = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    taun: ARANING_TAHUN_SEWINDU.get(_DAL),
-    rumus: WAL_PAT_PAT
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_DAL),
+  rumus: WAL_PAT_PAT
 }
 
 const WAL_BE = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    taun: ARANING_TAHUN_SEWINDU.get(_BE),
-    rumus: WAL_RO_PAT
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_BE),
+  rumus: WAL_RO_PAT
 }
 
 const WAL_WAWU = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
-    rumus: WAL_NEM_LU
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
+  rumus: WAL_NEM_LU
 }
 
 const WAL_JIMAKIR = {
-    wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-    taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
-    rumus: WAL_LU_RO
+  wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+  rumus: WAL_LU_RO
 }
 
 const RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI = new Map()
+
+RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI.set()
