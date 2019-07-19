@@ -113,7 +113,7 @@ async function cariHariAwalBulan(w, t) {
 }
 
 async function cariHariPasaranAwalBulan(w, t) {
-  return await cariHariAwalBulan(w, t)
+  return cariHariAwalBulan(w, t)
 }
 
 export {
