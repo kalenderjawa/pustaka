@@ -1,4 +1,4 @@
-import * as Lib from '../../lib/bundle.js'
+import * as Lib from '../../lib/index.js'
 
 const _TESTDAT = {
     wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
