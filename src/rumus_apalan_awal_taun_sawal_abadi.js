@@ -131,3 +131,5 @@ const WAL_JIMAKIR = {
     taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
     rumus: WAL_LU_RO
 }
+
+const RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI = new Map()
