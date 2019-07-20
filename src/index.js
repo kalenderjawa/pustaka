@@ -94,7 +94,7 @@ async function konversiHariPasaran(h: number, p: number, k: RumusType) {
     return { h: qH, p: qP }
   }
 
-async function konversiHari(h: number, dn: number) {
+async function konversiHari(h: number, dn: number): Promise<DintenType | string> {
     let xH = (dn + h) % 7 //Dinten MAX=7
     if (xH == 1) { xH } else { xH = xH - 1 }
     return new Promise((resolve, reject) => {
