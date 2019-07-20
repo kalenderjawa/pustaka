@@ -53,3 +53,10 @@ const DAH_NEM_RO = {
   dino: 6,
   pasaran: 2
 }
+
+const DAH_PAT_MO = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  dino: 4,
+  pasaran: 5
+}
+
