@@ -87,7 +87,7 @@ function cariTaunRegistry(taun) {
     return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : null
   }
 
-function cariWulanRegistry(wulan) {
+function cariWulanRegistry(wulan: string): ?WulanType {
     return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : null
   }
 
