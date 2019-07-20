@@ -17,7 +17,7 @@ import { ARANING_WULAN_SETAUN } from './wulan.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
 import { SengkalaMap } from './rupa_ati.js'
 
-import type { PasaranType, DintenType, WulanType, TaunType, KurupType } from './type.js'
+import type { PasaranType, DintenType, WulanType, TaunType, KurupType, WulanTaunType } from './type.js'
 
 type TaunKurupType = {| taun: TaunType, Kurup: KurupType, awal: Array<number>|}
   /**
@@ -79,7 +79,7 @@ async function cariRumusAbadiAwait(wulan, taun) {
     return qWT
   }
 
-function cariRumusWulanTaun(key) {
+function cariRumusWulanTaun(key: string): ?WulanTaunType {
     return SengkalaMap.has(Symbol.for(key)) ? SengkalaMap.get(Symbol.for(key)) : null
   }
 
