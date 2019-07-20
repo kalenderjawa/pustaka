@@ -1,13 +1,20 @@
 /**
+ * @flow
  * 📁pasaran.js
  * @desc Pasaran & Neptu
  */
+
+import type { PasaranType } from './type.js'
+
 const _LEGI = Symbol.for('legi')
 const _PAHING = Symbol.for('pahing')
 const _PON = Symbol.for('pon')
 const _WAGE = Symbol.for('wage')
 const _KLIWON = Symbol.for('kliwon')
 
+/**
+ * @const PasaranType
+ */
 const LEGI = { pasaran: 'legi', neptu: 5, urutan: 1 }
 const PAHING = { pasaran: 'pahing', neptu: 9, urutan: 2 }
 const PON = { pasaran: 'pon', neptu: 7, urutan: 3 }
