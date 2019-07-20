@@ -7,4 +7,6 @@ type DintenType = {| dino: string, urutan: number |}
 type WulanType = {| wulan: string, celukan: string, urutan: number |}
 type TaunType = {| taun: string, neptu: number, urutan: number |}
 
-export type { PasaranType, DintenType, WulanType, TaunType }
+type KurupType = {| taun: string, dinten: DintenType, pasaran: PasaranType |}
+
+export type { PasaranType, DintenType, WulanType, TaunType, KurupType }
