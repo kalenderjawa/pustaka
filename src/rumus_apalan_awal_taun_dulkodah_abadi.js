@@ -36,3 +36,15 @@ const _DAH_DAL = Symbol.for("dah_dal")
 const _DAH_BE = Symbol.for("dah_be")
 const _DAH_WAWU = Symbol.for("dah_wawu")
 const _DAH_JIMAKIR = Symbol.for("dah_jimakir")
+
+// Rumus Matematis
+
+/**
+ * Dah Ro Ji - Dulkodah Loro Siji 
+ */
+const DAH_RO_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  dino: 2,
+  pasaran: 1
+}
+
