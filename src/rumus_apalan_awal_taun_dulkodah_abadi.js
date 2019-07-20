@@ -29,4 +29,5 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 
 // Registry Symbol untuk Dulkodah Sewindu
 const _DAH_ALIP = Symbol.for("dah_alip")
-const _DAH_EHE = Symbol.for("dal_ehe")
+const _DAH_EHE = Symbol.for("dah_ehe")
+const _DAH_JIMAWAL = Symbol.for("dah_jimawal")
