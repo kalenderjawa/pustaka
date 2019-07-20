@@ -19,7 +19,7 @@ import { SengkalaMap } from './rupa_ati.js'
 
 import type { PasaranType, DintenType, WulanType, TaunType, KurupType, WulanTaunType } from './type.js'
 
-type TaunKurupType = {| taun: TaunType, Kurup: KurupType, awal: Array<number>|}
+type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
   /**
    * Data yang dikembalikan oleh fungsi cariTaunSengkala(w,t)
    * 
@@ -39,15 +39,15 @@ type TaunKurupType = {| taun: TaunType, Kurup: KurupType, awal: Array<number>|}
           ]
         }
    */
-  
 
-/**
- * Mencari Taun Jawa
- * @param { number } input - 4 digit integer
- * @returns { Promise } data - hasil promise adalah object 
- */
 
-async function cariTaunSengkala(_q: number): Promise<TaunKurupType> {
+  /**
+   * Mencari Taun Jawa
+   * @param { number } input - 4 digit integer
+   * @returns { Promise } data - hasil promise adalah object 
+   */
+
+  async function cariTaunSengkala(_q: number): Promise<TaunKurupType> {
     return new Promise((resolve, reject) => {
       for (let _kurup of Kurup.KURUP_ASAPON_ANENHING) {
         _kurup.awal.find(query => {
@@ -68,8 +68,12 @@ async function cariRumusAbadi(wulan: string, taun: number) {
       cariTaunSengkala(taun).then(r => {
         let wulanMap = cariWulanRegistry(wulan)
         let taunMap = cariTaunRegistry(r.taun.taun)
-        const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
-        resolve(cariRumusWulanTaun(KEY_RUMUS))
+        if (wulanMap != null && taunMap != null) {
+          const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
+          resolve(cariRumusWulanTaun(KEY_RUMUS))
+        } else {
+          reject(new Error('error cariRumusAbadi'))
+        }
       })
     })
   }
