@@ -4,6 +4,10 @@
 
 import * as KalenderJawa from '../index.js'
 import { ANENHING } from '../kurup.js'
+import { SengkalaMap } from '../rupa_ati.js'
+
+import * as Romadon from '../rumus_apalan_awal_taun_romadon_abadi.js'
+import * as Sawal from '../rumus_apalan_awal_taun_sawal_abadi'
 
 describe('Sengkala', () => {
   test("cariTaunSengkala", () => {
@@ -41,5 +45,9 @@ describe('Sengkala', () => {
     const { h, p } = await KalenderJawa.konversiHariPasaran(7, 4, kurup)
     expect(h.dino).toBe('senen')
     expect(p.pasaran).toBe('legi')
+  })
+
+  test("Rumus Map", () => {
+    expect(SengkalaMap.get(Romadon._DON_ALIP).wulan.wulan).toBe('romadon')
   })
 })
