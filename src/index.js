@@ -35,11 +35,6 @@ async function cariTaunSengkala(_q: number): Promise<KurupType> {
   })
 }
 
-async function cariTaunSengkalaAwait(_q) {
-  let qTaun = await cariTaunSengkala(_q)
-  return qTaun
-}
-
 /**
  * Fungsi untuk mencari rumus perhitungan abadi
  * @param {string} wulan 
@@ -121,7 +116,7 @@ async function cariHariPasaranAwalBulan(w, t) {
 }
 
 export {
-  cariTaunSengkalaAwait,
+  cariTaunSengkala,
   cariRumusAbadiAwait,
   cariWulanRegistry,
   cariTaunRegistry,
