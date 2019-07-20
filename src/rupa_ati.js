@@ -5,16 +5,13 @@
  * 📁 rupa_ati.js
  */
 
-type KWMap = Map<Symbol, Object>
+type KWMapType = Map<Symbol, Object>
 
-import * as Romadon from './rumus_apalan_awal_taun_abadi.js'
+import * as Romadon from './rumus_apalan_awal_taun_romadon_abadi.js'
 import * as Sawal from './rumus_apalan_awal_taun_sawal_abadi'
 
-function mergeMap(mapArray: Array<KWMap>): KWMap {
-  return new Map(function* (...mapArray) {
-    yield* mapArray
-  }())
+function SengkalaMap(): KWMapType {
+  return new Map([...Romadon.RUMUS_APALAN_AWAL_TAUN_ROMADON_ABADI, ...Sawal.RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI])
 }
 
-
-export { mergeMap }
+export { SengkalaMap }
