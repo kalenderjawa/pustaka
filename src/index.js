@@ -4,7 +4,9 @@
 // 📁 index.js
 // :ES6
 
+// $FlowFixMe
 import "core-js/stable"
+// $FlowFixMe
 import "regenerator-runtime/runtime"
 
 import * as Dinten from './dinten.js'
@@ -21,10 +23,11 @@ import { SengkalaMap } from './rupa_ati.js'
  * @returns { Promise } data - hasil promise adalah object 
  */
 
-async function cariTaunSengkala(_q) {
+type KurupType = {}
+
+async function cariTaunSengkala(_q: number): Promise<KurupType> {
   return new Promise((resolve, reject) => {
     for (let _kurup of Kurup.KURUP_ASAPON_ANENHING) {
-
       _kurup.awal.find(query => {
         if (query == _q) resolve(_kurup)
       })
