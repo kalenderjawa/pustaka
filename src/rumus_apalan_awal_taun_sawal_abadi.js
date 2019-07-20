@@ -2,6 +2,7 @@
  * @flow
  * 
  * 📁rumus_apalan_awal_taun_sawal_abadi.js
+ * Rumus untuk bulan Sawal selama 8 Tahun (Sewindu)
  */
 
 import type { WulanTaunType } from './type.js'
@@ -147,4 +148,4 @@ RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI.set(_WAL_BE, WAL_BE)
 RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI.set(_WAL_WAWU, WAL_WAWU)
 RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI.set(_WAL_JIMAKIR, WAL_JIMAKIR)
 
-export { RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI }
+export { RUMUS_APALAN_AWAL_TAUN_SAWAL_ABADI, _WAL_ALIP, _WAL_BE, _WAL_DAL, _WAL_EHE, _WAL_JE, _WAL_JIMAKIR, _WAL_JIMAWAL, _WAL_WAWU }
