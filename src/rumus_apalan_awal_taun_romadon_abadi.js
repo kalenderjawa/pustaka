@@ -2,6 +2,7 @@
  * @flow
  * 
  * 📁rumus_apalan_awal_taun_romadon_abadi.js
+ * Rumus bulan Romadon selama 8 Tahun (Sewindu)
  */
 
 import type { RumusType, WulanTaunType } from './type.js'
