@@ -77,11 +77,6 @@ async function cariRumusAbadi(wulan: string, taun: number): Promise<?WulanTaunTy
     })
   }
 
-async function cariRumusAbadiAwait(wulan, taun) {
-    let qWT = await cariRumusAbadi(wulan, taun)
-    return qWT
-  }
-
 function cariRumusWulanTaun(key: string): ?WulanTaunType {
     return SengkalaMap.has(Symbol.for(key)) ? SengkalaMap.get(Symbol.for(key)) : null
   }
@@ -145,7 +140,7 @@ async function cariHariPasaranAwalBulan(w, t) {
 
 export {
   cariTaunSengkala,
-  cariRumusAbadiAwait,
+  cariRumusAbadi,
   cariWulanRegistry,
   cariTaunRegistry,
   cariRumusWulanTaun,
