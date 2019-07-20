@@ -1,7 +1,11 @@
 /**
+ * @flow
+ * 
  * 📁taun.js
  * @desc Araning Tahun Ing Dalem Sewindu
  */
+
+import type { TaunType } from './type.js'
 
 const _ALIP = Symbol.for('alip')
 const _EHE = Symbol.for('ehe')
@@ -17,7 +21,7 @@ const EHE = { taun: 'ehe', neptu: 5, urutan: 2 }
 const JIMAWAL = { taun: 'jimawal', neptu: 3, urutan: 3 }
 const JE = { taun: 'je', neptu: 7, urutan: 4 }
 const DAL = { taun: 'dal', neptu: 4, urutan: 5 }
-const BE = { taun: 'be' , neptu: 2, urutan: 6 }
+const BE = { taun: 'be', neptu: 2, urutan: 6 }
 const WAWU = { taun: 'wawu', neptu: 6, urutan: 7 }
 const JIMAKIR = { taun: 'jimakir', neptu: 3, urutan: 8 }
 
