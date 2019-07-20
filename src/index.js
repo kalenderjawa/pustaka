@@ -57,13 +57,12 @@ type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
     })
   }
 
-
 /**
  * Fungsi untuk mencari rumus perhitungan abadi
  * @param {string} wulan 
  * @param {number} taun 
  */
-async function cariRumusAbadi(wulan: string, taun: number) {
+async function cariRumusAbadi(wulan: string, taun: number): Promise<?WulanTaunType> {
     return new Promise((resolve, reject) => {
       cariTaunSengkala(taun).then(r => {
         let wulanMap = cariWulanRegistry(wulan)
@@ -128,7 +127,10 @@ async function konversiPasaran(p, ps) {
  */
 async function cariHariAwalBulan(w, t) {
     let sengkalaTaun = await cariTaunSengkala(t)
+    
+    //$FlowFixMe
     let sengkalaRumus = await cariRumusAbadi(w, t)
+    
     let kH = await konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan)
     let kP = await konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)
 
