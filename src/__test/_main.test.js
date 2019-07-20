@@ -42,7 +42,7 @@ describe('Sengkala', () => {
   })
 
   test("konversiHariPasaran", async () => {
-    let rumus = { dinten: 2, pasaran: 3 }
+    let rumus = { dino: 2, pasaran: 3 }
     const { h, p } = await KalenderJawa.konversiHariPasaran(7, 4, rumus)
     expect(h.dino).toBe('senen')
     expect(p.pasaran).toBe('legi')
