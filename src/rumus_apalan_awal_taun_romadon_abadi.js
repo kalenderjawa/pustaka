@@ -1,6 +1,10 @@
 /**
- * 📁rumus_apalan_awal_taun_abadi.js
+ * @flow
+ * 
+ * 📁rumus_apalan_awal_taun_romadon_abadi.js
  */
+
+import type { RumusType, WulanTaunType } from './type.js'
 
 import {
   _MUKAROM,
@@ -171,7 +175,7 @@ const DON_JIMAKIR = {
 }
 
 // Mapping
-const RUMUS_APALAN_AWAL_TAUN_ROMADON_ABADI = new Map()
+const RUMUS_APALAN_AWAL_TAUN_ROMADON_ABADI: Map<Symbol, WulanTaunType> = new Map()
 
 RUMUS_APALAN_AWAL_TAUN_ROMADON_ABADI.set(_DON_ALIP, DON_ALIP)
 RUMUS_APALAN_AWAL_TAUN_ROMADON_ABADI.set(_DON_EHE, DON_EHE)
