@@ -17,7 +17,7 @@ import { ARANING_WULAN_SETAUN } from './wulan.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
 import { SengkalaMap } from './rupa_ati.js'
 
-import type { PasaranType, DintenType, WulanType, TaunType, KurupType, WulanTaunType } from './type.js'
+import type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType, WulanTaunType } from './type.js'
 
 type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
   /**
@@ -39,7 +39,6 @@ type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
           ]
         }
    */
-
 
   /**
    * Mencari Taun Jawa
@@ -89,13 +88,13 @@ function cariWulanRegistry(wulan: string): ?WulanType {
     return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : null
   }
 
-async function konversiHariPasaran(h, p, k) {
-    let qH = await konversiHari(h, k.dinten)
+async function konversiHariPasaran(h: number, p: number, k: RumusType) {
+    let qH = await konversiHari(h, k.dino)
     let qP = await konversiPasaran(p, k.pasaran)
     return { h: qH, p: qP }
   }
 
-async function konversiHari(h, dn) {
+async function konversiHari(h: number, dn: number) {
     let xH = (dn + h) % 7 //Dinten MAX=7
     if (xH == 1) { xH } else { xH = xH - 1 }
     return new Promise((resolve, reject) => {
@@ -105,7 +104,7 @@ async function konversiHari(h, dn) {
     })
   }
 
-async function konversiPasaran(p, ps) {
+async function konversiPasaran(p: number, ps: number) {
     let xP = (ps + p) % 5 //Pasaran MAX=5
     if (xP == 1) { xP } else { xP = xP - 1 }
     return new Promise((resolve, reject) => {
@@ -120,7 +119,7 @@ async function konversiPasaran(p, ps) {
  * @param {string} w - string wulan (bulan)
  * @param {number} t - 4 digit integer 
  */
-async function cariHariAwalBulan(w, t) {
+async function cariHariAwalBulan(w: string, t: number) {
     let sengkalaTaun = await cariTaunSengkala(t)
     
     //$FlowFixMe
@@ -134,7 +133,7 @@ async function cariHariAwalBulan(w, t) {
     return { w, t, i, kH, kP }
   }
 
-async function cariHariPasaranAwalBulan(w, t) {
+async function cariHariPasaranAwalBulan(w: string, t: number) {
     return cariHariAwalBulan(w, t)
   }
 
