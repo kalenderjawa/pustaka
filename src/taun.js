@@ -25,7 +25,7 @@ const BE = { taun: 'be', neptu: 2, urutan: 6 }
 const WAWU = { taun: 'wawu', neptu: 6, urutan: 7 }
 const JIMAKIR = { taun: 'jimakir', neptu: 3, urutan: 8 }
 
-const ARANING_TAHUN_SEWINDU = new Map()
+const ARANING_TAHUN_SEWINDU: Map<Symbol, TaunType> = new Map()
 
 ARANING_TAHUN_SEWINDU.set(_ALIP, ALIP)
 ARANING_TAHUN_SEWINDU.set(_EHE, EHE)
