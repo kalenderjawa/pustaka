@@ -9,6 +9,6 @@ type TaunType = {| taun: string, neptu: number, urutan: number |}
 
 type KurupType = {| taun: string, dinten: DintenType, pasaran: PasaranType |}
 type RumusType = {| wulan: WulanType, dino: string, pasaran: number |}
+type WulanTaunType = {| wulan: WulanType, taun: TaunType, rumus: RumusType |}
 
-
-export type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType}
+export type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType, WulanTaunType }
