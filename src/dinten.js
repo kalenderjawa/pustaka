@@ -1,7 +1,10 @@
 /**
+ * @flow 
+ * 
  * 📁dinten.js
  * @desc Araning Dinten Ing Jawa
  */
+import type { DintenType } from './type.js'
 
 const _SENEN = Symbol.for("senen")
 const _SELASA = Symbol.for("selasa")
