@@ -22,7 +22,7 @@ const JEMAH = { dino: 'jemah', urutan: 5 }
 const SEBTU = { dino: 'sebtu', urutan: 6 }
 const AKAD = { dino: 'akad', urutan: 7 }
 
-const DINTEN = new Map()
+const DINTEN: Map<Symbol, DintenType> = new Map()
 
 DINTEN.set(_SENEN, SENEN)
 DINTEN.set(_SELASA, SELASA)
