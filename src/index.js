@@ -13,7 +13,7 @@ import * as Kurup from './kurup_asapon_anenhing_statik.js'
 
 import { ARANING_WULAN_SETAUN } from './wulan.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
-import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_abadi.js'
+import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_romadon_abadi.js'
 
 /**
  * Mencari Taun Jawa
