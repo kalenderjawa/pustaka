@@ -11,7 +11,7 @@ import * as Sawal from '../rumus_apalan_awal_taun_sawal_abadi'
 
 describe('Sengkala', () => {
   test("cariTaunSengkala", () => {
-    return KalenderJawa.cariTaunSengkalaAwait(1994).then(r => {
+    return KalenderJawa.cariTaunSengkala(1994).then(r => {
       expect(r.taun.taun).toBe("jimakir")
       expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
     }, e => {
