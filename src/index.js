@@ -83,7 +83,7 @@ function cariRumusWulanTaun(key) {
     return SengkalaMap.has(Symbol.for(key)) ? SengkalaMap.get(Symbol.for(key)) : null
   }
 
-function cariTaunRegistry(taun) {
+function cariTaunRegistry(taun: string): ?TaunType {
     return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : null
   }
 
