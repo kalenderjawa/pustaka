@@ -12,6 +12,7 @@ import * as Sawal from '../rumus_apalan_awal_taun_sawal_abadi'
 describe('Sengkala', () => {
   test("cariTaunSengkala", () => {
     return KalenderJawa.cariTaunSengkala(1994).then(r => {
+      console.log(r)
       expect(r.taun.taun).toBe("jimakir")
       expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
     }, e => {
@@ -35,14 +36,14 @@ describe('Sengkala', () => {
   })
 
   test("cariRumusAbadi", () => {
-    return KalenderJawa.cariRumusAbadiAwait('romadon', 1952).then(d => {
+    return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
       expect(d.rumus.pasaran).toBe(4)
     })
   })
 
   test("konversiHariPasaran", async () => {
-    let kurup = { dinten: 2, pasaran: 3 }
-    const { h, p } = await KalenderJawa.konversiHariPasaran(7, 4, kurup)
+    let rumus = { dinten: 2, pasaran: 3 }
+    const { h, p } = await KalenderJawa.konversiHariPasaran(7, 4, rumus)
     expect(h.dino).toBe('senen')
     expect(p.pasaran).toBe('legi')
   })
