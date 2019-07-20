@@ -13,7 +13,7 @@ import * as Kurup from './kurup_asapon_anenhing_statik.js'
 
 import { ARANING_WULAN_SETAUN } from './wulan.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
-import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_romadon_abadi.js'
+import { SengkalaMap } from './rupa_ati.js'
 
 /**
  * Mencari Taun Jawa
@@ -24,6 +24,7 @@ import { RUMUS_APALAN_AWAL_TAUN_ABADI } from './rumus_apalan_awal_taun_romadon_a
 async function cariTaunSengkala(_q) {
   return new Promise((resolve, reject) => {
     for (let _kurup of Kurup.KURUP_ASAPON_ANENHING) {
+
       _kurup.awal.find(query => {
         if (query == _q) resolve(_kurup)
       })
@@ -59,7 +60,7 @@ async function cariRumusAbadiAwait(wulan, taun) {
 }
 
 function cariRumusWulanTaun(key) {
-  return RUMUS_APALAN_AWAL_TAUN_ABADI.has(Symbol.for(key)) ? RUMUS_APALAN_AWAL_TAUN_ABADI.get(Symbol.for(key)) : null
+  return SengkalaMap.has(Symbol.for(key)) ? SengkalaMap.get(Symbol.for(key)) : null
 }
 
 function cariTaunRegistry(taun) {
