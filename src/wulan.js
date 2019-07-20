@@ -1,7 +1,11 @@
 /**
+ * @flow
+ * 
  * 📁wulan.js
  * @desc Araning Wulan Ing Setaun
  */
+
+import type { WulanType } from './type.js'
 
 /**
  * @constant
