@@ -104,7 +104,7 @@ async function konversiHari(h: number, dn: number): Promise<DintenType | string>
     })
   }
 
-async function konversiPasaran(p: number, ps: number) {
+async function konversiPasaran(p: number, ps: number): Promise<PasaranType | string> {
     let xP = (ps + p) % 5 //Pasaran MAX=5
     if (xP == 1) { xP } else { xP = xP - 1 }
     return new Promise((resolve, reject) => {
