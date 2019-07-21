@@ -26,15 +26,17 @@ Sengkalan tersebut menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setel
 
 > Candra Sengkala atau Sengkalan merupakan cara orang Jawa dalam mengingat momen tahun sebagai suatu kalimat. Contoh paling terkenal adalah runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan bahwa Sengkalan sebenarnya adalah kalender lunar yang sudah lama dipakai sebelum masa para wali [[sumber](https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat)].
 
-Penanggalan Jawa masih umum dipakai khususnya dikalangan tua, penentuan upacara adat, dan daerah-daerah desa tetapi secara masal pemakaian masih memakai penanggalan hasil adopsi yaitu Masehi. 
+Penanggalan Jawa masih umum dipakai khususnya dikalangan tua, penentuan upacara adat, dan di pedesaan tetapi secara masal pemakaian masih memakai penanggalan hasil adopsi yaitu Masehi. 
 
-Ada banyak hal yang bisa anda pelajari dari sistem kalender Jawa yang memberikan metode pewarisan sejarah yang menurut saya sangat superior.
-
-Lebih lanjut silahkan membaca tentang penanggalan Jawa di [DOKUMENTASI](DOKUMENTASI.md)
+Ada banyak hal yang bisa anda pelajari dari sistem kalender jawa yang memberikan metode pembelajaran dan pewarisan sejarah yang menurut saya sangat superior. Lebih lanjut silahkan membaca tentang penanggalan jawa di [Dokumentasi](DOKUMENTASI.md).
 
 ## Instalasi
 
+### npm
 
+```
+npm install --save @junwatu/kalender-jawa
+```
 
 ## API
 ### `cariHariPasaranAwalBulan(w, t)`
