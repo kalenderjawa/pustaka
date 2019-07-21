@@ -72,4 +72,10 @@ const DAH_MO_LU = {
   pasaran: 3
 }
 
+const DAH_LU_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  dino: 3,
+  pasaran: 3
+}
+
 
