@@ -11,21 +11,18 @@
 ## Pengenalan
 Ada banyak kalender fisik maupun online yang sudah memenuhi kebutuhan anda untuk mengetahui informasi tentang penanggalan Jawa hanya saja khusus untuk pengembang tidak terlalu banyak atau mungkin tidak ada pustaka khusus yang menyediakan perhitungan, informasi ataupun pengkonversian misalnya dari penanggalan Jawa ke Hijriyah maupun ke Masehi sehingga dengan tujuan supaya penanggalan jawa bisa dipakai dan dikembangkan oleh siapa saja maka repositori ini menyimpan pustaka untuk perhitungan kalender jawa yang ditulis dengan bahasa JavaScript.
 
-Penanggalan jawa yang saya maksud disini adalah penanggalan jawa asli yang dibawa oleh leluhur bangsa Indonesia yang kemudian diolah oleh para wali yaitu penanggalan jawa yang dipakai sejak Raden Patah menjadi Sultan Demak pertama dimana momen ini ditandai dengan *Sengkalan* atau *Candra Sengkalan* 
+Penanggalan jawa yang saya maksud disini adalah penanggalan jawa asli yang dibawa oleh leluhur bangsa Indonesia yang kemudian diolah oleh para wali yaitu penanggalan jawa yang dipakai sejak Raden Patah menjadi Sultan Demak pertama dimana momen ini ditandai dengan *Sengkalan* atau *Candra Sengkala* 
 
 
-"Catur Ilang Sucining Ratu"
+
+#### *Catur Ilang Sucining Ratu*
 
 
 yang menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setelah runtuhnya Majapahit.
 
 
 
-> Candra Sengkalan atau Sengkalan merupakan cara orang Jawa dalam mengingat momen tahun sebagai suatu kalimat. Contoh paling terkenal adalah runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan Sengkalan sebenarnya adalah kalender lunar yang dipakai sebelum masa para wali [[sumber](https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat)].
-
-
-
-
+> Candra Sengkala atau Sengkalan merupakan cara orang Jawa dalam mengingat momen tahun sebagai suatu kalimat. Contoh paling terkenal adalah runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan Sengkalan sebenarnya adalah kalender lunar yang dipakai sebelum masa para wali [[sumber](https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat)].
 
 
 
@@ -71,4 +68,4 @@ console.log(`${kH.dino} ${kP.pasaran}`) // senen legi
 ## Lisensi
 [MIT License](https://choosealicense.com/licenses/mit/)
 
-Copyright © 2019 [Junwatu](https://github.com/junwatu)
+Copyright © *Lawang Tunggal Walang Kembar* (2019) [Junwatu](https://github.com/junwatu)
