@@ -1,4 +1,4 @@
-import * as Lib from '../../lib/index.js'
+import * as KalenderJawa from '../../lib/kalenderjawa-42b52e539ad1b866d591-bundle'
 
 const _TESTDAT = {
     wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
@@ -10,8 +10,8 @@ const _TESTDAT = {
     }
   }
 
-describe('Lib', () => {
-    test('Test Lib', () => {
-        expect(Lib.cariRumusWulanTaun('don_be')).toEqual(_TESTDAT)
+describe('Test Pustaka Bundle', () => {
+    test('cariRumusWulanTaun', () => {
+        expect(KalenderJawa.cariRumusWulanTaun('don_be')).toEqual(_TESTDAT)
     })
 })
