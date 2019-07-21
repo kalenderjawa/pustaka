@@ -53,7 +53,6 @@ Untuk pustaka dengan versi terbaru
 ```
 
 
-
 ## API
 
 ### `cariHariPasaranAwalBulan(w, t)`
@@ -76,8 +75,9 @@ dan kode javascript (ES6) untuk mencari hari dan pasaran tersebut bisa ditulis s
 ```
 import * as KalenderJawa from '@junwatu/kalender-jawa'
 
-let {kH, kP} = KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952)
-console.log(`${kH.dino} ${kP.pasaran}`) // senen legi
+KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952).then({kH, kP} => {
+  console.log(`${kH.dino} ${kP.pasaran}`) // senen legi
+})
 
 ```
 
