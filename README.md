@@ -46,7 +46,7 @@ npm install --save @junwatu/kalender-jawa
 
 ### Browser
 
-Untuk pustaka dengan versi terbaru
+Melalui browser pustaka bisa di ambil melalui CDN unpkg.com. Kode berikut akan mengambil pustaka dengan versi terbaru
 
 ```
 <script src="https://unpkg.com/@junwatu/kalender-jawa"/>
