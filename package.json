@@ -4,9 +4,10 @@
   "description": "Pustaka penanggalan dan perhitungan di dalam kalendar jawa",
   "main": "index.js",
   "type": "module",
+  "module": "src/index.js",
   "scripts": {
-    "build": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
-    "build-browser": "npx rollup src/index.js --file lib/bundle.js --format esm --name 'Sengkala'",
+    "build": "npx webpack",
+    "build-babel": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
     "test": "npm run build && npx jest --no-cache --coverage"
   },
@@ -32,26 +33,28 @@
   },
   "homepage": "https://github.com/junwatu/kalender-jawa#readme",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "@babel/preset-flow": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^24.7.1",
-    "babel-loader": "^8.0.5",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "flow-bin": "^0.102.0",
-    "jest": "^24.7.1",
-    "jsdoc": "^3.6.2",
-    "rollup": "^1.17.0",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.3",
+    "webpack": "^5.0.0-alpha.18",
+    "webpack-cli": "^3.3.6"
   },
   "dependencies": {
     "core-js": "^3.1.4",
-    "regenerator-runtime": "^0.13.2"
+    "regenerator-runtime": "^0.13.3"
   },
   "jest": {
-    "coveragePathIgnorePatterns": ["/node_modules/", "/lib/"],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
     "moduleFileExtensions": [
       "js",
       "json",
