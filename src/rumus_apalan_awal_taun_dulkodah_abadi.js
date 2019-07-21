@@ -84,3 +84,9 @@ const DAH_TU_RO = {
   pasaran: 2
 }
 
+const DAH_PAT_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  dino: 4,
+  pasaran: 1
+}
+
