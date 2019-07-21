@@ -1,5 +1,5 @@
 /**
- * 
+ * Sample Code untuk Node.js environment
  */
 const KalenderJawa = require('../../lib/kalenderjawa-2d6051b7fb0da7107ecc-bundle.js')
 
