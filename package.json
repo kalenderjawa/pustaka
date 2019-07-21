@@ -1,5 +1,5 @@
 {
-  "name": "kalender-jawa",
+  "name": "@junwatu/kalender-jawa",
   "version": "1.0.0-alpha",
   "description": "Pustaka penanggalan dan perhitungan di dalam kalendar jawa",
   "main": "index.js",
