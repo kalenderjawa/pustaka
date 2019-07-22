@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 import * as KalenderJawa from '../index.js'
 import * as Kurup from '../kurup.js'
 import * as Wulan from '../wulan.js'
@@ -18,6 +21,8 @@ const _TESTDAT = {
     pasaran: 4
   }
 }
+
+const _TESTDAT_2 = { "i": { "kurup": "alip selasa pon", "taun": "be" }, "kH": { "dino": "senen", "urutan": 1 }, "kP": { "neptu": 5, "pasaran": "legi", "urutan": 1 }, "t": 1952, "w": "romadon" }
 
 describe('Testing', () => {
   test('Wulan', () => {
@@ -80,13 +85,7 @@ describe('Testing', () => {
     expect(x.kP).toEqual({ pasaran: 'legi', neptu: 5, urutan: 1 })
   })
 
-  /**
   test("cariHariPasaranAwalBulan", async () => {
-    return KalenderJawa.cariHariPasaranAwalBulan('dulkodah', 1881).then(x => {
-      expect(x.kH).toEqual({ dino: 'senen', urutan: 1 })
-      expect(x.kP).toEqual({ pasaran: 'legi', neptu: 5, urutan: 1 })
-    })
+    await expect(KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952)).resolves.toStrictEqual(_TESTDAT_2)
   })
-*/
-
 })
