@@ -103,3 +103,9 @@ const DAH_EHE = {
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: DAH_NEM_MO
 }
+
+const DAH_JIMAWAL = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
+  rumus: DAH_PAT_MO
+}
