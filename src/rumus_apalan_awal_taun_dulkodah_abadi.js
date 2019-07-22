@@ -48,10 +48,10 @@ const DAH_RO_JI = {
   pasaran: 1
 }
 
-const DAH_NEM_RO = {
+const DAH_NEM_MO = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   dino: 6,
-  pasaran: 2
+  pasaran: 5
 }
 
 const DAH_PAT_MO = {
@@ -97,5 +97,4 @@ const DAH_ALIP = {
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: DAH_RO_JI
 }
-
 
