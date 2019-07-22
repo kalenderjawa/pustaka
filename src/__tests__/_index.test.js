@@ -1,17 +1,103 @@
 import * as KalenderJawa from '../index.js'
+import * as Kurup from '../kurup.js'
+import * as Wulan from '../wulan.js'
+import { ANENHING } from '../kurup.js'
+import { SengkalaMap } from '../rupa_ati.js'
+import * as Romadon from '../rumus_apalan_awal_taun_romadon_abadi.js'
+import * as Sawal from '../rumus_apalan_awal_taun_sawal_abadi'
 
-describe('Async Testing', () => {
-  fit("cariHariAwalBulan", async () => {
+const SAMPLE_ASAPON = 'alip selasa pon'
+const SAMPLE_ANENHING = 'alip senen pahing'
+const KalenderJawaLib = require('../../lib/kalenderjawa-2d6051b7fb0da7107ecc-bundle.js')
+
+const _TESTDAT = {
+  wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
+  taun: { taun: 'be', neptu: 2, urutan: 6 },
+  rumus: {
+    wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
+    dino: 7,
+    pasaran: 4
+  }
+}
+
+describe('Testing', () => {
+  test('_1', () => {
+    let _m = Wulan.ARANING_WULAN_SETAUN.get(Wulan._MUKAROM)
+    expect(_m.wulan).toBe('mukarom') 
+  })
+
+  test('ASAPON', () => {
+    expect(`${Kurup.ASAPON.taun} ${Kurup.ASAPON.dinten.dino} ${Kurup.ASAPON.pasaran.pasaran}`).toBe(SAMPLE_ASAPON)
+  })
+
+  test('ANENHING', () => {
+    expect(`${Kurup.ANENHING.taun} ${Kurup.ANENHING.dinten.dino} ${Kurup.ANENHING.pasaran.pasaran}`).toBe(SAMPLE_ANENHING)
+  })
+
+  test("cariTaunSengkala", () => {
+    return KalenderJawa.cariTaunSengkala(1994).then(r => {
+      expect(r.taun.taun).toBe("jimakir")
+      expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
+    }, e => {
+      expect(e).toMatch('error')
+    })
+  })
+
+  test("cariWulanRegistry", () => {
+    expect((KalenderJawa.cariWulanRegistry("romadon")).celukan).toBe('don')
+    expect(KalenderJawa.cariWulanRegistry("januari")).toBeNull()
+  })
+
+  test("cariTaunRegistry", () => {
+    expect((KalenderJawa.cariTaunRegistry("be")).urutan).toBe(6)
+    expect(KalenderJawa.cariTaunRegistry("kabisat")).toBeNull()
+  })
+
+  test("cariRumusWulanTaun", () => {
+    expect(KalenderJawa.cariRumusWulanTaun('don_be').rumus.dino).toBe(7)
+    expect(KalenderJawa.cariRumusWulanTaun('ora_ono')).toBeNull()
+  })
+
+  test("cariRumusAbadi", () => {
+    return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
+      expect(d.rumus.pasaran).toBe(4)
+    })
+  })
+
+  test("konversiHariPasaran", async () => {
+    let rumus = { dino: 2, pasaran: 3 }
+    const { h, p } = await KalenderJawa.konversiHariPasaran(7, 4, rumus)
+    expect(h.dino).toBe('senen')
+    expect(p.pasaran).toBe('legi')
+  })
+
+  test("Rumus Map", () => {
+    expect(SengkalaMap.get(Romadon._DON_ALIP).wulan.wulan).toBe('romadon')
+  })
+
+  test('cariRumusWulanTaun', () => {
+    expect(KalenderJawaLib.cariRumusWulanTaun('don_be')).toEqual(_TESTDAT)
+  })
+
+  test("cariTaunSengkala", () => {
+    return KalenderJawaLib.cariTaunSengkala(1881).then(r => {
+      //console.log(r)
+    })
+  })
+  
+  test("cariHariAwalBulan", async () => {
     const x = await KalenderJawa.cariHariAwalBulan('romadon', 1952)
     expect(x.kH).toEqual({ dino: 'senen', urutan: 1 })
     expect(x.kP).toEqual({ pasaran: 'legi', neptu: 5, urutan: 1 })
   })
 
+  /**
   test("cariHariPasaranAwalBulan", async () => {
-    return KalenderJawa.cariHariPasaranAwalBulan('romadon', 1955).then(x => {
+    return KalenderJawa.cariHariPasaranAwalBulan('dulkodah', 1881).then(x => {
       expect(x.kH).toEqual({ dino: 'senen', urutan: 1 })
       expect(x.kP).toEqual({ pasaran: 'legi', neptu: 5, urutan: 1 })
     })
   })
+*/
 
 })
