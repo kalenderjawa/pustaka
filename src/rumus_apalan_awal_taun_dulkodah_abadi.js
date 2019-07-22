@@ -142,3 +142,5 @@ const DAH_JIMAKIR = {
 
 // Mapping
 const RUMUS_APALAN_AWAL_TAUN_DULKODAH_ABADI: Map<Symbol, WulanTaunType> = new Map()
+
+RUMUS_APALAN_AWAL_TAUN_DULKODAH_ABADI.set(_DAH_ALIP, DAH_ALIP)
