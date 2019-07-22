@@ -122,3 +122,8 @@ const DAH_DAL = {
   rumus: DAH_MO_LU
 }
 
+const DAH_BE = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_BE),
+  rumus: DAH_LU_LU
+}
