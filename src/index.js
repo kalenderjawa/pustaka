@@ -95,21 +95,37 @@ async function konversiHariPasaran(h: number, p: number, k: RumusType) {
   }
 
 async function konversiHari(h: number, dn: number): Promise<DintenType | string> {
-    let xH = (dn + h) % 7 //Dinten MAX=7
+
+    let _xH = dn + h
+    let xH = _xH % 7 //Dinten MAX=7
+
     if (xH == 1) { xH } else { xH = xH - 1 }
+
     return new Promise((resolve, reject) => {
       Dinten.DINTEN.forEach((value, key, map) => {
-        (value.urutan == xH) ? resolve(value) : reject(new Error('error'))
+        
+        if (value.urutan == xH) {
+          resolve(value)
+        }
       })
     })
   }
 
 async function konversiPasaran(p: number, ps: number): Promise<PasaranType | string> {
-    let xP = (ps + p) % 5 //Pasaran MAX=5
-    if (xP == 1) { xP } else { xP = xP - 1 }
+
+    let _xP = ps + p
+    let xP = _xP % 5 //Pasaran MAX=5
+
+    if (xP == 1) { xP } else if (xP == 0) { xP = _xP } else { xP = xP - 1 }
+
     return new Promise((resolve, reject) => {
       PASARAN.forEach((value, key, map) => {
-        (value.urutan == xP) ? resolve(value) : reject(new Error('error'))
+        /**
+         * Hanya mengambil value sekali, gak perlu reject selama xP masih dalam range 1-5
+         */
+        if (value.urutan == xP) {
+          resolve(value)
+        }
       })
     })
   }
@@ -121,10 +137,10 @@ async function konversiPasaran(p: number, ps: number): Promise<PasaranType | str
  */
 async function cariHariAwalBulan(w: string, t: number) {
     let sengkalaTaun = await cariTaunSengkala(t)
-    
+
     //$FlowFixMe
     let sengkalaRumus = await cariRumusAbadi(w, t)
-    
+
     let kH = await konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan)
     let kP = await konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)
 
