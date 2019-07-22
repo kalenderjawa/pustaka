@@ -90,3 +90,12 @@ const DAH_PAT_JI = {
   pasaran: 1
 }
 
+// Wulan - Taun
+
+const DAH_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: DAH_RO_JI
+}
+
+
