@@ -98,3 +98,8 @@ const DAH_ALIP = {
   rumus: DAH_RO_JI
 }
 
+const DAH_EHE = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: DAH_NEM_MO
+}
