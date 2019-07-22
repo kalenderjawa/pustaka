@@ -133,3 +133,9 @@ const DAH_WAWU = {
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: DAH_TU_RO
 }
+
+const DAH_JIMAKIR = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+  rumus: DAH_PAT_JI
+}
