@@ -20,26 +20,7 @@ import { SengkalaMap } from './rupa_ati.js'
 import type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType, WulanTaunType } from './type.js'
 
 type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
-  /**
-   * Data yang dikembalikan oleh fungsi cariTaunSengkala(w,t)
-   * 
-      {
-          taun: { taun: 'jimakir', neptu: 3, urutan: 8 },
-          kurup: {
-            taun: 'alip',
-            dinten: { dino: 'senen', urutan: 1 },
-            pasaran: { pasaran: 'pahing', neptu: 9, urutan: 2 }
-          },
-          awal: [
-            1994, 2002, 2010,
-            2018, 2026, 2034,
-            2042, 2050, 2058,
-            2066, 2074, 2081,
-            2089, 2098, 2106
-          ]
-        }
-   */
-
+ 
   /**
    * Mencari Taun Jawa
    * @param { number } input - 4 digit integer
