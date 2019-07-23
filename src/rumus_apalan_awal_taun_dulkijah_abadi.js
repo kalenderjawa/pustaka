@@ -28,3 +28,4 @@ import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_S
 import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
 const _JAH_ALIP = Symbol.for("jah_alip")
+const _JAH_EHE = Symbol.for("jah_ehe")
