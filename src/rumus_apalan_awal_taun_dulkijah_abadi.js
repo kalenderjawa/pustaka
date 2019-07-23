@@ -122,3 +122,10 @@ const JAH_BE = {
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: JAH_MO_LU
 }
+
+const JAH_WAWU = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
+  rumus: JAH_RO_RO
+}
+
