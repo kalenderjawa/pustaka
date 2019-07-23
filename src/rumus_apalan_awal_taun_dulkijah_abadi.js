@@ -134,3 +134,6 @@ const JAH_JIMAKIR = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: JAH_NEM_JI
 }
+
+// Mapping
+const RUMUS_APALAN_AWAL_TAUN_DULKIJAH_ABADI: Map<Symbol, WulanTaunType> = new Map()
