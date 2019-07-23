@@ -93,3 +93,9 @@ const JAH_ALIP = {
   rumus: JAH_PAT_JI
 }
 
+const JAH_EHE = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: JAH_JI_MO
+}
+
