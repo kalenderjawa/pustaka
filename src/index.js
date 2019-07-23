@@ -22,12 +22,12 @@ import type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType
 type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
  
   /**
-   * Mencari Taun Jawa
+   * Mencari Kurup dan Taun Jawa
    * @param { number } input - 4 digit integer
    * @returns { Promise } data - hasil promise adalah object 
    */
 
-  async function cariTaunSengkala(_q: number): Promise<TaunKurupType> {
+  async function cariKurupTaun(_q: number): Promise<TaunKurupType> {
     return new Promise((resolve, reject) => {
       for (let _kurup of Kurup.KURUP_ASAPON_ANENHING) {
         _kurup.awal.find(query => {
@@ -44,7 +44,7 @@ type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
  */
 async function cariRumusAbadi(wulan: string, taun: number): Promise<?WulanTaunType> {
     return new Promise((resolve, reject) => {
-      cariTaunSengkala(taun).then(r => {
+      cariKurupTaun(taun).then(r => {
         let wulanMap = cariWulanRegistry(wulan)
         let taunMap = cariTaunRegistry(r.taun.taun)
         if (wulanMap != null && taunMap != null) {
@@ -117,7 +117,7 @@ async function konversiPasaran(p: number, ps: number): Promise<PasaranType | str
  * @param {number} t - 4 digit integer 
  */
 async function cariHariAwalBulan(w: string, t: number) {
-    let sengkalaTaun = await cariTaunSengkala(t)
+    let sengkalaTaun = await cariKurupTaun(t)
 
     //$FlowFixMe
     let sengkalaRumus = await cariRumusAbadi(w, t)
@@ -135,7 +135,7 @@ async function cariHariPasaranAwalBulan(w: string, t: number) {
   }
 
 export {
-  cariTaunSengkala,
+  cariKurupTaun,
   cariRumusAbadi,
   cariWulanRegistry,
   cariTaunRegistry,
