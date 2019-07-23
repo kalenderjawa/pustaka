@@ -61,3 +61,10 @@ const JAH_LU_PAT = {
   dino: 3,
   pasaran: 4
 }
+
+const JAH_TU_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
+  dino: 7,
+  pasaran: 3
+}
+
