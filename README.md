@@ -57,7 +57,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru
 
 ## API
 
-Jika anda belum mengetahui apa itu pasaran, kurup harap membaca terlebih dahulu [DOKUMENTASI](DOKUMENTASI.md).
+> Jika anda belum mengetahui apa itu pasaran, kurup harap membaca terlebih dahulu [DOKUMENTASI](DOKUMENTASI.md).
 
 ### `cariHariPasaranAwalBulan(w, t)`
 
@@ -96,9 +96,9 @@ Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa 
 
 
 **Return**:
-- Promise
+- `Promise`
 
-Data `then` dari Promise contohnya seperti berikut ini
+Data dari `Promise` merupakan `Object` contoh respon seperti berikut ini
 
 ``` 
       {
