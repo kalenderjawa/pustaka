@@ -54,12 +54,14 @@ Melalui browser pustaka bisa di ambil melalui CDN unpkg.com. Kode berikut akan m
 
 
 ## API
+Perlu menjadi catatan bahwa kata `taun` disini berarti tahun, `wulan` berarti bulan, `dino` berarti hari, `dinten` juga berarti hari (di Jawa kata dinten lebih halus dari dino).
 
 ### `cariHariPasaranAwalBulan(w, t)`
+
 **Argumen**:
 
-- Bulan `w` `string`
-- Tahun `t` `number`
+- Bulan `w` bertipe `string`
+- Tahun `t` bertipe `number`
 
 Contoh penggunaan:
 
@@ -78,6 +80,36 @@ import * as KalenderJawa from '@junwatu/kalender-jawa'
 KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952).then({kH, kP} => {
   console.log(`${kH.dino} ${kP.pasaran}`) // senen legi
 })
+
+```
+
+### `cariKurupTahunJawa(t)`
+
+**Argumen**:
+
+- Tahun `t` bertipe `number` (integer)
+
+
+Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa suatu taun `t`. Misalnya anda ingin mencari nama taun jawa dan kurup dari tahun 1994 maka tahun tersebut berada pada tahun Jimakir dan kurup Alip Senen Pahing atau Anenhing.
+
+**Return**:
+``` 
+ 
+      {
+          taun: { taun: 'jimakir', neptu: 3, urutan: 8 },
+          kurup: {
+            taun: 'alip',
+            dinten: { dino: 'senen', urutan: 1 },
+            pasaran: { pasaran: 'pahing', neptu: 9, urutan: 2 }
+          },
+          awal: [
+            1994, 2002, 2010,
+            2018, 2026, 2034,
+            2042, 2050, 2058,
+            2066, 2074, 2081,
+            2089, 2098, 2106
+          ]
+        }
 
 ```
 
