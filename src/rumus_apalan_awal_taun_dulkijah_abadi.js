@@ -120,5 +120,5 @@ const JAH_DAL = {
 const JAH_BE = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
-  rumus: JAH_RO_RO
+  rumus: JAH_MO_LU
 }
