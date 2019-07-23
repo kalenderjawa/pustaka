@@ -44,3 +44,10 @@ const JAH_PAT_JI = {
   pasaran: 1
 }
 
+const JAH_JI_MO = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
+  dino: 1,
+  pasaran: 5
+}
+
+
