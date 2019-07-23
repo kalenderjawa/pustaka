@@ -135,7 +135,7 @@ async function cariHariPasaranAwalBulan(w: string, t: number) {
   }
 
 export {
-  cariKurupTaun,
+  cariKurupTaun as cariKurupTaunJawa,
   cariRumusAbadi,
   cariWulanRegistry,
   cariTaunRegistry,
