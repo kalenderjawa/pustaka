@@ -85,3 +85,11 @@ const JAH_NEM_JI = {
   dino: 6,
   pasaran: 1
 }
+
+// 
+const JAH_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: JAH_PAT_JI
+}
+
