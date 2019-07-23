@@ -104,3 +104,10 @@ const JAH_JIMAWAL = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: JAH_NEM_MO
 }
+
+const JA_JE = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
+  taun: ARANING_TAHUN_SEWINDU.get(_JE),
+  rumus: JAH_LU_PAT
+}
+
