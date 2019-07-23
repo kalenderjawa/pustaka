@@ -9,14 +9,14 @@
 </p>
 
 ## Pengenalan
-Ada banyak kalender online (atau fisik) yang sudah memenuhi kebutuhan anda untuk mengetahui informasi tentang penanggalan Jawa hanya saja khusus untuk pengembang tidak terlalu banyak pustaka khusus yang menyediakan perhitungan, informasi ataupun pengkonversian misalnya dari penanggalan Jawa ke Hijriyah maupun ke Masehi.
+Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian kalender atau penanggalan Jawa. Dengan maksud dan tujuan supaya penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya buat pengembang maka repositori ini dibuat.
 
-Dengan maksud dan tujuan supaya penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya buat pengembang maka repositori ini dibuat. 
-
-Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ES6).
+> Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6).
 
 ## Sejarah
-Penanggalan jawa yang dipakai saat ini merupakan usaha hasil para Wali dalam mengolah antara penanggalan Jawa yang jauh sudah ada sebelumnya (*Candra Sengkala*) dengan kalender Hijri dan penanggalan Jawa baru itu resmi dipakai sejak Raden Patah menjadi Sultan Demak yang pertama, yang mana momen ini ditandai dengan *Sengkalan*,
+Penanggalan jawa yang dipakai sampai saat ini merupakan hasil usaha dari para Wali dalam mengolah antara penanggalan Jawa yang jauh sudah ada sebelumnya yaitu *Candra Sengkala* dengan kalender Hijri. 
+
+Secara historis penanggalan Jawa ini resmi dipakai sejak Raden Patah menjadi Sultan Demak yang pertama, dimana pada momen ini orang Jawa menandainya dengan *Sengkalan*,
 
 
 
@@ -30,9 +30,9 @@ Penanggalan jawa yang dipakai saat ini merupakan usaha hasil para Wali dalam men
 >
 > Contoh paling terkenal adalah *Sengkalan* runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan bahwa Sengkalan sebenarnya adalah kalender lunar yang sudah lama dipakai sebelum masa para Wali [[sumber](https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat)].
 
-Penanggalan Jawa masih umum dipakai khususnya dikalangan sesepuh, penentuan upacara adat, dan di pedesaan tetapi secara masal pemakaian masih memakai penanggalan hasil adopsi yaitu Masehi. 
+Sistem kalender jawa memberikan metode pembelajaran dan pewarisan sejarah yang menurut saya sangat superior karena **rumus abadi** perhitungan dari kalender Jawa ini diwariskan dalam bentuk hapalan dan bentuk hapalan ini bisa melalui bentuk nyanyian dll. 
 
-Ada banyak hal yang bisa anda pelajari dari sistem kalender jawa yang memberikan metode pembelajaran dan pewarisan sejarah yang menurut saya sangat superior. Lebih lanjut silahkan membaca tentang penanggalan jawa di [Dokumentasi](DOKUMENTASI.md).
+Lebih lanjut silahkan membaca tentang penanggalan jawa di [Dokumentasi](DOKUMENTASI.md).
 
 ## Instalasi
 
@@ -46,7 +46,9 @@ npm install --save @junwatu/kalender-jawa
 
 ### Browser
 
-Melalui browser pustaka bisa di ambil melalui CDN unpkg.com. Kode berikut akan mengambil pustaka dengan versi terbaru
+Jika anda memakai browser pustaka ini bisa di ambil melalui CDN (*Content Delivery Network*) di `unpkg.com`. 
+
+Kode berikut akan mengambil pustaka dengan versi terbaru
 
 ```
 <script src="https://unpkg.com/@junwatu/kalender-jawa"/>
@@ -54,7 +56,8 @@ Melalui browser pustaka bisa di ambil melalui CDN unpkg.com. Kode berikut akan m
 
 
 ## API
-Perlu menjadi catatan bahwa kata `taun` disini berarti tahun, `wulan` berarti bulan, `dino` berarti hari, `dinten` juga berarti hari (di Jawa kata dinten lebih halus dari dino).
+
+Jika anda belum mengetahui apa itu pasaran, kurup harap membaca terlebih dahulu [DOKUMENTASI](DOKUMENTASI.md).
 
 ### `cariHariPasaranAwalBulan(w, t)`
 
@@ -63,16 +66,16 @@ Perlu menjadi catatan bahwa kata `taun` disini berarti tahun, `wulan` berarti bu
 - Bulan `w` bertipe `string`
 - Tahun `t` bertipe `number`
 
-Contoh penggunaan:
+Fungsi ini akan mencari Hari dan Pasaran dari awal Bulan `w` dan Tahun `t` Jawa.
 
-Untuk mencari hari dan pasaran awal bulan puasa Romadon pada tahun 1952 Jawa maka parameternya adalah
+Misalnya untuk mencari hari dan pasaran dari awal bulan 1 Pasa/Romadon pada tahun 1952 Jawa (1440 Hijriyah, 2019 Maeshi) maka parameternya adalah
 
 | Argumen | Value 
 | :---: | --- |
 | `w` | "romadon"
 | `t` | 1952
 
-dan kode javascript (ES6) untuk mencari hari dan pasaran tersebut bisa ditulis seperti berikut
+dan kode javascript untuk mencari hari dan pasaran tersebut bisa ditulis seperti berikut
 
 ```
 import * as KalenderJawa from '@junwatu/kalender-jawa'
@@ -85,16 +88,19 @@ KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952).then({kH, kP} => {
 
 ### `cariKurupTahunJawa(t)`
 
+Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa suatu taun. Misalnya anda ingin mencari nama taun jawa dan kurup dari tahun 1994 maka tahun tersebut berada pada tahun Jimakir dan kurup Alip Senen Pahing atau Anenhing.
+
 **Argumen**:
 
 - Tahun `t` bertipe `number` (integer)
 
 
-Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa suatu taun `t`. Misalnya anda ingin mencari nama taun jawa dan kurup dari tahun 1994 maka tahun tersebut berada pada tahun Jimakir dan kurup Alip Senen Pahing atau Anenhing.
-
 **Return**:
+- Promise
+
+Data `then` dari Promise contohnya seperti berikut ini
+
 ``` 
- 
       {
           taun: { taun: 'jimakir', neptu: 3, urutan: 8 },
           kurup: {
@@ -109,7 +115,7 @@ Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa 
             2066, 2074, 2081,
             2089, 2098, 2106
           ]
-        }
+      }
 
 ```
 
