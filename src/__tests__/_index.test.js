@@ -48,8 +48,8 @@ describe('Testing', () => {
     expect(KalenderJawa.cariTaunRegistry("kabisat")).toBeNull()
   })
 
-  test("cariKurupTaunJawa", () => {
-    return KalenderJawa.cariKurupTaunJawa(1994).then(r => {
+  test("cariKurupTahunJawa", () => {
+    return KalenderJawa.cariKurupTahunJawa(1994).then(r => {
       expect(r.taun.taun).toBe("jimakir")
       expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
     }, e => {
