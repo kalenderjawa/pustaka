@@ -37,3 +37,10 @@ const _JAH_BE = Symbol.for("jah_be")
 const _JAH_WAWU = Symbol.for("jah_wawu")
 const _JAH_JIMAKIR = Symbol.for("jah_jimakir")
 
+// Rumus
+const JAH_PAT_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
+  dino: 4,
+  pasaran: 1
+}
+
