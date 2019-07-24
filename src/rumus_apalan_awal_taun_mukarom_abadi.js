@@ -44,3 +44,8 @@ const ROM_JI_JI = {
   pasaran: 1
 }
 
+const ROM_MO_MO = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  dino: 5,
+  pasaran: 5
+}
