@@ -29,3 +29,4 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 
 // Registry
 const _ROM_ALIP = Symbol.for("rom_alip")
+const _ROM_EHE = Symbol.for("rom_ehe")
