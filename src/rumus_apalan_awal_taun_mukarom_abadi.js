@@ -118,4 +118,10 @@ const ROM_DAL = {
   rumus: ROM_PAT_LU
 }
 
+const ROM_BE = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  taun: ARANING_TAHUN_SEWINDU.get(_BE),
+  rumus: ROM_RO_LU
+}
+
 
