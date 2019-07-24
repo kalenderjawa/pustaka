@@ -111,3 +111,11 @@ const ROM_JE = {
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: ROM_TU_PAT
 }
+
+const ROM_DAL = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  taun: ARANING_TAHUN_SEWINDU.get(_DAL),
+  rumus: ROM_PAT_LU
+}
+
+
