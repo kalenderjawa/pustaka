@@ -100,4 +100,8 @@ const ROM_EHE = {
   rumus: ROM_MO_MO
 }
 
-
+const ROM_JIMAWAL= {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: ROM_LU_MO
+}
