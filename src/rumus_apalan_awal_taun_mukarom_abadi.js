@@ -129,3 +129,9 @@ const ROM_WAWU = {
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: ROM_NEM_RO
 }
+
+const ROM_JIMAKIR = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+  rumus: ROM_LU_JI
+}
