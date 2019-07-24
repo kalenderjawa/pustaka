@@ -124,4 +124,8 @@ const ROM_BE = {
   rumus: ROM_RO_LU
 }
 
-
+const ROM_WAWU = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
+  rumus: ROM_NEM_RO
+}
