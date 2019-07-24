@@ -36,3 +36,11 @@ const _ROM_DAL = Symbol.for("rom_dal")
 const _ROM_BE = Symbol.for("rom_be")
 const _ROM_WAWU = Symbol.for("rom_wawu")
 const _ROM_JIMAKIR = Symbol.for("rom_jimakir")
+
+// Rumus abadi Mukarom
+const ROM_JI_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  dino: 1,
+  pasaran: 1
+}
+
