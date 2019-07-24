@@ -1,16 +1,11 @@
 /**
- * 
+ * Testing with Jest
  */
 import * as KalenderJawa from '../index.js'
-import * as Kurup from '../kurup.js'
-import * as Wulan from '../wulan.js'
-import { ANENHING } from '../kurup.js'
-import { SengkalaMap } from '../rupa_ati.js'
 import * as Romadon from '../rumus_apalan_awal_taun_romadon_abadi.js'
 import * as Sawal from '../rumus_apalan_awal_taun_sawal_abadi'
-
-const SAMPLE_ASAPON = 'alip selasa pon'
-const SAMPLE_ANENHING = 'alip senen pahing'
+import { SengkalaMap } from '../rupa_ati.js'
+import { ANENHING } from '../kurup.js'
 
 const _TESTDAT = {
   wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
@@ -25,19 +20,7 @@ const _TESTDAT = {
 const _TESTDAT_2 = { "i": { "kurup": "alip selasa pon", "taun": "be" }, "kH": { "dino": "senen", "urutan": 1 }, "kP": { "neptu": 5, "pasaran": "legi", "urutan": 1 }, "t": 1952, "w": "romadon" }
 
 describe('Testing', () => {
-  test('Wulan', () => {
-    let _m = Wulan.ARANING_WULAN_SETAUN.get(Wulan._MUKAROM)
-    expect(_m.wulan).toBe('mukarom')
-  })
-
-  test('Kurup ASAPON', () => {
-    expect(`${Kurup.ASAPON.taun} ${Kurup.ASAPON.dinten.dino} ${Kurup.ASAPON.pasaran.pasaran}`).toBe(SAMPLE_ASAPON)
-  })
-
-  test('Kurup ANENHING', () => {
-    expect(`${Kurup.ANENHING.taun} ${Kurup.ANENHING.dinten.dino} ${Kurup.ANENHING.pasaran.pasaran}`).toBe(SAMPLE_ANENHING)
-  })
-
+ 
   test("cariWulanRegistry", () => {
     expect((KalenderJawa.cariWulanRegistry("romadon")).celukan).toBe('don')
     expect(KalenderJawa.cariWulanRegistry("januari")).toBeNull()
@@ -86,14 +69,17 @@ describe('Testing', () => {
   })
 
   test("cariHariPasaranAwalBulan", async () => {
+    // senin legi
     await expect(KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952)).resolves.toStrictEqual(_TESTDAT_2)
   })
 
   test("cariHariPasaranAwalBulan", async () => {
+    // senin legi
     await expect(KalenderJawa.cariHariPasaranAwalBulan('dulkodah', 1881)).resolves.toStrictEqual(_TESTDAT_2)
   })
 
   test("cariHariPasaranAwalBulan", async () => {
+    // senin pahing
     await expect(KalenderJawa.cariHariPasaranAwalBulan('dulkijah', 1981)).resolves.toStrictEqual(_TESTDAT_2)
   })
   
