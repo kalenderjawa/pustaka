@@ -34,7 +34,7 @@ Sistem kalender jawa memberikan metode pembelajaran dan pewarisan sejarah yang m
 
 "Dengan terhafal dalam bentuk nyanyian, kalender Jawa akan terbawa kemana saja pergi, dan masih memiliki tingkat akurasi tinggi sampai 994 tahun lagi. Setelah itu baru ada koreksi +1 hari sebelum Ambal Kurup Alip Senen Kliwon, 1 Sura 2947 Jawa (26 Januari 2984 Masehi)" - [REF]()
 
-Lebih lanjut silahkan membaca tentang penanggalan jawa di [Dokumentasi](DOKUMENTASI.md).
+Lebih lanjut silahkan membaca tentang penanggalan jawa di [DOKUMENTASI.md](DOKUMENTASI.md).
 
 ## Instalasi
 
@@ -52,14 +52,14 @@ Jika anda memakai browser pustaka ini bisa di ambil melalui CDN (*Content Delive
 
 Kode berikut akan mengambil pustaka dengan versi terbaru
 
-```
+```html
 <script src="https://unpkg.com/@junwatu/kalender-jawa"/>
 ```
 
 
 ## API
 
-> Jika anda belum mengetahui apa itu pasaran, kurup harap membaca terlebih dahulu [DOKUMENTASI](DOKUMENTASI.md).
+> Jika anda belum mengetahui apa itu pasaran, kurup harap membaca terlebih dahulu [DOKUMENTASI.md](DOKUMENTASI.md).
 
 ### `cariHariPasaranAwalBulan(w, t)`
 
@@ -79,7 +79,7 @@ Misalnya untuk mencari hari dan pasaran dari awal bulan 1 Pasa/Romadon pada tahu
 
 dan kode javascript untuk mencari hari dan pasaran tersebut bisa ditulis seperti berikut
 
-```
+```js
 import * as KalenderJawa from '@junwatu/kalender-jawa'
 
 KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952).then({kH, kP} => {
@@ -102,7 +102,7 @@ Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa 
 
 Data dari `Promise` merupakan `Object` contoh respon seperti berikut ini
 
-``` 
+```js
       {
           taun: { taun: 'jimakir', neptu: 3, urutan: 8 },
           kurup: {
