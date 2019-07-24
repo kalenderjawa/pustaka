@@ -105,3 +105,9 @@ const ROM_JIMAWAL= {
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: ROM_LU_MO
 }
+
+const ROM_JE = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  taun: ARANING_TAHUN_SEWINDU.get(_JE),
+  rumus: ROM_TU_PAT
+}
