@@ -94,3 +94,10 @@ const ROM_ALIP = {
   rumus: ROM_JI_JI
 }
 
+const ROM_EHE = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: ROM_MO_MO
+}
+
+
