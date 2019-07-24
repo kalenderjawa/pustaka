@@ -135,3 +135,8 @@ const ROM_JIMAKIR = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: ROM_LU_JI
 }
+
+// Mapping Rumus abadi Mukarom dengan Registry
+const RUMUS_APALAN_AWAL_TAUN_MUKAROM_ABADI: Map<Symbol, WulanTaunType> = new Map()
+
+RUMUS_APALAN_AWAL_TAUN_MUKAROM_ABADI.set(_ROM_ALIP, ROM_ALIP)
