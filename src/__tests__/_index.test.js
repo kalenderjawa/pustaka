@@ -92,4 +92,9 @@ describe('Testing', () => {
   test("cariHariPasaranAwalBulan", async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulan('dulkodah', 1881)).resolves.toStrictEqual(_TESTDAT_2)
   })
+
+  test("cariHariPasaranAwalBulan", async () => {
+    await expect(KalenderJawa.cariHariPasaranAwalBulan('dulkijah', 1981)).resolves.toStrictEqual(_TESTDAT_2)
+  })
+  
 })
