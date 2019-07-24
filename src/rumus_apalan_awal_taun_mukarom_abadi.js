@@ -85,3 +85,12 @@ const ROM_LU_JI = {
   dino: 3,
   pasaran: 1
 }
+
+// Kunci Mukarom - Sewindu
+
+const ROM_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: ROM_JI_JI
+}
+
