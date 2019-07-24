@@ -28,11 +28,11 @@ Secara historis penanggalan Jawa ini resmi dipakai sejak Raden Patah menjadi Sul
 
 > Candra Sengkala atau Sengkalan merupakan cara orang Jawa dalam mengingat momen pada tahun dengan cara sederhana yaitu suatu kalimat. 
 >
-> Contoh paling terkenal adalah *Sengkalan* runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan bahwa Sengkalan sebenarnya adalah kalender lunar yang sudah lama dipakai sebelum masa para Wali - [REF](CK).
+> Contoh paling terkenal adalah *Sengkalan* runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan bahwa Sengkalan sebenarnya adalah kalender lunar yang sudah lama dipakai sebelum masa para Wali - [REF][CK].
 
 Sistem kalender jawa memberikan metode pembelajaran dan pewarisan sejarah yang menurut saya sangat superior karena **rumus matematis abadi** perhitungan dari kalender Jawa ini diwariskan dalam bentuk sederhana melalui lagu-lagu dan nyanyian. 
 
-"Dengan terhafal dalam bentuk nyanyian, kalender Jawa akan terbawa kemana saja pergi, dan masih memiliki tingkat akurasi tinggi sampai 994 tahun lagi. Setelah itu baru ada koreksi +1 hari sebelum Ambal Kurup Alip Senen Kliwon, 1 Sura 2947 Jawa (26 Januari 2984 Masehi)" - [REF](CK)
+"Dengan terhafal dalam bentuk nyanyian, kalender Jawa akan terbawa kemana saja pergi, dan masih memiliki tingkat akurasi tinggi sampai 994 tahun lagi. Setelah itu baru ada koreksi +1 hari sebelum Ambal Kurup Alip Senen Kliwon, 1 Sura 2947 Jawa (26 Januari 2984 Masehi)" - [REF][CK]
 
 Lebih lanjut silahkan membaca tentang penanggalan jawa di [DOKUMENTASI.md](DOKUMENTASI.md).
 
