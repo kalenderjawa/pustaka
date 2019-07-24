@@ -74,3 +74,8 @@ const ROM_RO_LU = {
   pasaran: 3
 }
 
+const ROM_NEM_RO = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  dino: 6,
+  pasaran: 2
+}
