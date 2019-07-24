@@ -61,3 +61,10 @@ const ROM_TU_PAT = {
   dino: 7,
   pasaran: 4
 }
+
+const ROM_PAT_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
+  dino: 4,
+  pasaran: 3
+}
+
