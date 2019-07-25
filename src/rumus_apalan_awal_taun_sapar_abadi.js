@@ -90,3 +90,9 @@ const PAR_MO_JI = {
   pasaran: 1
 }
 
+// Wulan - Taun
+const PAR_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: PAR_LU_JI
+}
