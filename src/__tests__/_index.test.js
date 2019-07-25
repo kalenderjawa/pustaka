@@ -70,17 +70,17 @@ describe('Testing', () => {
 
   test("cariHariPasaranAwalBulan", async () => {
     // senin legi
-    await expect(KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952)).resolves.toStrictEqual(_TESTDAT_2)
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952)).resolves.toStrictEqual(_TESTDAT_2)
   })
 
   test("cariHariPasaranAwalBulan", async () => {
     // senin legi
-    await expect(KalenderJawa.cariHariPasaranAwalBulan('dulkodah', 1881)).resolves.toStrictEqual(_TESTDAT_2)
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1881)).resolves.toStrictEqual(_TESTDAT_2)
   })
 
   test("cariHariPasaranAwalBulan", async () => {
     // senin pahing
-    await expect(KalenderJawa.cariHariPasaranAwalBulan('dulkijah', 1981)).resolves.toStrictEqual(_TESTDAT_2)
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1981)).resolves.toStrictEqual(_TESTDAT_2)
   })
   
 })
