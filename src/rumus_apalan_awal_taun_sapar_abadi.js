@@ -59,3 +59,9 @@ const PAR_MO_MO = {
   dino: 5,
   pasaran: 5
 }
+
+const PAR_RO_PAT = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  dino: 2,
+  pasaran: 4
+}
