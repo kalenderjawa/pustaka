@@ -133,3 +133,8 @@ const PAR_WAWU = {
   rumus: PAR_JI_RO
 }
 
+const PAR_JIMAKIR = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+  rumus: PAR_MO_JI
+}
