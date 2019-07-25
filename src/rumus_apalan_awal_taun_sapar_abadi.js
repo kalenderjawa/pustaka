@@ -121,3 +121,9 @@ const PAR_DAL = {
   rumus: PAR_NEM_LU
 }
 
+const PAR_BE = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  taun: ARANING_TAHUN_SEWINDU.get(_BE),
+  rumus: PAR_PAT_LU
+}
+
