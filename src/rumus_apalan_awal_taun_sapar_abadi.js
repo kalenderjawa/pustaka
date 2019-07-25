@@ -32,3 +32,4 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
  * "par_alip" = `${ARANING_WULAN_SETAUN.get(_SAPAR).celukan}_${ARANING_TAUN_SEWINDU.get(_ALIP).taun}`
  */
 const PAR_ALIP = Symbol.for("par_alip")
+const PAR_EHE = Symbol.for("par_ehe")
