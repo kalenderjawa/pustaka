@@ -103,3 +103,8 @@ const PAR_EHE = {
   rumus: PAR_TU_MO
 }
 
+const PAR_JIMAWAL = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
+  rumus: PAR_MO_MO
+}
