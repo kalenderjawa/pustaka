@@ -33,3 +33,4 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
  */
 const PAR_ALIP = Symbol.for("par_alip")
 const PAR_EHE = Symbol.for("par_ehe")
+const PAR_JIMAWAL = Symbol.for("par_jimawal")
