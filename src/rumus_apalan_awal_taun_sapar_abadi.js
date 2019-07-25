@@ -40,3 +40,11 @@ const PAR_BE = Symbol.for("par_be")
 const PAR_WAWU = Symbol.for("par_wawu")
 const PAR_JIMAKIR = Symbol.for("par_jimakir")
 
+// Rumus abadi Sapar - Sewindu
+
+const PAR_LU_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  dino: 3,
+  pasaran: 1
+}
+
