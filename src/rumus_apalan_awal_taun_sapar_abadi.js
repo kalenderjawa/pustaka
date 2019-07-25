@@ -96,3 +96,10 @@ const PAR_ALIP = {
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: PAR_LU_JI
 }
+
+const PAR_EHE = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: PAR_TU_MO
+}
+
