@@ -142,5 +142,5 @@ export {
   cariRumusWulanTaun,
   konversiHariPasaran,
   cariHariAwalBulan,
-  cariHariPasaranAwalBulan
+  cariHariPasaranAwalBulan as cariHariPasaranAwalBulanTahunJawa
 }
