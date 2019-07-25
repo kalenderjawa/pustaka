@@ -38,3 +38,5 @@ const PAR_JE = Symbol.for("par_je")
 const PAR_DAL = Symbol.for("par_dal")
 const PAR_BE = Symbol.for("par_be")
 const PAR_WAWU = Symbol.for("par_wawu")
+const PAR_JIMAKIR = Symbol.for("par_jimakir")
+
