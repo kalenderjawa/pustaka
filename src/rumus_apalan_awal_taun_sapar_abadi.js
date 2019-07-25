@@ -83,3 +83,9 @@ const PAR_JI_RO = {
   dino: 1,
   pasaran: 2
 }
+
+const PAR_MO_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  wulan: 5,
+  pasaran: 1
+}
