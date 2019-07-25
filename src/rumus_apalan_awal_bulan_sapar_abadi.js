@@ -138,3 +138,5 @@ const PAR_JIMAKIR = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: PAR_MO_JI
 }
+
+// Mapping 
