@@ -31,14 +31,14 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 /**
  * "par_alip" = `${ARANING_WULAN_SETAUN.get(_SAPAR).celukan}_${ARANING_TAUN_SEWINDU.get(_ALIP).taun}`
  */
-const PAR_ALIP = Symbol.for("par_alip")
-const PAR_EHE = Symbol.for("par_ehe")
-const PAR_JIMAWAL = Symbol.for("par_jimawal")
-const PAR_JE = Symbol.for("par_je")
-const PAR_DAL = Symbol.for("par_dal")
-const PAR_BE = Symbol.for("par_be")
-const PAR_WAWU = Symbol.for("par_wawu")
-const PAR_JIMAKIR = Symbol.for("par_jimakir")
+const _PAR_ALIP = Symbol.for("par_alip")
+const _PAR_EHE = Symbol.for("par_ehe")
+const _PAR_JIMAWAL = Symbol.for("par_jimawal")
+const _PAR_JE = Symbol.for("par_je")
+const _PAR_DAL = Symbol.for("par_dal")
+const _PAR_BE = Symbol.for("par_be")
+const _PAR_WAWU = Symbol.for("par_wawu")
+const _PAR_JIMAKIR = Symbol.for("par_jimakir")
 
 // Rumus abadi Sapar - Sewindu
 
@@ -89,3 +89,4 @@ const PAR_MO_JI = {
   wulan: 5,
   pasaran: 1
 }
+
