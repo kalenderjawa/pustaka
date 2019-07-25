@@ -61,7 +61,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru
 
 > Jika anda belum mengetahui apa itu pasaran, kurup harap membaca terlebih dahulu [DOKUMENTASI.md](DOKUMENTASI.md).
 
-### `cariHariPasaranAwalBulan(w, t)`
+### `cariHariPasaranAwalBulanTahunJawa(w, t)`
 
 **Argumen**:
 
@@ -82,7 +82,7 @@ dan kode javascript untuk mencari hari dan pasaran tersebut bisa ditulis seperti
 ```js
 import * as KalenderJawa from '@junwatu/kalender-jawa'
 
-KalenderJawa.cariHariPasaranAwalBulan('romadon', 1952).then({kH, kP} => {
+KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952).then({kH, kP} => {
   console.log(`${kH.dino} ${kP.pasaran}`) // senen legi
 })
 
