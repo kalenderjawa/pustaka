@@ -29,3 +29,4 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 // Registry
 const _BAN_ALIP = Symbol.for("ban_alip")
 const _BAN_EHE = Symbol.for("ban_ehe")
+const _BAN_JIMAWAL = Symbol.for("ban_jimawal")
