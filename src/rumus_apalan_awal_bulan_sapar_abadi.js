@@ -139,4 +139,7 @@ const PAR_JIMAKIR = {
   rumus: PAR_MO_JI
 }
 
-// Mapping 
+// Mapping
+const RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI: Map<Symbol, WulanTaunType> = new Map()
+
+RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI.set(_PAR_ALIP, PAR_ALIP)
