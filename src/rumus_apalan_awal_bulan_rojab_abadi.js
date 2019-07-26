@@ -101,7 +101,7 @@ const JAB_EHE = {
 
 const JAB_JIMAWAL = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
-  taun: ARANING_TAHUN_SEWINDU.get(_JE),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: JAB_MO_RO
 }
 
