@@ -34,3 +34,5 @@ const _JAB_JE = Symbol.for("jab_je")
 const _JAB_DAL = Symbol.for("jab_dal")
 const _JAB_BE = Symbol.for("jab_be")
 const _JAB_WAWU = Symbol.for("jab_wawu")
+const _JAB_JIMAKIR = Symbol.for("jab_jimakir")
+
