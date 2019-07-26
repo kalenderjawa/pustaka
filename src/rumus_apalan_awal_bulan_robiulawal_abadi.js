@@ -74,3 +74,8 @@ const ROWAL_MO_RO = {
   pasaran: 2
 }
 
+const ROWAL_RO_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
+  dino: 2,
+  pasaran: 1
+}
