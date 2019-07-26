@@ -105,3 +105,9 @@ const ROWAL_JIMAWAL = {
   rumus: ROWAL_NEM_PAT
 }
 
+const ROWAL_JE = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_JE),
+  rumus: ROWAL_LU_LU
+}
+
