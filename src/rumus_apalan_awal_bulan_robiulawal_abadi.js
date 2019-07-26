@@ -30,3 +30,4 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 // Registry 
 const _ROWAL_ALIP = Symbol.for("rowal_alip")
 const _ROWAL_EHE = Symbol.for("rowal_ehe")
+const _ROWAL_JIMAWAL = Symbol.for("rowal_jimawal")
