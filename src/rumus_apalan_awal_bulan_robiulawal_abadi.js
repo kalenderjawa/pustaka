@@ -129,3 +129,9 @@ const ROWAL_WAWU = {
   rumus: ROWAL_RO_JI
 }
 
+const ROWAL_JIMAKIR = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+  rumus: ROWAL_NEM_MO
+}
+
