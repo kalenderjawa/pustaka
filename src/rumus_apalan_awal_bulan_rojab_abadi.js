@@ -129,5 +129,10 @@ const JAB_WAWU = {
   rumus: JAB_JI_PAT
 }
 
+const JAB_JIMAKIR = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
+  taun:ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+  rumus: JAB_MO_LU
+}
 
 
