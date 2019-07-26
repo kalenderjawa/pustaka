@@ -43,3 +43,9 @@ const BAN_MO_LU = {
   pasaran: 3
 }
 
+const BAN_RO_RO = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  dino: 2,
+  pasaran: 2
+}
+
