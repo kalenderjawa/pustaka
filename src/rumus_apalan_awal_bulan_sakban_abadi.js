@@ -85,4 +85,11 @@ const BAN_TU_LU = {
   pasaran: 3
 }
 
+//
+
+const BAN_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: BAN_MO_LU
+}
 
