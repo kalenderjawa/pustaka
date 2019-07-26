@@ -36,3 +36,11 @@ const _ROWAL_DAL = Symbol.for("rowal_dal")
 const _ROWAL_BE = Symbol.for("rowal_be")
 const _ROWAL_WAWU = Symbol.for("rowal_wawu")
 const _ROWAL_JIMAKIR = Symbol.for("rowal_jimakir")
+
+// 
+const ROWAL_PAT_MO = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
+  dino: 4,
+  pasaran: 5
+}
+
