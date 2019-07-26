@@ -79,3 +79,9 @@ const JAB_JI_PAT = {
   dino: 1,
   pasaran: 4
 }
+
+const JAB_MO_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
+  dino: 5,
+  pasaran: 3
+}
