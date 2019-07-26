@@ -72,3 +72,11 @@ const BAN_NEM_MO = {
   dino: 6,
   pasaran: 5
 }
+
+const BAN_LU_PAT = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  dino: 3,
+  pasaran: 4
+}
+
+
