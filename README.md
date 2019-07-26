@@ -123,6 +123,8 @@ Data dari `Promise` merupakan `Object` contoh respon seperti berikut ini
 
 ## Referensi
 
+- https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
+
 [CK]: https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
 
 ## Lisensi
