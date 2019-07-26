@@ -79,4 +79,10 @@ const BAN_LU_PAT = {
   pasaran: 4
 }
 
+const BAN_TU_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  dino: 7,
+  pasaran: 3
+}
+
 
