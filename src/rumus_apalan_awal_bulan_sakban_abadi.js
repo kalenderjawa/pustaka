@@ -99,3 +99,8 @@ const BAN_EHE = {
   rumus: BAN_RO_RO
 }
 
+const BAN_JIMAWAL = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
+  rumus: BAN_TU_RO
+}
