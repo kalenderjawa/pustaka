@@ -54,3 +54,10 @@ const BAN_TU_RO = {
   dino: 7,
   pasaran: 2
 }
+
+const BAN_PAT_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  dino: 4,
+  pasaran: 1
+}
+
