@@ -92,3 +92,11 @@ const ROWAL_ALIP = {
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: ROWAL_PAT_MO
 }
+
+const ROWAL_EHE = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: ROWAL_JI_PAT
+}
+
+
