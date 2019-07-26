@@ -135,4 +135,7 @@ const JAB_JIMAKIR = {
   rumus: JAB_MO_LU
 }
 
+// Mapping Rumus abadi Rojab dengan Registry
+const RUMUS_APALAN_AWAL_BULAN_ROJAB_ABADI: Map<Symbol, WulanTaunType> = new Map()
 
+RUMUS_APALAN_AWAL_BULAN_ROJAB_ABADI.set(_JAB_ALIP, JAB_ALIP)
