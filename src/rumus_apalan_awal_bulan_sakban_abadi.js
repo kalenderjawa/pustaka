@@ -35,3 +35,11 @@ const _BAN_DAL = Symbol.for("ban_dal")
 const _BAN_BE = Symbol.for("ban_be")
 const _BAN_WAWU = Symbol.for("ban_wawu")
 const _BAN_JIMAKIR = Symbol.for("ban_jimakir")
+
+// Rumus 
+const BAN_MO_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  dino: 5,
+  pasaran: 3
+}
+
