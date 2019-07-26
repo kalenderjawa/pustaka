@@ -111,3 +111,8 @@ const BAN_JE = {
   rumus: BAN_PAT_JI
 }
 
+const BAN_DAL = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  taun: ARANING_TAHUN_SEWINDU.get(_DAL),
+  rumus: BAN_JI_MO
+}
