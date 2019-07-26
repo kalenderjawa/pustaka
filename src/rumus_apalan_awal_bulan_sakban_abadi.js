@@ -104,3 +104,10 @@ const BAN_JIMAWAL = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: BAN_TU_RO
 }
+
+const BAN_JE = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  taun: ARANING_TAHUN_SEWINDU.get(_JE),
+  rumus: BAN_PAT_JI
+}
+
