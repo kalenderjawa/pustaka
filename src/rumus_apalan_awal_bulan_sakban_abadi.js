@@ -93,3 +93,9 @@ const BAN_ALIP = {
   rumus: BAN_MO_LU
 }
 
+const BAN_EHE = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: BAN_RO_RO
+}
+
