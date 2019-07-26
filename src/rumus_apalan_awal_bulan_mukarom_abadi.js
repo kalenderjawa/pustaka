@@ -1,8 +1,8 @@
 /**
  * @flow
  * 
- * 📁rumus_apalan_awal_taun_dulkijah_abadi.js
- * Rumus untuk bulan Dulkijah selama 8 Tahun (Sewindu)
+ * 📁rumus_apalan_awal_bulan_mukarom_abadi.js
+ * Rumus untuk bulan Mukarom selama 8 Tahun (Sewindu)
  *
  */
 
