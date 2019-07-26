@@ -113,7 +113,7 @@ const ROWAL_JE = {
 
 const ROWAL_DAL = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
-  taun:ARANING_TAHUN_SEWINDU.get(_DAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: ROWAL_TU_RO
 }
 
@@ -121,5 +121,11 @@ const ROWAL_BE = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: ROWAL_MO_RO
+}
+
+const ROWAL_WAWU = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
+  rumus: ROWAL_RO_JI
 }
 
