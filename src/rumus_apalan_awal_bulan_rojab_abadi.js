@@ -36,3 +36,11 @@ const _JAB_BE = Symbol.for("jab_be")
 const _JAB_WAWU = Symbol.for("jab_wawu")
 const _JAB_JIMAKIR = Symbol.for("jab_jimakir")
 
+// Rumus
+
+const JAB_LU_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
+  dino: 3,
+  pasaran: 3
+}
+
