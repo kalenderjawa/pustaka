@@ -61,3 +61,9 @@ const BAN_PAT_JI = {
   pasaran: 1
 }
 
+const BAN_JI_MO = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  dino: 1,
+  pasaran: 5
+}
+
