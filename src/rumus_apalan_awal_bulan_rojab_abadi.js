@@ -56,3 +56,10 @@ const JAB_MO_RO = {
   pasaran: 2
 }
 
+const JAB_RO_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
+  dino: 2,
+  pasaran: 1
+}
+
+
