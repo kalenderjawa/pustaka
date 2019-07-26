@@ -13,6 +13,7 @@ import * as Dulkodah from './rumus_apalan_awal_bulan_dulkodah_abadi.js'
 import * as Dulkijah from './rumus_apalan_awal_bulan_dulkijah_abadi.js'
 import * as Mukarom from './rumus_apalan_awal_bulan_mukarom_abadi.js'
 import * as Sapar from './rumus_apalan_awal_bulan_sapar_abadi.js'
+import * as Rojab from './rumus_apalan_awal_bulan_rojab_abadi.js'
 
 function _SengkalaMap(): KWMapType {
   return new Map([
@@ -21,7 +22,8 @@ function _SengkalaMap(): KWMapType {
     ...Dulkodah.RUMUS_APALAN_AWAL_BULAN_DULKODAH_ABADI,
     ...Dulkijah.RUMUS_APALAN_AWAL_BULAN_DULKIJAH_ABADI,
     ...Mukarom.RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI,
-    ...Sapar.RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI
+    ...Sapar.RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI,
+    ...Rojab.RUMUS_APALAN_AWAL_BULAN_ROJAB_ABADI
   ])
 }
 
