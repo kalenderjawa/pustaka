@@ -105,3 +105,15 @@ const JAB_JIMAWAL = {
   rumus: JAB_MO_RO
 }
 
+const JAB_JE = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
+  taun: ARANING_TAHUN_SEWINDU.get(_JE),
+  rumus: JAB_RO_JI
+}
+
+const JAB_DAL = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
+  taun: ARANING_TAHUN_SEWINDU.get(_DAL),
+  rumus: JAB_NEM_MO
+}
+
