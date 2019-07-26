@@ -27,4 +27,4 @@ import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_S
 import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
 // Registry
-const JAB_ALIP = Symbol.for("jab_alip")
+const _JAB_ALIP = Symbol.for("jab_alip")
