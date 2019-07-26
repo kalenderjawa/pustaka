@@ -85,3 +85,10 @@ const ROWAL_NEM_MO = {
   dino: 6,
   pasaran: 5
 }
+
+// 
+const ROWAL_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: ROWAL_PAT_MO
+}
