@@ -117,6 +117,12 @@ const BAN_DAL = {
   rumus: BAN_JI_MO
 }
 
+const BAN_BE = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
+  taun: ARANING_TAHUN_SEWINDU.get(_BE),
+  rumus: BAN_NEM_MO
+}
+
 const BAN_WAWU = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
