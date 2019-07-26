@@ -85,3 +85,11 @@ const JAB_MO_LU = {
   dino: 5,
   pasaran: 3
 }
+
+//
+const JAB_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: JAB_LU_LU
+}
+
