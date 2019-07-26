@@ -30,3 +30,4 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 const _JAB_ALIP = Symbol.for("jab_alip")
 const _JAB_EHE = Symbol.for("jab_ehe")
 const _JAB_JIMAWAL = Symbol.for("jab_jimawal")
+const _JAB_JE = Symbol.for("jab_je")
