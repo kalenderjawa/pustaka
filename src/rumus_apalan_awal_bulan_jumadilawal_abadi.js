@@ -57,3 +57,9 @@ const JUWAL_JI_JI = {
   pasaran: 1
 }
 
+const JUWAL_MO_MO = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
+  dino: 5,
+  pasaran: 5
+}
+
