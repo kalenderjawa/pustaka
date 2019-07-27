@@ -50,3 +50,10 @@ const JUWAL_LU_JI = {
   dino: 3,
   pasaran: 1
 }
+
+const JUWAL_JI_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
+  dino: 1,
+  pasaran: 1
+}
+
