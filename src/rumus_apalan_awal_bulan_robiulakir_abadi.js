@@ -19,3 +19,11 @@ const _ROKIR_DAL = Symbol.for('rokit_dal')
 const _ROKIR_BE = Symbol.for('rokir_be')
 const _ROKIR_WAWU = Symbol.for('rokir_wawu')
 const _ROKIR_JIMAKIR = Symbol.for('rokir_jimakir')
+
+// Rumus Matematis
+const ROKIR_NEM_MO = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
+  dino: 6,
+  pasaran: 5
+}
+
