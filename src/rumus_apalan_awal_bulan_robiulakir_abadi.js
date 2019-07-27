@@ -69,5 +69,10 @@ const ROKIR_JI_MO = {
   pasaran: 5
 }
 
-
+//
+const ROKIR_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: ROKIR_NEM_MO
+}
 
