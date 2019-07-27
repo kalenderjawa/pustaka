@@ -69,6 +69,9 @@
   },
   "standard": {
     "parser": "babel-eslint",
-    "plugins": [ "flowtype" ]
+    "plugins": [ "flowtype" ],
+    "ignore": [
+      "lib"
+    ]
   }
 }
