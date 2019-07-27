@@ -33,3 +33,8 @@ const JUWAL_PAT_LU = {
   pasaran: 3
 }
 
+const JUWAL_RO_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
+  dino: 2,
+  pasaran: 3
+}
