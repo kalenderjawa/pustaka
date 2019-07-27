@@ -14,4 +14,5 @@ import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_S
 const _JUWAL_ALIP = Symbol.for('juwal_alip')
 const _JUWAL_EHE = Symbol.for('juwal_ehe')
 const _JUWAL_JIMAWAL = Symbol.for('juwal_jimawal')
+const _JUWAL_JE = Symbol.for('juwal_je')
 
