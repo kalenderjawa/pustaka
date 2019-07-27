@@ -76,3 +76,9 @@ const ROKIR_ALIP = {
   rumus: ROKIR_NEM_MO
 }
 
+const ROKIR_EHE = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: ROKIR_LU_PAT
+} 
+
