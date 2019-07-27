@@ -111,3 +111,9 @@ const ROKIR_WAWU = {
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: ROKIR_PAT_JI
 }
+
+const ROKIR_JIMAKIR = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
+  rumus: ROKIR_JI_MO
+}
