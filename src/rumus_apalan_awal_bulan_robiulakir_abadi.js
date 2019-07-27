@@ -10,3 +10,5 @@ import type { WulanTaunType } from './type.js'
 import { _ROBIULAKIR, ARANING_WULAN_SETAUN } from './wulan.js'
 import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
 
+// Registry
+const _ROKIR_ALIP = Symbol.for('rokir_alip')
