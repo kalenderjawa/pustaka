@@ -13,3 +13,4 @@ import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_S
 // Registry
 const _ROKIR_ALIP = Symbol.for('rokir_alip')
 const _ROKIR_EHE = Symbol.for('rokir_ehe')
+const _ROKIR_JIMAWAL = Symbol.for('rokir_jimawal')
