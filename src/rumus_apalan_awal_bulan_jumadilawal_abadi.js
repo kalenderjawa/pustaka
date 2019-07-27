@@ -70,3 +70,9 @@ const JUWAL_RO_PAT = {
 }
 
 //
+const JUWAL_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: JUWAL_TU_PAT
+}
+
