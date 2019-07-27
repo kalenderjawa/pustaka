@@ -18,4 +18,6 @@ const _JUWAL_JE = Symbol.for('juwal_je')
 const _JUWAL_DAL = Symbol.for('juwal_dal')
 const _JUWAL_BE = Symbol.for('juwal_be')
 const _JUWAL_WAWU = Symbol.for('juwal_wawu')
+const _JUWAL_JIMAKIR = Symbol.for('juwal_jimakir')
 
+// Rumus matematis
