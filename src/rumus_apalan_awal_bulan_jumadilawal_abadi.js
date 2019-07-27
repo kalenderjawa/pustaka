@@ -15,4 +15,5 @@ const _JUWAL_ALIP = Symbol.for('juwal_alip')
 const _JUWAL_EHE = Symbol.for('juwal_ehe')
 const _JUWAL_JIMAWAL = Symbol.for('juwal_jimawal')
 const _JUWAL_JE = Symbol.for('juwal_je')
+const _JUWAL_DAL = Symbol.for('juwal_dal')
 
