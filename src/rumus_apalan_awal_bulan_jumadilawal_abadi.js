@@ -21,3 +21,9 @@ const _JUWAL_WAWU = Symbol.for('juwal_wawu')
 const _JUWAL_JIMAKIR = Symbol.for('juwal_jimakir')
 
 // Rumus matematis
+const JUWAL_TU_PAT = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
+  dino: 7,
+  pasaran: 4
+}
+
