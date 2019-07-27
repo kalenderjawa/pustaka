@@ -80,7 +80,7 @@ const ROKIR_EHE = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: ROKIR_LU_PAT
-} 
+}
 
 const ROKIR_JIMAWAL = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
