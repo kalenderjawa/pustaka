@@ -45,5 +45,11 @@ const ROKIR_MO_LU = {
   pasaran: 3
 }
 
+const ROKIR_RO_RO = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
+  dino: 2,
+  pasaran: 2
+}
+
 
 
