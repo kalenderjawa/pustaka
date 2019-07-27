@@ -99,3 +99,10 @@ const ROKIR_DAL = {
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: ROKIR_RO_RO
 }
+
+const ROKIR_BE = {
+  wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
+  taun: ARANING_TAHUN_SEWINDU.get(_BE),
+  rumus: ROKIR_TU_RO
+}
+
