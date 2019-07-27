@@ -80,7 +80,7 @@ const WAL_ALIP = {
 
 const WAL_EHE = {
   wulan: ARANING_WULAN_SETAUN.get(_SAWAL),
-  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: WAL_MO_JI
 }
 
