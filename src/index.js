@@ -79,7 +79,7 @@ async function konversiHari (h: number, dn: number): Promise<DintenType | string
   const _xH = dn + h
   let xH = _xH % 7 // Dinten MAX=7
 
-  if (xH === 1) { xH } else { xH = xH - 1 }
+  if (xH !== 1) { xH = xH - 1 }
 
   return new Promise((resolve, reject) => {
     Dinten.DINTEN.forEach((value, key, map) => {
@@ -94,7 +94,7 @@ async function konversiPasaran (p: number, ps: number): Promise<PasaranType | st
   const _xP = ps + p
   let xP = _xP % 5 // Pasaran MAX=5
 
-  if (xP === 1) { xP } else if (xP === 0) { xP = _xP } else { xP = xP - 1 }
+  if (xP !== 1) { if (xP === 0) { xP = _xP } else { xP = xP - 1 } }
 
   return new Promise((resolve, reject) => {
     PASARAN.forEach((value, key, map) => {
