@@ -49,7 +49,7 @@ npm install --save @junwatu/kalender-jawa
 
 ### Browser
 
-Jika anda memakai browser maka pustaka ini bisa di ambil melalui CDN (*Content Delivery Network*) di `unpkg.com`. 
+Jika anda memakai browser pustaka ini bisa di ambil melalui CDN (*Content Delivery Network*) di `unpkg.com`. 
 
 Kode berikut akan mengambil pustaka dengan versi terbaru
 
@@ -60,7 +60,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru
 
 ## API
 
-Jika anda belum mengetahui apa itu pasaran ataupun kurup mohon membaca terlebih dahulu [DOKUMENTASI.md](DOKUMENTASI.md)
+> Jika anda belum mengetahui apa itu pasaran, kurup harap membaca terlebih dahulu [DOKUMENTASI.md](DOKUMENTASI.md).
 
 ### `cariHariPasaranAwalBulanTahunJawa(w, t)`
 
@@ -88,8 +88,6 @@ KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952).then({kH, kP} =>
 })
 
 ```
-artinya **1 Pasa** atau **Romadon 1952 Jawa (1440 H, 2019 M)** jatuh pada hari **Senin** dengan pasaran **Legi**.
-
 
 ### `cariKurupTahunJawa(t)`
 
