@@ -1,6 +1,6 @@
 /**
  * @flow
- * 
+ *
  * 📁rumus_apalan_awal_taun_sawal_abadi.js
  * Rumus untuk bulan Sawal selama 8 Tahun (Sewindu)
  */
@@ -28,14 +28,14 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 
 // Registry Symbol untuk Sawal Sewindu
 
-const _WAL_ALIP = Symbol.for("wal_alip")
-const _WAL_EHE = Symbol.for("wal_ehe")
-const _WAL_JIMAWAL = Symbol.for("wal_jimawal")
-const _WAL_JE = Symbol.for("wal_je")
-const _WAL_DAL = Symbol.for("wal_dal")
-const _WAL_BE = Symbol.for("wal_be")
-const _WAL_WAWU = Symbol.for("wal_wawu")
-const _WAL_JIMAKIR = Symbol.for("wal_jimakir")
+const _WAL_ALIP = Symbol.for('wal_alip')
+const _WAL_EHE = Symbol.for('wal_ehe')
+const _WAL_JIMAWAL = Symbol.for('wal_jimawal')
+const _WAL_JE = Symbol.for('wal_je')
+const _WAL_DAL = Symbol.for('wal_dal')
+const _WAL_BE = Symbol.for('wal_be')
+const _WAL_WAWU = Symbol.for('wal_wawu')
+const _WAL_JIMAKIR = Symbol.for('wal_jimakir')
 
 // Rumus matematis
 
@@ -149,13 +149,13 @@ RUMUS_APALAN_AWAL_BULAN_SAWAL_ABADI.set(_WAL_WAWU, WAL_WAWU)
 RUMUS_APALAN_AWAL_BULAN_SAWAL_ABADI.set(_WAL_JIMAKIR, WAL_JIMAKIR)
 
 export {
-  RUMUS_APALAN_AWAL_BULAN_SAWAL_ABADI, 
-  _WAL_ALIP, 
-  _WAL_BE, 
-  _WAL_DAL, 
-  _WAL_EHE, 
-  _WAL_JE, 
-  _WAL_JIMAKIR, 
-  _WAL_JIMAWAL, 
-  _WAL_WAWU 
+  RUMUS_APALAN_AWAL_BULAN_SAWAL_ABADI,
+  _WAL_ALIP,
+  _WAL_BE,
+  _WAL_DAL,
+  _WAL_EHE,
+  _WAL_JE,
+  _WAL_JIMAKIR,
+  _WAL_JIMAWAL,
+  _WAL_WAWU
 }

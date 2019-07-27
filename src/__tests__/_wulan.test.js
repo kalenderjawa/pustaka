@@ -3,9 +3,9 @@
  */
 import * as Wulan from '../wulan.js'
 
-describe("Wulan Testing", () => {
+describe('Wulan Testing', () => {
   test('Wulan', () => {
-    let _m = Wulan.ARANING_WULAN_SETAUN.get(Wulan._MUKAROM)
+    const _m = Wulan.ARANING_WULAN_SETAUN.get(Wulan._MUKAROM)
     expect(_m.wulan).toBe('mukarom')
   })
 })

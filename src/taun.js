@@ -1,6 +1,6 @@
 /**
  * @flow
- * 
+ *
  * 📁taun.js
  * @desc Araning Tahun Ing Dalem Sewindu
  */

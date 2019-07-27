@@ -6,7 +6,7 @@ import * as Kurup from '../kurup.js'
 const SAMPLE_ASAPON = 'alip selasa pon'
 const SAMPLE_ANENHING = 'alip senen pahing'
 
-describe("Kurup Testing", () => {
+describe('Kurup Testing', () => {
   test('Kurup ASAPON', () => {
     expect(`${Kurup.ASAPON.taun} ${Kurup.ASAPON.dinten.dino} ${Kurup.ASAPON.pasaran.pasaran}`).toBe(SAMPLE_ASAPON)
   })

@@ -1,18 +1,18 @@
 /**
- * @flow 
- * 
+ * @flow
+ *
  * 📁dinten.js
  * @desc Araning Dinten Ing Jawa
  */
 import type { DintenType } from './type.js'
 
-const _SENEN = Symbol.for("senen")
-const _SELASA = Symbol.for("selasa")
-const _REBO = Symbol.for("rebo")
-const _KEMIS = Symbol.for("kemis")
-const _JEMAH = Symbol.for("jemah")
-const _SEBTU = Symbol.for("sebtu")
-const _AKAD = Symbol.for("akad")
+const _SENEN = Symbol.for('senen')
+const _SELASA = Symbol.for('selasa')
+const _REBO = Symbol.for('rebo')
+const _KEMIS = Symbol.for('kemis')
+const _JEMAH = Symbol.for('jemah')
+const _SEBTU = Symbol.for('sebtu')
+const _AKAD = Symbol.for('akad')
 
 const SENEN = { dino: 'senen', urutan: 1 }
 const SELASA = { dino: 'selasa', urutan: 2 }

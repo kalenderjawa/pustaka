@@ -1,6 +1,6 @@
 /**
  * @flow
- * 
+ *
  * 📁rumus_apalan_awal_taun_dulkijah_abadi.js
  * Rumus untuk bulan Dulkijah selama 8 Tahun (Sewindu)
  *
@@ -28,14 +28,14 @@ import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_S
 import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
 // Registry Symbol
-const _JAH_ALIP = Symbol.for("jah_alip")
-const _JAH_EHE = Symbol.for("jah_ehe")
-const _JAH_JIMAWAL = Symbol.for("jah_jimawal")
-const _JAH_JE = Symbol.for("jah_je")
-const _JAH_DAL = Symbol.for("jah_dal")
-const _JAH_BE = Symbol.for("jah_be")
-const _JAH_WAWU = Symbol.for("jah_wawu")
-const _JAH_JIMAKIR = Symbol.for("jah_jimakir")
+const _JAH_ALIP = Symbol.for('jah_alip')
+const _JAH_EHE = Symbol.for('jah_ehe')
+const _JAH_JIMAWAL = Symbol.for('jah_jimawal')
+const _JAH_JE = Symbol.for('jah_je')
+const _JAH_DAL = Symbol.for('jah_dal')
+const _JAH_BE = Symbol.for('jah_be')
+const _JAH_WAWU = Symbol.for('jah_wawu')
+const _JAH_JIMAKIR = Symbol.for('jah_jimakir')
 
 // Rumus
 const JAH_PAT_JI = {
@@ -86,7 +86,7 @@ const JAH_NEM_JI = {
   pasaran: 1
 }
 
-// 
+//
 const JAH_ALIP = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),

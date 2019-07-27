@@ -1,6 +1,6 @@
 /**
  * @flow
- * 
+ *
  * 📁rumus_apalan_awal_bulan_sapar_abadi.js
  * Rumus untuk bulan Dulkijah selama 8 Tahun (Sewindu)
  *
@@ -31,14 +31,14 @@ import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from '.
 /**
  * "par_alip" = `${ARANING_WULAN_SETAUN.get(_SAPAR).celukan}_${ARANING_TAUN_SEWINDU.get(_ALIP).taun}`
  */
-const _PAR_ALIP = Symbol.for("par_alip")
-const _PAR_EHE = Symbol.for("par_ehe")
-const _PAR_JIMAWAL = Symbol.for("par_jimawal")
-const _PAR_JE = Symbol.for("par_je")
-const _PAR_DAL = Symbol.for("par_dal")
-const _PAR_BE = Symbol.for("par_be")
-const _PAR_WAWU = Symbol.for("par_wawu")
-const _PAR_JIMAKIR = Symbol.for("par_jimakir")
+const _PAR_ALIP = Symbol.for('par_alip')
+const _PAR_EHE = Symbol.for('par_ehe')
+const _PAR_JIMAWAL = Symbol.for('par_jimawal')
+const _PAR_JE = Symbol.for('par_je')
+const _PAR_DAL = Symbol.for('par_dal')
+const _PAR_BE = Symbol.for('par_be')
+const _PAR_WAWU = Symbol.for('par_wawu')
+const _PAR_JIMAKIR = Symbol.for('par_jimakir')
 
 // Rumus abadi Sapar - Sewindu
 
@@ -68,7 +68,7 @@ const PAR_RO_PAT = {
 
 const PAR_NEM_LU = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
-  dino: 6, 
+  dino: 6,
   pasaran: 3
 }
 
@@ -148,7 +148,7 @@ RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI.set(_PAR_JIMAWAL, PAR_JIMAWAL)
 RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI.set(_PAR_JE, PAR_JE)
 RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI.set(_PAR_DAL, PAR_DAL)
 RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI.set(_PAR_BE, PAR_BE)
-RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI.set(_PAR_WAWU,PAR_WAWU)
+RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI.set(_PAR_WAWU, PAR_WAWU)
 RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI.set(_PAR_JIMAKIR, PAR_JIMAKIR)
 
 export {

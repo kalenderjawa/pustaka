@@ -19,8 +19,8 @@ const _TESTOBJ = {
   ]
 }
 
-describe("Library Testing", () => {
-  test("cariTaunSengkala", async () => {
+describe('Library Testing', () => {
+  test('cariTaunSengkala', async () => {
     await expect(KalenderJawaLib.cariTaunSengkala(1881)).resolves.toMatchObject(_TESTOBJ)
   })
 })

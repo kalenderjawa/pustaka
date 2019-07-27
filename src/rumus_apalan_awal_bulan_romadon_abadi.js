@@ -1,6 +1,6 @@
 /**
  * @flow
- * 
+ *
  * 📁rumus_apalan_awal_taun_romadon_abadi.js
  * Rumus bulan Romadon selama 8 Tahun (Sewindu)
  */
@@ -27,15 +27,14 @@ import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_S
 import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
 // Registry Wulan Romadon Sewindu (8 Taun)
-const _DON_ALIP = Symbol.for("don_alip")
-const _DON_EHE = Symbol.for("don_ehe")
-const _DON_JIMAWAL = Symbol.for("don_jimawal")
-const _DON_JE = Symbol.for("don_je")
-const _DON_DAL = Symbol.for("don_dal")
-const _DON_BE = Symbol.for("don_be")
-const _DON_WAWU = Symbol.for("don_wawu")
-const _DON_JIMAKIR = Symbol.for("don_jimakir")
-
+const _DON_ALIP = Symbol.for('don_alip')
+const _DON_EHE = Symbol.for('don_ehe')
+const _DON_JIMAWAL = Symbol.for('don_jimawal')
+const _DON_JE = Symbol.for('don_je')
+const _DON_DAL = Symbol.for('don_dal')
+const _DON_BE = Symbol.for('don_be')
+const _DON_WAWU = Symbol.for('don_wawu')
+const _DON_JIMAKIR = Symbol.for('don_jimakir')
 
 // Rumus Matematis
 
@@ -74,7 +73,7 @@ const DON_RO_PAT = {
 
 /**
  * Don Tu Pat - Romadon Pitu Papat
- * Wulan Romadon Dino ke-Pitu (7) Pasaran ke-papat (4) 
+ * Wulan Romadon Dino ke-Pitu (7) Pasaran ke-papat (4)
  */
 const DON_TU_PAT = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
@@ -93,7 +92,6 @@ const DON_JI_RO = {
   dino: 1,
   pasaran: 2
 }
-
 
 /**
  * Don Alip -> Don Nem Ro
@@ -187,14 +185,14 @@ RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI.set(_DON_BE, DON_BE)
 RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI.set(_DON_WAWU, DON_WAWU)
 RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI.set(_DON_JIMAKIR, DON_JIMAKIR)
 
-export { 
-  RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI, 
-  _DON_ALIP, 
-  _DON_BE, 
-  _DON_DAL, 
-  _DON_EHE, 
-  _DON_JE, 
-  _DON_JIMAKIR, 
-  _DON_JIMAWAL, 
-  _DON_WAWU 
+export {
+  RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI,
+  _DON_ALIP,
+  _DON_BE,
+  _DON_DAL,
+  _DON_EHE,
+  _DON_JE,
+  _DON_JIMAKIR,
+  _DON_JIMAWAL,
+  _DON_WAWU
 }

@@ -1,6 +1,6 @@
 /**
  * @flow
- * 
+ *
  * 📁rumus_apalan_awal_bulan_robiulawal_abadi.js
  * Rumus untuk bulan Robiulawal selama 8 Tahun (Sewindu)
  *
@@ -27,17 +27,17 @@ import {
 import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
 import { _SENEN, _SELASA, _REBO, _KEMIS, _JEMAH, _SEBTU, _AKAD, DINTEN } from './dinten.js'
 
-// Registry 
-const _ROWAL_ALIP = Symbol.for("rowal_alip")
-const _ROWAL_EHE = Symbol.for("rowal_ehe")
-const _ROWAL_JIMAWAL = Symbol.for("rowal_jimawal")
-const _ROWAL_JE = Symbol.for("rowal_je")
-const _ROWAL_DAL = Symbol.for("rowal_dal")
-const _ROWAL_BE = Symbol.for("rowal_be")
-const _ROWAL_WAWU = Symbol.for("rowal_wawu")
-const _ROWAL_JIMAKIR = Symbol.for("rowal_jimakir")
+// Registry
+const _ROWAL_ALIP = Symbol.for('rowal_alip')
+const _ROWAL_EHE = Symbol.for('rowal_ehe')
+const _ROWAL_JIMAWAL = Symbol.for('rowal_jimawal')
+const _ROWAL_JE = Symbol.for('rowal_je')
+const _ROWAL_DAL = Symbol.for('rowal_dal')
+const _ROWAL_BE = Symbol.for('rowal_be')
+const _ROWAL_WAWU = Symbol.for('rowal_wawu')
+const _ROWAL_JIMAKIR = Symbol.for('rowal_jimakir')
 
-// 
+//
 const ROWAL_PAT_MO = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   dino: 4,
@@ -86,7 +86,7 @@ const ROWAL_NEM_MO = {
   pasaran: 5
 }
 
-// 
+//
 const ROWAL_ALIP = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
@@ -135,7 +135,7 @@ const ROWAL_JIMAKIR = {
   rumus: ROWAL_NEM_MO
 }
 
-// Mapping 
+// Mapping
 const RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI: Map<Symbol, WulanTaunType> = new Map()
 
 RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI.set(_ROWAL_ALIP, ROWAL_ALIP)
