@@ -18,5 +18,5 @@ const _JUKIR_JE = Symbol.for('jukir_je')
 const _JUKIR_DAL = Symbol.for('jukir_dal')
 const _JUKIR_BE = Symbol.for('jukir_be')
 const _JUKIR_WAWU = Symbol.for('jukir_wawu')
-
+const _JUKIR_JIMAKIR = Symbol.for('jukir_jimakir')
 
