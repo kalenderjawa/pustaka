@@ -15,4 +15,5 @@ const _JUKIR_ALIP = Symbol.for('jukir_alip')
 const _JUKIR_EHE = Symbol.for('jukir_ehe')
 const _JUKIR_JIMAWAL = Symbol.for('jukir_jimawal')
 const _JUKIR_JE = Symbol.for('jukir_je')
+const _JUKIR_DAL = Symbol.for('jukir_dal')
 
