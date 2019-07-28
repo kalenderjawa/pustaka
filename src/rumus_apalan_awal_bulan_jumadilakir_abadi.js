@@ -20,3 +20,11 @@ const _JUKIR_BE = Symbol.for('jukir_be')
 const _JUKIR_WAWU = Symbol.for('jukir_wawu')
 const _JUKIR_JIMAKIR = Symbol.for('jukir_jimakir')
 
+// Rumus Matematis
+const JUKIR_RO_PAT = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAKIR),
+  dino: 2,
+  pasaran: 4
+}
+
+
