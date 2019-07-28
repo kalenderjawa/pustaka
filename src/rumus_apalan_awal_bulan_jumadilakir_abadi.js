@@ -68,3 +68,13 @@ const JUKIR_PAT_PAT = {
   taun: 4,
   pasaran: 4
 }
+
+//
+const JUKIR_ALIP = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAKIR),
+  taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
+  rumus: JUKIR_RO_PAT
+}
+
+
+
