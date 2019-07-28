@@ -118,3 +118,5 @@ const JUWAL_JIMAKIR = {
   rumus: JUWAL_RO_PAT
 }
 
+//
+const RUMUS_APALAN_AWAL_BULAN_JUMADILAWAL_ABADI: Map<Symbol, WulanTaunType> = new Map()
