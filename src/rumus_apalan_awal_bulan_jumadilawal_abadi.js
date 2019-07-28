@@ -82,3 +82,10 @@ const JUWAL_EHE = {
   rumus: JUWAL_PAT_LU
 }
 
+const JUWAL_JIMAWAL = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
+  taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
+  rumus: JUWAL_RO_LU
+}
+
+
