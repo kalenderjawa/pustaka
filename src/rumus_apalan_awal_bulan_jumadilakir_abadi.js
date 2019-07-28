@@ -27,4 +27,10 @@ const JUKIR_RO_PAT = {
   pasaran: 4
 }
 
+const JUKIR_NEM_LU = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAKIR),
+  dino: 6,
+  pasaran: 3
+}
+
 
