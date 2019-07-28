@@ -64,7 +64,7 @@ const JUKIR_TU_MO = {
 }
 
 const JUKIR_PAT_PAT = {
- wulan: ARANING_WULAN_SETAUN.get(_JUMADILAKIR),
- taun: 4,
- pasaran: 4
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAKIR),
+  taun: 4,
+  pasaran: 4
 }
