@@ -76,5 +76,11 @@ const JUKIR_ALIP = {
   rumus: JUKIR_RO_PAT
 }
 
+const JUKIR_EHE = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAKIR),
+  taun: ARANING_TAHUN_SEWINDU.get(_EHE),
+  rumus: JUKIR_NEM_LU
+}
+
 
 
