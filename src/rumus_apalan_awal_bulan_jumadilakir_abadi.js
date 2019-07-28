@@ -38,3 +38,10 @@ const JUKIR_PAT_LU = {
   dino: 4,
   pasaran: 3
 }
+
+const JUKIR_JI_RO = {
+  wulan: ARANING_WULAN_SETAUN.get(_JUMADILAKIR),
+  dino: 1,
+  pasaran: 2
+}
+
