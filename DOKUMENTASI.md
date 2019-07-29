@@ -24,7 +24,7 @@ Berikut aturan atau sistematis utama dari Kalender Jawa yang perlu menjadi acuan
 
 
 ### Bulan (*Sasi*)
-Jumlah bulan atau *sasi* dalam Bahasa Jawa adalah sebanyak 12 bulan dengan nama-nama sebagai berikut: 
+Bulan atau *sasi* dalam Bahasa Jawa mempunyai jumlah sebanyak 12 bulan dengan nama-nama sebagai berikut: 
 
 | Urutan   |  Sasi | Alias | Jumlah Hari |
 | :---: | :--- | :--- | :---: |
@@ -52,7 +52,7 @@ Perlu diingat bahwa konsep Tahun Jawa sangat berbeda dengan Tahun Masehi karena 
 
 
 | Urutan |  Tahun Jawa | hari/tahun | 
-| :---: | :--- | :---: | :--- |
+| :---: | :--- | :---: |
 | 1 | Alip | 354 |
 | 2 | Ehe | 355 |
 | 3 | Jimawal | 354 |
