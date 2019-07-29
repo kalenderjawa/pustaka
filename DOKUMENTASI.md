@@ -16,9 +16,9 @@ Sengkalan tersebut menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setel
 
 
 ## Sistematis
-Berikut aturan atau sistematis utama dari kalender Jawa yang perlu menjadi acuan:
+Berikut aturan atau sistematis utama dari Kalender Jawa yang perlu menjadi acuan:
 
-- Kalender jawa mempunyai siklus 8 tahunan (satu windu).
+- Kalender Jawa mempunyai siklus 8 tahunan (satu windu).
 - Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (koreksi yaitu dengan menambah 1 hari tiap 120 tahun).
 
 
@@ -42,9 +42,12 @@ Jumlah bulan atau *sasi* dalam Bahasa Jawa adalah sebanyak 12 bulan dengan nama-
 | 12 | Dulkijah | Besar |
 
 ### Tahun Jawa
-Di dalam Penanggalan Jawa Tahun bukanlah satuan kalender yang terbesar tetapi dikenal Siklus Windu yaitu keberulangan yang terjadi setiap 8 Tahun Jawa.
+Di dalam Penanggalan Jawa Tahun bukanlah satuan kalender yang terbesar tetapi dikenal **Siklus Windu** yaitu keberulangan yang terjadi setiap 8 Tahun Jawa.
 
-> Perlu diingat bahwa konsep Tahun Jawa sangat berbeda dengan Tahun Masehi karena Tahun Jawa merupakan pembagian 8 dari 120 tahun atau 8 x 15 sehingga angka tahun-tahun yang berada pada Tahun Jawa yang sama pasti mempunyai karakteristik  yang sama.  
+Perlu diingat bahwa konsep Tahun Jawa sangat berbeda dengan Tahun Masehi karena Tahun Jawa merupakan pembagian 8 dari siklus 120 tahun atau 8 x 15 sehingga angka tahun-tahun yang berada pada Tahun Jawa yang sama pasti mempunyai karakteristik  yang sama.  
+
+**Tabel Nama Tahun Jawa**
+
 
 | Urutan |  Tahun Jawa | hari/tahun | 
 | :---: | :--- | :---: | :--- |
@@ -57,7 +60,13 @@ Di dalam Penanggalan Jawa Tahun bukanlah satuan kalender yang terbesar tetapi di
 | 7 | Wawu | 354 |
 | 8 | Jimakir | 355 |
 
+dan dibawah ini adalah **Tabel Hari Awal Tahun Kalender Jawa 1867‒2106 (1355‒1594 H, 1936‒2169 M)**
 
+![Hari Awal Tahun Kalender Jawa 1867‒2106 (1355‒1594 H, 1936‒2169 M)](images/20190102-menek-kalender-3.jpg)
+
+Seperti pada penjelasan sebelumnya tahun-tahun yang masuk di Tahun Jawa yang sama, misalnya tahun-tahun pada Tahun Be, maka semua tahun yang termasuk di Tahun Be tersebut akan mempunyai hari awal tahun yang sama yaitu **Rebo Kliwon** dan jumlah hari dalam tiap tahun juga sama yaitu sebanyak 354 hari.
+
+## Rumus Matematis
 
 ### Rumus Hafalan Awal Bulan Kalender Jawa Abadi
 
