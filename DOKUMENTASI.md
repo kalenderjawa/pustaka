@@ -44,12 +44,10 @@ Bulan atau *sasi* dalam Bahasa Jawa mempunyai jumlah sebanyak 12 bulan dengan na
 ***) Lihat tabel Tahun Jawa**
 
 ### Tahun Jawa
-Di dalam Penanggalan Jawa Tahun bukanlah satuan kalender yang terbesar tetapi dikenal **Siklus Windu** yaitu keberulangan yang terjadi setiap 8 Tahun Jawa.
+Di dalam Penanggalan Jawa, Tahun bukanlah satuan kalender yang terbesar tetapi dikenal yang namanya **Windu** yaitu 8 Tahun. Satuan windu ini dinamakan Tahun Jawa yang konsepnya tentu saja sangat berbeda dengan Tahun Masehi.
 
-Perlu diingat bahwa konsep Tahun Jawa sangat berbeda dengan Tahun Masehi karena Tahun Jawa merupakan pembagian 8 dari siklus 120 tahun atau 8 x 15 sehingga angka tahun-tahun yang berada pada Tahun Jawa yang sama pasti mempunyai karakteristik  yang sama.  
 
-**Tabel Nama Tahun Jawa**
-
+Nama nama dan lama hari dari Tahun Jawa berada di **Tabel Tahun Jawa** berikut
 
 | Urutan |  Tahun Jawa | hari/tahun | 
 | :---: | :--- | :---: |
@@ -64,7 +62,10 @@ Perlu diingat bahwa konsep Tahun Jawa sangat berbeda dengan Tahun Masehi karena 
 
 dan dibawah ini adalah **Tabel Hari Awal Tahun Kalender Jawa 1867‒2106 (1355‒1594 H, 1936‒2169 M)**
 
-![Hari Awal Tahun Kalender Jawa 1867‒2106 (1355‒1594 H, 1936‒2169 M)](images/20190102-menek-kalender-3.jpg)
+![Hari Awal Tahun Kalender Jawa 1867‒2106 (1355‒1594 H, 1936‒2169 M)](https://cdn.caknun.com/media/2019/01/20190102-menek-kalender-3.jpg)
+
+
+>Tahun Jawa merupakan pembagian 8 dari siklus 120 tahun atau 8 x 15.  
 
 Seperti pada penjelasan sebelumnya tahun-tahun yang masuk di Tahun Jawa yang sama, misalnya tahun-tahun pada Tahun Be, maka semua tahun yang termasuk di Tahun Be tersebut akan mempunyai hari awal tahun yang sama yaitu **Rebo Kliwon** dan jumlah hari dalam tiap tahun juga sama yaitu sebanyak 354 hari.
 
