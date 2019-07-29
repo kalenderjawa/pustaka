@@ -26,7 +26,7 @@ Berikut aturan atau sistematis utama dari kalender Jawa yang perlu menjadi acuan
 ### Bulan (*Sasi*)
 Jumlah bulan atau *sasi* dalam Bahasa Jawa adalah sebanyak 12 bulan dengan nama-nama sebagai berikut: 
 
-| No    |  Sasi | Alias |
+| Urutan   |  Sasi | Alias |
 | :---: | :--- | :--- |
 | 1 | Mukarom | Suro |
 | 2 | Sapar | - |
@@ -40,6 +40,22 @@ Jumlah bulan atau *sasi* dalam Bahasa Jawa adalah sebanyak 12 bulan dengan nama-
 | 10 | Sawal | - |
 | 11 | Dulkodah | Séla, Dulkangidah, Apit |
 | 12 | Dulkijah | Besar |
+
+### Tahun Jawa
+Di dalam Penanggalan Jawa Tahun bukanlah satuan kalender yang terbesar tetapi dikenal Siklus Windu yaitu keberulangan yang terjadi setiap 8 Tahun Jawa.
+
+> Perlu diingat bahwa konsep Tahun Jawa sangat berbeda dengan Tahun Masehi karena Tahun Jawa merupakan pembagian 8 dari 120 tahun atau 8 x 15 sehingga angka tahun-tahun yang berada pada Tahun Jawa yang sama pasti mempunyai karakteristik  yang sama.  
+
+| Urutan |  Tahun Jawa | hari/tahun | 
+| :---: | :--- | :---: | :--- |
+| 1 | Alip | 354 |
+| 2 | Ehe | 355 |
+| 3 | Jimawal | 354 |
+| 4 | Je | 354 |
+| 5 | Dal | 355 |
+| 6 | Be | 354 |
+| 7 | Wawu | 354 |
+| 8 | Jimakir | 355 |
 
 
 
