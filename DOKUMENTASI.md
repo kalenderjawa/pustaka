@@ -26,20 +26,22 @@ Berikut aturan atau sistematis utama dari Kalender Jawa yang perlu menjadi acuan
 ### Bulan (*Sasi*)
 Jumlah bulan atau *sasi* dalam Bahasa Jawa adalah sebanyak 12 bulan dengan nama-nama sebagai berikut: 
 
-| Urutan   |  Sasi | Alias |
-| :---: | :--- | :--- |
-| 1 | Mukarom | Suro |
-| 2 | Sapar | - |
-| 3 | Robi'ulawal | Mulud |
-| 4 | Robi'ulakir | Bakda Mulud |
-| 5 | Jumadilawal | - |
-| 6 | Jumadilakir | - |
-| 7 | Rojab | Rejeb |
-| 8 | Sakban | Ruwah, Arwah |
-| 9 | Romadon | Pasa, Ramelan, Puwasa |
-| 10 | Sawal | - |
-| 11 | Dulkodah | Séla, Dulkangidah, Apit |
-| 12 | Dulkijah | Besar |
+| Urutan   |  Sasi | Alias | Jumlah Hari |
+| :---: | :--- | :--- | :---: |
+| 1 | Mukarom | Suro | 30 |
+| 2 | Sapar | - | 29 |
+| 3 | Robi'ulawal | Mulud | 30 |
+| 4 | Robi'ulakir | Bakda Mulud | 29 |
+| 5 | Jumadilawal | - | 30 |
+| 6 | Jumadilakir | - | 29 |
+| 7 | Rojab | Rejeb | 30 |
+| 8 | Sakban | Ruwah, Arwah | 29 |
+| 9 | Romadon | Pasa, Ramelan, Puwasa | 30 |
+| 10 | Sawal | - | 29 |
+| 11 | Dulkodah | Séla, Dulkangidah, Apit | 30 |
+| 12 | Dulkijah | Besar | 29/30* |
+
+***) Lihat tabel Tahun Jawa**
 
 ### Tahun Jawa
 Di dalam Penanggalan Jawa Tahun bukanlah satuan kalender yang terbesar tetapi dikenal **Siklus Windu** yaitu keberulangan yang terjadi setiap 8 Tahun Jawa.
