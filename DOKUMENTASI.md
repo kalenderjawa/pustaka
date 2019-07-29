@@ -20,6 +20,29 @@ Berikut aturan atau sistematis utama dari kalender Jawa yang perlu menjadi acuan
 
 - Kalender jawa mempunyai siklus 8 tahunan (satu windu).
 - Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (koreksi yaitu dengan menambah 1 hari tiap 120 tahun).
- ### Rumus Hafalan Awal Bulan Kalender Jawa Abadi
+
+
+
+### Bulan (*Sasi*)
+Jumlah bulan atau *sasi* dalam Bahasa Jawa adalah sebanyak 12 bulan dengan nama-nama sebagai berikut: 
+
+| No    |  Sasi | Alias |
+| :---: | :--- | :--- |
+| 1 | Mukarom | Suro |
+| 2 | Sapar | - |
+| 3 | Robi'ulawal | Mulud |
+| 4 | Robi'ulakir | Bakda Mulud |
+| 5 | Jumadilawal | - |
+| 6 | Jumadilakir | - |
+| 7 | Rojab | Rejeb |
+| 8 | Sakban | Ruwah, Arwah |
+| 9 | Romadon | Pasa, Ramelan, Puwasa |
+| 10 | Sawal | - |
+| 11 | Dulkodah | Séla, Dulkangidah, Apit |
+| 12 | Dulkijah | Besar |
+
+
+
+### Rumus Hafalan Awal Bulan Kalender Jawa Abadi
 
  ![rumus_awal_taun](images/20190102-menek-kalender-4.jpg)
