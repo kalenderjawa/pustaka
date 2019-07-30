@@ -9,7 +9,7 @@ import * as Sapar from './rumus_apalan_awal_bulan_sapar_abadi.js'
 import * as Robiulawal from './rumus_apalan_awal_bulan_robiulawal_abadi.js'
 import * as Robiulakir from './rumus_apalan_awal_bulan_robiulakir_abadi.js'
 import * as Jumadilawal from './rumus_apalan_awal_bulan_jumadilawal_abadi.js'
-
+import * as Jumadilakir from './rumus_apalan_awal_bulan_jumadilakir_abadi.js'
 import * as Rojab from './rumus_apalan_awal_bulan_rojab_abadi.js'
 import * as Sakban from './rumus_apalan_awal_bulan_sakban_abadi.js'
 import * as Romadon from './rumus_apalan_awal_bulan_romadon_abadi.js'
@@ -31,7 +31,8 @@ function _SengkalaMap (): KWMapType {
     ...Robiulawal.RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI,
     ...Robiulakir.RUMUS_APALAN_AWAL_BULAN_ROBIULAKIR_ABADI,
     ...Sakban.RUMUS_APALAN_AWAL_BULAN_SAKBAN_ABADI,
-    ...Jumadilawal.RUMUS_APALAN_AWAL_BULAN_JUMADILAWAL_ABADI
+    ...Jumadilawal.RUMUS_APALAN_AWAL_BULAN_JUMADILAWAL_ABADI,
+    ...Jumadilakir.RUMUS_APALAN_AWAL_BULAN_JUMADILAKIR_ABADI
   ])
 }
 
