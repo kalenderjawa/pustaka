@@ -60,7 +60,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru
 
 ## API
 
-> Jika anda belum mengetahui apa itu pasaran, kurup harap membaca terlebih dahulu [DOKUMENTASI.md](DOKUMENTASI.md).
+Jika anda belum mengetahui apa itu Pasaran, Kurup, Tahun Jawa harap membaca terlebih dahulu [DOKUMENTASI.md](DOKUMENTASI.md).
 
 ### `cariHariPasaranAwalBulanTahunJawa(w, t)`
 
