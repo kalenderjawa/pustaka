@@ -1,4 +1,4 @@
-/**
+,/**
  * @flow
  *
  * 📁taun.js
@@ -16,7 +16,7 @@ const _BE = Symbol.for('be')
 const _WAWU = Symbol.for('wawu')
 const _JIMAKIR = Symbol.for('jimakir')
 
-const ALIP = { taun: 'alip', neptu: 1, urutan: 1 }
+const ALIP = { taun: 'alip', neptu: 1, urutan: 1, cacah: 354 }
 const EHE = { taun: 'ehe', neptu: 5, urutan: 2 }
 const JIMAWAL = { taun: 'jimawal', neptu: 3, urutan: 3 }
 const JE = { taun: 'je', neptu: 7, urutan: 4 }
