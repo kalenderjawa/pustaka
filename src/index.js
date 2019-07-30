@@ -13,7 +13,7 @@ import * as Dinten from './dinten.js'
 import { PASARAN } from './pasaran.js'
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
 
-import { ARANING_WULAN_SETAUN } from './wulan.js'
+import { ARANING_WULAN_SETAUN } from './sasi.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
 import { SengkalaMap } from './rupa_ati.js'
 
