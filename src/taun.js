@@ -22,7 +22,7 @@ const JIMAWAL = { taun: 'jimawal', neptu: 3, urutan: 3, cacah: 354 }
 const JE = { taun: 'je', neptu: 7, urutan: 4, cacahe: 354 }
 const DAL = { taun: 'dal', neptu: 4, urutan: 5, cacahe: 355 }
 const BE = { taun: 'be', neptu: 2, urutan: 6, cacahe: 354 }
-const WAWU = { taun: 'wawu', neptu: 6, urutan: 7 }
+const WAWU = { taun: 'wawu', neptu: 6, urutan: 7, cacah: 354 }
 const JIMAKIR = { taun: 'jimakir', neptu: 3, urutan: 8 }
 
 const ARANING_TAHUN_SEWINDU: Map<Symbol, TaunType> = new Map()
