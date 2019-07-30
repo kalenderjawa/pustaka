@@ -1,8 +1,7 @@
 # Kalender Jawa
 
 ## Sejarah
-Selain kalender umum atau Masehi yang kita gunakan saat ini, sebenarnya ada penanggalan warisan bangsa Indonesia yang sebenarnya jauh lebih akurat.
-Penanggalan yang saya maksud disini adalah penanggalan jawa asli yang dibawa oleh leluhur bangsa Indonesia yang kemudian diolah oleh para wali yaitu penanggalan jawa yang dipakai sejak Raden Patah menjadi Sultan Demak pertama dimana momen ini ditandai dengan *Sengkalan* atau *Candra Sengkala*,
+Kalender atau Penanggalan Jawa merupakan penanggalan asli yang dibawa oleh leluhur bangsa Indonesia yang kemudian diolah lebih lanjut oleh para wali. Penanggalan Jawa ini sudag umum dipakai sejak Raden Patah menjadi Sultan Demak untuk yang pertama kali dimana momen ini ditandai dengan *Sengkalan* atau *Candra Sengkala*,
 
 
 
@@ -46,6 +45,8 @@ Selain sistem pembagian 7 hari seperti halnya pada penanggalan Masehi, masyaraka
 | Pon | 7 |
 | Wage | 4 |
 | Kliwon | 8 |
+
+**Neptu** adalah penilaian atau bobot angka dari suatu Pasaran. Asal mula dan bagaimana caranya menetapkan Neptu pada suatu Pasaran sejarahnya masih misteri, hanya saja penggunaanya sudah sangat umum sampai sekarang seperti penetapan acara adat dll. 
 
 ### Bulan (*Sasi*)
 Bulan atau *sasi* dalam Bahasa Jawa mempunyai jumlah sebanyak 12 bulan dengan nama-nama sebagai berikut: 
