@@ -4,15 +4,15 @@
  * Rupa Ati
  * 📁 rupa_ati.js
  */
-
-import * as Romadon from './rumus_apalan_awal_bulan_romadon_abadi.js'
-import * as Sawal from './rumus_apalan_awal_bulan_sawal_abadi'
-import * as Dulkodah from './rumus_apalan_awal_bulan_dulkodah_abadi.js'
-import * as Dulkijah from './rumus_apalan_awal_bulan_dulkijah_abadi.js'
 import * as Mukarom from './rumus_apalan_awal_bulan_mukarom_abadi.js'
 import * as Sapar from './rumus_apalan_awal_bulan_sapar_abadi.js'
-import * as Rojab from './rumus_apalan_awal_bulan_rojab_abadi.js'
 import * as Robiulawal from './rumus_apalan_awal_bulan_robiulawal_abadi.js'
+import * as Robiulakir from './rumus_apalan_awal_bulan_robiulakir_abadi.js'
+import * as Romadon from './rumus_apalan_awal_bulan_romadon_abadi.js'
+import * as Sawal from './rumus_apalan_awal_bulan_sawal_abadi.js'
+import * as Dulkodah from './rumus_apalan_awal_bulan_dulkodah_abadi.js'
+import * as Dulkijah from './rumus_apalan_awal_bulan_dulkijah_abadi.js'
+import * as Rojab from './rumus_apalan_awal_bulan_rojab_abadi.js'
 
 type KWMapType = Map<Symbol, Object>
 
@@ -25,7 +25,8 @@ function _SengkalaMap (): KWMapType {
     ...Mukarom.RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI,
     ...Sapar.RUMUS_APALAN_AWAL_BULAN_SAPAR_ABADI,
     ...Rojab.RUMUS_APALAN_AWAL_BULAN_ROJAB_ABADI,
-    ...Robiulawal.RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI
+    ...Robiulawal.RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI,
+    ...Robiulakir.RUMUS_APALAN_AWAL_BULAN_ROBIULAKIR_ABADI
   ])
 }
 
