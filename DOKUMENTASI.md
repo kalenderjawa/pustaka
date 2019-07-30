@@ -22,6 +22,20 @@ Berikut aturan atau sistematis dari Kalender Jawa yang perlu menjadi acuan:
 - Kalender Jawa mempunyai siklus 8 tahunan (satu windu).
 - Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (koreksi yaitu dengan menambah 1 hari tiap 120 tahun).
 
+### Hari (*Dinten*/*Dino*/*Peken*)
+Sama seperti halnya sistem kalender Masehi, penanggalan Jawa juga memakai sistem pembagian hari menjadi 7.
+
+| Urutan | Dinten |
+| :--- | :--- |
+| 1 | Senen |
+| 2 | Selasa |
+| 3| Rebo |
+| 4 | Kemis |
+| 5 | Jemah |
+| 6 | Sebtu |
+| 7 | Akad | 
+
+
 ### Pasaran
 Selain sistem pembagian 7 hari seperti halnya pada penanggalan Masehi, masyarakat Jawa juga membagi hari menjadi 5 atau sering disebut dengan **Pasaran**. 
 
@@ -51,7 +65,7 @@ Bulan atau *sasi* dalam Bahasa Jawa mempunyai jumlah sebanyak 12 bulan dengan na
 | 11 | Dulkodah | Séla, Dulkangidah, Apit | 30 |
 | 12 | Dulkijah | Besar | 29/30* |
 
-***) Lihat tabel Tahun Jawa**
+***) lihat Tabel Tahun Jawa**
 
 ### Tahun Jawa
 Di dalam Penanggalan Jawa, Tahun bukanlah satuan kalender yang terbesar tetapi dikenal yang namanya **Windu** yaitu 8 Tahun. Satuan windu ini dinamakan Tahun Jawa yang konsepnya tentu saja sangat berbeda dengan Tahun Masehi.
