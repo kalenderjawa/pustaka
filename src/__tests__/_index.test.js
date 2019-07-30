@@ -3,7 +3,7 @@
  */
 import * as KalenderJawa from '../index.js'
 import * as Romadon from '../rumus_apalan_awal_bulan_romadon_abadi.js'
-import * as Sawal from '../rumus_apalan_awal_bulan_sawal_abadi'
+import * as Sawal from '../rumus_apalan_awal_bulan_sawal_abadi.js'
 import { SengkalaMap } from '../rupa_ati.js'
 import { ANENHING } from '../kurup.js'
 
