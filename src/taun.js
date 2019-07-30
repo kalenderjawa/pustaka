@@ -17,7 +17,7 @@ const _WAWU = Symbol.for('wawu')
 const _JIMAKIR = Symbol.for('jimakir')
 
 const ALIP = { taun: 'alip', neptu: 1, urutan: 1, cacah: 354 }
-const EHE = { taun: 'ehe', neptu: 5, urutan: 2 }
+const EHE = { taun: 'ehe', neptu: 5, urutan: 2, cacah: 355 }
 const JIMAWAL = { taun: 'jimawal', neptu: 3, urutan: 3 }
 const JE = { taun: 'je', neptu: 7, urutan: 4 }
 const DAL = { taun: 'dal', neptu: 4, urutan: 5 }
