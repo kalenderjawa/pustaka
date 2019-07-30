@@ -16,12 +16,22 @@ Sengkalan tersebut menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setel
 
 
 ## Sistematis
-Berikut aturan atau sistematis utama dari Kalender Jawa yang perlu menjadi acuan:
+Berikut aturan atau sistematis dari Kalender Jawa yang perlu menjadi acuan:
 
+- Kalender Jawa Memakai sistem hari 7 dan 5.
 - Kalender Jawa mempunyai siklus 8 tahunan (satu windu).
 - Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (koreksi yaitu dengan menambah 1 hari tiap 120 tahun).
 
+### Pasaran
+Selain sistem pembagian 7 hari seperti halnya pada penanggalan Masehi, masyarakat Jawa juga membagi hari menjadi 5 atau sering disebut dengan **Pasaran**. 
 
+| Pasaran | Neptu |
+| :--- | :---: |
+| Legi | 5 |
+| Pahing | 9 |
+| Pon | 7 |
+| Wage | 4 |
+| Kliwon | 8 |
 
 ### Bulan (*Sasi*)
 Bulan atau *sasi* dalam Bahasa Jawa mempunyai jumlah sebanyak 12 bulan dengan nama-nama sebagai berikut: 
