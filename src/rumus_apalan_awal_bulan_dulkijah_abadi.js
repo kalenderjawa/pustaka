@@ -7,7 +7,7 @@
  */
 
 import type { WulanTaunType } from './type.js'
-import { _DULKIJAH, ARANING_WULAN_SETAUN } from './wulan.js'
+import { _DULKIJAH, ARANING_WULAN_SETAUN } from './sasi.js'
 import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
 
 // Registry Symbol
