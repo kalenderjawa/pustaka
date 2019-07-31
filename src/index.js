@@ -17,7 +17,7 @@ import { ARANING_WULAN_SETAUN } from './sasi.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
 import { SengkalaMap } from './rupa_ati.js'
 
-import type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType, WulanTaunType } from './type.js'
+import type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType, WulanTaunQueryType, RumusSasiTaunType } from './type.js'
 
 type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
 
@@ -42,14 +42,14 @@ async function cariKurupTaun (_q: number): Promise<TaunKurupType> {
  * @param {string} wulan
  * @param {number} taun
  */
-async function cariRumusAbadi (wulan: string, taun: number): Promise<?WulanTaunType> {
+async function cariRumusAbadi (wulan: string, taun: number): Promise<?RumusSasiTaunType> {
   return new Promise((resolve, reject) => {
     cariKurupTaun(taun).then(r => {
       const wulanMap = cariWulanRegistry(wulan)
       const taunMap = cariTaunRegistry(r.taun.taun)
       if (wulanMap != null && taunMap != null) {
         const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
-        resolve(cariRumusWulanTaun(KEY_RUMUS))
+        resolve(cariRumusWulanTaun(KEY_RUMUS, { wulan: wulan, taun: taun }))
       } else {
         reject(new Error('error cariRumusAbadi'))
       }
@@ -57,8 +57,14 @@ async function cariRumusAbadi (wulan: string, taun: number): Promise<?WulanTaunT
   })
 }
 
-function cariRumusWulanTaun (key: string): ?WulanTaunType {
-  return SengkalaMap.has(Symbol.for(key)) ? SengkalaMap.get(Symbol.for(key)) : null
+function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): ?RumusSasiTaunType {
+  if (SengkalaMap.has(Symbol.for(key))) {
+    const _RWT = SengkalaMap.get(Symbol.for(key))
+    const _K = { query: q }
+    return { ..._RWT, ..._K }
+  } else {
+    return null
+  }
 }
 
 function cariTaunRegistry (taun: string): ?TaunType {
@@ -134,6 +140,7 @@ async function cariHariPasaranAwalBulan (w: string, t: number) {
 export {
   cariKurupTaun as cariKurupTahunJawa,
   cariRumusAbadi,
+  cariRumusAbadi as cariRumusAbadiAwalBulanTahunJawa,
   cariWulanRegistry,
   cariTaunRegistry,
   cariRumusWulanTaun,
