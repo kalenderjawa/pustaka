@@ -89,6 +89,35 @@ KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952).then({kH, kP} =>
 
 ```
 
+### `cariRumusAbadiAwalBulanTahunJawa(w, t)`
+Rumus untuk hari-hari awal bulan pada masing-masing tahun dalam siklus windu bisa didapatkan melalui fungsi ini. 
+
+> Untuk tabel rumus abadi jika anda ingin menghapalnya lihat di [DOKUMENTASI.md](DOKUMENTASI.md)
+
+**Argumen**:
+
+- Sasi atau Bulan `w` bertipe `string`. Contoh: `sapar`
+- Tahun `t` bertipe integer. Contoh : `1881` 
+
+**Return**:
+
+- `Promise`
+
+Format data dari `then` seperti berikut
+
+```
+{
+  wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
+  taun: { taun: 'be', neptu: 2, urutan: 6, cacah: 354 },
+  rumus: {
+    wulan: { wulan: 'romadon', celukan: 'don', urutan: 9 },
+    dino: 7,
+    pasaran: 4
+  },
+  query: { wulan: 'romadon', taun: 1952 }
+}
+```
+
 ### `cariKurupTahunJawa(t)`
 
 Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa suatu taun. Misalnya anda ingin mencari nama taun jawa dan kurup dari tahun 1994 maka tahun tersebut berada pada tahun Jimakir dan kurup Alip Senen Pahing atau Anenhing.
