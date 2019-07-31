@@ -10,5 +10,17 @@ type TaunType = {| taun: string, neptu: number, urutan: number, cacah: number |}
 type KurupType = {| taun: string, dinten: DintenType, pasaran: PasaranType |}
 type RumusType = {| wulan: WulanType | void, dino: number, pasaran: number |}
 type WulanTaunType = {| wulan: WulanType | void, taun: TaunType | void, rumus: RumusType |}
+type WulanTaunQueryType = {| wulan: string, taun: number |}
+type RumusSasiTaunType = {| query: WulanTaunQueryType, wulan: WulanType | void, taun: TaunType | void, rumus: RumusType |}
 
-export type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType, WulanTaunType }
+export type {
+  PasaranType,
+  DintenType,
+  WulanType,
+  TaunType,
+  KurupType,
+  RumusType,
+  WulanTaunType,
+  WulanTaunQueryType,
+  RumusSasiTaunType
+}
