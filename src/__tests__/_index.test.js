@@ -3,7 +3,6 @@
  */
 import * as KalenderJawa from '../index.js'
 import * as Romadon from '../rumus_apalan_awal_bulan_romadon_abadi.js'
-import * as Sawal from '../rumus_apalan_awal_bulan_sawal_abadi.js'
 import { SengkalaMap } from '../rupa_ati.js'
 import { ANENHING } from '../kurup.js'
 
@@ -44,9 +43,21 @@ describe('Testing', () => {
     expect(KalenderJawa.cariRumusWulanTaun('ora_ono')).toBeNull()
   })
 
-  test('cariRumusAbadi', () => {
+  test('cariRumusAbadi Romadon, 1952 ', () => {
     return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
       expect(d.rumus.pasaran).toBe(4)
+    })
+  })
+
+  test('cariRumusAbadi Dulkijah, 1952', () => {
+    return KalenderJawa.cariRumusAbadi('dulkijah', 1952).then(d => {
+      expect(d.rumus.pasaran).toBe(3)
+    })
+  })
+
+  test('cariRumusAbadi Mukarom, 1953', () => {
+    return KalenderJawa.cariRumusAbadi('mukarom', 1953).then(d => {
+      expect(d.rumus.dino).toBe(6)
     })
   })
 
