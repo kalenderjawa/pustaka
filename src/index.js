@@ -50,19 +50,20 @@ async function cariRumusAbadi (wulan: string, taun: number): Promise<?RumusSasiT
 
       // koreksi jumlah hari bulan dulkijah
       // berdasarkan tahun jawa
-      if (r.taun.cacah === 354) {
-        const _correction = { cacah: [29] }
-        if (wulanMap.urutan === 12) {
-          Object.assign(wulanMap, _correction)
-        }
-      } else {
-        const _correction = { cacah: [30] }
-        if (wulanMap.urutan === 12) {
-          Object.assign(wulanMap, _correction)
+      if ((wulanMap !== null || wulanMap !== undefined) && (taunMap !== null || taunMap !== undefined)) {
+        if (r.taun.cacah === 354) {
+          const _correction = { cacah: [29] }
+          if (wulanMap.urutan === 12) {
+            Object.assign(wulanMap, _correction)
+          }
+        } else {
+          const _correction = { cacah: [30] }
+          if (wulanMap.urutan === 12) {
+            Object.assign(wulanMap, _correction)
+          }
         }
       }
 
-      console.log(wulanMap)
       if (wulanMap != null && taunMap != null) {
         const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
         resolve(cariRumusWulanTaun(KEY_RUMUS, { wulan: wulan, taun: taun }))
