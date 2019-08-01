@@ -26,7 +26,7 @@ const _DULKIJAH = Symbol.for('dulkijah')
 
 const MUKAROM = { wulan: 'mukarom', celukan: 'rom', urutan: 1, cacah: [30] }
 const SAPAR = { wulan: 'sapar', celukan: 'par', urutan: 2, cacah: [29] }
-const ROBIULAWAL = { wulan: 'robiulawal', celukan: 'rowal', urutan: 3 }
+const ROBIULAWAL = { wulan: 'robiulawal', celukan: 'rowal', urutan: 3, cacah:[30] }
 const ROBIULAKIR = { wulan: 'robiulakir', celukan: 'rokir', urutan: 4 }
 const JUMADILAWAL = { wulan: 'jumadilawal', celukan: 'juwal', urutan: 5 }
 const JUMADILAKIR = { wulan: 'jumadilakir', celukan: 'jukir', urutan: 6 }
