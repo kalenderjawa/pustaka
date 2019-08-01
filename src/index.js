@@ -47,6 +47,22 @@ async function cariRumusAbadi (wulan: string, taun: number): Promise<?RumusSasiT
     cariKurupTaun(taun).then(r => {
       const wulanMap = cariWulanRegistry(wulan)
       const taunMap = cariTaunRegistry(r.taun.taun)
+
+      // koreksi jumlah hari bulan dulkijah
+      // berdasarkan tahun jawa
+      if (r.taun.cacah === 354) {
+        const _correction = { cacah: [29] }
+        if (wulanMap.urutan === 12) {
+          Object.assign(wulanMap, _correction)
+        }
+      } else {
+        const _correction = { cacah: [30] }
+        if (wulanMap.urutan === 12) {
+          Object.assign(wulanMap, _correction)
+        }
+      }
+
+      console.log(wulanMap)
       if (wulanMap != null && taunMap != null) {
         const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
         resolve(cariRumusWulanTaun(KEY_RUMUS, { wulan: wulan, taun: taun }))
@@ -136,6 +152,14 @@ async function cariHariAwalBulan (w: string, t: number) {
 async function cariHariPasaranAwalBulan (w: string, t: number) {
   return cariHariAwalBulan(w, t)
 }
+
+/**
+async function dataSasi(w: string, t: number) {
+  // 1. Cari hari dan pasaran awal bulan
+  // 2. Hitung dan simpan semua tanggal, hari & pasaran ke dalam Array
+
+}
+*/
 
 export {
   cariKurupTaun as cariKurupTahunJawa,
