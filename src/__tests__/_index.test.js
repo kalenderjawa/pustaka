@@ -49,15 +49,21 @@ describe('Testing', () => {
     })
   })
 
-  test('cariRumusAbadi Dulkijah, 1952', () => {
+  test('Test Jumlah Hari di Dulkijah (29), 1952 (Tahun Be)', () => {
     return KalenderJawa.cariRumusAbadi('dulkijah', 1952).then(d => {
-      expect(d.rumus.pasaran).toBe(3)
+      expect(d.wulan.cacah).toBe([29])
     })
   })
 
   test('cariRumusAbadi Mukarom, 1953', () => {
     return KalenderJawa.cariRumusAbadi('mukarom', 1953).then(d => {
       expect(d.rumus.dino).toBe(6)
+    })
+  })
+
+  test('Test Jumlah Hari Dulkijah (30), 1911 (Tahun Dal)', () => {
+    return KalenderJawa.cariRumusAbadi('dulkijah', 1911).then(d => {
+      expect(d.wulan.cacah).toBe([30])
     })
   })
 
