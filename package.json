@@ -70,8 +70,7 @@
   "standard": {
     "parser": "babel-eslint",
     "plugins": [ "flowtype" ],
-    "ignore": [
-      "lib"
-    ]
+    "ignore": [ "lib" ],
+    "env": [ "jest" ]
   }
 }
