@@ -35,7 +35,7 @@ const SAKBAN = { wulan: 'sakban', celukan: 'ban', urutan: 8, cacah: [29] }
 const ROMADON = { wulan: 'romadon', celukan: 'don', urutan: 9, cacah: [30] }
 const SAWAL = { wulan: 'sawal', celukan: 'wal', urutan: 10, cacah: [29] }
 const DULKODAH = { wulan: 'dulkodah', celukan: 'dah', urutan: 11, cacah: [30] }
-const DULKIJAH = { wulan: 'dulkijah', celukan: 'jah', urutan: 12 }
+const DULKIJAH = { wulan: 'dulkijah', celukan: 'jah', urutan: 12, cacah: [29, 30] }
 
 const ARANING_WULAN_SETAUN: Map<Symbol, WulanType> = new Map()
 
