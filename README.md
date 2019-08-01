@@ -118,7 +118,6 @@ Format data dari `then` seperti berikut
 }
 ```
 
-<<<<<<< HEAD
 Contoh kode 
 ```js
 KalenderJawa.cariRumusAbadi('romadon', 1952).then(data => {
@@ -127,9 +126,6 @@ KalenderJawa.cariRumusAbadi('romadon', 1952).then(data => {
 ```
 
 ### `cariKurupTahunJawa(t)`
-=======
-### :shell: `cariKurupTahunJawa(t)`
->>>>>>> 41725331c793da2100f1f390ad6bf4025c889859
 
 Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa suatu taun. Misalnya anda ingin mencari nama taun jawa dan kurup dari tahun 1994 maka tahun tersebut berada pada tahun Jimakir dan kurup Alip Senen Pahing atau Anenhing.
 
