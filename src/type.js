@@ -4,14 +4,14 @@
 
 type PasaranType = {| pasaran: string, neptu: number, urutan: number |}
 type DintenType = {| dino: string, urutan: number |}
-type WulanType = {| wulan: string, celukan: string, urutan: number |}
+type WulanType = {| wulan: string, celukan: string, urutan: number, cacah: Array |}
 type TaunType = {| taun: string, neptu: number, urutan: number, cacah: number |}
-
 type KurupType = {| taun: string, dinten: DintenType, pasaran: PasaranType |}
 type RumusType = {| wulan: WulanType | void, dino: number, pasaran: number |}
 type WulanTaunType = {| wulan: WulanType | void, taun: TaunType | void, rumus: RumusType |}
 type WulanTaunQueryType = {| wulan: string, taun: number |}
-type RumusSasiTaunType = {| query: WulanTaunQueryType, wulan: WulanType | void, taun: TaunType | void, rumus: RumusType |}
+type WulanTaunQueryKeyType = {| query: WulanTaunQueryType |}
+type RumusSasiTaunType = WulanTaunQueryKeyType | WulanTaunType
 
 export type {
   PasaranType,
