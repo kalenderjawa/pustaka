@@ -8,18 +8,9 @@
 import 'core-js/stable'
 // $FlowFixMe
 import 'regenerator-runtime/runtime'
-
-import * as Dinten from './dinten.js'
-import { PASARAN } from './pasaran.js'
+import type { RumusSasiTaunType, TaunKurupType } from './type.js'
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
-
-import { ARANING_WULAN_SETAUN } from './sasi.js'
-import { ARANING_TAHUN_SEWINDU } from './taun.js'
-import { SengkalaMap } from './rupa_ati.js'
-
-import type { PasaranType, DintenType, WulanType, TaunType, KurupType, RumusType, WulanTaunQueryType, RumusSasiTaunType } from './type.js'
-
-type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
+import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
 
 /**
    * Mencari Kurup dan Taun Jawa
@@ -42,7 +33,7 @@ async function cariKurupTaun (_q: number): Promise<TaunKurupType> {
  * @param {string} wulan
  * @param {number} taun
  */
-async function cariRumusAbadi (wulan: string, taun: number): Promise<?RumusSasiTaunType> {
+async function cariRumusAbadiAwalBulanTahunJawa (wulan: string, taun: number): Promise<?RumusSasiTaunType> {
   return new Promise((resolve, reject) => {
     cariKurupTaun(taun).then(r => {
       const wulanMap = cariWulanRegistry(wulan)
@@ -74,77 +65,16 @@ async function cariRumusAbadi (wulan: string, taun: number): Promise<?RumusSasiT
   })
 }
 
-function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): ?RumusSasiTaunType {
-  if (SengkalaMap.has(Symbol.for(key))) {
-    const _RWT = SengkalaMap.get(Symbol.for(key))
-    const _K = { query: q }
-    return { ..._RWT, ..._K }
-  } else {
-    return null
-  }
-}
-
-type TaunReturnType = TaunType | void
-
-function cariTaunRegistry (taun: string): TaunReturnType {
-  return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : undefined
-}
-
-type SasiReturnType = WulanType | void
-
-function cariWulanRegistry (wulan: string): SasiReturnType {
-  return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : undefined
-}
-
-async function konversiHariPasaran (h: number, p: number, k: RumusType) {
-  const qH = await konversiHari(h, k.dino)
-  const qP = await konversiPasaran(p, k.pasaran)
-  return { h: qH, p: qP }
-}
-
-async function konversiHari (h: number, dn: number): Promise<DintenType | string> {
-  const _xH = dn + h
-  let xH = _xH % 7 // Dinten MAX=7
-
-  if (xH !== 1) { xH = xH - 1 }
-
-  return new Promise((resolve, reject) => {
-    Dinten.DINTEN.forEach((value, key, map) => {
-      if (value.urutan === xH) {
-        resolve(value)
-      }
-    })
-  })
-}
-
-async function konversiPasaran (p: number, ps: number): Promise<PasaranType | string> {
-  const _xP = ps + p
-  let xP = _xP % 5 // Pasaran MAX=5
-
-  if (xP !== 1) { if (xP === 0) { xP = _xP } else { xP = xP - 1 } }
-
-  return new Promise((resolve, reject) => {
-    PASARAN.forEach((value, key, map) => {
-      /**
-         * Hanya mengambil value sekali, gak perlu reject selama xP masih dalam range 1-5
-         */
-      if (value.urutan === xP) {
-        resolve(value)
-      }
-    })
-  })
-}
-
 /**
  *
  * @param {string} w - string wulan (bulan)
  * @param {number} t - 4 digit integer
  */
-async function cariHariAwalBulan (w: string, t: number) {
+async function _cariHariAwalBulan (w: string, t: number) {
   const sengkalaTaun = await cariKurupTaun(t)
 
   // $FlowFixMe
-  const sengkalaRumus = await cariRumusAbadi(w, t)
+  const sengkalaRumus = await cariRumusAbadiAwalBulanTahunJawa(w, t)
 
   const kH = await konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan)
   const kP = await konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)
@@ -155,7 +85,7 @@ async function cariHariAwalBulan (w: string, t: number) {
 }
 
 async function cariHariPasaranAwalBulan (w: string, t: number) {
-  return cariHariAwalBulan(w, t)
+  return _cariHariAwalBulan(w, t)
 }
 
 /**
@@ -167,13 +97,7 @@ async function dataSasi(w: string, t: number) {
 */
 
 export {
-  // cariRumusAbadi,
-  // cariWulanRegistry,
-  // cariTaunRegistry,
-  // cariRumusWulanTaun,
-  // konversiHariPasaran,
-  // cariHariAwalBulan,
-  cariRumusAbadi as cariRumusAbadiAwalBulanTahunJawa,
+  cariRumusAbadiAwalBulanTahunJawa,
   cariKurupTaun as cariKurupTahunJawa,
   cariHariPasaranAwalBulan as cariHariPasaranAwalBulanTahunJawa
 }
