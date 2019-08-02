@@ -121,7 +121,7 @@ Format data dari `then` seperti berikut
 Contoh kode 
 ```js
 KalenderJawa.cariRumusAbadi('romadon', 1952).then(data => {
-  console.log(data)
+  console.log(`${data.rumus.wulan.wulan}_${data.rumus.dino}_${data.rumus.pasaran}`) // romadon_7_4 (don tu pat)
 })
 ```
 
@@ -156,6 +156,15 @@ Data dari `Promise` merupakan `Object` contoh respon seperti berikut ini
           ]
       }
 
+```
+
+Contoh kode
+
+```js
+KalenderJawa.cariKurupTahunJawa(1994).then( d => {
+  console.log(d.taun.taun) // jimakir
+  console.log(`${d.kurup.taun}_${d.dinten.dino}_${d.kurup.pasaran.pasaran}`) // alip_senen_pahing (anenhing)
+})
 ```
 
 ## Referensi
