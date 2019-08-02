@@ -13,6 +13,10 @@ type WulanTaunQueryType = {| wulan: string, taun: number |}
 type WulanTaunQueryKeyType = {| query: WulanTaunQueryType |}
 type RumusSasiTaunType = WulanTaunQueryKeyType | WulanTaunType
 
+type TaunReturnType = TaunType | void
+type SasiReturnType = WulanType | void
+type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
+
 export type {
   PasaranType,
   DintenType,
@@ -22,5 +26,8 @@ export type {
   RumusType,
   WulanTaunType,
   WulanTaunQueryType,
-  RumusSasiTaunType
+  RumusSasiTaunType,
+  TaunReturnType,
+  SasiReturnType,
+  TaunKurupType
 }
