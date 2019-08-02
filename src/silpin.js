@@ -1,11 +1,13 @@
 /**
  * @flow
- *
+ * 📁 silpin.js
  */
 
-import type { PasaranType, DintenType, RumusType } from './type.js'
+import type { PasaranType, DintenType, RumusType, SasiReturnType, TaunReturnType } from './type.js'
 import { PASARAN } from './pasaran.js'
 import { DINTEN } from './dinten.js'
+import { ARANING_WULAN_SETAUN } from './sasi.js'
+import { ARANING_TAHUN_SEWINDU } from './taun.js'
 
 async function konversiHari (h: number, dn: number): Promise<DintenType | string> {
   const _xH = dn + h
@@ -44,8 +46,18 @@ async function konversiHariPasaran (h: number, p: number, k: RumusType) {
   return { h: qH, p: qP }
 }
 
+function cariTaunRegistry (taun: string): TaunReturnType {
+  return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : undefined
+}
+
+function cariWulanRegistry (wulan: string): SasiReturnType {
+  return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : undefined
+}
+
 export {
   konversiPasaran,
   konversiHari,
-  konversiHariPasaran
+  konversiHariPasaran,
+  cariWulanRegistry,
+  cariTaunRegistry
 }
