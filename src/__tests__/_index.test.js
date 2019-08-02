@@ -1,25 +1,11 @@
 /**
  * Testing with Jest
  */
+import * as DAT from './_data.js'
 import * as KalenderJawa from '../index.js'
-import * as Romadon from '../rumus_apalan_awal_bulan_romadon_abadi.js'
-import { SengkalaMap } from '../rupa_ati.js'
 import { ANENHING } from '../kurup.js'
 
-const _TESTDAT_2 = { i: { kurup: 'alip selasa pon', taun: 'be' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 5, pasaran: 'legi', urutan: 1 }, t: 1952, w: 'romadon' }
-const _TESTDAT_3 = { i: { kurup: 'alip selasa pon', taun: 'wawu' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 8, pasaran: 'kliwon', urutan: 5 }, t: 1881, w: 'dulkodah' }
-const _TESTDAT_4 = { i: { kurup: 'alip selasa pon', taun: 'jimawal' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 9, pasaran: 'pahing', urutan: 2 }, t: 1981, w: 'dulkijah' }
-
 describe('Testing', () => {
-  test('cariWulanRegistry', () => {
-    expect((KalenderJawa.cariWulanRegistry('romadon')).celukan).toBe('don')
-    expect(KalenderJawa.cariWulanRegistry('januari')).toBeNull()
-  })
-
-  test('cariTaunRegistry', () => {
-    expect((KalenderJawa.cariTaunRegistry('be')).urutan).toBe(6)
-    expect(KalenderJawa.cariTaunRegistry('kabisat')).toBeNull()
-  })
 
   test('cariKurupTahunJawa', () => {
     return KalenderJawa.cariKurupTahunJawa(1994).then(r => {
@@ -30,33 +16,22 @@ describe('Testing', () => {
     })
   })
 
+  /**
+  test('cariWulanRegistry', () => {
+    expect((KalenderJawa.cariWulanRegistry('romadon')).celukan).toBe('don')
+    expect(KalenderJawa.cariWulanRegistry('januari')).toBeNull()
+  })
+
+  test('cariTaunRegistry', () => {
+    expect((KalenderJawa.cariTaunRegistry('be')).urutan).toBe(6)
+    expect(KalenderJawa.cariTaunRegistry('kabisat')).toBeNull()
+  })
+  */
+
+  /**
   test('cariRumusWulanTaun', () => {
     expect(KalenderJawa.cariRumusWulanTaun('don_be').rumus.dino).toBe(7)
     expect(KalenderJawa.cariRumusWulanTaun('ora_ono')).toBeNull()
-  })
-
-  test('cariRumusAbadi Romadon, 1952 ', () => {
-    return KalenderJawa.cariRumusAbadi('romadon', 1952).then(d => {
-      expect(d.rumus.pasaran).toBe(4)
-    })
-  })
-
-  test('Test Jumlah Hari di Dulkijah (29), 1952 (Tahun Be)', () => {
-    return KalenderJawa.cariRumusAbadi('dulkijah', 1952).then(d => {
-      expect(d.wulan.cacah).toStrictEqual([29])
-    })
-  })
-
-  test('cariRumusAbadi Mukarom, 1953', () => {
-    return KalenderJawa.cariRumusAbadi('mukarom', 1953).then(d => {
-      expect(d.rumus.dino).toBe(6)
-    })
-  })
-
-  test('Test Jumlah Hari Dulkijah (30), 1911 (Tahun Dal)', () => {
-    return KalenderJawa.cariRumusAbadi('dulkijah', 1911).then(d => {
-      expect(d.wulan.cacah).toStrictEqual([30])
-    })
   })
 
   test('konversiHariPasaran', async () => {
@@ -76,15 +51,46 @@ describe('Testing', () => {
     expect(x.kP).toEqual({ pasaran: 'legi', neptu: 5, urutan: 1 })
   })
 
+  */
+})
+
+describe('Testing cariRumusAbadiAwalBulanTahunJawa', () => {
+
+  test('cariRumusAbadi Romadon, 1952 ', () => {
+    return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('romadon', 1952).then(d => {
+      expect(d.rumus.pasaran).toBe(4)
+    })
+  })
+
+  test('Test Jumlah Hari di Dulkijah (29), 1952 (Tahun Be)', () => {
+    return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('dulkijah', 1952).then(d => {
+      expect(d.wulan.cacah).toStrictEqual([29])
+    })
+  })
+
+  test('cariRumusAbadi Mukarom, 1953', () => {
+    return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('mukarom', 1953).then(d => {
+      expect(d.rumus.dino).toBe(6)
+    })
+  })
+
+  test('Test Jumlah Hari Dulkijah (30), 1911 (Tahun Dal)', () => {
+    return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('dulkijah', 1911).then(d => {
+      expect(d.wulan.cacah).toStrictEqual([30])
+    })
+  })
+})
+
+describe('Testing cariHariPasaranAwalBulanTahunJawa', () => {
   test('cariHariPasaranAwalBulan', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952)).resolves.toStrictEqual(_TESTDAT_2)
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952)).resolves.toStrictEqual(DAT.TESTDAT2)
   })
 
   test('cariHariPasaranAwalBulan', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1881)).resolves.toStrictEqual(_TESTDAT_3)
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1881)).resolves.toStrictEqual(DAT.TESTDAT3)
   })
 
   test('cariHariPasaranAwalBulan', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1981)).resolves.toStrictEqual(_TESTDAT_4)
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1981)).resolves.toStrictEqual(DAT.TESTDAT4)
   })
 })
