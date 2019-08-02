@@ -7,12 +7,12 @@ import * as Silpin from '../silpin.js'
 describe('Test Silpin.js', () => {
   test('cariWulanRegistry', () => {
     expect((Silpin.cariWulanRegistry('romadon')).celukan).toBe('don')
-    expect(Silpin.cariWulanRegistry('januari')).toBeNull()
+    expect(Silpin.cariWulanRegistry('januari')).toBeUndefined()
   })
 
   test('cariTaunRegistry', () => {
     expect((Silpin.cariTaunRegistry('be')).urutan).toBe(6)
-    expect(Silpin.cariTaunRegistry('kabisat')).toBeNull()
+    expect(Silpin.cariTaunRegistry('kabisat')).toBeUndefined()
   })
 
   test('cariRumusWulanTaun', () => {
@@ -32,10 +32,4 @@ describe('Test Silpin.js', () => {
     expect(SengkalaMap.get(Romadon._DON_ALIP).wulan.wulan).toBe('romadon')
   })
   */
-
-  test('cariHariAwalBulan', async () => {
-    const x = await Silpin.cariHariAwalBulan('romadon', 1952)
-    expect(x.kH).toEqual({ dino: 'senen', urutan: 1 })
-    expect(x.kP).toEqual({ pasaran: 'legi', neptu: 5, urutan: 1 })
-  })
 })
