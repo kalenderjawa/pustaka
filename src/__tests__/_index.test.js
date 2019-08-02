@@ -6,7 +6,6 @@ import * as KalenderJawa from '../index.js'
 import { ANENHING } from '../kurup.js'
 
 describe('Testing', () => {
-
   test('cariKurupTahunJawa', () => {
     return KalenderJawa.cariKurupTahunJawa(1994).then(r => {
       expect(r.taun.taun).toBe('jimakir')
@@ -55,7 +54,6 @@ describe('Testing', () => {
 })
 
 describe('Testing cariRumusAbadiAwalBulanTahunJawa', () => {
-
   test('cariRumusAbadi Romadon, 1952 ', () => {
     return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('romadon', 1952).then(d => {
       expect(d.rumus.pasaran).toBe(4)
