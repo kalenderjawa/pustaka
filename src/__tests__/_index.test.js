@@ -1,11 +1,11 @@
 /**
- * Testing with Jest
+ * Testing Jest Yes!
  */
 import * as DAT from './_data.js'
 import * as KalenderJawa from '../index.js'
 import { ANENHING } from '../kurup.js'
 
-describe('Testing', () => {
+describe('Testing cariKurupTahunJawa', () => {
   test('cariKurupTahunJawa', () => {
     return KalenderJawa.cariKurupTahunJawa(1994).then(r => {
       expect(r.taun.taun).toBe('jimakir')
@@ -14,43 +14,6 @@ describe('Testing', () => {
       expect(e).toMatch('error')
     })
   })
-
-  /**
-  test('cariWulanRegistry', () => {
-    expect((KalenderJawa.cariWulanRegistry('romadon')).celukan).toBe('don')
-    expect(KalenderJawa.cariWulanRegistry('januari')).toBeNull()
-  })
-
-  test('cariTaunRegistry', () => {
-    expect((KalenderJawa.cariTaunRegistry('be')).urutan).toBe(6)
-    expect(KalenderJawa.cariTaunRegistry('kabisat')).toBeNull()
-  })
-  */
-
-  /**
-  test('cariRumusWulanTaun', () => {
-    expect(KalenderJawa.cariRumusWulanTaun('don_be').rumus.dino).toBe(7)
-    expect(KalenderJawa.cariRumusWulanTaun('ora_ono')).toBeNull()
-  })
-
-  test('konversiHariPasaran', async () => {
-    const rumus = { dino: 2, pasaran: 3 }
-    const { h, p } = await KalenderJawa.konversiHariPasaran(7, 4, rumus)
-    expect(h.dino).toBe('senen')
-    expect(p.pasaran).toBe('legi')
-  })
-
-  test('Rumus Map', () => {
-    expect(SengkalaMap.get(Romadon._DON_ALIP).wulan.wulan).toBe('romadon')
-  })
-
-  test('cariHariAwalBulan', async () => {
-    const x = await KalenderJawa.cariHariAwalBulan('romadon', 1952)
-    expect(x.kH).toEqual({ dino: 'senen', urutan: 1 })
-    expect(x.kP).toEqual({ pasaran: 'legi', neptu: 5, urutan: 1 })
-  })
-
-  */
 })
 
 describe('Testing cariRumusAbadiAwalBulanTahunJawa', () => {
