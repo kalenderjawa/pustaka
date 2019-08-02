@@ -125,7 +125,7 @@ KalenderJawa.cariRumusAbadi('romadon', 1952).then(data => {
 })
 ```
 
-### `cariKurupTahunJawa(t)`
+### :six_pointed_star: `cariKurupTahunJawa(t)`
 
 Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa suatu taun. Misalnya anda ingin mencari nama taun jawa dan kurup dari tahun 1994 maka tahun tersebut berada pada tahun Jimakir dan kurup Alip Senen Pahing atau Anenhing.
 
