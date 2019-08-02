@@ -50,7 +50,7 @@ async function cariRumusAbadi (wulan: string, taun: number): Promise<?RumusSasiT
 
       // koreksi jumlah hari bulan dulkijah
       // berdasarkan tahun jawa
-      if ((wulanMap !== null || wulanMap !== undefined) && (taunMap !== null || taunMap !== undefined)) {
+      if (wulanMap !== null || wulanMap !== undefined) {
         if (r.taun.cacah === 354) {
           const _correction = { cacah: [29] }
           if (wulanMap.urutan === 12) {
@@ -84,12 +84,16 @@ function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): ?RumusSasiTaun
   }
 }
 
-function cariTaunRegistry (taun: string): ?TaunType {
-  return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : null
+type TaunReturnType = TaunType | void
+
+function cariTaunRegistry (taun: string): TaunReturnType {
+  return ARANING_TAHUN_SEWINDU.has(Symbol.for(taun)) ? ARANING_TAHUN_SEWINDU.get(Symbol.for(taun)) : undefined
 }
 
-function cariWulanRegistry (wulan: string): ?WulanType {
-  return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : null
+type SasiReturnType = WulanType | void
+
+function cariWulanRegistry (wulan: string): SasiReturnType {
+  return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : undefined
 }
 
 async function konversiHariPasaran (h: number, p: number, k: RumusType) {
@@ -163,13 +167,13 @@ async function dataSasi(w: string, t: number) {
 */
 
 export {
-  cariKurupTaun as cariKurupTahunJawa,
-  cariRumusAbadi,
+  // cariRumusAbadi,
+  // cariWulanRegistry,
+  // cariTaunRegistry,
+  // cariRumusWulanTaun,
+  // konversiHariPasaran,
+  // cariHariAwalBulan,
   cariRumusAbadi as cariRumusAbadiAwalBulanTahunJawa,
-  cariWulanRegistry,
-  cariTaunRegistry,
-  cariRumusWulanTaun,
-  konversiHariPasaran,
-  cariHariAwalBulan,
+  cariKurupTaun as cariKurupTahunJawa,
   cariHariPasaranAwalBulan as cariHariPasaranAwalBulanTahunJawa
 }
