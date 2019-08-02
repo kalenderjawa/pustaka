@@ -3,11 +3,12 @@
  * 📁 silpin.js
  */
 
-import type { PasaranType, DintenType, RumusType, SasiReturnType, TaunReturnType } from './type.js'
+import type { PasaranType, DintenType, RumusType, SasiReturnType, TaunReturnType, WulanTaunQueryType, RumusSasiTaunType } from './type.js'
 import { PASARAN } from './pasaran.js'
 import { DINTEN } from './dinten.js'
 import { ARANING_WULAN_SETAUN } from './sasi.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
+import { SengkalaMap } from './rupa_ati.js'
 
 async function konversiHari (h: number, dn: number): Promise<DintenType | string> {
   const _xH = dn + h
@@ -54,10 +55,21 @@ function cariWulanRegistry (wulan: string): SasiReturnType {
   return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : undefined
 }
 
+function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): ?RumusSasiTaunType {
+  if (SengkalaMap.has(Symbol.for(key))) {
+    const _RWT = SengkalaMap.get(Symbol.for(key))
+    const _K = { query: q }
+    return { ..._RWT, ..._K }
+  } else {
+    return null
+  }
+}
+
 export {
   konversiPasaran,
   konversiHari,
   konversiHariPasaran,
   cariWulanRegistry,
-  cariTaunRegistry
+  cariTaunRegistry,
+  cariRumusWulanTaun
 }
