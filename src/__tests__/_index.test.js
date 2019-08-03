@@ -68,16 +68,16 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa', () => {
   test('Jumadilakir, 1952', async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('jumadilakir', 1952)).resolves.toStrictEqual(DAT.TEST_JUMADILAKIR_HP_1952)
   })
-/**
+
   test('Rojab, 1952', async () => {
-    //await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('rojab', 1952)).resolves.toStrictEqual(DAT.TESTDAT5)
-   return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('jumadilakir', 1952).then(d => {
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('rojab', 1952)).resolves.toStrictEqual(DAT.TEST_ROJAB_HP_1952)
+  })
+/**
+  test('Sakban, 1952', async () => {
+    // await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('sakban', 1952)).resolves.toStrictEqual(DAT.TESTDAT5)
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('rojab', 1952).then(d => {
       console.log(d)
     })
-  })
-
-  test('Sakban, 1952', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('sakban', 1952)).resolves.toStrictEqual(DAT.TESTDAT5)
   })
 
   test('Romadon, 1952', async () => {
@@ -90,10 +90,6 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa', () => {
 
   test('Dulkodah, 1952', async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1952)).resolves.toStrictEqual(DAT.TESTDAT5)
-  })
-
-  test('Dulkijah, 1952', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1952)).resolves.toStrictEqual(DAT.TESTDAT5)
   })
 
   test('Dulkodah, 1881', async () => {
