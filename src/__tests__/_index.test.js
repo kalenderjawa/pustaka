@@ -46,11 +46,11 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa', () => {
   test('Mukarom, 1952', async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1952)).resolves.toStrictEqual(DAT.TEST_MUKAROM_HP_1952)
   })
-  /**
-  test('Sapar, 1952', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('sapar', 1952)).resolves.toStrictEqual(DAT.TESTDAT5)
-  })
 
+  test('Sapar, 1952', async () => {
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('sapar', 1952)).resolves.toStrictEqual(DAT.TEST_SAPAR_HP_1952)
+  })
+/**
   test('Robiulawal, 1952', async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('robiulawal', 1952)).resolves.toStrictEqual(DAT.TESTDAT5)
   })
