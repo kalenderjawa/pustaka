@@ -8,8 +8,8 @@
 import 'core-js/stable'
 // $FlowFixMe
 import 'regenerator-runtime/runtime'
-import type { RumusSasiTaunType, TaunKurupType } from './type.js'
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
+import type { RumusSasiTaunType, TaunKurupType } from './type.js'
 import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
 
 /**
@@ -41,7 +41,7 @@ async function cariRumusAbadiAwalBulanTahunJawa (wulan: string, taun: number): P
 
       // koreksi jumlah hari bulan dulkijah
       // berdasarkan tahun jawa
-      if (wulanMap !== null || wulanMap !== undefined) {
+      if (wulanMap !== undefined || wulanMap !== undefined) {
         if (r.taun.cacah === 354) {
           const _correction = { cacah: [29] }
           if (wulanMap.urutan === 12) {
@@ -55,12 +55,14 @@ async function cariRumusAbadiAwalBulanTahunJawa (wulan: string, taun: number): P
         }
       }
 
-      if (wulanMap != null && taunMap != null) {
+      if (wulanMap !== undefined && taunMap !== undefined) {
         const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`
-        resolve(cariRumusWulanTaun(KEY_RUMUS, { wulan: wulan, taun: taun }))
-      } else {
-        reject(new Error('error cariRumusAbadi'))
+        const RWT = cariRumusWulanTaun(KEY_RUMUS, { wulan: wulan, taun: taun })
+        if (RWT !== undefined) {
+          resolve(RWT)
+        }
       }
+      reject(new Error('error cariRumusAbadi'))
     })
   })
 }
