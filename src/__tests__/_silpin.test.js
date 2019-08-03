@@ -17,7 +17,7 @@ describe('Test Silpin.js', () => {
 
   test('cariRumusWulanTaun', () => {
     expect(Silpin.cariRumusWulanTaun('don_be').rumus.dino).toBe(7)
-    expect(Silpin.cariRumusWulanTaun('ora_ono')).toBeNull()
+    expect(Silpin.cariRumusWulanTaun('ora_ono')).toBeUndefined()
   })
 
   test('konversiHariPasaran', async () => {
