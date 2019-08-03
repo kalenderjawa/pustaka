@@ -3,13 +3,22 @@
  */
 import * as DAT from './_data.js'
 import * as KalenderJawa from '../index.js'
-import { ANENHING } from '../kurup.js'
+import { ANENHING, ASAPON } from '../kurup.js'
 
 describe('Testing cariKurupTahunJawa', () => {
-  test('cariKurupTahunJawa', () => {
+  test('cariKurupTahunJawa 1994', () => {
     return KalenderJawa.cariKurupTahunJawa(1994).then(r => {
       expect(r.taun.taun).toBe('jimakir')
       expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
+    }, e => {
+      expect(e).toMatch('error')
+    })
+  })
+
+  test('cariKurupTahunJawa 1881', () => {
+    return KalenderJawa.cariKurupTahunJawa(1881).then(r => {
+      expect(r.taun.taun).toBe('wawu')
+      expect(r.kurup.pasaran).toBe(ASAPON.pasaran)
     }, e => {
       expect(e).toMatch('error')
     })
