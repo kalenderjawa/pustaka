@@ -49,6 +49,12 @@ describe('Testing cariRumusAbadiAwalBulanTahunJawa', () => {
       expect(d.wulan.cacah).toStrictEqual([30])
     })
   })
+
+  test('Test Jumlah Hari Robiulawal (30), 1953 (Tahun Wawu)', () => {
+    return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('robiulawal', 1953).then(d => {
+      expect(d.wulan.cacah).toStrictEqual([30])
+    })
+  })
 })
 
 describe('Testing cariHariPasaranAwalBulanTahunJawa', () => {
