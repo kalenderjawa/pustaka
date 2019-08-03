@@ -47,6 +47,14 @@ Pustaka Kalender Jawa bisa dipakai melalui beberapa cara tergantung platform yan
 npm install --save @junwatu/kalender-jawa
 ```
 
+Cara memakai pustaka jika memakai `import` ES6
+
+```js
+import { KalenderJawa } from '@junwatu/kalender-jawa'
+
+KalenderJawa.cariKurupTahunJawa(1881).then(/**...*/)
+```
+
 ### Browser
 
 Jika anda memakai browser pustaka ini bisa di ambil melalui CDN (*Content Delivery Network*) di `unpkg.com`. 
