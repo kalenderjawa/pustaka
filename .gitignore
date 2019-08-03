@@ -59,9 +59,14 @@ typings/
 
 # next.js build output
 .next
-lib
+
+# lib folder
+!lib
+lib/*
+!lib/kalenderjawa*.js
 
 # documentation
 docs
 
+# vscode settings
 .vscode
