@@ -2,13 +2,34 @@
  * @flow
  * Test Data
  */
+const TEST_MUKAROM_HP_1952 = {
+  w: 'mukarom',
+  t: 1952,
+  i: { taun: 'be', kurup: 'alip selasa pon' },
+  kH: { dino: 'rebo', urutan: 3 },
+  kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
+}
 
-const _TESTDAT_2 = { i: { kurup: 'alip selasa pon', taun: 'be' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 5, pasaran: 'legi', urutan: 1 }, t: 1952, w: 'romadon' }
-const _TESTDAT_3 = { i: { kurup: 'alip selasa pon', taun: 'wawu' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 8, pasaran: 'kliwon', urutan: 5 }, t: 1881, w: 'dulkodah' }
-const _TESTDAT_4 = { i: { kurup: 'alip selasa pon', taun: 'jimawal' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 9, pasaran: 'pahing', urutan: 2 }, t: 1981, w: 'dulkijah' }
+
+const TEST_ROMADON_HP_1952 = { i: { kurup: 'alip selasa pon', taun: 'be' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 5, pasaran: 'legi', urutan: 1 }, t: 1952, w: 'romadon' }
+const TEST_DULKODAH_HP_1881 = { i: { kurup: 'alip selasa pon', taun: 'wawu' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 8, pasaran: 'kliwon', urutan: 5 }, t: 1881, w: 'dulkodah' }
+const TEST_DULKIJAH_HP_1981 = { i: { kurup: 'alip selasa pon', taun: 'jimawal' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 9, pasaran: 'pahing', urutan: 2 }, t: 1981, w: 'dulkijah' }
+
+const _TESTDAT_5 = {
+  wulan: { wulan: 'dulkijah', celukan: 'jah', urutan: 12, cacah: [29] },
+  taun: { taun: 'be', neptu: 2, urutan: 6, cacah: 354 },
+  rumus: {
+    wulan: { wulan: 'dulkijah', celukan: 'jah', urutan: 12, cacah: [Array] },
+    dino: 5,
+    pasaran: 3
+  },
+  query: { wulan: 'dulkijah', taun: 1952 }
+}
 
 export {
-  _TESTDAT_2 as TESTDAT2,
-  _TESTDAT_3 as TESTDAT3,
-  _TESTDAT_4 as TESTDAT4
+  TEST_MUKAROM_HP_1952,
+  TEST_ROMADON_HP_1952,
+  TEST_DULKODAH_HP_1881,
+  TEST_DULKIJAH_HP_1981,
+  _TESTDAT_5 as TESTDAT5
 }
