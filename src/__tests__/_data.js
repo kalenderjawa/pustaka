@@ -10,6 +10,13 @@ const TEST_MUKAROM_HP_1952 = {
   kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
 }
 
+const TEST_SAPAR_HP_1952 = {
+  w: 'sapar',
+  t: 1952,
+  i: { taun: 'be', kurup: 'alip selasa pon' },
+  kH: { dino: 'jemah', urutan: 5 },
+  kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
+}
 
 const TEST_ROMADON_HP_1952 = { i: { kurup: 'alip selasa pon', taun: 'be' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 5, pasaran: 'legi', urutan: 1 }, t: 1952, w: 'romadon' }
 const TEST_DULKODAH_HP_1881 = { i: { kurup: 'alip selasa pon', taun: 'wawu' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 8, pasaran: 'kliwon', urutan: 5 }, t: 1881, w: 'dulkodah' }
@@ -28,6 +35,7 @@ const _TESTDAT_5 = {
 
 export {
   TEST_MUKAROM_HP_1952,
+  TEST_SAPAR_HP_1952,
   TEST_ROMADON_HP_1952,
   TEST_DULKODAH_HP_1881,
   TEST_DULKIJAH_HP_1981,
