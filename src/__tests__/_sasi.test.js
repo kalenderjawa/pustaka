@@ -13,5 +13,4 @@ describe('Sasi Testing', () => {
     const _m = Sasi.ARANING_WULAN_SETAUN.get(Sasi._ROBIULAWAL)
     expect(_m.wulan).toBe('robiulawal')
   })
-
 })
