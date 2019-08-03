@@ -1,8 +1,7 @@
 /**
  * Library Testing
  */
-const KalenderJawaLib = require('../../lib/kalenderjawa-2d6051b7fb0da7107ecc-bundle.js')
-
+const KalenderJawaLib = require('../../lib/kalenderjawa-811ec64a03c3280bdbf4-bundle.js')
 const _TESTOBJ = {
   taun: { taun: 'wawu', neptu: 6, urutan: 7 },
   kurup: {
@@ -20,7 +19,7 @@ const _TESTOBJ = {
 }
 
 describe('Library Testing', () => {
-  test('cariTaunSengkala', async () => {
-    await expect(KalenderJawaLib.cariTaunSengkala(1881)).resolves.toMatchObject(_TESTOBJ)
+  test('cariKurupTaunJawa', async () => {
+    await expect(KalenderJawaLib.cariKurupTahunJawa(1881)).resolves.toMatchObject(_TESTOBJ)
   })
 })
