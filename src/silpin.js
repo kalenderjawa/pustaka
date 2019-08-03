@@ -18,13 +18,16 @@ import { SengkalaMap } from './rupa_ati.js'
 async function konversiHari (h: number, dn: number): Promise<DintenType | string> {
   const _xH = dn + h
   let xH = _xH % 7 // Dinten MAX=7
-  if (xH !== 1) { xH = xH - 1 }
+  // if (xH !== 1) { xH = xH - 1 }
+  if (xH !== 1) { if (xH === 0) { xH = _xH } else { xH = xH - 1 } }
+
   return new Promise((resolve, reject) => {
     DINTEN.forEach((value, key, map) => {
       if (value.urutan === xH) {
         resolve(value)
       }
     })
+    reject(new Error('Error konversiHari'))
   })
 }
 
@@ -39,6 +42,7 @@ async function konversiPasaran (p: number, ps: number): Promise<PasaranType | st
         resolve(value)
       }
     })
+    reject(new Error('Error konversiPasaran'))
   })
 }
 
@@ -53,10 +57,11 @@ function cariTaunRegistry (taun: string): TaunReturnType {
 }
 
 function cariWulanRegistry (wulan: string): SasiReturnType {
+  // console.log(ARANING_WULAN_SETAUN.get(Symbol.for(wulan)))
   return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : undefined
 }
 
-function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): void | RumusSasiTaunType {
+function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): RumusSasiTaunType | void {
   if (SengkalaMap.has(Symbol.for(key))) {
     const _RWT = SengkalaMap.get(Symbol.for(key))
     const _K = { query: q }
