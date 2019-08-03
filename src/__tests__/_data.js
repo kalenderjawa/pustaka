@@ -98,7 +98,13 @@ const TEST_DULKODAH_HP_1881 = {
   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
 
-const TEST_DULKIJAH_HP_1981 = { i: { kurup: 'alip selasa pon', taun: 'jimawal' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 9, pasaran: 'pahing', urutan: 2 }, t: 1981, w: 'dulkijah' }
+const TEST_DULKIJAH_HP_1981 = {
+  w: 'dulkijah',
+  t: 1881,
+  i: { taun: 'wawu', kurup: 'alip selasa pon' },
+  kH: { dino: 'rebo', urutan: 3 },
+  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
+}
 
 const _TESTDAT_5 = {
   wulan: { wulan: 'dulkijah', celukan: 'jah', urutan: 12, cacah: [29] },
