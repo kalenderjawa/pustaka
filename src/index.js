@@ -25,6 +25,8 @@ async function cariKurupTaun (_q: number): Promise<TaunKurupType> {
         if (query === _q) resolve(_kurup)
       })
     }
+
+    reject(new Error('Error cariKurupTaun'))
   })
 }
 
@@ -63,7 +65,7 @@ async function cariRumusAbadiAwalBulanTahunJawa (wulan: string, taun: number): P
         }
       }
       reject(new Error('error cariRumusAbadi'))
-    })
+    }).catch(e => reject(e))
   })
 }
 
@@ -72,22 +74,13 @@ async function cariRumusAbadiAwalBulanTahunJawa (wulan: string, taun: number): P
  * @param {string} w - string wulan (bulan)
  * @param {number} t - 4 digit integer
  */
-async function _cariHariAwalBulan (w: string, t: number) {
-  const sengkalaTaun = await cariKurupTaun(t)
-
+async function cariHariPasaranAwalBulanTahunJawa (w: string, t: number) {
   // $FlowFixMe
-  const sengkalaRumus = await cariRumusAbadiAwalBulanTahunJawa(w, t)
-
-  const kH = await konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan)
-  const kP = await konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)
+  const [sengkalaTaun, sengkalaRumus] = await Promise.all([cariKurupTaun(t), cariRumusAbadiAwalBulanTahunJawa(w, t)])
+  const [kH, kP] = await Promise.all([konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan), konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)])
 
   const i = { taun: sengkalaTaun.taun.taun, kurup: `${sengkalaTaun.kurup.taun} ${sengkalaTaun.kurup.dinten.dino} ${sengkalaTaun.kurup.pasaran.pasaran}` }
-
   return { w, t, i, kH, kP }
-}
-
-async function cariHariPasaranAwalBulan (w: string, t: number) {
-  return _cariHariAwalBulan(w, t)
 }
 
 /**
@@ -99,7 +92,7 @@ async function dataSasi(w: string, t: number) {
 */
 
 export {
-  cariRumusAbadiAwalBulanTahunJawa,
   cariKurupTaun as cariKurupTahunJawa,
-  cariHariPasaranAwalBulan as cariHariPasaranAwalBulanTahunJawa
+  cariRumusAbadiAwalBulanTahunJawa,
+  cariHariPasaranAwalBulanTahunJawa
 }
