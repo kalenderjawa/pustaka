@@ -58,6 +58,14 @@ const TEST_ROJAB_HP_1952 = {
   kP: { pasaran: 'pahing', neptu: 9, urutan: 2 }
 }
 
+const TEST_SAKBAN_HP_1952 = {
+  w: 'sakban',
+  t: 1952,
+  i: { taun: 'be', kurup: 'alip selasa pon' },
+  kH: { dino: 'senen', urutan: 1 },
+  kP: { pasaran: 'pahing', neptu: 9, urutan: 2 }
+}
+
 const TEST_ROMADON_HP_1952 = { i: { kurup: 'alip selasa pon', taun: 'be' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 5, pasaran: 'legi', urutan: 1 }, t: 1952, w: 'romadon' }
 const TEST_DULKODAH_HP_1881 = { i: { kurup: 'alip selasa pon', taun: 'wawu' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 8, pasaran: 'kliwon', urutan: 5 }, t: 1881, w: 'dulkodah' }
 const TEST_DULKIJAH_HP_1981 = { i: { kurup: 'alip selasa pon', taun: 'jimawal' }, kH: { dino: 'senen', urutan: 1 }, kP: { neptu: 9, pasaran: 'pahing', urutan: 2 }, t: 1981, w: 'dulkijah' }
@@ -80,6 +88,7 @@ export {
   TEST_JUMADILAWAL_HP_1952,
   TEST_JUMADILAKIR_HP_1952,
   TEST_ROJAB_HP_1952,
+  TEST_SAKBAN_HP_1952,
   TEST_DULKIJAH_HP_1952,
   TEST_ROMADON_HP_1952,
   TEST_DULKODAH_HP_1881,
