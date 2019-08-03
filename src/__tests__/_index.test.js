@@ -92,12 +92,13 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa', () => {
   test('Dulkodah, 1881', async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKODAH_HP_1881)
   })
-/**
-  test('Dulkijah, 1981', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1981)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1981)
-    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1881).then(d => {
+
+  test('Dulkijah, 1881', async () => {
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1981)
+    /**
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1881).then(d => {
       console.log(d)
     })
+    */
   })
-  */
 })
