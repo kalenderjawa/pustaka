@@ -56,13 +56,13 @@ function cariWulanRegistry (wulan: string): SasiReturnType {
   return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : undefined
 }
 
-function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): ?RumusSasiTaunType {
+function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): void | RumusSasiTaunType {
   if (SengkalaMap.has(Symbol.for(key))) {
     const _RWT = SengkalaMap.get(Symbol.for(key))
     const _K = { query: q }
     return { ..._RWT, ..._K }
   } else {
-    return null
+    return undefined
   }
 }
 
