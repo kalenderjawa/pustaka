@@ -80,7 +80,7 @@ const TEST_SAKBAN_HP_1952 = {
   w: 'sakban',
   t: 1952,
   i: { taun: 'be', kurup: 'alip selasa pon' },
-  kH: { dino: 'senen', urutan: 1 },
+  kH: { dino: 'akad', urutan: 7 },
   kP: { pasaran: 'pahing', neptu: 9, urutan: 2 }
 }
 
