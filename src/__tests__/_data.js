@@ -133,6 +133,16 @@ const TEST_DULKIJAH_HP_1881 = {
   kH: { dino: 'rebo', urutan: 3 },
   kP: { pasaran: 'wage', neptu: 4, urutan: 4 }
 }
+// Mukarom, 2077 → Tahun Jimawal, Anenhing, Rom 3 5
+// Adjust Dino: Senen + 3 → Rebo
+// Adjust Pasaran: Pahing + 5 → Legi
+const TEST_MUKAROM_HP_2077 = {
+  w: 'mukarom',
+  t: 2077,
+  i: { taun: 'jimawal', kurup: 'alip senen pahing' },
+  kH: { dino: 'rebo', urutan: 3 },
+  kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
+}
 
 const _TESTDAT_5 = {
   wulan: { wulan: 'dulkijah', celukan: 'jah', urutan: 12, cacah: [29] },
@@ -159,5 +169,7 @@ export {
   TEST_DULKODAH_HP_1952,
   TEST_DULKODAH_HP_1881,
   TEST_DULKIJAH_HP_1881,
+
+  TEST_MUKAROM_HP_2077,
   _TESTDAT_5 as TESTDAT5
 }
