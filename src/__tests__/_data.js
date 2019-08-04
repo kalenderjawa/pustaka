@@ -53,7 +53,9 @@ const TEST_JUMADILAWAL_HP_1952 = {
   kH: { dino: 'selasa', urutan: 2 },
   kP: { pasaran: 'pon', neptu: 7, urutan: 3 }
 }
-
+// JUmadilakir, 1952 → Tahun Be, Asapon, Jukir 3 1
+// Koreksi Dino: Selasa + 3 → Kemis
+// Koreksi Pasaran: Pon + 1 → Pon
 const TEST_JUMADILAKIR_HP_1952 = {
   w: 'jumadilakir',
   t: 1952,
