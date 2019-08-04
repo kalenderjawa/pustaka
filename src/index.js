@@ -11,7 +11,8 @@ import 'regenerator-runtime/runtime'
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
 import type { RumusSasiTaunType, TaunKurupType } from './type.js'
 import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
-
+import { DINTEN_ARR } from './dinten.js'
+import { PASARAN_ARR } from './pasaran.js'
 /**
    * Mencari Kurup dan Taun Jawa
    * @param { number } input - 4 digit integer
@@ -83,30 +84,26 @@ async function cariHariPasaranAwalBulanTahunJawa (w: string, t: number) {
   return { w, t, i, kH, kP }
 }
 
-async function sasi (s: string, th: number) {
+async function sasi (s: string, th: number): Map<Object, Array<Object>> {
   const { kH, kP } = await cariHariPasaranAwalBulanTahunJawa(s, th)
   const dat = await cariRumusAbadiAwalBulanTahunJawa(s, th)
   const _m = []
   let i = 0
+
   do {
     i = i + 1
-    _m.push({ [i]: { dino: koreksiDino(kH.urutan++), pasaran: koreksiPasaran(kP.urutan++) } })
+    const { ps, pn } = koreksiPasaran(kP.urutan++)
+    _m.push({ [i]: { dino: koreksiDino(kH.urutan++), pasaran: ps, neptu: pn } })
   } while (i < dat.wulan.cacah[0])
-  console.log(_m)
 
-  // pasaran 5
-  // hari 7
-  // sasi 29/30
-  // taun : 1953,
-  // 1. Cari hari dan pasaran awal bulan
-  // 2. Hitung dan simpan semua tanggal, hari & pasaran ke dalam Array
+  const _s = new Map()
+  const _sk = { sasi: dat.wulan, taun: th, jawa: dat.taun }
+  _s.set(_sk, _m)
 
-  // sasi : [
-  //  { mukarom: [ {tanggal:1, pasaran: 'pahing', dinten: 'senen'}, {tanggal: 2, pasaran: 'pon', dinten: 'selasa'} ] },
-  //  { sapar: [ {...} ] }
+  return _s
 }
 
-function koreksiDino (d: number): number {
+function koreksiDino (d: number) {
   let dc = 0
   if (d > 7) {
     dc = d % 7
@@ -116,10 +113,11 @@ function koreksiDino (d: number): number {
   } else {
     dc = d
   }
-  return dc
+
+  return DINTEN_ARR[dc - 1]['dino']
 }
 
-function koreksiPasaran (p: number): number {
+function koreksiPasaran (p: number) {
   let pc = 0
   if (p > 5) {
     pc = p % 5
@@ -129,7 +127,7 @@ function koreksiPasaran (p: number): number {
   } else {
     pc = p
   }
-  return pc
+  return { ps: PASARAN_ARR[pc - 1]['pasaran'], pn: PASARAN_ARR[pc - 1]['neptu'] }
 }
 
 function version (): string {
