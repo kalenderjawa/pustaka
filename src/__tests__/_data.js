@@ -73,7 +73,9 @@ const TEST_ROJAB_HP_1952 = {
   kH: { dino: 'jemah', urutan: 5 },
   kP: { pasaran: 'pahing', neptu: 9, urutan: 2 }
 }
-
+// Sakban, 1952 → Tahun Be, Asapon, Ban 6 5
+// Adjust Dino: Selasa + 6 → Akad
+// Adjust Pasaran: Pon + 5 → Pahing
 const TEST_SAKBAN_HP_1952 = {
   w: 'sakban',
   t: 1952,
