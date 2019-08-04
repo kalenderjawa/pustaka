@@ -103,13 +103,15 @@ const TEST_SAWAL_HP_1952 = {
   kH: { dino: 'rebo', urutan: 3 },
   kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
 }
-
+// Dulkodah, 1952 → Tahun Be, Asapon, Dah 3 3
+// Adjust Dino: Selasa + 3 → Kemis
+// Adjust Pasaran: Pon + 3 → Kliwon
 const TEST_DULKODAH_HP_1952 = {
   w: 'dulkodah',
   t: 1952,
   i: { taun: 'be', kurup: 'alip selasa pon' },
   kH: { dino: 'kemis', urutan: 4 },
-  kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
+  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
 
 const TEST_DULKODAH_HP_1881 = {
