@@ -115,10 +115,11 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 1952', () => {
       console.log(d)
     })
     */
-  })
+ })
 })
 
-describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom', () => {
+describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom 1907-1914', () => {
+
   test('mukarom, 1907', async () => {
     return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1907).then(({ kH, kP }) => {
       expect(`${kH.dino}_${kP.pasaran}`).toBe('selasa_pon')
@@ -126,15 +127,16 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom', () =>
   })
 
   test('mukarom, 1908', async () => {
-    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1908).then(({ kH, kP }) => {
-      // console.log(kH, kP)
-      expect(`${kH.dino}_${kP.pasaran}`).toBe('sebtu_pahing')
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1908).then((d) => {
+      console.log(d)
+      expect(`${d.kH.dino}_${d.kP.pasaran}`).toBe('sebtu_pahing')
     })
   })
 
   test('mukarom, 1909', async () => {
-    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1909).then(({ kH, kP }) => {
-      expect(`${kH.dino}_${kP.pasaran}`).toBe('kemis_pahing')
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1909).then((d) => {
+      console.log(d)
+      expect(`${d.kH.dino}_${d.kP.pasaran}`).toBe('kemis_pahing')
     })
   })
 
@@ -155,17 +157,15 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom', () =>
       expect(`${kH.dino}_${kP.pasaran}`).toBe('rebo_kliwon')
     })
   })
-
   test('mukarom, 1913', async () => {
-    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1913).then(({ kH, kP }) => {
-      expect(`${kH.dino}_${kP.pasaran}`).toBe('akad_wage')
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1913).then((d) => {
+      console.log(d)
+      expect(`${d.kH.dino}_${d.kP.pasaran}`).toBe('akad_wage')
     })
   })
-
   test('mukarom, 1914', async () => {
     return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1914).then(({ kH, kP }) => {
       expect(`${kH.dino}_${kP.pasaran}`).toBe('kemis_pon')
     })
   })
-
 })
