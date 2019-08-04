@@ -83,16 +83,63 @@ async function cariHariPasaranAwalBulanTahunJawa (w: string, t: number) {
   return { w, t, i, kH, kP }
 }
 
-/**
-async function dataSasi(w: string, t: number) {
+async function sasi (s: string, th: number) {
+  const { kH, kP } = await cariHariPasaranAwalBulanTahunJawa(s, th)
+  const dat = await cariRumusAbadiAwalBulanTahunJawa(s, th)
+  const _m = []
+  let i = 0
+  do {
+    i = i + 1
+    _m.push({ [i]: { dino: koreksiDino(kH.urutan++), pasaran: koreksiPasaran(kP.urutan++) } })
+  } while (i < dat.wulan.cacah[0])
+  console.log(_m)
+
+  // pasaran 5
+  // hari 7
+  // sasi 29/30
+  // taun : 1953,
   // 1. Cari hari dan pasaran awal bulan
   // 2. Hitung dan simpan semua tanggal, hari & pasaran ke dalam Array
 
+  // sasi : [
+  //  { mukarom: [ {tanggal:1, pasaran: 'pahing', dinten: 'senen'}, {tanggal: 2, pasaran: 'pon', dinten: 'selasa'} ] },
+  //  { sapar: [ {...} ] }
 }
-*/
+
+function koreksiDino (d: number): number {
+  let dc = 0
+  if (d > 7) {
+    dc = d % 7
+    if (dc === 0) {
+      dc = 7
+    }
+  } else {
+    dc = d
+  }
+  return dc
+}
+
+function koreksiPasaran (p: number): number {
+  let pc = 0
+  if (p > 5) {
+    pc = p % 5
+    if (pc === 0) {
+      pc = 5
+    }
+  } else {
+    pc = p
+  }
+  return pc
+}
+
+function version (): string {
+  return '1.0.0-alpha © Lawang Tunggal Walang Kembar (2019), Junwatu'
+}
 
 export {
   cariKurupTaun as cariKurupTahunJawa,
   cariRumusAbadiAwalBulanTahunJawa,
-  cariHariPasaranAwalBulanTahunJawa
+  cariHariPasaranAwalBulanTahunJawa,
+  sasi,
+  version
 }
