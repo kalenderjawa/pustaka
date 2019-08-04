@@ -103,7 +103,9 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 1952', () => {
   test('Dulkodah, 1952', async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1952)).resolves.toStrictEqual(DAT.TEST_DULKODAH_HP_1952)
   })
+})
 
+describe('Testing cariHariPasaranAwalBulanTahunJawa, 1881', () => {
   test('Dulkodah, 1881', async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKODAH_HP_1881)
   })
@@ -115,7 +117,7 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 1952', () => {
       console.log(d)
     })
     */
- })
+  })
 })
 
 describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom 1907-1914', () => {
@@ -128,14 +130,12 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom 1907-19
 
   test('mukarom, 1908', async () => {
     return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1908).then((d) => {
-      console.log(d)
       expect(`${d.kH.dino}_${d.kP.pasaran}`).toBe('sebtu_pahing')
     })
   })
 
   test('mukarom, 1909', async () => {
     return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1909).then((d) => {
-      console.log(d)
       expect(`${d.kH.dino}_${d.kP.pasaran}`).toBe('kemis_pahing')
     })
   })
@@ -159,7 +159,6 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom 1907-19
   })
   test('mukarom, 1913', async () => {
     return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1913).then((d) => {
-      console.log(d)
       expect(`${d.kH.dino}_${d.kP.pasaran}`).toBe('akad_wage')
     })
   })
@@ -168,4 +167,20 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom 1907-19
       expect(`${kH.dino}_${kP.pasaran}`).toBe('kemis_pon')
     })
   })
+})
+
+describe('Testing cariHariPasaranAwalBulanTahunJawa, 2077 Kurup Anenhing', () => {
+  test('mukarom, 2077', async () => {
+    //await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKODAH_HP_1881)
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2077).then(d => {
+      console.log(d)
+    })
+  })
+
+  /**
+  test('Dulkijah, 1881', async () => {
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1881)
+
+  })
+  */
 })
