@@ -5,7 +5,7 @@
 
 // Mukarom, 1952 → Tahun Be, Asapon, Rom 2 3
 // Koreksi Dino: Selasa + 2 → Rebo
-// KOreksi Pasaran: Pon + 3 → Kliwon  
+// KOreksi Pasaran: Pon + 3 → Kliwon 
 const TEST_MUKAROM_HP_1952 = {
   w: 'mukarom',
   t: 1952,
@@ -13,21 +13,25 @@ const TEST_MUKAROM_HP_1952 = {
   kH: { dino: 'rebo', urutan: 3 },
   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
-
+// Sapar, 1952 → Tahun Be, Asapon, Par 4 3
+// KOreksi Dino: Selasa + 4 → Jemah
+// Koreksi Pasaran: Pon + 3 → Kliwon
 const TEST_SAPAR_HP_1952 = {
   w: 'sapar',
   t: 1952,
   i: { taun: 'be', kurup: 'alip selasa pon' },
   kH: { dino: 'jemah', urutan: 5 },
-  kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
+  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
-
+// Robiulawal, 1952 → Tahun Be, Asapon, Rowal 5 2
+// KOreksi Dino: Selasa + 5 → Sebtu
+// KOreksi PAsaran: Pon + 2 → Wage
 const TEST_ROBIULAWAL_HP_1952 = {
   w: 'robiulawal',
   t: 1952,
   i: { taun: 'be', kurup: 'alip selasa pon' },
-  kH: { dino: 'akad', urutan: 7 },
-  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
+  kH: { dino: 'sebtu', urutan: 6 },
+  kP: { pasaran: 'wage', neptu: 4, urutan: 4 }
 }
 
 const TEST_DULKIJAH_HP_1952 = {
