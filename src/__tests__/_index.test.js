@@ -124,4 +124,11 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom', () =>
       expect(`${kH.dino}_${kP.pasaran}`).toBe('selasa_pon')
     })
   })
+
+  test('mukarom, 1908', async () => {
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1907).then(({ kH, kP }) => {
+      expect(`${kH.dino}_${kP.pasaran}`).toBe('sabtu_pahing')
+    })
+  })
+
 })
