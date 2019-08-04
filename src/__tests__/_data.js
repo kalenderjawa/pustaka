@@ -2,12 +2,16 @@
  * @flow
  * Test Data
  */
+
+// Mukarom, 1952 → Tahun Be, Asapon, Rom 2 3
+// Koreksi Dino: Selasa + 2 → Rebo
+// KOreksi Pasaran: Pon + 3 → Kliwon  
 const TEST_MUKAROM_HP_1952 = {
   w: 'mukarom',
   t: 1952,
   i: { taun: 'be', kurup: 'alip selasa pon' },
   kH: { dino: 'rebo', urutan: 3 },
-  kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
+  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
 
 const TEST_SAPAR_HP_1952 = {
