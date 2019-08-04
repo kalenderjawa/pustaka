@@ -150,4 +150,22 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom', () =>
     })
   })
 
+  test('mukarom, 1912', async () => {
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1912).then(({ kH, kP }) => {
+      expect(`${kH.dino}_${kP.pasaran}`).toBe('rebo_kliwon')
+    })
+  })
+
+  test('mukarom, 1913', async () => {
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1913).then(({ kH, kP }) => {
+      expect(`${kH.dino}_${kP.pasaran}`).toBe('akad_wage')
+    })
+  })
+
+  test('mukarom, 1914', async () => {
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1914).then(({ kH, kP }) => {
+      expect(`${kH.dino}_${kP.pasaran}`).toBe('kemis_pon')
+    })
+  })
+
 })
