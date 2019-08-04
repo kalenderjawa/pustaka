@@ -83,7 +83,9 @@ const TEST_SAKBAN_HP_1952 = {
   kH: { dino: 'akad', urutan: 7 },
   kP: { pasaran: 'pahing', neptu: 9, urutan: 2 }
 }
-
+// Romadon, 1952 → Tahun Be, Asapon, Don 7 4
+// Adjust Dino: Selasa + 7 → Senen
+// Adjust Pasaran: Pon + 4 → Legi
 const TEST_ROMADON_HP_1952 = {
   w: 'romadon',
   t: 1952,
