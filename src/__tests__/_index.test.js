@@ -57,7 +57,7 @@ describe('Testing cariRumusAbadiAwalBulanTahunJawa', () => {
   })
 })
 
-describe('Testing cariHariPasaranAwalBulanTahunJawa', () => {
+describe('Testing cariHariPasaranAwalBulanTahunJawa, 1952', () => {
   test('Mukarom, 1952', async () => {
     await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1952)).resolves.toStrictEqual(DAT.TEST_MUKAROM_HP_1952)
   })
@@ -115,5 +115,13 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa', () => {
       console.log(d)
     })
     */
+  })
+})
+
+describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom', () => {
+  test('mukarom, 1907', async () => {
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1907).then(({ kH, kP }) => {
+      expect(`${kH.dino}_${kP.pasaran}`).toBe('selasa_pon')
+    })
   })
 })
