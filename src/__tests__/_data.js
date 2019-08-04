@@ -33,13 +33,15 @@ const TEST_ROBIULAWAL_HP_1952 = {
   kH: { dino: 'sebtu', urutan: 6 },
   kP: { pasaran: 'wage', neptu: 4, urutan: 4 }
 }
-
+// Dulkijah, 1952 → Tahun Be. Asapon, Jah 5 3
+// Koreksi Dino: Selasa + 5 → Sebtu
+// Koreksi Pasaran: Pon + 3 → Kliwon
 const TEST_DULKIJAH_HP_1952 = {
   w: 'dulkijah',
   t: 1952,
   i: { taun: 'be', kurup: 'alip selasa pon' },
-  kH: { dino: 'akad', urutan: 7 },
-  kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
+  kH: { dino: 'sebtu', urutan: 6 },
+  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
 
 const TEST_JUMADILAWAL_HP_1952 = {
