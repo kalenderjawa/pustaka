@@ -123,13 +123,15 @@ const TEST_DULKODAH_HP_1881 = {
   kH: { dino: 'senen', urutan: 1 },
   kP: { pasaran: 'wage', neptu: 4, urutan: 4 }
 }
-
+// Dulkijah, 1881 → Tahun Wawu, Asapon, Jah 2 2
+// Adjust Dino: Selasa + 2 → Rebo
+// Adjust Pasaran: Pon + 2 → Wage
 const TEST_DULKIJAH_HP_1881 = {
   w: 'dulkijah',
   t: 1881,
   i: { taun: 'wawu', kurup: 'alip selasa pon' },
   kH: { dino: 'rebo', urutan: 3 },
-  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
+  kP: { pasaran: 'wage', neptu: 4, urutan: 4 }
 }
 
 const _TESTDAT_5 = {
