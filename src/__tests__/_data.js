@@ -93,7 +93,9 @@ const TEST_ROMADON_HP_1952 = {
   kH: { dino: 'senen', urutan: 1 },
   kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
 }
-
+// Sawal, 1952 → Tahun Be, Asapon, Wal 2 4
+// Adjust Dino: Selasa + 2 → Rebo
+// Adjust Pasaran: Pon + 4 → Legi
 const TEST_SAWAL_HP_1952 = {
   w: 'sawal',
   t: 1952,
