@@ -43,7 +43,9 @@ const TEST_DULKIJAH_HP_1952 = {
   kH: { dino: 'sebtu', urutan: 6 },
   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
-
+// Jumadilawal, 1952 → Tahun Be, Asapon, Juwal 1 1
+// Koreksi Dino: Selasa + 1 → Selasa
+// Koreksi Pasaran: Pon + 1 → Pon
 const TEST_JUMADILAWAL_HP_1952 = {
   w: 'jumadilawal',
   t: 1952,
