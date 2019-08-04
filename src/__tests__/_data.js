@@ -4,8 +4,8 @@
  */
 
 // Mukarom, 1952 → Tahun Be, Asapon, Rom 2 3
-// Koreksi Dino: Selasa + 2 → Rebo
-// KOreksi Pasaran: Pon + 3 → Kliwon 
+// Adjust Dino: Selasa + 2 → Rebo
+// Adjust Pasaran: Pon + 3 → Kliwon 
 const TEST_MUKAROM_HP_1952 = {
   w: 'mukarom',
   t: 1952,
@@ -14,8 +14,8 @@ const TEST_MUKAROM_HP_1952 = {
   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
 // Sapar, 1952 → Tahun Be, Asapon, Par 4 3
-// KOreksi Dino: Selasa + 4 → Jemah
-// Koreksi Pasaran: Pon + 3 → Kliwon
+// Adjust Dino: Selasa + 4 → Jemah
+// Adjust Pasaran: Pon + 3 → Kliwon
 const TEST_SAPAR_HP_1952 = {
   w: 'sapar',
   t: 1952,
@@ -24,8 +24,8 @@ const TEST_SAPAR_HP_1952 = {
   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
 // Robiulawal, 1952 → Tahun Be, Asapon, Rowal 5 2
-// KOreksi Dino: Selasa + 5 → Sebtu
-// KOreksi PAsaran: Pon + 2 → Wage
+// Adjust Dino: Selasa + 5 → Sebtu
+// Adjust PAsaran: Pon + 2 → Wage
 const TEST_ROBIULAWAL_HP_1952 = {
   w: 'robiulawal',
   t: 1952,
@@ -34,8 +34,8 @@ const TEST_ROBIULAWAL_HP_1952 = {
   kP: { pasaran: 'wage', neptu: 4, urutan: 4 }
 }
 // Dulkijah, 1952 → Tahun Be. Asapon, Jah 5 3
-// Koreksi Dino: Selasa + 5 → Sebtu
-// Koreksi Pasaran: Pon + 3 → Kliwon
+// Adjust Dino: Selasa + 5 → Sebtu
+// Adjust Pasaran: Pon + 3 → Kliwon
 const TEST_DULKIJAH_HP_1952 = {
   w: 'dulkijah',
   t: 1952,
@@ -44,8 +44,8 @@ const TEST_DULKIJAH_HP_1952 = {
   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
 // Jumadilawal, 1952 → Tahun Be, Asapon, Juwal 1 1
-// Koreksi Dino: Selasa + 1 → Selasa
-// Koreksi Pasaran: Pon + 1 → Pon
+// Adjust Dino: Selasa + 1 → Selasa
+// Adjust Pasaran: Pon + 1 → Pon
 const TEST_JUMADILAWAL_HP_1952 = {
   w: 'jumadilawal',
   t: 1952,
@@ -54,8 +54,8 @@ const TEST_JUMADILAWAL_HP_1952 = {
   kP: { pasaran: 'pon', neptu: 7, urutan: 3 }
 }
 // JUmadilakir, 1952 → Tahun Be, Asapon, Jukir 3 1
-// Koreksi Dino: Selasa + 3 → Kemis
-// Koreksi Pasaran: Pon + 1 → Pon
+// Adjust Dino: Selasa + 3 → Kemis
+// Adjust Pasaran: Pon + 1 → Pon
 const TEST_JUMADILAKIR_HP_1952 = {
   w: 'jumadilakir',
   t: 1952,
@@ -63,7 +63,9 @@ const TEST_JUMADILAKIR_HP_1952 = {
   kH: { dino: 'kemis', urutan: 4 },
   kP: { pasaran: 'pon', neptu: 7, urutan: 3 }
 }
-
+// ROjab, 1952 → Tahun Be, Asapon, Jab 4 5
+// Adjust Dino: Selasa + 4 → Jemah
+// Adjust Pasaran: Pon + 5 -> Pahing
 const TEST_ROJAB_HP_1952 = {
   w: 'rojab',
   t: 1952,
