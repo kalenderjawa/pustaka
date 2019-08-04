@@ -15,11 +15,17 @@ import { ARANING_WULAN_SETAUN } from './sasi.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
 import { SengkalaMap } from './rupa_ati.js'
 
+/**
+ *
+ * @param {*} h Dinten adjustment dari Kurup Dino -> dn + h
+ * @param {*} dn Kurup Dino. Misal Selasa -> Urutan 2
+ */
 async function konversiHari (h: number, dn: number): Promise<DintenType | string> {
-  const _xH = dn + h
-  let xH = _xH % 7 // Dinten MAX=7
-  // if (xH !== 1) { xH = xH - 1 }
-  if (xH !== 1) { if (xH === 0) { xH = _xH } else { xH = xH - 1 } }
+  const _xH = dn + h - 1
+  console.log(`dino> koreksi: ${h}, offset: ${dn}`)
+  let xH = 0
+  
+  if (_xH > 7) { xH = _xH - 7 } else { xH = _xH }
 
   return new Promise((resolve, reject) => {
     DINTEN.forEach((value, key, map) => {
@@ -32,9 +38,12 @@ async function konversiHari (h: number, dn: number): Promise<DintenType | string
 }
 
 async function konversiPasaran (p: number, ps: number): Promise<PasaranType | string> {
-  const _xP = ps + p
-  let xP = _xP % 5 // Pasaran MAX=5
-  if (xP !== 1) { if (xP === 0) { xP = _xP } else { xP = xP - 1 } }
+  const _xP = ps + p - 1
+  console.log(`pasaran> koreksi: ${p}, offset: ${ps}`)
+  let xP = 0
+
+  if (_xP > 5) { xP = _xP - 5 } else { xP = _xP }
+
   return new Promise((resolve, reject) => {
     PASARAN.forEach((value, key, map) => {
       // Hanya mengambil value sekali, gak perlu reject selama xP masih dalam range 1-5
