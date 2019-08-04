@@ -4,7 +4,7 @@
 </h3>
 
 <p align="center">
-<a href="https://travis-ci.com/junwatu/kalender-jawa" alt="Travis CI"><img src="https://travis-ci.com/junwatu/kalender-jawa.svg?token=ygQgbKk8uMU72qsetYYB&branch=master" alt="Build Status"/></a>
+<a href="https://circleci.com/gh/junwatu/kalender-jawa" alt="Travis CI"><img src="https://circleci.com/gh/junwatu/kalender-jawa/tree/master.svg?style=svg&circle-token=23e428d78a273d8a105c8bdfdc86a112eccbcefa" alt="Build Status"/></a>
 <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
 <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="JavaScript Style Guide"></a>
 </p>
