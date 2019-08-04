@@ -109,7 +109,7 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 1952', () => {
   })
 
   test('Dulkijah, 1881', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1981)
+    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1881)
     /**
     return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1881).then(d => {
       console.log(d)

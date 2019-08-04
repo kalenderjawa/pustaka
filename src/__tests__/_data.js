@@ -124,7 +124,7 @@ const TEST_DULKODAH_HP_1881 = {
   kP: { pasaran: 'wage', neptu: 4, urutan: 4 }
 }
 
-const TEST_DULKIJAH_HP_1981 = {
+const TEST_DULKIJAH_HP_1881 = {
   w: 'dulkijah',
   t: 1881,
   i: { taun: 'wawu', kurup: 'alip selasa pon' },
@@ -156,6 +156,6 @@ export {
   TEST_DULKIJAH_HP_1952,
   TEST_DULKODAH_HP_1952,
   TEST_DULKODAH_HP_1881,
-  TEST_DULKIJAH_HP_1981,
+  TEST_DULKIJAH_HP_1881,
   _TESTDAT_5 as TESTDAT5
 }
