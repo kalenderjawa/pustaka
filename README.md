@@ -184,4 +184,4 @@ KalenderJawa.cariKurupTahunJawa(1994).then( d => {
 ## Lisensi
 [MIT License](https://choosealicense.com/licenses/mit/)
 
-Copyright © *Lawang Tunggal Walang Kembar*, [Junwatu](https://github.com/junwatu)
+Copyright © *Lawang Tunggal Walang Kembar* *(2019)*, [Junwatu](https://github.com/junwatu)
