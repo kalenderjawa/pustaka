@@ -171,9 +171,9 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom 1907-19
 
 describe('Testing cariHariPasaranAwalBulanTahunJawa, 2077 Kurup Anenhing', () => {
   test('mukarom, 2077', async () => {
-    //await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkodah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKODAH_HP_1881)
     return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2077).then(d => {
-      console.log(d)
+      // console.log(d)
+      expect(`${d.kH.dino}_${d.kP.pasaran}`).toBe('rebo_legi')
     })
   })
 
