@@ -121,7 +121,6 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 1881', () => {
 })
 
 describe('Testing cariHariPasaranAwalBulanTahunJawa Sewindu Sasi Mukarom 1907-1914', () => {
-
   test('mukarom, 1907', async () => {
     return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1907).then(({ kH, kP }) => {
       expect(`${kH.dino}_${kP.pasaran}`).toBe('selasa_pon')
@@ -183,4 +182,12 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 2077 Kurup Anenhing', () =>
 
   })
   */
+})
+
+describe('Test Sasi', () => {
+  test('sasi', async () => {
+    return KalenderJawa.sasi('sapar', 1952).then(d => {
+      console.log(d)
+    })
+  })
 })
