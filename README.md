@@ -10,36 +10,23 @@
 </p>
 
 ## Pengenalan
-Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian kalender atau penanggalan Jawa. Dengan maksud dan tujuan supaya penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya buat pengembang maka repositori ini dibuat.
+Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian kalender dan Penanggalan Jawa. 
+
+Dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya ramah buat para pengembang maka repositori ini dibuat.
 
 > Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6).
 
 ## Sejarah
-Penanggalan jawa yang dipakai sampai saat ini merupakan hasil usaha dari para Wali dalam mengolah antara penanggalan Jawa yang jauh sudah ada sebelumnya yaitu *Candra Sengkala* dengan kalender Hijri. 
+Menurut sejarahnya Penanggalan Jawa diwariskan terutama melalui rumus perhitungan dengan cara hafalan dan hebatnya rumus perhitungan ini bersifat abadi dan sangat akurat sampai hampir 1000 tahun!.
 
-Secara historis penanggalan Jawa ini resmi dipakai sejak Raden Patah menjadi Sultan Demak yang pertama, dimana pada momen ini orang Jawa menandainya dengan *Sengkalan*,
-
-
-
-### *Catur Ilang Sucining Ratu*
+"Dengan terhafal dalam bentuk nyanyian, kalender Jawa akan terbawa kemana saja pergi, dan masih memiliki tingkat akurasi tinggi sampai 994 tahun lagi. Setelah itu baru ada koreksi +1 hari sebelum Ambal Kurup Alip Senen Kliwon, 1 Sura 2947 Jawa (26 Januari 2984 Masehi)" - [REF][CK].
 
 
-
-*Sengkalan* tersebut menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setelah runtuhnya Majapahit.
-
-> Candra Sengkala atau Sengkalan merupakan cara orang Jawa dalam mengingat momen pada tahun dengan cara sederhana yaitu suatu kalimat. 
->
-> Contoh paling terkenal adalah *Sengkalan* runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan bahwa Sengkalan sebenarnya adalah kalender lunar yang sudah lama dipakai sebelum masa para Wali - [REF][CK].
-
-Sistem kalender jawa memberikan metode pembelajaran dan pewarisan sejarah yang menurut saya sangat superior karena **rumus matematis abadi** perhitungan dari kalender Jawa ini diwariskan dalam bentuk sederhana melalui lagu-lagu dan nyanyian. 
-
-"Dengan terhafal dalam bentuk nyanyian, kalender Jawa akan terbawa kemana saja pergi, dan masih memiliki tingkat akurasi tinggi sampai 994 tahun lagi. Setelah itu baru ada koreksi +1 hari sebelum Ambal Kurup Alip Senen Kliwon, 1 Sura 2947 Jawa (26 Januari 2984 Masehi)" - [REF][CK]
-
-Lebih lanjut silahkan membaca tentang penanggalan jawa di [DOKUMENTASI.md](DOKUMENTASI.md).
+Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [DOKUMENTASI.md](DOKUMENTASI.md).
 
 ## Instalasi
 
-Pustaka Kalender Jawa bisa dipakai melalui beberapa cara tergantung platform yang anda gunakan, bisa memakai node  melalui npm ataupun browser melalui CDN
+Pustaka Kalender Jawa bisa dipakai melalui beberapa cara, bisa diinstall melalui npm ataupun dipakai di browser melalui CDN
 
 ### Node
 
@@ -47,7 +34,7 @@ Pustaka Kalender Jawa bisa dipakai melalui beberapa cara tergantung platform yan
 npm install --save @junwatu/kalender-jawa
 ```
 
-Cara memakai pustaka jika memakai `import` ES6
+Memakai pustaka jika memakai `import` ES6
 
 ```js
 import { KalenderJawa } from '@junwatu/kalender-jawa'
@@ -59,7 +46,7 @@ KalenderJawa.cariKurupTahunJawa(1881).then(/**...*/)
 
 Jika anda memakai browser pustaka ini bisa di ambil melalui CDN (*Content Delivery Network*) di `unpkg.com`. 
 
-Kode berikut akan mengambil pustaka dengan versi terbaru
+Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 ```html
 <script src="https://unpkg.com/@junwatu/kalender-jawa"/>
@@ -68,7 +55,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru
 
 ## API
 
-Jika anda belum mengetahui apa itu Pasaran, Kurup, Tahun Jawa harap membaca terlebih dahulu [DOKUMENTASI.md](DOKUMENTASI.md).
+Pasaran, Kurup. Neptu dan Tahun Jawa dijelaskan di [DOKUMENTASI.md](DOKUMENTASI.md).
 
 ### :new_moon: `cariHariPasaranAwalBulanTahunJawa(w, t)`
 
