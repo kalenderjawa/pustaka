@@ -97,7 +97,7 @@ async function sasi (s: string, th: number): Map<Object, Array<Object>> {
   } while (i < dat.wulan.cacah[0])
 
   const _s = new Map()
-  const _sk = { sasi: dat.wulan, taun: th, jawa: dat.taun }
+  const _sk = { sasi: dat.wulan.wulan, taun: th }
   _s.set(_sk, _m)
 
   return _s
