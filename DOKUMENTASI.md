@@ -103,3 +103,13 @@ Kalender Jawa ini mempunyai keteraturan yang sangat luar biasa sehingga ditemuka
 
  ![rumus_awal_taun](https://cdn.caknun.com/media/2019/01/20190102-menek-kalender-4.jpg)
 
+Contoh, untuk menentukan hari awal bulan **Tahun Baru Suro (Mukarom) 1953 J** (1 Muharom 1441 H, 1 September 2019 M), langkahnya adalah sebagai berikut:
+
+1. Tahun **1953** termasuk **Tahun Wawu, Kurup Asapon (Alip Selasa Pon)**.
+2. Rumus awal dari bulan **Mukarom** Tahun **Wawu** yaitu **"Rom Nem Ro"** atau **Mukarom Enem Loro** (Mukarom 6 2). Angka depan 6 = hari, Angka belakang 2 = pasaran, pengaturan dihitung dari awal Kurup (Asapon).
+3. Hari dihitung mulai dari Selasa: 1. Selasa, 2. Rebo, 3. Kemis, 4. Jemah (Jum'at) 5. Sebtu 6. Akad (Minggu). Hari ke-6 bertepatan dengan hari **Akad** atau **Minggu**.
+4. Pasaran dihitung mulai dari Pon: 1. Pon, 2. Wage. Pasaran ke-5 bertepatan dengan pasaran **Wage**.
+5. Sehingga, **1 Suro (Mukarom) 1953 J** bertepatan dengan hari **Minggu Wage**. 
+
+---
+
