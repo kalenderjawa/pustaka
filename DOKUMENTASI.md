@@ -1,7 +1,9 @@
 # Kalender Jawa
 
 ## Sejarah
-Kalender atau Penanggalan Jawa merupakan penanggalan asli yang dibawa oleh leluhur bangsa Indonesia yang kemudian diolah lebih lanjut oleh para wali. Penanggalan Jawa ini sudag umum dipakai sejak Raden Patah menjadi Sultan Demak untuk yang pertama kali dimana momen ini ditandai dengan *Sengkalan* atau *Candra Sengkala*,
+Kalender atau Penanggalan Jawa merupakan penanggalan asli yang dibawa oleh leluhur bangsa Indonesia yang kemudian diolah lebih lanjut oleh para wali. Penanggalan Jawa hasil kolaborasi para Wali dan leluhur Jawa ini sudah umum dipakai sejak Raden Patah menjadi Sultan Demak. 
+
+Momen dimana Raden Patah menjadi sultan pertama di Demak ditandai dengan *Sengkalan* atau *Candra Sengkala*,
 
 
 
