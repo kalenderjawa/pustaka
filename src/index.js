@@ -13,6 +13,7 @@ import type { RumusSasiTaunType, TaunKurupType } from './type.js'
 import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
 import { DINTEN_ARR } from './dinten.js'
 import { PASARAN_ARR } from './pasaran.js'
+import { SASI_ARR } from './sasi.js'
 /**
    * Mencari Kurup dan Taun Jawa
    * @param { number } input - 4 digit integer
@@ -139,7 +140,8 @@ export {
   cariRumusAbadiAwalBulanTahunJawa,
   cariHariPasaranAwalBulanTahunJawa,
   sasi,
-  PASARAN_ARR as pasaran,
-  DINTEN_ARR as dinten,
+  PASARAN_ARR as araningPasaran,
+  DINTEN_ARR as araningDinten,
+  SASI_ARR as araningSasi,
   version
 }
