@@ -139,5 +139,6 @@ export {
   cariRumusAbadiAwalBulanTahunJawa,
   cariHariPasaranAwalBulanTahunJawa,
   sasi,
+  PASARAN_ARR as pasaran,
   version
 }
