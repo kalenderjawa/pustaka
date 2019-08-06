@@ -14,6 +14,7 @@ import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, car
 import { DINTEN_ARR } from './dinten.js'
 import { PASARAN_ARR } from './pasaran.js'
 import { SASI_ARR } from './sasi.js'
+import { TAHUN_ARR } from './taun.js'
 /**
    * Mencari Kurup dan Taun Jawa
    * @param { number } input - 4 digit integer
@@ -143,5 +144,6 @@ export {
   PASARAN_ARR as araningPasaran,
   DINTEN_ARR as araningDinten,
   SASI_ARR as araningSasi,
+  TAHUN_ARR as tahunJawa,
   version
 }
