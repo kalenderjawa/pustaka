@@ -140,5 +140,6 @@ export {
   cariHariPasaranAwalBulanTahunJawa,
   sasi,
   PASARAN_ARR as pasaran,
+  DINTEN_ARR as dinten,
   version
 }
