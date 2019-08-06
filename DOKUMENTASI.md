@@ -95,7 +95,9 @@ dan dibawah ini adalah **Tabel Hari Awal Tahun Kalender Jawa 1867â€’2106 (1355â€
 Seperti pada penjelasan sebelumnya tahun-tahun yang masuk di Tahun Jawa yang sama, misalnya tahun-tahun pada Tahun Be, maka semua tahun yang termasuk di Tahun Be tersebut akan mempunyai hari awal tahun yang sama yaitu **Rebo Kliwon** dan jumlah hari dalam tiap tahun juga sama yaitu sebanyak 354 hari.
 
 ## Rumus Matematis
+Kalender Jawa ini mempunyai keteraturan yang sangat luar biasa sehingga ditemukan pola-pola yang kemudian dirumuskan dan rumusan itu dengan mudah di buat menjadi suatu hafalan. Berdasarkan rumusan hari awal tahun kemudian didapatkan juga rumusan untuk hari-hari awal bulan pada masing-masing tahun dalam siklus windu.
 
 ### Rumus Hafalan Awal Bulan Kalender Jawa Abadi
 
- ![rumus_awal_taun](images/20190102-menek-kalender-4.jpg)
+ ![rumus_awal_taun](https://cdn.caknun.com/media/2019/01/20190102-menek-kalender-4.jpg)
+
