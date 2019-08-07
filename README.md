@@ -164,7 +164,7 @@ KalenderJawa.cariKurupTahunJawa(1994).then( d => {
 })
 ```
 
-## Properties
+## Properti
 
 ### `araningPasaran`
 Nama atau *araning* dari Pasaran
