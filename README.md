@@ -179,6 +179,22 @@ const pasaran = KalenderJawa.araningPasaran
 console.log(pasaran[0].pasaran) // legi
 ```
 
+### `araningDinten`
+**Return**
+- Array
+
+Contoh
+
+```js
+const iterator = KalenderJawa.araningDinten.values()
+let index = iterator.next()
+
+while (!index.done) {
+  console.log(index.value) //  { dino: 'senen', urutan: 1 } ...
+  index = iterator.next()
+}
+```
+
 ## Berkontribusi
 Lihat di [CONTRIBUTING.md](CONTRIBUTING.md).
 
