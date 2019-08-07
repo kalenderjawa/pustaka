@@ -186,8 +186,15 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 2077 Kurup Anenhing', () =>
 
 describe('Test Sasi', () => {
   test('sasi', async () => {
-    return KalenderJawa.sasi('sapar', 1952).then(d => {
+    return KalenderJawa.sasi('mukarom', 1953).then(d => {
       console.log(d)
     })
+  })
+})
+
+describe('Test Pasaran, Dinten, Tahun Jawa', () => {
+  test('Pasaran', () => {
+    const p = KalenderJawa.araningPasaran
+    expect(p).toContainEqual({ neptu: 5, pasaran: 'legi', urutan: 1 })
   })
 })
