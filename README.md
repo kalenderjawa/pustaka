@@ -57,6 +57,8 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 **Pasaran**, **Kurup**. **Neptu** dan **Tahun Jawa** dijelaskan di [DOKUMENTASI.md](DOKUMENTASI.md).
 
+## Fungsi
+
 ### :new_moon: `cariHariPasaranAwalBulanTahunJawa(w, t)`
 
 **Argumen**:
@@ -161,6 +163,22 @@ KalenderJawa.cariKurupTahunJawa(1994).then( d => {
   console.log(`${d.kurup.taun}_${d.dinten.dino}_${d.kurup.pasaran.pasaran}`) // alip_senen_pahing (anenhing)
 })
 ```
+
+## Properties
+
+### `araningPasaran`
+Nama atau *araning* dari Pasaran
+
+ **Return**:
+- Array
+
+Contoh
+
+```js
+const pasaran = KalenderJawa.araningPasaran
+console.log(pasaran[0].pasaran) // legi
+```
+
 ## Berkontribusi
 Lihat di [CONTRIBUTING.md](CONTRIBUTING.md).
 
