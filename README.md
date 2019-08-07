@@ -190,9 +190,19 @@ const iterator = KalenderJawa.araningDinten.values()
 let index = iterator.next()
 
 while (!index.done) {
-  console.log(index.value) //  { dino: 'senen', urutan: 1 } ...
+  console.log(index.value) // { dino: 'senen', urutan: 1 } ...
   index = iterator.next()
 }
+```
+
+### `taunJawa`
+**Return**
+- Array
+
+Contoh 
+
+```js
+console.log(KalenderJawa.tahunJawa[1]) // { taun: 'dal', neptu: 4, urutan: 5, cacah: 355 }
 ```
 
 ## Berkontribusi
