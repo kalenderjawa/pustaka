@@ -197,4 +197,8 @@ describe('Test Pasaran, Dinten, Tahun Jawa', () => {
     const p = KalenderJawa.araningPasaran
     expect(p).toContainEqual({ neptu: 5, pasaran: 'legi', urutan: 1 })
   })
+  
+  test('Dinten', () => {
+    expect(KalenderJawa.araningDinten).toContainEqual({ dino: 'jemah', urutan: 5 })
+  })
 })
