@@ -191,10 +191,10 @@ Key `k` untuk kode diatas adalah
 dan value dengan key `k` seperti berikut
 ```js
 [ 
-  { '1': { dino: 'akad', pasaran: 'wage', neptu: 4 } },
-  { '2': { dino: 'senen', pasaran: 'kliwon', neptu: 8 } },
+  { '1': { dinten: 'akad', pasaran: 'wage', neptu: 4 } },
+  { '2': { dinten: 'senen', pasaran: 'kliwon', neptu: 8 } },
   // ...dipersingkat
-  { '30': { dino: 'senen', pasaran: 'pon', neptu: 7 } }
+  { '30': { dinten: 'senen', pasaran: 'pon', neptu: 7 } }
 ]
 ```
 
