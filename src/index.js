@@ -95,7 +95,7 @@ async function sasi (s: string, th: number) {
   do {
     i = i + 1
     const { ps, pn } = koreksiPasaran(kP.urutan++)
-    _m.push({ [i]: { dino: koreksiDino(kH.urutan++), pasaran: ps, neptu: pn } })
+    _m.push({ [i]: { dinten: koreksiDino(kH.urutan++), pasaran: ps, neptu: pn } })
   } while (i < dat.wulan.cacah[0])
 
   const sMap: Map<SasiKeyType, Array<Object>> = new Map()
