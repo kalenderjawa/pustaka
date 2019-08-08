@@ -186,8 +186,9 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 2077 Kurup Anenhing', () =>
 
 describe('Test Sasi', () => {
   test('sasi', async () => {
-    return KalenderJawa.sasi('mukarom', 1953).then(d => {
-      console.log(d)
+    return KalenderJawa.sasi('mukarom', 1953).then(({ k, s }) => {
+      console.log(k)
+      console.log(s.has(k))
     })
   })
 })
