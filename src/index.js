@@ -9,7 +9,7 @@ import 'core-js/stable'
 // $FlowFixMe
 import 'regenerator-runtime/runtime'
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
-import type { RumusSasiTaunType, TaunKurupType } from './type.js'
+import type { RumusSasiTaunType, TaunKurupType, SasiKeyType } from './type.js'
 import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
 import { DINTEN_ARR } from './dinten.js'
 import { PASARAN_ARR } from './pasaran.js'
@@ -86,7 +86,7 @@ async function cariHariPasaranAwalBulanTahunJawa (w: string, t: number) {
   return { w, t, i, kH, kP }
 }
 
-async function sasi (s: string, th: number): Map<Object, Array<Object>> {
+async function sasi (s: string, th: number) {
   const { kH, kP } = await cariHariPasaranAwalBulanTahunJawa(s, th)
   const dat = await cariRumusAbadiAwalBulanTahunJawa(s, th)
   const _m = []
@@ -98,11 +98,12 @@ async function sasi (s: string, th: number): Map<Object, Array<Object>> {
     _m.push({ [i]: { dino: koreksiDino(kH.urutan++), pasaran: ps, neptu: pn } })
   } while (i < dat.wulan.cacah[0])
 
-  const _s = new Map()
-  const _sk = { sasi: dat.wulan.wulan, taun: th }
-  _s.set(_sk, _m)
+  const sMap: Map<SasiKeyType, Array<Object>> = new Map()
+  const sKey: SasiKeyType = { sasi: dat.wulan.wulan, taun: th }
+  sMap.set(sKey, _m)
 
-  return _s
+  // Map keys use ===
+  return { k: sKey, s: sMap }
 }
 
 function koreksiDino (d: number) {
