@@ -170,11 +170,33 @@ KalenderJawa.cariKurupTahunJawa(1994).then( d => {
 - `t` tahun dalam `number`. Misal: `2077`
 
 **Return**
-- `Object` yaitu `{ k, s }` dimana `k` adalah `key` dan `s` adalah Map.
+- `Promise` dengan data `then` yaitu `{ k, s }` dimana `k` adalah `key` dan `s` adalah Map.
 
 Pakai fungsi ini jika anda ingin mengetahui Hari dan Pasaran selama satu bulan penuh pada tahun Jawa tertentu.
 
+```js
+import * as KalenderJawa from '@junwatu/kalender-jawa'
 
+KalenderJawa.sasi('mukarom', 1953).then({ k, s } => {
+  console.log(s.get(k))
+})
+```
+
+Key `k` untuk kode diatas adalah 
+
+```js
+{ sasi: 'mukarom', taun: 1953 }
+```
+
+dan value dengan key `k` seperti berikut
+```js
+[ 
+  { '1': { dino: 'akad', pasaran: 'wage', neptu: 4 } },
+  { '2': { dino: 'senen', pasaran: 'kliwon', neptu: 8 } },
+  // ...dipersingkat
+  { '30': { dino: 'senen', pasaran: 'pon', neptu: 7 } }
+]
+```
 
 
 ## Properti
