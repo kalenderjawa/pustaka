@@ -165,6 +165,8 @@ KalenderJawa.cariKurupTahunJawa(1994).then( d => {
 ```
 
 ### `sasi(w, t)`
+Pakai fungsi ini jika anda ingin mengetahui Hari dan Pasaran selama satu bulan penuh pada tahun Jawa tertentu.
+
 **Argumen**
 - `w` sasi dalam `string`. Misal : `sapar`
 - `t` tahun dalam `number`. Misal: `2077`
@@ -172,7 +174,7 @@ KalenderJawa.cariKurupTahunJawa(1994).then( d => {
 **Return**
 - `Promise` dengan data `then` yaitu `{ k, s }` dimana `k` adalah `key` dan `s` adalah Map.
 
-Pakai fungsi ini jika anda ingin mengetahui Hari dan Pasaran selama satu bulan penuh pada tahun Jawa tertentu.
+Contoh
 
 ```js
 import * as KalenderJawa from '@junwatu/kalender-jawa'
