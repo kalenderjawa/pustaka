@@ -174,8 +174,8 @@ Pakai fungsi ini jika anda ingin mengetahui Hari dan Pasaran selama satu bulan p
 **Return**
 - `Promise` dengan data `then` yaitu `{ k, s }` dimana `k` adalah `key` dan `s` adalah Map.
 
-Contoh
 
+Misalnya anda ingin mengetahui Tanggal, Hari & Pasaran selama sasi **Mukarom, 1953 Tahun Jawa**
 ```js
 import * as KalenderJawa from '@junwatu/kalender-jawa'
 
