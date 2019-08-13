@@ -1,7 +1,7 @@
 # Kalender Jawa
 
 ## Sejarah
-Kalender atau Penanggalan Jawa merupakan penanggalan asli yang dibawa oleh leluhur bangsa Indonesia yang kemudian diolah lebih lanjut oleh para wali. Penanggalan Jawa hasil kolaborasi para Wali dan leluhur Jawa ini sudah umum dipakai sejak Raden Patah menjadi Sultan Demak. 
+Kalender atau Penanggalan Jawa merupakan penanggalan yang dibawa oleh para leluhur Jawa dan kemudian diolah lebih lanjut oleh para Wali tetapi sebelum masa para Wali, para leluhur Jawa telah memakai penanggalan berdasarkan matahari atau Saka dan juga berdasarkan bulan dan dalam perkembangan selanjutnya para Wali yang berkolaborasi dengan para leluhur bangsa Jawa tersebut menghasilkan Penanggalan Jawa yang baru tetapi berdasarkan pergerakan bulan dan Penanggalan Jawa baru ini sudah umum dipakai sejak Raden Patah menjadi Sultan Demak. 
 
 Momen dimana Raden Patah menjadi sultan pertama di Demak ditandai dengan *Sengkalan* atau *Candra Sengkala*,
 
@@ -14,6 +14,7 @@ Momen dimana Raden Patah menjadi sultan pertama di Demak ditandai dengan *Sengka
 Sengkalan tersebut menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setelah runtuhnya Majapahit.
 
 > Candra Sengkala atau Sengkalan merupakan cara orang Jawa dalam mengingat momen tahun sebagai suatu kalimat. Contoh paling terkenal adalah runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan bahwa Sengkalan sebenarnya adalah kalender lunar yang sudah lama dipakai sebelum masa para wali [[sumber](https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat)].
+
 
 
 ## Sistematis
