@@ -17,14 +17,29 @@ Sengkalan tersebut menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setel
 
 Pada masa Sultan Agung terjadi peresmian Kalender Jawa sebagai kalender kerajaan yaitu Jumat Legi, 1 Sura 1555 (1 Muharram 1043 H, 8 Juli 1633 M, atau 51 tahun setelah kalender Gregorian diresmikan) yang berlaku untuk seluruh Pulau Jawa kecuali Banten, Blambangan dan Madura.
 
-Kalau dihitung-hitung dan dinalar sebenarnya para leluhur bangsa Indonesia jauh lebih cepat dalam perumusan dan pemakaian sistem kalender yaitu 100 tahun lebih awal (peresmian Kalender Masehi adalah tahun 1582 M).
+> Kalau dihitung-hitung dan dinalar sebenarnya para leluhur bangsa Indonesia jauh lebih cepat dalam perumusan dan pemakaian sistem kalender yaitu 100 tahun lebih awal (peresmian Kalender Masehi adalah tahun 1582 M) dibandingkan Kalender Gregorian atau Masehi.
+
+
 
 ## Sistematis
 Berikut aturan atau sistematis dari Kalender Jawa yang perlu menjadi acuan:
 
-- Kalender Jawa Memakai sistem hari 7 dan 5.
+- Kalender Jawa Memakai sistem hari 7 *(saptawara)* yang sesuai dengan sistem hari pada kalender Masehi.
+- Kalender Jawa mamakai sistem 5 *(pancawara)* atau sering dikenal dengan Pasaran.
 - Kalender Jawa mempunyai siklus 8 tahunan (satu windu).
-- Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (koreksi yaitu dengan menambah 1 hari tiap 120 tahun).
+- Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (pengkoreksian yaitu dengan menambah 1 hari tiap 120 tahun).
+
+---
+Beberapa sistematis berikut belum ada rencana untuk di implementasikan dalam **Pustaka Kalender Jawa**:
+
+- Sistem pembagian hari menjadi 6, *sadwara* atau *paringkelan*.
+- Sistem siklus 210 hari atau 30 Wuku dimana tiap Wuku mempunyai siklus 7 hari. Sistem ini dikenal dengan nama Kalender Pawukon.
+- Sistem *tumbuk* dimana setiap 4 windu sekali terjadi keberulangan nama hari, tanggal, pasaran dan bulan.
+- Sistem lambang dengan siklus 2 windu.
+
+---
+
+
 
 ### Hari (*Dinten*/*Dino*/*Peken*)
 Sama seperti halnya sistem kalender Masehi, penanggalan Jawa juga memakai sistem pembagian hari menjadi 7.
