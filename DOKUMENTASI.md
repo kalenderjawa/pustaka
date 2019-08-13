@@ -15,7 +15,9 @@ Sengkalan tersebut menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setel
 
 > Candra Sengkala atau Sengkalan merupakan cara orang Jawa dalam mengingat momen tahun sebagai suatu kalimat. Contoh paling terkenal adalah runtuhnya Majapahit yaitu "Sirna ilang Kertaning Bumi" atau tahun 1400 Jawa dan yang perlu menjadi catatan bahwa Sengkalan sebenarnya adalah kalender lunar yang sudah lama dipakai sebelum masa para wali [[sumber](https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat)].
 
+Pada masa Sultan Agung terjadi peresmian Kalender Jawa sebagai kalender kerajaan yaitu Jumat Legi, 1 Sura 1555 (1 Muharram 1043 H, 8 Juli 1633 M, atau 51 tahun setelah kalender Gregorian diresmikan) yang berlaku untuk seluruh Pulau Jawa kecuali Banten, Blambangan dan Madura.
 
+Kalau dihitung-hitung dan dinalar sebenarnya para leluhur bangsa Indonesia jauh lebih cepat dalam perumusan dan pemakaian sistem kalender yaitu 100 tahun lebih awal (peresmian Kalender Masehi adalah tahun 1582 M).
 
 ## Sistematis
 Berikut aturan atau sistematis dari Kalender Jawa yang perlu menjadi acuan:
