@@ -10,14 +10,12 @@
 </p>
 
 ## Pengenalan
-Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian Penanggalan atau Kalender Jawa. 
-
-Dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya ramah buat para pengembang maka pustaka ini dibuat.
+Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian Penanggalan atau Kalender Jawa, dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya ramah buat para pengembang maka pustaka ini dibuat.
 
 > Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6).
 
 ## Sejarah
-Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan leluhur Jawa dan kemudian diwariskan terutama melalui rumus perhitungan dengan cara hafalan dan hebatnya rumus perhitungan ini bersifat abadi dan sangat akurat sampai hampir **1000 tahun**!.
+Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para leluhur Jawa dan kemudian diwariskan terutama melalui rumus perhitungan dengan cara hafalan dan hebatnya rumus perhitungan ini bersifat abadi dan sangat akurat sampai hampir **1000 tahun**.
 
 *"Dengan terhafal dalam bentuk nyanyian, kalender Jawa akan terbawa kemana saja pergi, dan masih memiliki tingkat akurasi tinggi sampai 994 tahun lagi. Setelah itu baru ada koreksi +1 hari sebelum Ambal Kurup Alip Senen Kliwon, 1 Sura 2947 Jawa (26 Januari 2984 Masehi)"* - [REF][CK].
 
@@ -26,7 +24,7 @@ Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [DOKUMENTASI.md](DOKUM
 
 ## Instalasi
 
-Pustaka Kalender Jawa bisa dipakai melalui beberapa cara, bisa diinstall melalui npm ataupun dipakai di browser melalui CDN
+Pustaka Kalender Jawa bisa dipakai dilingkungan Node maupun Browser
 
 ### Node
 
