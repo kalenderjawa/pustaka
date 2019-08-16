@@ -162,7 +162,7 @@ KalenderJawa.cariKurupTahunJawa(1994).then( d => {
 })
 ```
 
-### `sasi(w, t)`
+### :full_moon: `sasi(w, t)`
 Pakai fungsi ini jika anda ingin mengetahui Hari dan Pasaran selama satu bulan penuh pada tahun Jawa tertentu.
 
 **Argumen**
