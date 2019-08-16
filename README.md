@@ -240,7 +240,7 @@ Contoh
 console.log(KalenderJawa.tahunJawa[1]) // { taun: 'dal', neptu: 4, urutan: 5, cacah: 355 }
 
 ```
-## :warning: Batasan
+## :warning: :construction: Batasan :construction: :warning:
 Pustaka Kalender Jawa saat ini hanya mendukung dua kurup (Asapon & Anenhing).
 
 
