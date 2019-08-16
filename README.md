@@ -198,6 +198,11 @@ dan value dengan key `k` seperti berikut
 ]
 ```
 
+### `versi()`
+Info versi dari pustaka
+
+**Return**
+- `String`
 
 ## Properti
 
