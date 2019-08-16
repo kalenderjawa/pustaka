@@ -6,8 +6,8 @@
 
 // saat ini Pustaka Kalender Jawa hanya berlaku untuk 2 kurup
 // prototype
-const MIN_TAUNJ = 1867
-const MAX_TAUNJ = 2106
+const MIN_TAHUNJAWA = 1867
+const MAX_TAHUNJAWA = 2106
 
 function periksaBatasan (t: number): boolean {
   // if(t < )
