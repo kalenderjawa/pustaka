@@ -1,9 +1,9 @@
 # Kalender Jawa
 
 ## Sejarah
-Kalender atau Penanggalan Jawa merupakan penanggalan yang dibawa oleh para leluhur Jawa dan kemudian diolah lebih lanjut oleh para Wali tetapi sebelum masa para Wali, para leluhur Jawa telah memakai penanggalan berdasarkan matahari atau Saka dan juga berdasarkan bulan dan dalam perkembangan selanjutnya para Wali yang berkolaborasi dengan para leluhur bangsa Jawa tersebut menghasilkan Penanggalan Jawa yang baru tetapi berdasarkan pergerakan bulan dan Penanggalan Jawa baru ini sudah umum dipakai sejak Raden Patah menjadi Sultan Demak. 
+Kalender atau Penanggalan Jawa merupakan penanggalan yang dibawa oleh para leluhur Jawa dan kemudian diolah lebih lanjut oleh para Wali. Sebelum masa para Wali, para leluhur Jawa telah memakai penanggalan berdasarkan matahari atau Saka dan juga berdasarkan bulan dan dalam perkembangan selanjutnya para Wali yang berkolaborasi dengan para leluhur bangsa Jawa tersebut menghasilkan Penanggalan Jawa yang baru tetapi berdasarkan pergerakan bulan dan Penanggalan Jawa baru ini sudah umum dipakai sejak Raden Patah menjadi Sultan Demak yang pertama. 
 
-Momen dimana Raden Patah menjadi sultan pertama di Demak ditandai dengan *Sengkalan* atau *Candra Sengkala*,
+Momen dimana Raden Patah menjadi sultan pertama di Demak ini ditandai dengan *Sengkalan* atau *Candra Sengkala*,
 
 
 
@@ -17,8 +17,7 @@ Sengkalan tersebut menandakan tahun 1404 Saka (887 H, 1482 M) atau 4 tahun setel
 
 Pada masa Sultan Agung terjadi peresmian Kalender Jawa sebagai kalender kerajaan yaitu Jumat Legi, 1 Sura 1555 (1 Muharram 1043 H, 8 Juli 1633 M, atau 51 tahun setelah kalender Gregorian diresmikan) yang berlaku untuk seluruh Pulau Jawa kecuali Banten, Blambangan dan Madura.
 
-> Kalau dihitung-hitung dan dinalar sebenarnya para leluhur bangsa Indonesia jauh lebih cepat dalam perumusan dan pemakaian sistem kalender yaitu 100 tahun lebih awal (peresmian Kalender Masehi adalah tahun 1582 M) dibandingkan Kalender Gregorian atau Masehi.
-
+> Kalau dihitung-hitung dan dinalar sebenarnya para leluhur bangsa Indonesia jauh lebih cepat dalam perumusan dan pemakaian sistem kalender yaitu 100 tahun lebih awal dibandingkan Kalender Gregorian atau Masehi (peresmian Kalender Masehi adalah tahun 1582 M).
 
 
 ## Sistematis
