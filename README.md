@@ -198,7 +198,7 @@ dan value dengan key `k` seperti berikut
 ]
 ```
 
-### `versi()`
+### :zap: `versi()`
 Info versi dari pustaka
 
 **Return**
