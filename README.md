@@ -238,7 +238,11 @@ Contoh
 
 ```js
 console.log(KalenderJawa.tahunJawa[1]) // { taun: 'dal', neptu: 4, urutan: 5, cacah: 355 }
+
 ```
+## :warning: Batasan
+Pustaka Kalender Jawa saat ini hanya mendukung dua kurup (Asapon & Anenhing).
+
 
 ## Berkontribusi
 Lihat di [CONTRIBUTING.md](CONTRIBUTING.md).
