@@ -30,12 +30,12 @@ Berikut aturan atau sistematis dari Kalender Jawa yang perlu menjadi acuan:
 - Koreksi keberulangan terjadi setiap 120 tahun sekali (15 windu) atau istilahnya yaitu **Salin Kurup** atau **Ganti Kurup** (pengkoreksian yaitu dengan menambah 1 hari tiap 120 tahun).
 
 ---
-Beberapa sistematis berikut belum ada rencana untuk di implementasikan dalam **Pustaka Kalender Jawa**:
+Beberapa sistematis berikut juga termasuk dalam Kalender Jawa hanya saja tidak (belum ada rencana) di implementasikan dalam **Pustaka Kalender Jawa** karena sifatnya yang pilihan:
 
 - Sistem pembagian hari menjadi 6, *sadwara* atau *paringkelan*.
-- Sistem siklus 210 hari atau 30 Wuku dimana tiap Wuku mempunyai siklus 7 hari. Sistem ini dikenal dengan nama Kalender Pawukon.
+- Sistem siklus 210 hari atau 30 Wuku dimana tiap Wuku mempunyai siklus 7 hari. Sistem ini dikenal dengan nama Pawukon.
 - Sistem *tumbuk* dimana setiap 4 windu sekali terjadi keberulangan nama hari, tanggal, pasaran dan bulan.
-- Sistem lambang dengan siklus 2 windu.
+- Sistem *lambang* dengan siklus 2 windu.
 
 ---
 
