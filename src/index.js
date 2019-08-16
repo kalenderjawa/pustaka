@@ -146,5 +146,5 @@ export {
   DINTEN_ARR as araningDinten,
   SASI_ARR as araningSasi,
   TAHUN_ARR as tahunJawa,
-  version
+  version as versi
 }
