@@ -134,7 +134,7 @@ function koreksiPasaran (p: number) {
 }
 
 function version (): string {
-  return '1.0.0-alpha © Lawang Tunggal Walang Kembar (2019), Junwatu'
+  return 'v1.0-beta © Lawang Tunggal Walang Kembar (2019), Junwatu'
 }
 
 export {
