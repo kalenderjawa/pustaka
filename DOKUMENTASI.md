@@ -40,7 +40,7 @@ Beberapa sistematis berikut juga termasuk dalam Kalender Jawa hanya saja tidak (
 
 
 
-### Hari (*Dinten*/*Dino*/*Peken*)
+### Hari (*Dinten*/*Dino*)
 Sama seperti halnya sistem kalender Masehi, penanggalan Jawa juga memakai sistem pembagian hari menjadi 7.
 
 | Urutan | Dinten |
