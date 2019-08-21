@@ -4,6 +4,7 @@
  */
 const path = require('path')
 const LIB_NAME = 'KalenderJawa'
+const version = process.env.npm_package_version
 
 module.exports = {
   //mode: 'development',
@@ -11,7 +12,7 @@ module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
   output: {
     path: path.join(__dirname, 'lib'),
-    filename: `${LIB_NAME.toLowerCase()}-[contenthash]-bundle.js`,
+    filename: `${LIB_NAME.toLowerCase()}-${version}.min.js`,
     libraryTarget: 'umd',
     globalObject: 'this',
     library: `${LIB_NAME}`
