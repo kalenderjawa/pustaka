@@ -6,7 +6,8 @@ const path = require('path')
 const LIB_NAME = 'KalenderJawa'
 
 module.exports = {
-  mode: 'development',
+  //mode: 'development',
+  mode: 'production',
   entry: path.join(__dirname, 'src/index.js'),
   output: {
     path: path.join(__dirname, 'lib'),
