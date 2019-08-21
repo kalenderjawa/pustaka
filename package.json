@@ -4,7 +4,7 @@
   "description": "Pustaka penanggalan dan perhitungan di dalam kalendar jawa",
   "main": "lib/kalenderjawa-1.0.0-beta.0.min.js",
   "type": "module",
-  "module": "src/index.js",
+  "module": "lib/kalenderjawa-1.0.0-beta.0.min.js",
   "scripts": {
     "build": "npx webpack",
     "build-babel": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
