@@ -5,9 +5,14 @@
 import * as Silpin from '../silpin.js'
 
 describe('Test Silpin.js', () => {
-  test('cariWulanRegistry', () => {
+  test('cariWulanRegistry Parameter string', () => {
     expect((Silpin.cariWulanRegistry('romadon')).celukan).toBe('don')
     expect(Silpin.cariWulanRegistry('januari')).toBeUndefined()
+  })
+
+  test('cariWulanRegistry Parameter number', () => {
+    expect((Silpin.cariWulanRegistry(1)).celukan).toBe('rom')
+    expect(Silpin.cariWulanRegistry(14)).toBeUndefined()
   })
 
   test('cariTaunRegistry', () => {
