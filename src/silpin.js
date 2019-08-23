@@ -11,7 +11,7 @@ import 'regenerator-runtime/runtime'
 import type { PasaranType, DintenType, RumusType, SasiReturnType, TaunReturnType, WulanTaunQueryType, RumusSasiTaunType } from './type.js'
 import { PASARAN } from './pasaran.js'
 import { DINTEN } from './dinten.js'
-import { ARANING_WULAN_SETAUN } from './sasi.js'
+import { ARANING_WULAN_SETAUN, SASI_ARR } from './sasi.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
 import { SengkalaMap } from './rupa_ati.js'
 
@@ -67,7 +67,19 @@ function cariTaunRegistry (taun: string): TaunReturnType {
 
 function cariWulanRegistry (wulan: string): SasiReturnType {
   // console.log(ARANING_WULAN_SETAUN.get(Symbol.for(wulan)))
-  return ARANING_WULAN_SETAUN.has(Symbol.for(wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(wulan)) : undefined
+  // cek wulan type number or string
+  var _wulan = ''
+
+  if (typeof wulan === 'string') {
+    _wulan = wulan
+  } else if (typeof wulan === 'number') {
+    const _sasi = SASI_ARR[wulan - 1]
+    if (_sasi) {
+      _wulan = _sasi.wulan
+    }
+  }
+
+  return ARANING_WULAN_SETAUN.has(Symbol.for(_wulan)) ? ARANING_WULAN_SETAUN.get(Symbol.for(_wulan)) : undefined
 }
 
 function cariRumusWulanTaun (key: string, q: WulanTaunQueryType): RumusSasiTaunType | void {
