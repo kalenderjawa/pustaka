@@ -1,6 +1,6 @@
 {
   "name": "@junwatu/kalender-jawa",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Pustaka penanggalan dan perhitungan di dalam kalendar jawa",
   "main": "lib/kalenderjawa-1.0.0-beta.0.min.js",
   "type": "module",
