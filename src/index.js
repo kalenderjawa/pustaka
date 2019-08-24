@@ -22,10 +22,11 @@ import { TAHUN_ARR } from './taun.js'
    */
 
 async function cariKurupTaun (_q: number): Promise<TaunKurupType> {
+  const _qi = parseInt(_q)
   return new Promise((resolve, reject) => {
     for (const _kurup of Kurup.KURUP_ASAPON_ANENHING) {
       _kurup.awal.find(query => {
-        if (query === _q) resolve(_kurup)
+        if (query === _qi) resolve(_kurup)
       })
     }
 
