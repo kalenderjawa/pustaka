@@ -23,6 +23,15 @@ describe('Testing cariKurupTahunJawa', () => {
       expect(e).toMatch('error')
     })
   })
+
+  test('cariKurupTahunJawa 2000', () => {
+    return KalenderJawa.cariKurupTahunJawa(2000).then(r => {
+      expect(r.taun.taun).toBe('be')
+      expect(r.kurup.pasaran).toBe(ANENHING.pasaran)
+    }, e => {
+      expect(e).toMatch('error')
+    })
+  })
 })
 
 describe('Testing cariRumusAbadiAwalBulanTahunJawa', () => {
@@ -117,6 +126,13 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 1881', () => {
       console.log(d)
     })
     */
+  })
+
+  test('Mukarom, 2000', async () => {
+    // await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2000)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1881)
+    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2000).then(d => {
+      console.log(d)
+    })
   })
 })
 
