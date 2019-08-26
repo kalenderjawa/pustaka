@@ -1,5 +1,4 @@
-# Kalender Jawa
+# Dokumentasi
 
-Dokumentasi lengkap kunjungi
+:earth_asia: [https://kalenderjawa.dev](https://kalenderjawa.dev/dokumentasi)
 
-[https://kalenderjawa.dev]("https://kalenderjawa.dev/dokumentasi") 
