@@ -1,8 +1,12 @@
-<h3 align="center">
+<h2 align="center">
 <p align="center">Pustaka Kalender Jawa</p>
 <p align="center"><img src="images/sengkala.svg" width="80%" alt="sengkala"></p>
-</h3>
-
+</h2>
+<h2>
+<p align="center">
+<a href="https://kalenderjawa.dev"><img src="https://img.shields.io/badge/kalenderjawa.dev-WEBSITE-blue?style=for-the-badge&color=D90429&labelColor=2B2D42"/>  </a>
+</p>
+</h2>
 <p align="center">
 <a href="https://circleci.com/gh/junwatu/kalender-jawa" alt="Travis CI"><img src="https://circleci.com/gh/junwatu/kalender-jawa/tree/master.svg?style=svg&circle-token=23e428d78a273d8a105c8bdfdc86a112eccbcefa" alt="Build Status"/></a>
 <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
