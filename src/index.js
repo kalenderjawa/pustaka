@@ -90,11 +90,15 @@ async function sasi (s: string, th: number) {
   const [{ kH, kP }, dat] = await Promise.all([cariHariPasaranAwalBulanTahunJawa(s, th), cariRumusAbadiAwalBulanTahunJawa(s, th)])
   const _m = []
   let i = 0
+  let _x = kP.urutan
+  let _s = kH.urutan
 
   do {
     i = i + 1
-    const { ps, pn } = koreksiPasaran(kP.urutan + 1)
-    _m.push({ [i]: { dinten: koreksiDino(kH.urutan + 1), pasaran: ps, neptu: pn } })
+    const { ps, pn } = koreksiPasaran(_x)
+    _m.push({ [i]: { dinten: koreksiDino(_s), pasaran: ps, neptu: pn } })
+    _x = _x + 1
+    _s = _s + 1
   } while (i < dat.wulan.cacah[0])
 
   const sMap: Map<SasiKeyType, Array<Object>> = new Map()
