@@ -82,21 +82,19 @@ async function cariHariPasaranAwalBulanTahunJawa (w: string, t: number) {
   // $FlowFixMe
   const [sengkalaTaun, sengkalaRumus] = await Promise.all([cariKurupTaun(t), cariRumusAbadiAwalBulanTahunJawa(w, t)])
   const [kH, kP] = await Promise.all([konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan), konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)])
-
   const i = { taun: sengkalaTaun.taun.taun, kurup: `${sengkalaTaun.kurup.taun} ${sengkalaTaun.kurup.dinten.dino} ${sengkalaTaun.kurup.pasaran.pasaran}` }
   return { w, t, i, kH, kP }
 }
 
 async function sasi (s: string, th: number) {
-  const { kH, kP } = await cariHariPasaranAwalBulanTahunJawa(s, th)
-  const dat = await cariRumusAbadiAwalBulanTahunJawa(s, th)
+  const [{ kH, kP }, dat] = await Promise.all([cariHariPasaranAwalBulanTahunJawa(s, th), cariRumusAbadiAwalBulanTahunJawa(s, th)])
   const _m = []
   let i = 0
 
   do {
     i = i + 1
-    const { ps, pn } = koreksiPasaran(kP.urutan++)
-    _m.push({ [i]: { dinten: koreksiDino(kH.urutan++), pasaran: ps, neptu: pn } })
+    const { ps, pn } = koreksiPasaran(kP.urutan + 1)
+    _m.push({ [i]: { dinten: koreksiDino(kH.urutan + 1), pasaran: ps, neptu: pn } })
   } while (i < dat.wulan.cacah[0])
 
   const sMap: Map<SasiKeyType, Array<Object>> = new Map()
