@@ -200,16 +200,6 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 2077 Kurup Anenhing', () =>
   */
 })
 
-describe('Test Sasi', () => {
-  test('sasi', async () => {
-    return KalenderJawa.sasi('mukarom', 1953).then(({ k, s }) => {
-      console.log(s)
-      console.log(s.get(k))
-    })
-
-  })
-})
-
 describe('Test Pasaran, Dinten, Tahun Jawa', () => {
   test('Pasaran', () => {
     const p = KalenderJawa.araningPasaran
