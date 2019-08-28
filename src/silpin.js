@@ -22,7 +22,6 @@ import { SengkalaMap } from './rupa_ati.js'
  */
 async function konversiHari (h: number, dn: number): Promise<DintenType | string> {
   const _xH = dn + h - 1
-  // console.log(`dino> koreksi: ${h}, offset: ${dn}`)
   let xH = 0
 
   if (_xH > 7) { xH = _xH - 7 } else { xH = _xH }
@@ -39,7 +38,6 @@ async function konversiHari (h: number, dn: number): Promise<DintenType | string
 
 async function konversiPasaran (p: number, ps: number): Promise<PasaranType | string> {
   const _xP = ps + p - 1
-  // console.log(`pasaran> koreksi: ${p}, offset: ${ps}`)
   let xP = 0
 
   if (_xP > 5) { xP = _xP - 5 } else { xP = _xP }
