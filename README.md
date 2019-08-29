@@ -24,7 +24,7 @@ Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para lelu
 *"Dengan terhafal dalam bentuk nyanyian, kalender Jawa akan terbawa kemana saja pergi, dan masih memiliki tingkat akurasi tinggi sampai 994 tahun lagi. Setelah itu baru ada koreksi +1 hari sebelum Ambal Kurup Alip Senen Kliwon, 1 Sura 2947 Jawa (26 Januari 2984 Masehi)"* - [REF][CK].
 
 
-Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [DOKUMENTASI.md](DOKUMENTASI.md).
+Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [DOKUMENTASI](https://kalenderjawa.dev/dokumentasi).
 
 ## Instalasi
 
@@ -57,7 +57,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 ## API
 
-**Pasaran**, **Kurup**. **Neptu** dan **Tahun Jawa** dijelaskan di [DOKUMENTASI.md](DOKUMENTASI.md).
+**Pasaran**, **Kurup**. **Neptu** dan **Tahun Jawa** dijelaskan di [DOKUMENTASI](https://kalenderjawa.dev/dokumentasi).
 
 ## Fungsi
 
