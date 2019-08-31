@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/junwatu/kalender-jawa.git"
+    "url": "git+https://github.com/junwatu/pustaka.git"
   },
   "keywords": [
     "kalender",
@@ -34,9 +34,9 @@
   "author": "Equan Pr.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/junwatu/kalender-jawa/issues"
+    "url": "https://github.com/junwatu/pustaka/issues"
   },
-  "homepage": "https://github.com/junwatu/kalender-jawa#readme",
+  "homepage": "https://github.com/junwatu/pustaka#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
