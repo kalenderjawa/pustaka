@@ -5,6 +5,9 @@
   "main": "lib/kalenderjawa.min.js",
   "type": "module",
   "module": "lib/kalenderjawa.min.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npx webpack",
     "build-babel": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
