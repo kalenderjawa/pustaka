@@ -7,7 +7,7 @@ const LIB_NAME = 'KalenderJawa'
 const version = process.env.npm_package_version
 
 module.exports = {
-  //mode: 'development',
+  // mode: 'development',
   mode: 'production',
   entry: path.join(__dirname, 'src/index.js'),
   output: {
