@@ -12,7 +12,7 @@ module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
   output: {
     path: path.join(__dirname, 'lib'),
-    filename: `${LIB_NAME.toLowerCase()}-${version}.min.js`,
+    filename: `${LIB_NAME.toLowerCase()}.min.js`,
     libraryTarget: 'umd',
     globalObject: 'this',
     library: `${LIB_NAME}`
