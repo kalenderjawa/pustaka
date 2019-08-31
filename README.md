@@ -24,7 +24,7 @@ Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para lelu
 *"Dengan terhafal dalam bentuk nyanyian, kalender Jawa akan terbawa kemana saja pergi, dan masih memiliki tingkat akurasi tinggi sampai 994 tahun lagi. Setelah itu baru ada koreksi +1 hari sebelum Ambal Kurup Alip Senen Kliwon, 1 Sura 2947 Jawa (26 Januari 2984 Masehi)"* - [REF][CK].
 
 
-Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [DOKUMENTASI](https://kalenderjawa.dev/dokumentasi).
+Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [DOKUMENTASI](https://kalenderjawa.dev/sejarah).
 
 ## Instalasi
 
@@ -57,7 +57,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 ## API
 
-**Pasaran**, **Kurup**. **Neptu** dan **Tahun Jawa** dijelaskan di [DOKUMENTASI](https://kalenderjawa.dev/dokumentasi).
+**Pasaran**, **Kurup**. **Neptu** dan **Tahun Jawa** dijelaskan di [DOKUMENTASI](https://kalenderjawa.dev/sejarah).
 
 ## Fungsi
 
@@ -91,7 +91,7 @@ KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952).then({kH, kP} =>
 ### :1234: `cariRumusAbadiAwalBulanTahunJawa(w, t)`
 Rumus untuk hari-hari awal bulan pada masing-masing tahun dalam siklus windu bisa didapatkan melalui fungsi ini. 
 
-> Untuk tabel rumus abadi jika anda ingin menghapalnya lihat di [DOKUMENTASI.md](DOKUMENTASI.md)
+> Untuk tabel rumus abadi jika anda ingin menghapalnya lihat di [DOKUMENTASI](https://kalenderjawa.dev/sejarah)
 
 **Argumen**:
 
