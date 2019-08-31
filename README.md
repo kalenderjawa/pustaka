@@ -59,6 +59,8 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 **Pasaran**, **Kurup**. **Neptu** dan **Tahun Jawa** dijelaskan di [DOKUMENTASI](https://kalenderjawa.dev/sejarah).
 
+> Demo API ada di [https://kalenderjawa.dev/api](https://kalenderjawa.dev/api) 
+
 ## Fungsi
 
 ### :new_moon: `cariHariPasaranAwalBulanTahunJawa(w, t)`
