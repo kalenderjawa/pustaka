@@ -33,13 +33,13 @@ Pustaka Kalender Jawa bisa dipakai dilingkungan Node maupun Browser
 ### Node
 
 ```
-npm install --save @junwatu/kalender-jawa
+npm install --save @kalenderjawa/pustaka
 ```
 
 Memakai pustaka jika memakai `import` ES6
 
 ```js
-import { KalenderJawa } from '@junwatu/kalender-jawa'
+import * as KalenderJawa from '@kalenderjawa/pustaka'
 
 KalenderJawa.cariKurupTahunJawa(1881).then(/**...*/)
 ```
@@ -51,7 +51,7 @@ Jika anda memakai browser pustaka ini bisa di ambil melalui CDN (*Content Delive
 Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 ```html
-<script src="https://unpkg.com/@junwatu/kalender-jawa"/>
+<script src="https://unpkg.com/@kalenderjawa/pustaka"/>
 ```
 
 
@@ -80,7 +80,7 @@ Misalnya untuk mencari hari dan pasaran dari awal bulan 1 Pasa/Romadon pada tahu
 dan kode javascript untuk mencari hari dan pasaran tersebut bisa ditulis seperti berikut
 
 ```js
-import * as KalenderJawa from '@junwatu/kalender-jawa'
+import * as KalenderJawa from '@kalenderjawa/pustaka'
 
 KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952).then({kH, kP} => {
   console.log(`${kH.dino} ${kP.pasaran}`) // senen legi
@@ -179,7 +179,7 @@ Pakai fungsi ini jika anda ingin mengetahui Hari dan Pasaran selama satu bulan p
 
 Misalnya anda ingin mengetahui Tanggal, Hari & Pasaran selama sasi **Mukarom, 1953 Tahun Jawa**
 ```js
-import * as KalenderJawa from '@junwatu/kalender-jawa'
+import * as KalenderJawa from '@kalenderjawa/pustaka'
 
 KalenderJawa.sasi('mukarom', 1953).then({ k, s } => {
   console.log(s.get(k))
