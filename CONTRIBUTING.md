@@ -8,8 +8,8 @@ anda bisa melaporkannya melalui **issues** di repo ini.
 
 Jika anda programer dan ingin memperbaiki **kode** ini supaya lebih seksi, silahkan dan kami ucapkan banyak terima kasih! :+1:
 
-## Dokumentasi
-Jika ada kata-kata pada **Dokumentasi** yang salah tulis atau dirasa kurang pas silahkan membuat **issues** atau fork dan **pull request**. 
+## Konten
+Jika ada kata-kata pada yang salah tulis atau dirasa kurang pas silahkan membuat **issues**. 
 
 ## SosMed, Artikel
 Beribu terima kasih jika anda bersedia membantu share pustaka ini meskipun sekecil memberitahu kepada teman, apalagi share ke Media Sosial ataupun membikin artikel tentang Pustaka Kalender Jawa. God Bless You! :pray:.
