@@ -238,6 +238,21 @@ while (!index.done) {
   index = iterator.next()
 }
 ```
+### `araningSasi`
+**Return**
+- Array
+
+Contoh
+
+```js
+const iterator = KalenderJawa.araningSasi.values()
+let index = iterator.next()
+
+while (!index.done) {
+  console.log(index.value) // { wulan: 'mukarom', urutan: 1 } ...
+  index = iterator.next()
+}
+```
 
 ### `taunJawa`
 **Return**
