@@ -11,9 +11,9 @@
  * Untuk target env yang mendukung native module, core-js & regenerator-runtime cukup dihilangkan.
  */
 // $FlowFixMe
-import 'core-js/stable'
+// import 'core-js/stable'
 // $FlowFixMe
-import 'regenerator-runtime/runtime'
+// import 'regenerator-runtime/runtime'
 /***/
 
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
