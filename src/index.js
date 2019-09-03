@@ -4,10 +4,18 @@
 // 📁 index.js
 // :ES6
 
+/**
+ * Kedua dependensi ini hanya diperlukan jika ingin mem-bundle pustaka 
+ * untuk target browser yang belum mendukung native module.
+ * -----
+ * Untuk target env yang mendukung native module, core-js & regenerator-runtime cukup dihilangkan.
+ */
 // $FlowFixMe
 import 'core-js/stable'
 // $FlowFixMe
 import 'regenerator-runtime/runtime'
+/***/
+
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
 import type { RumusSasiTaunType, TaunKurupType, SasiKeyType } from './type.js'
 import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
