@@ -1,16 +1,18 @@
-var flow = require('rollup-plugin-flow')
+import flow from 'rollup-plugin-flow'
+import { terser } from 'rollup-plugin-terser'
 
 export default {
   input: {
     main: 'src/index.js'
   },
   plugins: [
-    flow()
+    flow(),
+    terser()
   ],
   output: {
     dir: 'lib',
     format: 'esm',
-    entryFileNames: 'kalenderjawa.esm.mjs'
+    entryFileNames: 'kalenderjawa.esm.min.mjs'
   }
 }
 
