@@ -11,6 +11,7 @@
   "scripts": {
     "build": "npx webpack",
     "build-babel": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
+    "build-native-module": "rollup --config",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
     "test": "npx jest --no-cache --coverage --testPathIgnorePatterns=\"_data.*\"",
     "test-watch": "npm run test -- --watch"
@@ -54,6 +55,7 @@
     "jest": "^24.8.0",
     "jsdoc": "^3.6.3",
     "rollup-plugin-flow": "^1.1.1",
+    "rollup-plugin-terser": "^5.1.1",
     "standard": "^13.1.0",
     "webpack": "^5.0.0-alpha.18",
     "webpack-cli": "^3.3.6"
