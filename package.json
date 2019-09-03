@@ -4,7 +4,7 @@
   "description": "Pustaka JavaScript untuk perhitungan, pengkonversian dan penanggalan Kalender Jawa Abadi",
   "main": "lib/kalenderjawa.min.js",
   "type": "module",
-  "module": "lib/kalenderjawa.min.js",
+  "module": "lib/kalenderjawa.esm.min.mjs",
   "publishConfig": {
     "access": "public"
   },
@@ -53,6 +53,7 @@
     "flow-bin": "^0.102.0",
     "jest": "^24.8.0",
     "jsdoc": "^3.6.3",
+    "rollup-plugin-flow": "^1.1.1",
     "standard": "^13.1.0",
     "webpack": "^5.0.0-alpha.18",
     "webpack-cli": "^3.3.6"
