@@ -64,7 +64,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 ## Fungsi
 
-### :new_moon: `cariHariPasaranAwalBulanTahunJawa(w, t)`
+### `cariHariPasaranAwalBulanTahunJawa(w, t)`
 
 **Argumen**:
 
@@ -91,7 +91,7 @@ KalenderJawa.cariHariPasaranAwalBulanTahunJawa('romadon', 1952).then({kH, kP} =>
 
 ```
 
-### :1234: `cariRumusAbadiAwalBulanTahunJawa(w, t)`
+### `cariRumusAbadiAwalBulanTahunJawa(w, t)`
 Rumus untuk hari-hari awal bulan pada masing-masing tahun dalam siklus windu bisa didapatkan melalui fungsi ini. 
 
 > Untuk tabel rumus abadi jika anda ingin menghapalnya lihat di [DOKUMENTASI](https://kalenderjawa.dev/sejarah)
@@ -127,7 +127,7 @@ KalenderJawa.cariRumusAbadi('romadon', 1952).then(data => {
 })
 ```
 
-### :six_pointed_star: `cariKurupTahunJawa(t)`
+### `cariKurupTahunJawa(t)`
 
 Fungsi ini akan mencari pada tahun apa dalam se-windu dan berada pada kurup apa suatu taun. Misalnya anda ingin mencari nama taun jawa dan kurup dari tahun 1994 maka tahun tersebut berada pada tahun Jimakir dan kurup Alip Senen Pahing atau Anenhing.
 
@@ -169,7 +169,7 @@ KalenderJawa.cariKurupTahunJawa(1994).then( d => {
 })
 ```
 
-### :full_moon: `sasi(w, t)`
+### `sasi(w, t)`
 Pakai fungsi ini jika anda ingin mengetahui Hari dan Pasaran selama satu bulan penuh pada tahun Jawa tertentu.
 
 **Argumen**
@@ -205,7 +205,7 @@ dan value dengan key `k` seperti berikut
 ]
 ```
 
-### :zap: `versi()`
+### `versi()`
 Info versi dari pustaka
 
 **Return**
