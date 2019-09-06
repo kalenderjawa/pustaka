@@ -12,7 +12,7 @@ export default {
   output: {
     dir: 'lib',
     format: 'esm',
-    entryFileNames: 'kalenderjawa.esm.min.mjs'
+    entryFileNames: 'kalenderjawa.min.mjs'
   }
 }
 
