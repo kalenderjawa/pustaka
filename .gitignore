@@ -64,6 +64,7 @@ typings/
 !lib
 lib/*
 !lib/kalenderjawa*.js
+!lib/kalenderjawa*.mjs
 
 # documentation
 docs
