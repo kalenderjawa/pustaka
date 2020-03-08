@@ -60,7 +60,7 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 **Pasaran**, **Kurup**. **Neptu** dan **Tahun Jawa** dijelaskan di [DOKUMENTASI](https://kalenderjawa.dev/sejarah).
 
-> Demo API ada di [https://kalenderjawa.dev/api](https://kalenderjawa.dev/api) 
+> Demo API ada di [https://kalenderjawa.dev/api](https://kalenderjawa.dev/api)
 
 ## Fungsi
 
@@ -283,4 +283,4 @@ Lihat di [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Lisensi
 [MIT License](https://choosealicense.com/licenses/mit/)
 
-Copyright © *Lawang Tunggal Walang Kembar* *(2019)*, [Junwatu](https://github.com/junwatu)
+Copyright © *Lawang Tunggal Walang Kembar* *(2019)* *- 2020*, [Junwatu](https://github.com/junwatu)
