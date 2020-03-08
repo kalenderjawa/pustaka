@@ -1,7 +1,7 @@
 /**
  * Library Testing
  */
-const KalenderJawaLib = require('../../lib/kalenderjawa.min.js')
+import * as KalenderJawaLib from '../../lib/kalenderjawa.min.js'
 const _TESTOBJ = {
   taun: { taun: 'wawu', neptu: 6, urutan: 7 },
   kurup: {
