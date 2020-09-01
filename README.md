@@ -63,4 +63,5 @@ Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
 ## Lisensi
 [MIT License](https://choosealicense.com/licenses/mit/)
 
-Copyright © *(2019)* *- 2021* [kalenderjawa.dev](https://kalenderjawa.dev)
+---
+Copyright © *2019* *- 2021* [kalenderjawa.dev](https://kalenderjawa.dev)
