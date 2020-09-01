@@ -9,7 +9,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npx webpack",
+    "build": "npx webpack && npm run build-native-module",
     "build-babel": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
     "build-native-module": "rollup --config",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
