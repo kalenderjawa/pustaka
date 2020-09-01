@@ -59,6 +59,10 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 
 Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
 
+## Kalender
+
+Contoh aplikasi web yang memakai pustaka ini adalah [Sengkala](https://app.kalenderjawa.dev).
+
 
 [CK]: https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
 
@@ -66,4 +70,4 @@ Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
 [MIT License](https://choosealicense.com/licenses/mit/)
 
 ---
-Copyright © *2019* *- 2021* [kalenderjawa.dev](https://kalenderjawa.dev)
+Copyright © [kalenderjawa.dev](https://kalenderjawa.dev) (2019 - 2021)
