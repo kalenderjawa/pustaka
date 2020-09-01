@@ -60,6 +60,8 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
 
 
+[CK]: https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
+
 ## Lisensi
 [MIT License](https://choosealicense.com/licenses/mit/)
 
