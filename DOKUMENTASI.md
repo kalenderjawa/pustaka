@@ -1,4 +1,4 @@
 # Dokumentasi
 
-:earth_asia: [https://kalenderjawa.dev](https://kalenderjawa.dev/dokumentasi)
+:earth_asia: [https://kalenderjawa.dev](https://kalenderjawa.dev)
 
