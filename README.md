@@ -61,6 +61,13 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 <script src="https://unpkg.com/@kalenderjawa/pustaka"/>
 ```
 
+atau kalau anda ingin memakai pustaka versi ES Module yang ukurannya jauh lebih kecil (tetapi hanya mendukung browser modern).
+
+```html
+<script src="https://unpkg.com/@kalenderjawa/pustaka/lib/kalenderjawa.min.mjs"/>
+
+```
+
 ## API
 
 Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
