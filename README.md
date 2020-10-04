@@ -17,7 +17,7 @@
 ## Pengenalan
 Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian Penanggalan atau Kalender Jawa, dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya ramah buat para pengembang maka pustaka ini dibuat.
 
-> Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6).
+> Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6) dan hanya mendukung ES Module.
 
 ## Sejarah
 Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para leluhur Jawa dan kemudian diwariskan terutama melalui rumus perhitungan dengan cara hafalan dan hebatnya rumus perhitungan ini bersifat abadi dan sangat akurat sampai hampir **1000 tahun**.
@@ -30,12 +30,6 @@ Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [Website Kalender Jawa
 ## Instalasi
 
 Pustaka Kalender Jawa bisa dipakai dilingkungan Node maupun Browser.
-
-**Jenis Pustaka**
-
-- `kalenderjawa.min.js` adalah *library* untuk browser ataupun node.js yang belum mendukung ES Module.
-
-- `kalenderjawa.min.mjs` adalah *library* untuk browser ataupun node yang PASTI mendukung ES Module.
 
 ### Node
 
@@ -61,12 +55,6 @@ Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
 <script src="https://unpkg.com/@kalenderjawa/pustaka"/>
 ```
 
-atau kalau anda ingin memakai pustaka versi ES Module yang ukurannya jauh lebih kecil (tetapi hanya mendukung browser modern).
-
-```html
-<script src="https://unpkg.com/@kalenderjawa/pustaka/lib/kalenderjawa.min.mjs"/>
-
-```
 
 ## API
 
