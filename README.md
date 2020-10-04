@@ -29,7 +29,13 @@ Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [Website Kalender Jawa
 
 ## Instalasi
 
-Pustaka Kalender Jawa bisa dipakai dilingkungan Node maupun Browser
+Pustaka Kalender Jawa bisa dipakai dilingkungan Node maupun Browser.
+
+**Jenis Pustaka**
+
+- `kalenderjawa.min.js` adalah *library* untuk browser ataupun node.js yang belum mendukung ES Module.
+
+- `kalenderjawa.min.mjs` adalah *library* untuk browser ataupun node yang PASTI mendukung ES Module.
 
 ### Node
 
