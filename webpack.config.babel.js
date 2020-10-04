@@ -3,11 +3,11 @@
  * See: https://github.com/kalcifer/webpack-library-example/blob/master/webpack.config.babel.js
  */
 const path = require('path')
+
 const LIB_NAME = 'KalenderJawa'
 const version = process.env.npm_package_version
 
 module.exports = {
-  // mode: 'development',
   mode: 'production',
   entry: path.join(__dirname, 'src/index.js'),
   output: {
@@ -21,8 +21,11 @@ module.exports = {
     rules: [
       {
         test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader'
+        exclude: path.resolve(__dirname, '/node_modules'),
+        loader: 'babel-loader',
+        options: {
+          presets: ["@babel/preset-flow", "@babel/preset-env"]
+        }
       }
     ]
   }
