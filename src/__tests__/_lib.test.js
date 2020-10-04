@@ -2,9 +2,7 @@
  * Library Testing
  */
 
-// $FlowFixMe[cannot-resolve-module]
 import 'core-js/stable'
-// $FlowFixMe[cannot-resolve-module]
 import 'regenerator-runtime/runtime'
 
 import * as KalenderJawaLib from '../../lib/kalenderjawa.min.js'

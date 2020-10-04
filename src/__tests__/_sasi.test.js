@@ -2,9 +2,7 @@
  * Testing wulan.js
  */
 
-// $FlowFixMe[cannot-resolve-module]
 import 'core-js/stable'
-// $FlowFixMe[cannot-resolve-module]
 import 'regenerator-runtime/runtime'
 
 import * as Sasi from '../sasi.js'
