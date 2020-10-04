@@ -16,17 +16,18 @@ export default {
       dir: 'lib',
       format: 'esm',
       entryFileNames: 'kalenderjawa.min.js'
-    }]
-}
-
-/**
- *
- * manualChunks(id) {
-    if (id.includes('node_modules')) {
-      // Return the directory name following the last `node_modules`.
-      // Usually this is the package, but it could also be the scope.
-      const dirs = id.split(path.sep);
-      return dirs[dirs.lastIndexOf('node_modules') + 1];
     }
-  }
- */
+    ,
+    {
+      dir: 'lib',
+      format: 'iife',
+      name: 'KalenderJawa',
+      entryFileNames: 'kalenderjawa.browser.min.js'
+    },
+    {
+      dir: 'lib',
+      format: 'cjs',
+      entryFileNames: 'kalenderjawa.min.cjs'
+    }
+  ]
+}
