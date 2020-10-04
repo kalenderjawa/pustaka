@@ -3,10 +3,10 @@
  * Silpin (Bahasa Sanskrit) artinya Seniman
  * 📁 silpin.js
  */
-// $FlowFixMe
-//import 'core-js/stable'
-// $FlowFixMe
-//import 'regenerator-runtime/runtime'
+// $FlowFixMe[cannot-resolve-module]
+import 'core-js/stable'
+// $FlowFixMe[cannot-resolve-module]
+import 'regenerator-runtime/runtime'
 
 import type { PasaranType, DintenType, RumusType, SasiReturnType, TaunReturnType, WulanTaunQueryType, RumusSasiTaunType } from './type.js'
 import { PASARAN } from './pasaran.js'
