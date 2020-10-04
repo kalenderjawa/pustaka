@@ -11,11 +11,12 @@ export default {
     flow(),
     terser()
   ],
-  output: {
-    dir: 'lib',
-    format: 'esm',
-    entryFileNames: 'kalenderjawa.esm.min.js'
-  }
+  output: [
+    {
+      dir: 'lib',
+      format: 'esm',
+      entryFileNames: 'kalenderjawa.min.mjs'
+    }]
 }
 
 /**
