@@ -1,6 +1,6 @@
 {
   "name": "@kalenderjawa/pustaka",
-  "version": "1.0.0-beta.9",
+  "version": "1.0.0-beta.10",
   "description": "Pustaka JavaScript untuk perhitungan, pengkonversian dan penanggalan Kalender Jawa Abadi",
   "main": "lib/kalenderjawa.min.js",
   "type": "module",
