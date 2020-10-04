@@ -2,6 +2,12 @@
  * Testing Jest Yes!
  */
 
+// $FlowFixMe[cannot-resolve-module]
+import 'core-js/stable'
+// $FlowFixMe[cannot-resolve-module]
+import 'regenerator-runtime/runtime'
+
+
 import * as Silpin from '../silpin.js'
 
 describe('Test Silpin.js', () => {
