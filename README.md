@@ -17,7 +17,7 @@
 ## Pengenalan
 Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian Penanggalan atau Kalender Jawa, dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya ramah buat para pengembang maka pustaka ini dibuat.
 
-> Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6) dan hanya mendukung ES Module.
+> Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6) dan memakai ES Module.
 
 ## Sejarah
 Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para leluhur Jawa dan kemudian diwariskan terutama melalui rumus perhitungan dengan cara hafalan dan hebatnya rumus perhitungan ini bersifat abadi dan sangat akurat sampai hampir **1000 tahun**.
@@ -26,6 +26,21 @@ Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para lelu
 
 
 Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [Website Kalender Jawa](https://kalenderjawa.dev/sejarah).
+
+## Hasil Build
+Ada 3 hasil build dan default adalah build untuk Node.js ataupun browser yang mendukung ES Module (ESM).
+
+### Browser yang tidak mendukung ESM
+`kalenderjawa.browser.min.js`
+
+### Node.js yang tidak mendukung ESM (sebelum Node.js 12.17.0)
+`kalenderjawa.min.cjs`
+
+### Node.js & browser yang mendukung ESM 
+`kalenderjawa.min.js`
+
+Contoh penggunaan hasil build diatas ada pada direktori `examples`
+
 
 ## Instalasi
 
@@ -37,7 +52,7 @@ Pustaka Kalender Jawa bisa dipakai dilingkungan Node maupun Browser.
 npm install --save @kalenderjawa/pustaka
 ```
 
-Memakai pustaka jika memakai `import` ES6
+Secara default anda akan memakai Pustaka yang mendukung ES Module, benar yaitu yang memakai `import`
 
 ```js
 import * as KalenderJawa from '@kalenderjawa/pustaka'
@@ -45,16 +60,27 @@ import * as KalenderJawa from '@kalenderjawa/pustaka'
 KalenderJawa.cariKurupTahunJawa(1881).then(/**...*/)
 ```
 
+Untuk Node.js yang belum mendukung ES Module (Node.js sebelum v12.17.0) silahkan memakai berkas `kalenderjawa.min.cjs` pada direktori `lib`.
+
 ### Browser
 
-Jika anda memakai browser pustaka ini bisa di ambil melalui CDN (*Content Delivery Network*) di `unpkg.com`. 
+Jika anda memakai browser Pustaka ini bisa di ambil melalui CDN (*Content Delivery Network*) seperti di `unpkg.com`.
 
-Kode berikut akan mengambil pustaka dengan versi terbaru dari CDN
+Kode berikut akan mengambil pustaka untuk browser yang tidak mendukung ES Module.
 
 ```html
-<script src="https://unpkg.com/@kalenderjawa/pustaka"/>
+<script src="https://unpkg.com/@kalenderjawa/pustaka/lib/kalenderjawa.browser.min.js"/>
 ```
 
+dan kode berikut untuk browser yang mendukung ES Module
+
+```html
+<script src="https://unpkg.com/@kalenderjawa/pustaka" type="module">
+ import * as KalenderJawa from "@kalenderjawa/pustaka";
+
+ console.log(KalenderJawa);
+<script>
+```
 
 ## API
 
