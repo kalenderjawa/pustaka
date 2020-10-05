@@ -17,6 +17,7 @@ type TaunReturnType = TaunType | void
 type SasiReturnType = WulanType | void
 type TaunKurupType = {| taun: TaunType, kurup: KurupType, awal: Array<number>|}
 type SasiKeyType = {| sasi: string, taun: number |}
+type DateType = {|yyyy: number, mm: number, dd: number|}
 
 export type {
   PasaranType,
@@ -31,5 +32,6 @@ export type {
   RumusSasiTaunType,
   TaunReturnType,
   SasiReturnType,
-  TaunKurupType
+  TaunKurupType,
+  DateType
 }

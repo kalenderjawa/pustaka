@@ -1,6 +1,10 @@
 /**
  * Library Testing
  */
+
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+
 import * as KalenderJawaLib from '../../lib/kalenderjawa.min.js'
 const _TESTOBJ = {
   taun: { taun: 'wawu', neptu: 6, urutan: 7 },

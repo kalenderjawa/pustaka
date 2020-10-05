@@ -2,6 +2,9 @@
  * Testing Jest Yes!
  */
 
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+
 import * as Silpin from '../silpin.js'
 
 describe('Test Silpin.js', () => {

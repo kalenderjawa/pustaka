@@ -1,6 +1,10 @@
 /**
  * Testing wulan.js
  */
+
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+
 import * as Sasi from '../sasi.js'
 import * as KalenderJawa from '../index.js'
 

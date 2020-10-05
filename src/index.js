@@ -12,12 +12,15 @@
  */
 
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
-import type { RumusSasiTaunType, TaunKurupType, SasiKeyType } from './type.js'
+import type { RumusSasiTaunType, TaunKurupType, SasiKeyType, DateType } from './type.js'
 import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
 import { DINTEN_ARR } from './dinten.js'
 import { PASARAN_ARR } from './pasaran.js'
 import { SASI_ARR } from './sasi.js'
 import { TAHUN_ARR } from './taun.js'
+//import { MasehiKeHijriyah, HijriyahKeMasehi } from './hg/index.js'
+import pkg from '../package.json'
+
 /**
    * Mencari Kurup dan Taun Jawa
    * @param { number } input - 4 digit integer
@@ -139,9 +142,15 @@ function koreksiPasaran (p: number) {
   return { ps: PASARAN_ARR[pc - 1]['pasaran'], pn: PASARAN_ARR[pc - 1]['neptu'] }
 }
 
-function version (): string {
-  return 'v1.0.0-beta.8 © Lawang Tunggal Walang Kembar (2019), Junwatu'
+function JawaKeHijriyah(jd: DateType, hd: DateType) {
+
 }
+
+
+function version (): string {
+  return `v${pkg.version}`
+}
+
 
 export {
   cariKurupTaun as cariKurupTahunJawa,
