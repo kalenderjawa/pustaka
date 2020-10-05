@@ -9,6 +9,8 @@ import * as DAT from './_data.js'
 import * as KalenderJawa from '../index.js'
 import { ANENHING, ASAPON } from '../kurup.js'
 
+import pkg from '../../package.json'
+
 describe('Testing cariKurupTahunJawa', () => {
   test('cariKurupTahunJawa 1994', () => {
     return KalenderJawa.cariKurupTahunJawa(1994).then(r => {
@@ -195,13 +197,6 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 2077 Kurup Anenhing', () =>
       expect(`${d.kH.dino}_${d.kP.pasaran}`).toBe('rebo_legi')
     })
   })
-
-  /**
-  test('Dulkijah, 1881', async () => {
-    await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('dulkijah', 1881)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1881)
-
-  })
-  */
 })
 
 describe('Test Pasaran, Dinten, Tahun Jawa', () => {
@@ -217,5 +212,13 @@ describe('Test Pasaran, Dinten, Tahun Jawa', () => {
   test('Taun Jawa', () => {
     const j = KalenderJawa.tahunJawa
     expect(j[3].taun).toBe('je')
+  })
+})
+
+describe('Test Versi Pustaka', () => {
+  test('Versi', () => {
+    let libVersi = KalenderJawa.versi()
+    let versi = `v${pkg.version}`
+    expect(libVersi).toBe(versi)
   })
 })
