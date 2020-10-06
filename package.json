@@ -14,7 +14,7 @@
   "scripts": {
     "build": "npx rollup --config",
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
-    "test": "npx jest --no-cache --coverage --testPathIgnorePatterns=\"_data.*\"",
+    "test": "npx cross-env JEST_PUPPETEER_CONFIG=jest-puppeteer.config.cjs jest --no-cache --coverage --testPathIgnorePatterns=\"_data.*\"",
     "test-watch": "npm run test -- --watch",
     "serve": "node scripts/res.js && node test_server.js"
   },
@@ -57,6 +57,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.5.1",
     "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
     "eslint-plugin-flowtype": "^5.2.0",
     "express": "^4.17.1",
     "flow-bin": "^0.132.0",
