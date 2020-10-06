@@ -18,5 +18,11 @@ describe("ESM Browser", () => {
     );
   });
 
-  
+  test("test HTML evaluate", async () => {
+    const out = await page.evaluate(() => {
+      return KalenderJawa.araningPasaran[0]["pasaran"];
+    });
+    
+    expect(out).toBe("legi");
+  });
 });
