@@ -18,7 +18,6 @@ import { DINTEN_ARR } from './dinten.js'
 import { PASARAN_ARR } from './pasaran.js'
 import { SASI_ARR } from './sasi.js'
 import { TAHUN_ARR } from './taun.js'
-//import { MasehiKeHijriyah, HijriyahKeMasehi } from './hg/index.js'
 import pkg from '../package.json'
 
 /**
@@ -141,11 +140,6 @@ function koreksiPasaran (p: number) {
   }
   return { ps: PASARAN_ARR[pc - 1]['pasaran'], pn: PASARAN_ARR[pc - 1]['neptu'] }
 }
-
-function JawaKeHijriyah(jd: DateType, hd: DateType) {
-
-}
-
 
 function version (): string {
   return `v${pkg.version}`
