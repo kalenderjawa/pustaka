@@ -75,11 +75,11 @@ Kode berikut akan mengambil pustaka untuk browser yang tidak mendukung ES Module
 dan kode berikut untuk browser yang mendukung ES Module
 
 ```html
-<script src="https://unpkg.com/@kalenderjawa/pustaka" type="module">
- import * as KalenderJawa from "@kalenderjawa/pustaka";
+<script type="module">
+ import * as KalenderJawa from "https://unpkg.com/@kalenderjawa/pustaka";
 
  console.log(KalenderJawa);
-<script>
+</script>
 ```
 
 ## API
