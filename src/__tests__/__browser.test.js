@@ -12,5 +12,11 @@ describe("ESM Browser", () => {
     });
   });
 
+  test("test HTML title", async () => {
+    await expect(page.title()).resolves.toMatch(
+      "Test Kalender Jawa Browser IIFE version"
+    );
+  });
+
   
 });
