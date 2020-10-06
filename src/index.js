@@ -4,13 +4,6 @@
 // 📁 index.js
 // :ES6
 
-/**
- * Kedua dependensi ini hanya diperlukan jika ingin mem-bundle pustaka 
- * untuk target browser yang belum mendukung native module.
- * -----
- * Untuk target env yang mendukung native module, core-js & regenerator-runtime cukup dihilangkan.
- */
-
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
 import type { RumusSasiTaunType, TaunKurupType, SasiKeyType, DateType } from './type.js'
 import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
