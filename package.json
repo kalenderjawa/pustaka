@@ -16,7 +16,7 @@
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
     "test": "npx jest --no-cache --coverage --testPathIgnorePatterns=\"_data.*\"",
     "test-watch": "npm run test -- --watch",
-    "serve": "node scripts/res.js && npx svh serve examples"
+    "serve": "node scripts/res.js && node test_server.js"
   },
   "repository": {
     "type": "git",
@@ -58,6 +58,7 @@
     "babel-jest": "^25.5.1",
     "babel-loader": "^8.1.0",
     "eslint-plugin-flowtype": "^5.2.0",
+    "express": "^4.17.1",
     "flow-bin": "^0.132.0",
     "fs-extra": "^9.0.1",
     "jest": "^25.5.4",
