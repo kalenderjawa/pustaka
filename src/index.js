@@ -4,13 +4,6 @@
 // 📁 index.js
 // :ES6
 
-/**
- * Kedua dependensi ini hanya diperlukan jika ingin mem-bundle pustaka 
- * untuk target browser yang belum mendukung native module.
- * -----
- * Untuk target env yang mendukung native module, core-js & regenerator-runtime cukup dihilangkan.
- */
-
 import * as Kurup from './kurup_asapon_anenhing_statik.js'
 import type { RumusSasiTaunType, TaunKurupType, SasiKeyType, DateType } from './type.js'
 import { konversiHari, konversiPasaran, cariWulanRegistry, cariTaunRegistry, cariRumusWulanTaun } from './silpin.js'
@@ -84,7 +77,7 @@ async function cariRumusAbadiAwalBulanTahunJawa (wulan: string, taun: number): P
  * @param {number} t - 4 digit integer
  */
 async function cariHariPasaranAwalBulanTahunJawa (w: string, t: number) {
-  // $FlowFixMe
+  // $FlowFixMe[incompatible-call]
   const [sengkalaTaun, sengkalaRumus] = await Promise.all([cariKurupTaun(t), cariRumusAbadiAwalBulanTahunJawa(w, t)])
   const [kH, kP] = await Promise.all([konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan), konversiPasaran(sengkalaRumus.rumus.pasaran, sengkalaTaun.kurup.pasaran.urutan)])
   const i = { taun: sengkalaTaun.taun.taun, kurup: `${sengkalaTaun.kurup.taun} ${sengkalaTaun.kurup.dinten.dino} ${sengkalaTaun.kurup.pasaran.pasaran}` }
