@@ -5,11 +5,22 @@
     <title>Test Kalender Jawa Browser ESM version</title>
   </head>
   <body>
-    <h1>Browser Test</h1>
-    <div id="app"></div>
+    <h1>ESM Browser Test</h1>
+    <div id="tahun"></div>
+    <div id="sasi"></div>
     <script type="module">
       import * as KalenderJawa from "/kalenderjawa.min.js";
-      console.log(KalenderJawa);
+
+      const thun = 1954;
+
+      KalenderJawa.cariKurupTahunJawa(1954).then((d) => {
+        document.getElementById(
+          "tahun"
+        ).innerHTML = `${thun}:${d.kurup.taun}_${d.kurup.dinten.dino}_${d.kurup.pasaran.pasaran}`;
+      });
+
+      let s = KalenderJawa.araningSasi;
+      document.getElementById("sasi").innerHTML = `sasi_1:${s[0].wulan}`;
     </script>
   </body>
 </html>
