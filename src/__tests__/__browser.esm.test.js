@@ -25,4 +25,14 @@ describe("ESM Browser", () => {
     });
     expect(taun.innerHTML).toBe('sasi_1:mukarom');
   })
+  
+  test("test tahun jawa div id 'tahun'", async () => {
+    const taun = await page.$eval('#tahun', e => {
+      return{
+        innerHTML: e.innerHTML
+      }
+    });
+    expect(taun.innerHTML).toBe('1954:alip_selasa_pon');
+  })
+
 });
