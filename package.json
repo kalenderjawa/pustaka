@@ -16,7 +16,8 @@
     "doc": "npx jsdoc -c jsdoc.conf.json -r src -d docs",
     "test": "npx cross-env JEST_PUPPETEER_CONFIG=jest-puppeteer.config.cjs jest --no-cache --coverage --testPathIgnorePatterns=\"_data.*\"",
     "test-watch": "npm run test -- --watch",
-    "serve": "node scripts/res.js && node test_server.js"
+    "serve": "node scripts/res.js && node test_server.js",
+    "test-no-esm": "docker build ."
   },
   "repository": {
     "type": "git",
