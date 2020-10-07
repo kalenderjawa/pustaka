@@ -3,12 +3,11 @@ import "regenerator-runtime/runtime";
 
 describe("ESM Browser", () => {
   beforeEach(async () => {
-    await page.goto(`${PATH}/index.html`, { waitUntil: "load" });
+    const out = await page.goto(`${PATH}/index.html`, { waitUntil: "load" });
 
     page.on("console", (consoleObj) => {
-      if (consoleObj.type() !== "warning") {
-        console.log(consoleObj.text());
-      }
+      for (let i = 0; i < msg.args().length; ++i)
+        console.log(`${i}: ${msg.args()[i]}`);
     });
   });
 
@@ -18,4 +17,12 @@ describe("ESM Browser", () => {
     );
   });
 
+  test("test sasi bulan jawa di div id 'sasi'", async () => {
+    const taun = await page.$eval('#sasi', e => {
+      return{
+        innerHTML: e.innerHTML
+      }
+    });
+    expect(taun.innerHTML).toBe('sasi_1:mukarom');
+  })
 });
