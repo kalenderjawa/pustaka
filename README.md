@@ -22,7 +22,7 @@ Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para lelu
 Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [Website Kalender Jawa](https://kalenderjawa.dev/sejarah).
 
 ## @kalenderjawa/pustaka
-Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian Penanggalan atau Kalender Jawa, dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum khususnya ramah buat para pengembang maka pustaka ini dibuat.
+Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian Penanggalan atau Kalender Jawa, dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum, khususnya buat para pengembang.
 
 > Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6) dan memakai ES Module.
 
