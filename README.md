@@ -87,7 +87,7 @@ Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
 
 ## Kalender
 
-Contoh aplikasi web yang memakai pustaka ini adalah [Sengkala](https://app.kalenderjawa.dev).
+Contoh aplikasi web yang memakai Pustaka ini adalah [Sengkala](https://app.kalenderjawa.dev). Proyek ini open-source jadi anda bisa melihat potensi dari pemakaian Pustaka ini.
 
 
 [CK]: https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
@@ -96,4 +96,4 @@ Contoh aplikasi web yang memakai pustaka ini adalah [Sengkala](https://app.kalen
 [MIT License](https://choosealicense.com/licenses/mit/)
 
 ---
-Copyright © [kalenderjawa.dev](https://kalenderjawa.dev) (2019 - 2021)
+[kalenderjawa.dev](https://kalenderjawa.dev) © (2019 - 2021)
