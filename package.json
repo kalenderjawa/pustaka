@@ -92,17 +92,5 @@
     "globals": {
       "PATH": "http://localhost:3113"
     }
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "plugins": [
-      "flowtype"
-    ],
-    "ignore": [
-      "lib"
-    ],
-    "env": [
-      "jest"
-    ]
   }
 }
