@@ -2,13 +2,15 @@
   "name": "@kalenderjawa/pustaka",
   "version": "1.0.0-rc.2",
   "description": "Pustaka JavaScript untuk perhitungan, pengkonversian dan penanggalan Kalender Jawa Abadi",
-  "main": "lib/kalenderjawa.min.js",
   "type": "module",
+  "main": "lib/kalenderjawa.min.cjs",
   "module": "lib/kalenderjawa.min.js",
+  "browser": "lib/kalenderjawa.browser.min.js",
   "exports": {
     ".": {
       "require": "./lib/kalenderjawa.min.cjs",
-      "import": "./lib/kalenderjawa.min.js"
+      "import": "./lib/kalenderjawa.min.js",
+      "browser": "./lib/kalenderjawa.browser.min.js"
     },
     "./package.json": "./package.json",
     "./": "./"
