@@ -2,29 +2,24 @@ import json from "@rollup/plugin-json";
 import flow from "rollup-plugin-flow";
 import { terser } from "rollup-plugin-terser";
 
-const masterPackage = require("./package.json").version;
+import pkg from "./package.json";
 
 export default {
-  input: {
-    main: "src/index.js",
-  },
+  input: "src/index.js",
   plugins: [flow(), terser(), json({ compact: true })],
   output: [
     {
-      dir: "lib",
+      file: pkg.module,
       format: "esm",
-      entryFileNames: "kalenderjawa.min.js",
     },
     {
-      dir: "lib",
+      file: pkg.browser,
       format: "iife",
       name: "KalenderJawa",
-      entryFileNames: "kalenderjawa.browser.min.js",
     },
     {
-      dir: "lib",
+      file: pkg.main,
       format: "cjs",
-      entryFileNames: "kalenderjawa.min.cjs",
     },
   ],
 };
