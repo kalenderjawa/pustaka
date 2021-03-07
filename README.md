@@ -1,6 +1,6 @@
 <h2 align="center">
 <p align="center">Pustaka Kalender Jawa</p>
-<p align="center"><img src="https://raw.githubusercontent.com/kalenderjawa/pustaka/master/images/sengkala.png" width="80%" alt="sengkala"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/kalenderjawa/pustaka/master/images/kj_v2.png" width="80%" alt="sengkala"></p>
 </h2>
 <h2>
 <p align="center">
