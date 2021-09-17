@@ -103,5 +103,9 @@
     "globals": {
       "PATH": "http://localhost:3113"
     }
+  },
+  "dependencies": {
+    "@kalenderjawa/pancawara": "^1.0.0",
+    "@kalenderjawa/saptawara": "^1.2.2"
   }
 }
