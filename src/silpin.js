@@ -4,8 +4,8 @@
  * 📁 silpin.js
  */
 import type { PasaranType, DintenType, RumusType, SasiReturnType, TaunReturnType, WulanTaunQueryType, RumusSasiTaunType } from './type.js'
-import { PASARAN } from './pasaran.js'
-import { DINTEN } from './dinten.js'
+import { PASARAN } from '@kalenderjawa/pancawara'
+import { DINTEN } from '@kalenderjawa/saptawara'
 import { ARANING_WULAN_SETAUN, SASI_ARR } from './sasi.js'
 import { ARANING_TAHUN_SEWINDU } from './taun.js'
 import { SengkalaMap } from './rupa_ati.js'

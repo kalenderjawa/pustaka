@@ -5,8 +5,8 @@
  * 📁 kurup.js
  */
 
-import * as P from './pasaran.js'
-import * as D from './dinten.js'
+import * as P from '@kalenderjawa/pancawara'
+import * as D from '@kalenderjawa/saptawara'
 
 import type { KurupType } from './type.js'
 
