@@ -206,7 +206,7 @@ describe('Test Pasaran, Dinten, Tahun Jawa', () => {
   })
 
   test('Dinten', () => {
-    expect(KalenderJawa.araningDinten).toContainEqual({ dino: 'akad', urutan: 1, bobot: 5 })
+    expect(KalenderJawa.araningDinten).toContainEqual({ dino: 'akad', urutan: 7, bobot: 5 })
   })
 
   test('Taun Jawa', () => {
