@@ -23,8 +23,6 @@ Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [Website Kalender Jawa
 
 ## @kalenderjawa/pustaka
 
-[![Buka di Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/kalenderjawa/pustaka)
-
 Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian Penanggalan atau Kalender Jawa, dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum, khususnya buat para pengembang.
 
 > Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6) dan memakai ES Module.
