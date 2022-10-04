@@ -62,12 +62,12 @@
   "devDependencies": {
     "@babel/cli": "^7.14.x",
     "@babel/core": "^7.15.x",
+    "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.15.x",
     "@babel/preset-flow": "^7.14.x",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^10.1.0",
     "babel-jest": "^27.1.x",
     "babel-loader": "^8.1.0",
     "core-js": "^3.6.5",
