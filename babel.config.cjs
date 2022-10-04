@@ -2,19 +2,19 @@
 module.exports = {
   presets: [
     [
-      '@babel/preset-env',
+      "@babel/preset-env",
       {
         targets: {
-          node: process.version.node,
+          node: 16,
           esmodules: true,
           chrome: 76,
           edge: 75,
-          firefox: 69
+          firefox: 69,
         },
-        useBuiltIns: 'entry',
-        ignoreBrowserslistConfig: true
-      }
+        useBuiltIns: "entry",
+        ignoreBrowserslistConfig: true,
+      },
     ],
-    ['@babel/preset-flow']
-  ]
-}
+    ["@babel/preset-flow"],
+  ],
+};
