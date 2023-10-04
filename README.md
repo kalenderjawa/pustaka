@@ -85,6 +85,16 @@ dan kode berikut untuk browser yang mendukung ES Module
 </script>
 ```
 
+## Testing
+
+Untuk menjalankan *testing*. Silahkan pakai command berikut:
+
+```shell
+npm run test
+```
+
+Pengetestan memakai *headless chrome* dari [Puppeteer](https://pptr.dev/).
+
 ## API
 
 Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
