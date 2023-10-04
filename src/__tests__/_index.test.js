@@ -38,9 +38,30 @@ describe('Testing cariKurupTahunJawa', () => {
       expect(e).toMatch('error')
     })
   })
+
+  test('cariKurupTahunJawa 9999 - skenario error', () => {
+    return KalenderJawa.cariKurupTahunJawa(9999).catch(e => {
+      expect(e.message).toBe('Error cariKurupTaun');
+    }); 
+  });
 })
 
 describe('Testing cariRumusAbadiAwalBulanTahunJawa', () => {
+  
+  test('cariRumusAbadiAwalBulanTahunJawa - artificial error to test catch', () => {
+    return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('romadon', 1952).then(r => {
+      throw new Error('Artificial error');
+    }).catch(e => {
+      expect(e.message).toBe('Artificial error');
+    }); 
+  });
+
+  test('cariRumusAbadiAwalBulanTahunJawa untuk tahun yg valid tapi bulan yg salah', () => {
+    return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('InvalidMonthName', 2000).catch(e => {
+      expect(e.message).toBe('error cariRumusAbadi');
+    }); 
+  });
+
   test('cariRumusAbadi Romadon, 1952 ', () => {
     return KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('romadon', 1952).then(d => {
       expect(d.rumus.pasaran).toBe(4)
