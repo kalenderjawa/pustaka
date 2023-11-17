@@ -115,4 +115,4 @@ Contoh aplikasi web yang memakai Pustaka ini adalah [Sengkala](https://app.kalen
 
 ---
 
-[kalenderjawa.dev](https://kalenderjawa.dev) © (2019 - 2022)
+[kalenderjawa.dev](https://kalenderjawa.dev) © (2019 - 2024)
