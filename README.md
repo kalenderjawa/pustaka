@@ -4,7 +4,7 @@
 </h2>
 <h2>
 <p align="center">
-<a href="https://kalenderjawa.dev"><img src="https://img.shields.io/badge/kalenderjawa.dev-WEBSITE-blue?style=for-the-badge&color=D90429&labelColor=2B2D42"/>  </a>
+<a href="https://kalenderjawa.github.io"><img src="https://img.shields.io/badge/kalenderjawa.dev-WEBSITE-blue?style=for-the-badge&color=D90429&labelColor=2B2D42"/>  </a>
 </p>
 </h2>
 <p align="center">
