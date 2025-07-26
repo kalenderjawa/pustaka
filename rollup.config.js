@@ -1,8 +1,7 @@
 import json from "@rollup/plugin-json";
 import flow from "rollup-plugin-flow";
 import { terser } from "rollup-plugin-terser";
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 import pkg from "./package.json";
 
