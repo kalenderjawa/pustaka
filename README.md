@@ -9,10 +9,10 @@
 </h2>
 <p align="center">
 <a href="https://actions-badge.atrox.dev/kalenderjawa/pustaka/goto?ref=master"><img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fkalenderjawa%2Fpustaka%2Fbadge%3Fref%3Dmaster&style=flat" /></a>
-<a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
 <a href="https://bundlephobia.com/result?p=@kalenderjawa/pustaka"><img src="https://badgen.net/bundlephobia/minzip/@kalenderjawa/pustaka" alt="bundlephobia"></a> 
 </p>
 
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/kalenderjawa/pustaka?utm_source=oss&utm_medium=github&utm_campaign=kalenderjawa%2Fpustaka&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 ## Sejarah Penanggalan Jawa
 
 Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para leluhur Jawa dan kemudian diwariskan terutama melalui rumus perhitungan dengan cara hafalan dan hebatnya rumus perhitungan ini bersifat abadi dan sangat akurat sampai hampir **1000 tahun**.
