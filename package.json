@@ -26,6 +26,8 @@
   "scripts": {
     "build": "vite build",
     "build:rollup": "bunx rollup --config",
+    "sync-lib": "cp dist/kalenderjawa.min.js lib/kalenderjawa.min.js && cp dist/kalenderjawa.min.cjs lib/kalenderjawa.min.cjs && cp dist/kalenderjawa.browser.min.js lib/kalenderjawa.browser.min.js",
+    "build:all": "npm run build && npm run sync-lib",
     "dev": "vite build --watch",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
@@ -35,7 +37,7 @@
     "format": "prettier --write \"src/**/*.{ts,js,json}\"",
     "doc": "typedoc src/index.ts --out docs",
     "serve": "vite preview",
-    "prepublishOnly": "npm run typecheck && npm run lint && npm run test && npm run build",
+    "prepublishOnly": "npm run typecheck && npm run lint && npm run test && npm run build:all",
     "release": "np"
   },
   "repository": {
