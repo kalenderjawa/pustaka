@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
@@ -10,12 +10,20 @@ export default defineConfig({
       exclude: [
         'node_modules/',
         'dist/',
+        'lib/',
+        'docs/',
+        'coverage/',
         '**/*.d.ts',
+        '**/*.test.{js,ts}',
+        '**/*.spec.{js,ts}',
+        'src/__tests__/**/*',
         'vite.config.ts',
-        'vitest.config.ts'
-      ]
+        'vitest.config.ts',
+        'babel.config.cjs',
+        'jest-puppeteer.config.cjs',
+      ],
     },
-    include: ['src/**/*.{test,spec}.{js,ts}'],
-    exclude: ['node_modules/', 'dist/', 'src/**/__browser*.test.js']
-  }
-})
+    include: ['src/__tests__/**/*.{test,spec}.{js,ts}'],
+    exclude: ['node_modules/', 'dist/', 'src/**/__browser*.test.js'],
+  },
+});
