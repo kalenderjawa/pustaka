@@ -1,12 +1,10 @@
 /**
- * @flow
- *
- * 📁rumus_apalan_awal_taun_sakban_abadi.js
- * Rumus untuk bulan Sawal selama 8 Tahun (Sewindu)
+ * 📁rumus_apalan_awal_bulan_sakban_abadi.ts
+ * Rumus untuk bulan Sakban selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./type.js";
-import { _SAKBAN, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _SAKBAN, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -17,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _BAN_ALIP = Symbol.for("ban_alip");
-const _BAN_EHE = Symbol.for("ban_ehe");
-const _BAN_JIMAWAL = Symbol.for("ban_jimawal");
-const _BAN_JE = Symbol.for("ban_je");
-const _BAN_DAL = Symbol.for("ban_dal");
-const _BAN_BE = Symbol.for("ban_be");
-const _BAN_WAWU = Symbol.for("ban_wawu");
-const _BAN_JIMAKIR = Symbol.for("ban_jimakir");
+const _BAN_ALIP = Symbol.for('ban_alip');
+const _BAN_EHE = Symbol.for('ban_ehe');
+const _BAN_JIMAWAL = Symbol.for('ban_jimawal');
+const _BAN_JE = Symbol.for('ban_je');
+const _BAN_DAL = Symbol.for('ban_dal');
+const _BAN_BE = Symbol.for('ban_be');
+const _BAN_WAWU = Symbol.for('ban_wawu');
+const _BAN_JIMAKIR = Symbol.for('ban_jimakir');
 
 // Rumus
 const BAN_MO_LU = {
@@ -80,56 +78,58 @@ const BAN_TU_LU = {
 
 //
 
-const BAN_ALIP = {
+// Kunci Sakban - Sewindu
+const BAN_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: BAN_MO_LU,
 };
 
-const BAN_EHE = {
+const BAN_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: BAN_RO_RO,
 };
 
-const BAN_JIMAWAL = {
+const BAN_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: BAN_TU_RO,
 };
 
-const BAN_JE = {
+const BAN_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: BAN_PAT_JI,
 };
 
-const BAN_DAL = {
+const BAN_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: BAN_JI_MO,
 };
 
-const BAN_BE = {
+const BAN_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: BAN_NEM_MO,
 };
 
-const BAN_WAWU = {
+const BAN_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: BAN_LU_PAT,
 };
 
-const BAN_JIMAKIR = {
+const BAN_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAKBAN),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: BAN_TU_LU,
 };
 
 // Mapping
-const RUMUS_APALAN_AWAL_BULAN_SAKBAN_ABADI: Map<symbol,WulanTaunType> = new Map();
+const RUMUS_APALAN_AWAL_BULAN_SAKBAN_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_SAKBAN_ABADI.set(_BAN_ALIP, BAN_ALIP);
 RUMUS_APALAN_AWAL_BULAN_SAKBAN_ABADI.set(_BAN_EHE, BAN_EHE);

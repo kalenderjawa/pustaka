@@ -1,13 +1,10 @@
 /**
- * @flow
- *
- * 📁rumus_apalan_awal_taun_dulkodah_abadi.js
+ * 📁rumus_apalan_awal_bulan_dulkodah_abadi.ts
  * Rumus untuk bulan Dulkodah selama 8 Tahun (Sewindu)
- *
  */
 
-import type { WulanTaunType } from "./type.js";
-import { _DULKODAH, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _DULKODAH, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -18,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry Symbol untuk Dulkodah Sewindu
-const _DAH_ALIP = Symbol.for("dah_alip");
-const _DAH_EHE = Symbol.for("dah_ehe");
-const _DAH_JIMAWAL = Symbol.for("dah_jimawal");
-const _DAH_JE = Symbol.for("dah_je");
-const _DAH_DAL = Symbol.for("dah_dal");
-const _DAH_BE = Symbol.for("dah_be");
-const _DAH_WAWU = Symbol.for("dah_wawu");
-const _DAH_JIMAKIR = Symbol.for("dah_jimakir");
+const _DAH_ALIP = Symbol.for('dah_alip');
+const _DAH_EHE = Symbol.for('dah_ehe');
+const _DAH_JIMAWAL = Symbol.for('dah_jimawal');
+const _DAH_JE = Symbol.for('dah_je');
+const _DAH_DAL = Symbol.for('dah_dal');
+const _DAH_BE = Symbol.for('dah_be');
+const _DAH_WAWU = Symbol.for('dah_wawu');
+const _DAH_JIMAKIR = Symbol.for('dah_jimakir');
 
 // Rumus Matematis
 
@@ -84,57 +81,59 @@ const DAH_PAT_JI = {
 };
 
 // Wulan - Taun
+// Kunci Dulkodah - Sewindu
 
-const DAH_ALIP = {
+const DAH_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: DAH_RO_JI,
 };
 
-const DAH_EHE = {
+const DAH_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: DAH_NEM_MO,
 };
 
-const DAH_JIMAWAL = {
+const DAH_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: DAH_PAT_MO,
 };
 
-const DAH_JE = {
+const DAH_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: DAH_JI_PAT,
 };
 
-const DAH_DAL = {
+const DAH_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: DAH_MO_LU,
 };
 
-const DAH_BE = {
+const DAH_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: DAH_LU_LU,
 };
 
-const DAH_WAWU = {
+const DAH_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: DAH_TU_RO,
 };
 
-const DAH_JIMAKIR = {
+const DAH_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKODAH),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: DAH_PAT_JI,
 };
 
-// Mapping
-const RUMUS_APALAN_AWAL_BULAN_DULKODAH_ABADI: Map<symbol,WulanTaunType> = new Map();
+// Mapping Rumus abadi Dulkodah dengan Registry
+const RUMUS_APALAN_AWAL_BULAN_DULKODAH_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_DULKODAH_ABADI.set(_DAH_ALIP, DAH_ALIP);
 RUMUS_APALAN_AWAL_BULAN_DULKODAH_ABADI.set(_DAH_EHE, DAH_EHE);

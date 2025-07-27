@@ -12,9 +12,9 @@ module.exports = {
           firefox: 69,
         },
         useBuiltIns: "entry",
+        corejs: 3,
         ignoreBrowserslistConfig: true,
       },
     ],
-    ["@babel/preset-flow"],
   ],
 };

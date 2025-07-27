@@ -1,12 +1,10 @@
 /**
- * @flow
- *
- * 📁rumus_apalan_awal_taun_romadon_abadi.js
- * Rumus bulan Romadon selama 8 Tahun (Sewindu)
+ * 📁rumus_apalan_awal_bulan_romadon_abadi.ts
+ * Rumus untuk bulan Romadon selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./type.js";
-import { _ROMADON, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _ROMADON, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -17,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry Wulan Romadon Sewindu (8 Taun)
-const _DON_ALIP = Symbol.for("don_alip");
-const _DON_EHE = Symbol.for("don_ehe");
-const _DON_JIMAWAL = Symbol.for("don_jimawal");
-const _DON_JE = Symbol.for("don_je");
-const _DON_DAL = Symbol.for("don_dal");
-const _DON_BE = Symbol.for("don_be");
-const _DON_WAWU = Symbol.for("don_wawu");
-const _DON_JIMAKIR = Symbol.for("don_jimakir");
+const _DON_ALIP = Symbol.for('don_alip');
+const _DON_EHE = Symbol.for('don_ehe');
+const _DON_JIMAWAL = Symbol.for('don_jimawal');
+const _DON_JE = Symbol.for('don_je');
+const _DON_DAL = Symbol.for('don_dal');
+const _DON_BE = Symbol.for('don_be');
+const _DON_WAWU = Symbol.for('don_wawu');
+const _DON_JIMAKIR = Symbol.for('don_jimakir');
 
 // Rumus Matematis
 
@@ -90,7 +88,7 @@ const DON_JI_RO = {
  * Don Alip -> Don Nem Ro
  * Wulan Romadon Taun Alip
  */
-const DON_ALIP = {
+const DON_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: DON_NEM_RO,
@@ -100,7 +98,7 @@ const DON_ALIP = {
  * Don Ehe -> Don Lu Ji
  * Wulan Romadon Taun Ehe
  */
-const DON_EHE = {
+const DON_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: DON_LU_JI,
@@ -110,7 +108,7 @@ const DON_EHE = {
  * Don Jimawal -> Don Ji Ji
  * Wulan Romadon Taun Jimawal
  */
-const DON_JIMAWAL = {
+const DON_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: DON_JI_JI,
@@ -120,7 +118,7 @@ const DON_JIMAWAL = {
  * Don Je -> Don Mo Mo
  * Wulan Romadon Taun Je
  */
-const DON_JE = {
+const DON_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: DON_MO_MO,
@@ -130,7 +128,7 @@ const DON_JE = {
  * Don Dal -> Don Ro Pat
  * Wulan Romadon Taun Dal
  */
-const DON_DAL = {
+const DON_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: DON_RO_PAT,
@@ -140,7 +138,7 @@ const DON_DAL = {
  * Don Be -> Don Tu Pat
  * Wulan Romadon Taun Be
  */
-const DON_BE = {
+const DON_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: DON_TU_PAT,
@@ -150,7 +148,7 @@ const DON_BE = {
  * Don Wawu -> Don Pat Lu
  * Wulan Romadon Taun Wawu
  */
-const DON_WAWU = {
+const DON_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: DON_PAT_LU,
@@ -160,14 +158,15 @@ const DON_WAWU = {
  * Don Jimakir -> Don Ji Ro
  * Wulan Romadon Taun Jimakir
  */
-const DON_JIMAKIR = {
+const DON_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROMADON),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: DON_JI_RO,
 };
 
 // Mapping
-const RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI: Map<symbol,WulanTaunType> = new Map();
+const RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI.set(_DON_ALIP, DON_ALIP);
 RUMUS_APALAN_AWAL_BULAN_ROMADON_ABADI.set(_DON_EHE, DON_EHE);

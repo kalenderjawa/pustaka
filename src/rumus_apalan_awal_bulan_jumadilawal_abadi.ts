@@ -1,13 +1,10 @@
 /**
- * @flow
- *
- * 📁rumus_apalan_awal_bulan_jumadilawal_abadi.js
+ * 📁rumus_apalan_awal_bulan_jumadilawal_abadi.ts
  * Rumus untuk bulan Jumadilawal selama 8 Tahun (Sewindu)
- *
  */
 
-import type { WulanTaunType } from "./type.js";
-import { _JUMADILAWAL, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _JUMADILAWAL, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -18,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _JUWAL_ALIP = Symbol.for("juwal_alip");
-const _JUWAL_EHE = Symbol.for("juwal_ehe");
-const _JUWAL_JIMAWAL = Symbol.for("juwal_jimawal");
-const _JUWAL_JE = Symbol.for("juwal_je");
-const _JUWAL_DAL = Symbol.for("juwal_dal");
-const _JUWAL_BE = Symbol.for("juwal_be");
-const _JUWAL_WAWU = Symbol.for("juwal_wawu");
-const _JUWAL_JIMAKIR = Symbol.for("juwal_jimakir");
+const _JUWAL_ALIP = Symbol.for('juwal_alip');
+const _JUWAL_EHE = Symbol.for('juwal_ehe');
+const _JUWAL_JIMAWAL = Symbol.for('juwal_jimawal');
+const _JUWAL_JE = Symbol.for('juwal_je');
+const _JUWAL_DAL = Symbol.for('juwal_dal');
+const _JUWAL_BE = Symbol.for('juwal_be');
+const _JUWAL_WAWU = Symbol.for('juwal_wawu');
+const _JUWAL_JIMAKIR = Symbol.for('juwal_jimakir');
 
 // Rumus matematis
 const JUWAL_TU_PAT = {
@@ -79,57 +76,58 @@ const JUWAL_RO_PAT = {
   pasaran: 4,
 };
 
-//
-const JUWAL_ALIP = {
+// Kunci Jumadilawal - Sewindu
+const JUWAL_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: JUWAL_TU_PAT,
 };
 
-const JUWAL_EHE = {
+const JUWAL_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: JUWAL_PAT_LU,
 };
 
-const JUWAL_JIMAWAL = {
+const JUWAL_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: JUWAL_RO_LU,
 };
 
-const JUWAL_JE = {
+const JUWAL_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: JUWAL_NEM_RO,
 };
 
-const JUWAL_DAL = {
+const JUWAL_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: JUWAL_LU_JI,
 };
 
-const JUWAL_BE = {
+const JUWAL_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: JUWAL_JI_JI,
 };
 
-const JUWAL_WAWU = {
+const JUWAL_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: JUWAL_MO_MO,
 };
 
-const JUWAL_JIMAKIR = {
+const JUWAL_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_JUMADILAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: JUWAL_RO_PAT,
 };
 
 //
-const RUMUS_APALAN_AWAL_BULAN_JUMADILAWAL_ABADI: Map<symbol,WulanTaunType> = new Map();
+const RUMUS_APALAN_AWAL_BULAN_JUMADILAWAL_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_JUMADILAWAL_ABADI.set(_JUWAL_ALIP, JUWAL_ALIP);
 RUMUS_APALAN_AWAL_BULAN_JUMADILAWAL_ABADI.set(_JUWAL_EHE, JUWAL_EHE);

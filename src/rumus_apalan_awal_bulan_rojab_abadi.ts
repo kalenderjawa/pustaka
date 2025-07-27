@@ -1,12 +1,10 @@
 /**
- * @flow
- *
- * 📁rumus_apalan_awal_bulan_rojab_abadi.js
+ * 📁rumus_apalan_awal_bulan_rojab_abadi.ts
  * Rumus untuk bulan Rojab selama 8 Tahun (Sewindu)
- *
  */
-import type { WulanTaunType } from "./type.js";
-import { _ROJAB, ARANING_WULAN_SETAUN } from "./sasi.js";
+
+import type { WulanTaunType } from './types.js';
+import { _ROJAB, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -17,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _JAB_ALIP = Symbol.for("jab_alip");
-const _JAB_EHE = Symbol.for("jab_ehe");
-const _JAB_JIMAWAL = Symbol.for("jab_jimawal");
-const _JAB_JE = Symbol.for("jab_je");
-const _JAB_DAL = Symbol.for("jab_dal");
-const _JAB_BE = Symbol.for("jab_be");
-const _JAB_WAWU = Symbol.for("jab_wawu");
-const _JAB_JIMAKIR = Symbol.for("jab_jimakir");
+const _JAB_ALIP = Symbol.for('jab_alip');
+const _JAB_EHE = Symbol.for('jab_ehe');
+const _JAB_JIMAWAL = Symbol.for('jab_jimawal');
+const _JAB_JE = Symbol.for('jab_je');
+const _JAB_DAL = Symbol.for('jab_dal');
+const _JAB_BE = Symbol.for('jab_be');
+const _JAB_WAWU = Symbol.for('jab_wawu');
+const _JAB_JIMAKIR = Symbol.for('jab_jimakir');
 
 // Rumus
 
@@ -79,57 +77,58 @@ const JAB_MO_LU = {
   pasaran: 3,
 };
 
-//
-const JAB_ALIP = {
+// Kunci Rojab - Sewindu
+const JAB_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: JAB_LU_LU,
 };
 
-const JAB_EHE = {
+const JAB_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: JAB_TU_RO,
 };
 
-const JAB_JIMAWAL = {
+const JAB_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: JAB_MO_RO,
 };
 
-const JAB_JE = {
+const JAB_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: JAB_RO_JI,
 };
 
-const JAB_DAL = {
+const JAB_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: JAB_NEM_MO,
 };
 
-const JAB_BE = {
+const JAB_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: JAB_PAT_MO,
 };
 
-const JAB_WAWU = {
+const JAB_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: JAB_JI_PAT,
 };
 
-const JAB_JIMAKIR = {
+const JAB_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROJAB),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: JAB_MO_LU,
 };
 
 // Mapping Rumus abadi Rojab dengan Registry
-const RUMUS_APALAN_AWAL_BULAN_ROJAB_ABADI: Map<symbol,WulanTaunType> = new Map();
+const RUMUS_APALAN_AWAL_BULAN_ROJAB_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_ROJAB_ABADI.set(_JAB_ALIP, JAB_ALIP);
 RUMUS_APALAN_AWAL_BULAN_ROJAB_ABADI.set(_JAB_EHE, JAB_EHE);

@@ -1,13 +1,10 @@
 /**
- * @flow
- *
- * 📁rumus_apalan_awal_bulan_mukarom_abadi.js
+ * 📁rumus_apalan_awal_bulan_mukarom_abadi.ts
  * Rumus untuk bulan Mukarom selama 8 Tahun (Sewindu)
- *
  */
 
-import type { WulanTaunType } from "./type.js";
-import { _MUKAROM, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _MUKAROM, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -18,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _ROM_ALIP = Symbol.for("rom_alip");
-const _ROM_EHE = Symbol.for("rom_ehe");
-const _ROM_JIMAWAL = Symbol.for("rom_jimawal");
-const _ROM_JE = Symbol.for("rom_je");
-const _ROM_DAL = Symbol.for("rom_dal");
-const _ROM_BE = Symbol.for("rom_be");
-const _ROM_WAWU = Symbol.for("rom_wawu");
-const _ROM_JIMAKIR = Symbol.for("rom_jimakir");
+const _ROM_ALIP = Symbol.for('rom_alip');
+const _ROM_EHE = Symbol.for('rom_ehe');
+const _ROM_JIMAWAL = Symbol.for('rom_jimawal');
+const _ROM_JE = Symbol.for('rom_je');
+const _ROM_DAL = Symbol.for('rom_dal');
+const _ROM_BE = Symbol.for('rom_be');
+const _ROM_WAWU = Symbol.for('rom_wawu');
+const _ROM_JIMAKIR = Symbol.for('rom_jimakir');
 
 // Rumus abadi Mukarom
 const ROM_JI_JI = {
@@ -81,56 +78,57 @@ const ROM_LU_JI = {
 
 // Kunci Mukarom - Sewindu
 
-const ROM_ALIP = {
+const ROM_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: ROM_JI_JI,
 };
 
-const ROM_EHE = {
+const ROM_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: ROM_MO_MO,
 };
 
-const ROM_JIMAWAL = {
+const ROM_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: ROM_LU_MO,
 };
 
-const ROM_JE = {
+const ROM_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: ROM_TU_PAT,
 };
 
-const ROM_DAL = {
+const ROM_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: ROM_PAT_LU,
 };
 
-const ROM_BE = {
+const ROM_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: ROM_RO_LU,
 };
 
-const ROM_WAWU = {
+const ROM_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: ROM_NEM_RO,
 };
 
-const ROM_JIMAKIR = {
+const ROM_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_MUKAROM),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: ROM_LU_JI,
 };
 
 // Mapping Rumus abadi Mukarom dengan Registry
-const RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI: Map<symbol,WulanTaunType> = new Map();
+const RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI.set(_ROM_ALIP, ROM_ALIP);
 RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI.set(_ROM_EHE, ROM_EHE);

@@ -1,13 +1,10 @@
 /**
- * @flow
- *
- * 📁rumus_apalan_awal_bulan_robiulawal_abadi.js
+ * 📁rumus_apalan_awal_bulan_robiulawal_abadi.ts
  * Rumus untuk bulan Robiulawal selama 8 Tahun (Sewindu)
- *
  */
 
-import type { WulanTaunType } from "./type.js";
-import { _ROBIULAWAL, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _ROBIULAWAL, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -18,19 +15,19 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _ROWAL_ALIP = Symbol.for("rowal_alip");
-const _ROWAL_EHE = Symbol.for("rowal_ehe");
-const _ROWAL_JIMAWAL = Symbol.for("rowal_jimawal");
-const _ROWAL_JE = Symbol.for("rowal_je");
-const _ROWAL_DAL = Symbol.for("rowal_dal");
-const _ROWAL_BE = Symbol.for("rowal_be");
-const _ROWAL_WAWU = Symbol.for("rowal_wawu");
-const _ROWAL_JIMAKIR = Symbol.for("rowal_jimakir");
+const _ROWAL_ALIP = Symbol.for('rowal_alip');
+const _ROWAL_EHE = Symbol.for('rowal_ehe');
+const _ROWAL_JIMAWAL = Symbol.for('rowal_jimawal');
+const _ROWAL_JE = Symbol.for('rowal_je');
+const _ROWAL_DAL = Symbol.for('rowal_dal');
+const _ROWAL_BE = Symbol.for('rowal_be');
+const _ROWAL_WAWU = Symbol.for('rowal_wawu');
+const _ROWAL_JIMAKIR = Symbol.for('rowal_jimakir');
 
-//
+// Rumus abadi Robiulawal
 const ROWAL_PAT_MO = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   dino: 4,
@@ -79,57 +76,58 @@ const ROWAL_NEM_MO = {
   pasaran: 5,
 };
 
-//
-const ROWAL_ALIP = {
+// Kunci Robiulawal - Sewindu
+const ROWAL_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: ROWAL_PAT_MO,
 };
 
-const ROWAL_EHE = {
+const ROWAL_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: ROWAL_JI_PAT,
 };
 
-const ROWAL_JIMAWAL = {
+const ROWAL_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: ROWAL_NEM_PAT,
 };
 
-const ROWAL_JE = {
+const ROWAL_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: ROWAL_LU_LU,
 };
 
-const ROWAL_DAL = {
+const ROWAL_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: ROWAL_TU_RO,
 };
 
-const ROWAL_BE = {
+const ROWAL_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: ROWAL_MO_RO,
 };
 
-const ROWAL_WAWU = {
+const ROWAL_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: ROWAL_RO_JI,
 };
 
-const ROWAL_JIMAKIR = {
+const ROWAL_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAWAL),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: ROWAL_NEM_MO,
 };
 
-// Mapping
-const RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI: Map<symbol,WulanTaunType> = new Map();
+// Mapping Rumus abadi Robiulawal dengan Registry
+const RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI.set(_ROWAL_ALIP, ROWAL_ALIP);
 RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI.set(_ROWAL_EHE, ROWAL_EHE);

@@ -1,13 +1,10 @@
 /**
- * @flow
- *
- * 📁rumus_apalan_awal_taun_dulkijah_abadi.js
+ * 📁rumus_apalan_awal_bulan_dulkijah_abadi.ts
  * Rumus untuk bulan Dulkijah selama 8 Tahun (Sewindu)
- *
  */
 
-import type { WulanTaunType } from "./type.js";
-import { _DULKIJAH, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _DULKIJAH, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -18,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry Symbol
-const _JAH_ALIP = Symbol.for("jah_alip");
-const _JAH_EHE = Symbol.for("jah_ehe");
-const _JAH_JIMAWAL = Symbol.for("jah_jimawal");
-const _JAH_JE = Symbol.for("jah_je");
-const _JAH_DAL = Symbol.for("jah_dal");
-const _JAH_BE = Symbol.for("jah_be");
-const _JAH_WAWU = Symbol.for("jah_wawu");
-const _JAH_JIMAKIR = Symbol.for("jah_jimakir");
+const _JAH_ALIP = Symbol.for('jah_alip');
+const _JAH_EHE = Symbol.for('jah_ehe');
+const _JAH_JIMAWAL = Symbol.for('jah_jimawal');
+const _JAH_JE = Symbol.for('jah_je');
+const _JAH_DAL = Symbol.for('jah_dal');
+const _JAH_BE = Symbol.for('jah_be');
+const _JAH_WAWU = Symbol.for('jah_wawu');
+const _JAH_JIMAKIR = Symbol.for('jah_jimakir');
 
 // Rumus
 const JAH_PAT_JI = {
@@ -79,57 +76,58 @@ const JAH_NEM_JI = {
   pasaran: 1,
 };
 
-//
-const JAH_ALIP = {
+// Kunci Dulkijah - Sewindu
+const JAH_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
   rumus: JAH_PAT_JI,
 };
 
-const JAH_EHE = {
+const JAH_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
   rumus: JAH_JI_MO,
 };
 
-const JAH_JIMAWAL = {
+const JAH_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
   rumus: JAH_NEM_MO,
 };
 
-const JAH_JE = {
+const JAH_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
   rumus: JAH_LU_PAT,
 };
 
-const JAH_DAL = {
+const JAH_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
   rumus: JAH_TU_LU,
 };
 
-const JAH_BE = {
+const JAH_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
   rumus: JAH_MO_LU,
 };
 
-const JAH_WAWU = {
+const JAH_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
   rumus: JAH_RO_RO,
 };
 
-const JAH_JIMAKIR = {
+const JAH_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_DULKIJAH),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
   rumus: JAH_NEM_JI,
 };
 
-// Mapping
-const RUMUS_APALAN_AWAL_BULAN_DULKIJAH_ABADI: Map<symbol, WulanTaunType> = new Map();
+// Mapping Rumus abadi Dulkijah dengan Registry
+const RUMUS_APALAN_AWAL_BULAN_DULKIJAH_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_DULKIJAH_ABADI.set(_JAH_ALIP, JAH_ALIP);
 RUMUS_APALAN_AWAL_BULAN_DULKIJAH_ABADI.set(_JAH_EHE, JAH_EHE);
