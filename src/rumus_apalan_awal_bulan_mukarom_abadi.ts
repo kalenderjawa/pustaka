@@ -3,8 +3,8 @@
  * Rumus untuk bulan Mukarom selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _MUKAROM, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _MUKAROM, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -15,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _ROM_ALIP = Symbol.for("rom_alip");
-const _ROM_EHE = Symbol.for("rom_ehe");
-const _ROM_JIMAWAL = Symbol.for("rom_jimawal");
-const _ROM_JE = Symbol.for("rom_je");
-const _ROM_DAL = Symbol.for("rom_dal");
-const _ROM_BE = Symbol.for("rom_be");
-const _ROM_WAWU = Symbol.for("rom_wawu");
-const _ROM_JIMAKIR = Symbol.for("rom_jimakir");
+const _ROM_ALIP = Symbol.for('rom_alip');
+const _ROM_EHE = Symbol.for('rom_ehe');
+const _ROM_JIMAWAL = Symbol.for('rom_jimawal');
+const _ROM_JE = Symbol.for('rom_je');
+const _ROM_DAL = Symbol.for('rom_dal');
+const _ROM_BE = Symbol.for('rom_be');
+const _ROM_WAWU = Symbol.for('rom_wawu');
+const _ROM_JIMAKIR = Symbol.for('rom_jimakir');
 
 // Rumus abadi Mukarom
 const ROM_JI_JI = {
@@ -127,7 +127,8 @@ const ROM_JIMAKIR: WulanTaunType = {
 };
 
 // Mapping Rumus abadi Mukarom dengan Registry
-const RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI: Map<symbol, WulanTaunType> = new Map();
+const RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI.set(_ROM_ALIP, ROM_ALIP);
 RUMUS_APALAN_AWAL_BULAN_MUKAROM_ABADI.set(_ROM_EHE, ROM_EHE);

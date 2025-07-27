@@ -3,59 +3,94 @@
  * @desc Araning Wulan Ing Setaun
  */
 
-import type { WulanType } from "./types.js";
+import type { WulanType } from './types.js';
 
 /**
  * @constant
  * @type {Symbol}
  */
-const _MUKAROM = Symbol.for("mukarom");
-const _SAPAR = Symbol.for("sapar");
-const _ROBIULAWAL = Symbol.for("robiulawal");
-const _ROBIULAKIR = Symbol.for("robiulakir");
-const _JUMADILAWAL = Symbol.for("jumadilawal");
-const _JUMADILAKIR = Symbol.for("jumadilakir");
-const _ROJAB = Symbol.for("rojab");
-const _SAKBAN = Symbol.for("sakban");
-const _ROMADON = Symbol.for("romadon");
-const _SAWAL = Symbol.for("sawal");
-const _DULKODAH = Symbol.for("dulkodah");
-const _DULKIJAH = Symbol.for("dulkijah");
+const _MUKAROM = Symbol.for('mukarom');
+const _SAPAR = Symbol.for('sapar');
+const _ROBIULAWAL = Symbol.for('robiulawal');
+const _ROBIULAKIR = Symbol.for('robiulakir');
+const _JUMADILAWAL = Symbol.for('jumadilawal');
+const _JUMADILAKIR = Symbol.for('jumadilakir');
+const _ROJAB = Symbol.for('rojab');
+const _SAKBAN = Symbol.for('sakban');
+const _ROMADON = Symbol.for('romadon');
+const _SAWAL = Symbol.for('sawal');
+const _DULKODAH = Symbol.for('dulkodah');
+const _DULKIJAH = Symbol.for('dulkijah');
 
-const MUKAROM: WulanType = { wulan: "mukarom", celukan: "rom", urutan: 1, cacah: [30] };
-const SAPAR: WulanType = { wulan: "sapar", celukan: "par", urutan: 2, cacah: [29] };
+const MUKAROM: WulanType = {
+  wulan: 'mukarom',
+  celukan: 'rom',
+  urutan: 1,
+  cacah: [30],
+};
+const SAPAR: WulanType = {
+  wulan: 'sapar',
+  celukan: 'par',
+  urutan: 2,
+  cacah: [29],
+};
 const ROBIULAWAL: WulanType = {
-  wulan: "robiulawal",
-  celukan: "rowal",
+  wulan: 'robiulawal',
+  celukan: 'rowal',
   urutan: 3,
   cacah: [30],
 };
 const ROBIULAKIR: WulanType = {
-  wulan: "robiulakir",
-  celukan: "rokir",
+  wulan: 'robiulakir',
+  celukan: 'rokir',
   urutan: 4,
   cacah: [29],
 };
 const JUMADILAWAL: WulanType = {
-  wulan: "jumadilawal",
-  celukan: "juwal",
+  wulan: 'jumadilawal',
+  celukan: 'juwal',
   urutan: 5,
   cacah: [30],
 };
 const JUMADILAKIR: WulanType = {
-  wulan: "jumadilakir",
-  celukan: "jukir",
+  wulan: 'jumadilakir',
+  celukan: 'jukir',
   urutan: 6,
   cacah: [29],
 };
-const ROJAB: WulanType = { wulan: "rojab", celukan: "jab", urutan: 7, cacah: [30] };
-const SAKBAN: WulanType = { wulan: "sakban", celukan: "ban", urutan: 8, cacah: [29] };
-const ROMADON: WulanType = { wulan: "romadon", celukan: "don", urutan: 9, cacah: [30] };
-const SAWAL: WulanType = { wulan: "sawal", celukan: "wal", urutan: 10, cacah: [29] };
-const DULKODAH: WulanType = { wulan: "dulkodah", celukan: "dah", urutan: 11, cacah: [30] };
+const ROJAB: WulanType = {
+  wulan: 'rojab',
+  celukan: 'jab',
+  urutan: 7,
+  cacah: [30],
+};
+const SAKBAN: WulanType = {
+  wulan: 'sakban',
+  celukan: 'ban',
+  urutan: 8,
+  cacah: [29],
+};
+const ROMADON: WulanType = {
+  wulan: 'romadon',
+  celukan: 'don',
+  urutan: 9,
+  cacah: [30],
+};
+const SAWAL: WulanType = {
+  wulan: 'sawal',
+  celukan: 'wal',
+  urutan: 10,
+  cacah: [29],
+};
+const DULKODAH: WulanType = {
+  wulan: 'dulkodah',
+  celukan: 'dah',
+  urutan: 11,
+  cacah: [30],
+};
 const DULKIJAH: WulanType = {
-  wulan: "dulkijah",
-  celukan: "jah",
+  wulan: 'dulkijah',
+  celukan: 'jah',
   urutan: 12,
   cacah: [29, 30],
 };

@@ -10,12 +10,12 @@ import type {
   TaunReturnType,
   WulanTaunQueryType,
   RumusSasiTaunType,
-} from "./types.js";
-import { PASARAN } from "@kalenderjawa/pancawara";
-import { DINTEN } from "@kalenderjawa/saptawara";
-import { ARANING_WULAN_SETAUN, SASI_ARR } from "./sasi.js";
-import { ARANING_TAHUN_SEWINDU } from "./taun.js";
-import { SengkalaMap } from "./rupa_ati.js";
+} from './types.js';
+import { PASARAN } from '@kalenderjawa/pancawara';
+import { DINTEN } from '@kalenderjawa/saptawara';
+import { ARANING_WULAN_SETAUN, SASI_ARR } from './sasi.js';
+import { ARANING_TAHUN_SEWINDU } from './taun.js';
+import { SengkalaMap } from './rupa_ati.js';
 
 /**
  *
@@ -24,7 +24,7 @@ import { SengkalaMap } from "./rupa_ati.js";
  */
 async function konversiHari(
   h: number,
-  dn: number,
+  dn: number
 ): Promise<DintenType | string> {
   const _xH = dn + h - 1;
   let xH = 0;
@@ -41,13 +41,13 @@ async function konversiHari(
         resolve(value);
       }
     });
-    reject(new Error("Error konversiHari"));
+    reject(new Error('Error konversiHari'));
   });
 }
 
 async function konversiPasaran(
   p: number,
-  ps: number,
+  ps: number
 ): Promise<PasaranType | string> {
   const _xP = ps + p - 1;
   let xP = 0;
@@ -65,7 +65,7 @@ async function konversiPasaran(
         resolve(value);
       }
     });
-    reject(new Error("Error konversiPasaran"));
+    reject(new Error('Error konversiPasaran'));
   });
 }
 
@@ -84,11 +84,11 @@ function cariTaunRegistry(taun: string): TaunReturnType {
 function cariWulanRegistry(wulan: string): SasiReturnType {
   // console.log(ARANING_WULAN_SETAUN.get(Symbol.for(wulan)))
   // cek wulan type number or string
-  var _wulan = "";
+  let _wulan = '';
 
-  if (typeof wulan === "string") {
+  if (typeof wulan === 'string') {
     _wulan = wulan;
-  } else if (typeof wulan === "number") {
+  } else if (typeof wulan === 'number') {
     const _sasi = SASI_ARR[wulan - 1];
     if (_sasi) {
       _wulan = _sasi.wulan;
@@ -102,7 +102,7 @@ function cariWulanRegistry(wulan: string): SasiReturnType {
 
 function cariRumusWulanTaun(
   key: string,
-  q: WulanTaunQueryType,
+  q: WulanTaunQueryType
 ): RumusSasiTaunType | undefined {
   if (SengkalaMap.has(Symbol.for(key))) {
     const _RWT = SengkalaMap.get(Symbol.for(key));

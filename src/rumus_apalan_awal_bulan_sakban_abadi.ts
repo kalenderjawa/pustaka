@@ -3,8 +3,8 @@
  * Rumus untuk bulan Sakban selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _SAKBAN, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _SAKBAN, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -15,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _BAN_ALIP = Symbol.for("ban_alip");
-const _BAN_EHE = Symbol.for("ban_ehe");
-const _BAN_JIMAWAL = Symbol.for("ban_jimawal");
-const _BAN_JE = Symbol.for("ban_je");
-const _BAN_DAL = Symbol.for("ban_dal");
-const _BAN_BE = Symbol.for("ban_be");
-const _BAN_WAWU = Symbol.for("ban_wawu");
-const _BAN_JIMAKIR = Symbol.for("ban_jimakir");
+const _BAN_ALIP = Symbol.for('ban_alip');
+const _BAN_EHE = Symbol.for('ban_ehe');
+const _BAN_JIMAWAL = Symbol.for('ban_jimawal');
+const _BAN_JE = Symbol.for('ban_je');
+const _BAN_DAL = Symbol.for('ban_dal');
+const _BAN_BE = Symbol.for('ban_be');
+const _BAN_WAWU = Symbol.for('ban_wawu');
+const _BAN_JIMAKIR = Symbol.for('ban_jimakir');
 
 // Rumus
 const BAN_MO_LU = {

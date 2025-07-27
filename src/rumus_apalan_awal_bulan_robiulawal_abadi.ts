@@ -3,8 +3,8 @@
  * Rumus untuk bulan Robiulawal selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _ROBIULAWAL, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _ROBIULAWAL, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -15,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _ROWAL_ALIP = Symbol.for("rowal_alip");
-const _ROWAL_EHE = Symbol.for("rowal_ehe");
-const _ROWAL_JIMAWAL = Symbol.for("rowal_jimawal");
-const _ROWAL_JE = Symbol.for("rowal_je");
-const _ROWAL_DAL = Symbol.for("rowal_dal");
-const _ROWAL_BE = Symbol.for("rowal_be");
-const _ROWAL_WAWU = Symbol.for("rowal_wawu");
-const _ROWAL_JIMAKIR = Symbol.for("rowal_jimakir");
+const _ROWAL_ALIP = Symbol.for('rowal_alip');
+const _ROWAL_EHE = Symbol.for('rowal_ehe');
+const _ROWAL_JIMAWAL = Symbol.for('rowal_jimawal');
+const _ROWAL_JE = Symbol.for('rowal_je');
+const _ROWAL_DAL = Symbol.for('rowal_dal');
+const _ROWAL_BE = Symbol.for('rowal_be');
+const _ROWAL_WAWU = Symbol.for('rowal_wawu');
+const _ROWAL_JIMAKIR = Symbol.for('rowal_jimakir');
 
 // Rumus abadi Robiulawal
 const ROWAL_PAT_MO = {
@@ -126,7 +126,8 @@ const ROWAL_JIMAKIR: WulanTaunType = {
 };
 
 // Mapping Rumus abadi Robiulawal dengan Registry
-const RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI: Map<symbol, WulanTaunType> = new Map();
+const RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI: Map<symbol, WulanTaunType> =
+  new Map();
 
 RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI.set(_ROWAL_ALIP, ROWAL_ALIP);
 RUMUS_APALAN_AWAL_BULAN_ROBIULAWAL_ABADI.set(_ROWAL_EHE, ROWAL_EHE);

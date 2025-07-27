@@ -3,8 +3,8 @@
  * Rumus untuk bulan Jumadilakir selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _JUMADILAKIR, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _JUMADILAKIR, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -15,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _JUKIR_ALIP = Symbol.for("jukir_alip");
-const _JUKIR_EHE = Symbol.for("jukir_ehe");
-const _JUKIR_JIMAWAL = Symbol.for("jukir_jimawal");
-const _JUKIR_JE = Symbol.for("jukir_je");
-const _JUKIR_DAL = Symbol.for("jukir_dal");
-const _JUKIR_BE = Symbol.for("jukir_be");
-const _JUKIR_WAWU = Symbol.for("jukir_wawu");
-const _JUKIR_JIMAKIR = Symbol.for("jukir_jimakir");
+const _JUKIR_ALIP = Symbol.for('jukir_alip');
+const _JUKIR_EHE = Symbol.for('jukir_ehe');
+const _JUKIR_JIMAWAL = Symbol.for('jukir_jimawal');
+const _JUKIR_JE = Symbol.for('jukir_je');
+const _JUKIR_DAL = Symbol.for('jukir_dal');
+const _JUKIR_BE = Symbol.for('jukir_be');
+const _JUKIR_WAWU = Symbol.for('jukir_wawu');
+const _JUKIR_JIMAKIR = Symbol.for('jukir_jimakir');
 
 // Rumus Matematis
 const JUKIR_RO_PAT = {

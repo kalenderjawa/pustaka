@@ -3,8 +3,8 @@
  * Rumus untuk bulan Dulkodah selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _DULKODAH, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _DULKODAH, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -15,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry Symbol untuk Dulkodah Sewindu
-const _DAH_ALIP = Symbol.for("dah_alip");
-const _DAH_EHE = Symbol.for("dah_ehe");
-const _DAH_JIMAWAL = Symbol.for("dah_jimawal");
-const _DAH_JE = Symbol.for("dah_je");
-const _DAH_DAL = Symbol.for("dah_dal");
-const _DAH_BE = Symbol.for("dah_be");
-const _DAH_WAWU = Symbol.for("dah_wawu");
-const _DAH_JIMAKIR = Symbol.for("dah_jimakir");
+const _DAH_ALIP = Symbol.for('dah_alip');
+const _DAH_EHE = Symbol.for('dah_ehe');
+const _DAH_JIMAWAL = Symbol.for('dah_jimawal');
+const _DAH_JE = Symbol.for('dah_je');
+const _DAH_DAL = Symbol.for('dah_dal');
+const _DAH_BE = Symbol.for('dah_be');
+const _DAH_WAWU = Symbol.for('dah_wawu');
+const _DAH_JIMAKIR = Symbol.for('dah_jimakir');
 
 // Rumus Matematis
 

@@ -7,7 +7,7 @@ declare module '@kalenderjawa/saptawara' {
 
   export const DINTEN: Map<string, DintenType>;
   export const DINTEN_ARR: DintenType[];
-  
+
   // Day constants (keys for DINTEN Map)
   export const _AKAD: string;
   export const _SENEN: string;

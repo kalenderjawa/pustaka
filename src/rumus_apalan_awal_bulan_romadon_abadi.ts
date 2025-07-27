@@ -3,8 +3,8 @@
  * Rumus untuk bulan Romadon selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _ROMADON, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _ROMADON, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -15,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry Wulan Romadon Sewindu (8 Taun)
-const _DON_ALIP = Symbol.for("don_alip");
-const _DON_EHE = Symbol.for("don_ehe");
-const _DON_JIMAWAL = Symbol.for("don_jimawal");
-const _DON_JE = Symbol.for("don_je");
-const _DON_DAL = Symbol.for("don_dal");
-const _DON_BE = Symbol.for("don_be");
-const _DON_WAWU = Symbol.for("don_wawu");
-const _DON_JIMAKIR = Symbol.for("don_jimakir");
+const _DON_ALIP = Symbol.for('don_alip');
+const _DON_EHE = Symbol.for('don_ehe');
+const _DON_JIMAWAL = Symbol.for('don_jimawal');
+const _DON_JE = Symbol.for('don_je');
+const _DON_DAL = Symbol.for('don_dal');
+const _DON_BE = Symbol.for('don_be');
+const _DON_WAWU = Symbol.for('don_wawu');
+const _DON_JIMAKIR = Symbol.for('don_jimakir');
 
 // Rumus Matematis
 

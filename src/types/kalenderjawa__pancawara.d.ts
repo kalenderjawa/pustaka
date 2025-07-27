@@ -7,7 +7,7 @@ declare module '@kalenderjawa/pancawara' {
 
   export const PASARAN: Map<string, PasaranType>;
   export const PASARAN_ARR: PasaranType[];
-  
+
   // Pasaran constants (keys for PASARAN Map)
   export const _LEGI: string;
   export const _PAHING: string;

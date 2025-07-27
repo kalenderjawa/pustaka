@@ -3,8 +3,8 @@
  * Rumus untuk bulan Dulkijah selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _DULKIJAH, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _DULKIJAH, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -15,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry Symbol
-const _JAH_ALIP = Symbol.for("jah_alip");
-const _JAH_EHE = Symbol.for("jah_ehe");
-const _JAH_JIMAWAL = Symbol.for("jah_jimawal");
-const _JAH_JE = Symbol.for("jah_je");
-const _JAH_DAL = Symbol.for("jah_dal");
-const _JAH_BE = Symbol.for("jah_be");
-const _JAH_WAWU = Symbol.for("jah_wawu");
-const _JAH_JIMAKIR = Symbol.for("jah_jimakir");
+const _JAH_ALIP = Symbol.for('jah_alip');
+const _JAH_EHE = Symbol.for('jah_ehe');
+const _JAH_JIMAWAL = Symbol.for('jah_jimawal');
+const _JAH_JE = Symbol.for('jah_je');
+const _JAH_DAL = Symbol.for('jah_dal');
+const _JAH_BE = Symbol.for('jah_be');
+const _JAH_WAWU = Symbol.for('jah_wawu');
+const _JAH_JIMAKIR = Symbol.for('jah_jimakir');
 
 // Rumus
 const JAH_PAT_JI = {

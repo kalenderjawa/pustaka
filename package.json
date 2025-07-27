@@ -3,19 +3,19 @@
   "version": "1.0.0-rc.4",
   "description": "Pustaka JavaScript untuk perhitungan, pengkonversian dan penanggalan Kalender Jawa Abadi",
   "type": "module",
-  "main": "lib/kalenderjawa.min.cjs",
-  "module": "lib/kalenderjawa.min.js",
-  "browser": "lib/kalenderjawa.browser.min.js",
+  "main": "dist/kalenderjawa.min.cjs",
+  "module": "dist/kalenderjawa.min.js",
+  "browser": "dist/kalenderjawa.browser.min.js",
   "exports": {
     ".": {
-      "require": "./lib/kalenderjawa.min.cjs",
-      "import": "./lib/kalenderjawa.min.js",
-      "browser": "./lib/kalenderjawa.browser.min.js"
+      "require": "./dist/kalenderjawa.min.cjs",
+      "import": "./dist/kalenderjawa.min.js",
+      "browser": "./dist/kalenderjawa.browser.min.js"
     },
     "./package.json": "./package.json"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -24,12 +24,19 @@
     "node": ">=12.18.0"
   },
   "scripts": {
-    "build": "bunx rollup --config",
-    "doc": "bunx jsdoc -c jsdoc.conf.json -r src -d docs",
-    "test": "bunx cross-env JEST_PUPPETEER_CONFIG=jest-puppeteer.config.cjs bunx jest --no-cache --coverage --testPathIgnorePatterns=\"_data.*\"",
-    "test-watch": "bun run test -- --watch",
-    "serve": "bun scripts/res.js && bun test_server.js",
-    "test-no-esm": "docker build ."
+    "build": "vite build",
+    "build:rollup": "bunx rollup --config",
+    "dev": "vite build --watch",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.js --fix",
+    "format": "prettier --write \"src/**/*.{ts,js,json}\"",
+    "doc": "typedoc src/index.ts --out docs",
+    "serve": "vite preview",
+    "prepublishOnly": "npm run typecheck && npm run lint && npm run test && npm run build",
+    "release": "np"
   },
   "repository": {
     "type": "git",
@@ -59,66 +66,24 @@
   },
   "homepage": "https://github.com/kalenderjawa/pustaka#readme",
   "devDependencies": {
-    "@babel/cli": "^7.28.0",
-    "@babel/core": "^7.28.0",
-    "@babel/eslint-parser": "^7.28.0",
-    "@babel/preset-env": "^7.28.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@rollup/plugin-typescript": "^12.1.4",
-    "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^27.5.1",
-    "babel-loader": "^8.4.1",
-    "core-js": "^3.44.0",
-    "cross-env": "^7.0.3",
-    "express": "^4.21.2",
-    "fs-extra": "^10.1.0",
-    "jest": "^27.5.1",
-    "jest-puppeteer": "^6.2.0",
-    "puppeteer": "^13.7.0",
-    "regenerator-runtime": "^0.13.11",
+    "@vitest/coverage-v8": "^2.1.0",
+    "@vitest/ui": "^2.1.0",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "np": "^10.0.10",
+    "prettier": "^3.3.3",
     "rollup": "^2.79.2",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.36.0",
-    "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3"
-  },
-  "jest": {
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/lib/"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json",
-      "mjs"
-    ],
-    "transform": {
-      "^.+\\.ts$": [
-        "ts-jest",
-        {
-          "isolatedModules": true,
-          "tsconfig": {
-            "strict": false,
-            "noImplicitAny": false,
-            "skipLibCheck": true
-          }
-        }
-      ],
-      "^.+\\.m?js?$": "babel-jest"
-    },
-    "moduleNameMapper": {
-      "^(\\.{1,2}/.*)\\.js$": "$1"
-    },
-    "preset": "jest-puppeteer",
-    "globals": {
-      "PATH": "http://localhost:3113"
-    }
+    "terser": "^5.36.0",
+    "typedoc": "^0.26.11",
+    "typescript": "^5.8.3",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0",
+    "vitest": "^2.1.0"
   },
   "dependencies": {
     "@kalenderjawa/pancawara": "^1.0.0",

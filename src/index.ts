@@ -3,25 +3,25 @@
 // 📁 index.ts
 // :ES6
 
-import * as Kurup from "./kurup_asapon_anenhing_statik.js";
+import * as Kurup from './kurup_asapon_anenhing_statik.js';
 import type {
   RumusSasiTaunType,
   TaunKurupType,
   SasiKeyType,
   DateType,
-} from "./types.js";
+} from './types.js';
 import {
   konversiHari,
   konversiPasaran,
   cariWulanRegistry,
   cariTaunRegistry,
   cariRumusWulanTaun,
-} from "./silpin.js";
-import { DINTEN_ARR } from "@kalenderjawa/saptawara";
-import { PASARAN_ARR } from "@kalenderjawa/pancawara";
-import { SASI_ARR } from "./sasi.js";
-import { TAHUN_ARR } from "./taun.js";
-import pkg from "../package.json";
+} from './silpin.js';
+import { DINTEN_ARR } from '@kalenderjawa/saptawara';
+import { PASARAN_ARR } from '@kalenderjawa/pancawara';
+import { SASI_ARR } from './sasi.js';
+import { TAHUN_ARR } from './taun.js';
+import pkg from '../package.json';
 
 /**
  * Mencari Kurup dan Taun Jawa
@@ -33,12 +33,12 @@ async function cariKurupTaun(_q: number): Promise<TaunKurupType> {
   const _qi = parseInt(_q.toString());
   return new Promise((resolve, reject) => {
     for (const _kurup of Kurup.KURUP_ASAPON_ANENHING) {
-      _kurup.awal.find((query) => {
+      _kurup.awal.find(query => {
         if (query === _qi) resolve(_kurup);
       });
     }
 
-    reject(new Error("Error cariKurupTaun"));
+    reject(new Error('Error cariKurupTaun'));
   });
 }
 
@@ -49,11 +49,11 @@ async function cariKurupTaun(_q: number): Promise<TaunKurupType> {
  */
 async function cariRumusAbadiAwalBulanTahunJawa(
   wulan: string,
-  taun: number,
+  taun: number
 ): Promise<RumusSasiTaunType | undefined> {
   return new Promise((resolve, reject) => {
     cariKurupTaun(taun)
-      .then((r) => {
+      .then(r => {
         const wulanMap = cariWulanRegistry(wulan);
         const taunMap = cariTaunRegistry(r.taun.taun);
 
@@ -83,9 +83,9 @@ async function cariRumusAbadiAwalBulanTahunJawa(
             resolve(RWT);
           }
         }
-        reject(new Error("error cariRumusAbadi"));
+        reject(new Error('error cariRumusAbadi'));
       })
-      .catch((e) => reject(e));
+      .catch(e => reject(e));
   });
 }
 
@@ -101,12 +101,12 @@ async function cariHariPasaranAwalBulanTahunJawa(w: string, t: number) {
   ]);
   const [kH, kP] = await Promise.all([
     konversiHari(
-      "rumus" in sengkalaRumus! ? sengkalaRumus.rumus.dino : 0,
-      sengkalaTaun.kurup.dinten.urutan,
+      'rumus' in sengkalaRumus! ? sengkalaRumus.rumus.dino : 0,
+      sengkalaTaun.kurup.dinten.urutan
     ),
     konversiPasaran(
-      "rumus" in sengkalaRumus! ? sengkalaRumus.rumus.pasaran : 0,
-      sengkalaTaun.kurup.pasaran.urutan,
+      'rumus' in sengkalaRumus! ? sengkalaRumus.rumus.pasaran : 0,
+      sengkalaTaun.kurup.pasaran.urutan
     ),
   ]);
   const i = {
@@ -134,11 +134,11 @@ async function sasi(s: string, th: number) {
     });
     _x = _x + 1;
     _s = _s + 1;
-  } while (i < ("wulan" in dat! ? dat.wulan!.cacah[0] : 0));
+  } while (i < ('wulan' in dat! ? dat.wulan!.cacah[0] : 0));
 
-  const sMap: Map<SasiKeyType, Array<Object>> = new Map();
+  const sMap: Map<SasiKeyType, Array<object>> = new Map();
   const sKey: SasiKeyType = {
-    sasi: "wulan" in dat! ? dat.wulan!.wulan : "",
+    sasi: 'wulan' in dat! ? dat.wulan!.wulan : '',
     taun: th,
   };
   sMap.set(sKey, _m);
@@ -158,7 +158,7 @@ function koreksiDino(d: number) {
     dc = d;
   }
 
-  return DINTEN_ARR[dc - 1]["dino"];
+  return DINTEN_ARR[dc - 1]['dino'];
 }
 
 function koreksiPasaran(p: number) {
@@ -172,8 +172,8 @@ function koreksiPasaran(p: number) {
     pc = p;
   }
   return {
-    ps: PASARAN_ARR[pc - 1]["pasaran"],
-    pn: PASARAN_ARR[pc - 1]["neptu"],
+    ps: PASARAN_ARR[pc - 1]['pasaran'],
+    pn: PASARAN_ARR[pc - 1]['neptu'],
   };
 }
 

@@ -5,8 +5,8 @@
  * Rumus untuk bulan Sawal selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _SAWAL, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _SAWAL, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -17,18 +17,18 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry Symbol untuk Sawal Sewindu
 
-const _WAL_ALIP = Symbol.for("wal_alip");
-const _WAL_EHE = Symbol.for("wal_ehe");
-const _WAL_JIMAWAL = Symbol.for("wal_jimawal");
-const _WAL_JE = Symbol.for("wal_je");
-const _WAL_DAL = Symbol.for("wal_dal");
-const _WAL_BE = Symbol.for("wal_be");
-const _WAL_WAWU = Symbol.for("wal_wawu");
-const _WAL_JIMAKIR = Symbol.for("wal_jimakir");
+const _WAL_ALIP = Symbol.for('wal_alip');
+const _WAL_EHE = Symbol.for('wal_ehe');
+const _WAL_JIMAWAL = Symbol.for('wal_jimawal');
+const _WAL_JE = Symbol.for('wal_je');
+const _WAL_DAL = Symbol.for('wal_dal');
+const _WAL_BE = Symbol.for('wal_be');
+const _WAL_WAWU = Symbol.for('wal_wawu');
+const _WAL_JIMAKIR = Symbol.for('wal_jimakir');
 
 // Rumus matematis
 

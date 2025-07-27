@@ -3,8 +3,8 @@
  * Rumus untuk bulan Rojab selama 8 Tahun (Sewindu)
  */
 
-import type { WulanTaunType } from "./types.js";
-import { _ROJAB, ARANING_WULAN_SETAUN } from "./sasi.js";
+import type { WulanTaunType } from './types.js';
+import { _ROJAB, ARANING_WULAN_SETAUN } from './sasi.js';
 import {
   _ALIP,
   _EHE,
@@ -15,17 +15,17 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.js";
+} from './taun.js';
 
 // Registry
-const _JAB_ALIP = Symbol.for("jab_alip");
-const _JAB_EHE = Symbol.for("jab_ehe");
-const _JAB_JIMAWAL = Symbol.for("jab_jimawal");
-const _JAB_JE = Symbol.for("jab_je");
-const _JAB_DAL = Symbol.for("jab_dal");
-const _JAB_BE = Symbol.for("jab_be");
-const _JAB_WAWU = Symbol.for("jab_wawu");
-const _JAB_JIMAKIR = Symbol.for("jab_jimakir");
+const _JAB_ALIP = Symbol.for('jab_alip');
+const _JAB_EHE = Symbol.for('jab_ehe');
+const _JAB_JIMAWAL = Symbol.for('jab_jimawal');
+const _JAB_JE = Symbol.for('jab_je');
+const _JAB_DAL = Symbol.for('jab_dal');
+const _JAB_BE = Symbol.for('jab_be');
+const _JAB_WAWU = Symbol.for('jab_wawu');
+const _JAB_JIMAKIR = Symbol.for('jab_jimakir');
 
 // Rumus
 
