@@ -21,7 +21,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=12.18.0"
+    "node": ">=20.0.0"
   },
   "scripts": {
     "build": "vite build",
