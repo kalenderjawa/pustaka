@@ -3,7 +3,7 @@
 // 📁 index.ts
 // :ES6
 
-import * as Kurup from "./kurup_asapon_anenhing_statik.js";
+import * as Kurup from "./kurup_asapon_anenhing_statik.ts";
 import type {
   RumusSasiTaunType,
   TaunKurupType,

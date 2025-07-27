@@ -2,18 +2,18 @@
  * Rupa Ati
  * 📁 rupa_ati.ts
  */
-import * as Mukarom from "./rumus_apalan_awal_bulan_mukarom_abadi.js";
-import * as Sapar from "./rumus_apalan_awal_bulan_sapar_abadi.js";
-import * as Robiulawal from "./rumus_apalan_awal_bulan_robiulawal_abadi.js";
-import * as Robiulakir from "./rumus_apalan_awal_bulan_robiulakir_abadi.js";
-import * as Jumadilawal from "./rumus_apalan_awal_bulan_jumadilawal_abadi.js";
-import * as Jumadilakir from "./rumus_apalan_awal_bulan_jumadilakir_abadi.js";
-import * as Rojab from "./rumus_apalan_awal_bulan_rojab_abadi.js";
-import * as Sakban from "./rumus_apalan_awal_bulan_sakban_abadi.js";
-import * as Romadon from "./rumus_apalan_awal_bulan_romadon_abadi.js";
-import * as Sawal from "./rumus_apalan_awal_bulan_sawal_abadi.js";
-import * as Dulkodah from "./rumus_apalan_awal_bulan_dulkodah_abadi.js";
-import * as Dulkijah from "./rumus_apalan_awal_bulan_dulkijah_abadi.js";
+import * as Mukarom from "./rumus_apalan_awal_bulan_mukarom_abadi.ts";
+import * as Sapar from "./rumus_apalan_awal_bulan_sapar_abadi.ts";
+import * as Robiulawal from "./rumus_apalan_awal_bulan_robiulawal_abadi.ts";
+import * as Robiulakir from "./rumus_apalan_awal_bulan_robiulakir_abadi.ts";
+import * as Jumadilawal from "./rumus_apalan_awal_bulan_jumadilawal_abadi.ts";
+import * as Jumadilakir from "./rumus_apalan_awal_bulan_jumadilakir_abadi.ts";
+import * as Rojab from "./rumus_apalan_awal_bulan_rojab_abadi.ts";
+import * as Sakban from "./rumus_apalan_awal_bulan_sakban_abadi.ts";
+import * as Romadon from "./rumus_apalan_awal_bulan_romadon_abadi.ts";
+import * as Sawal from "./rumus_apalan_awal_bulan_sawal_abadi.ts";
+import * as Dulkodah from "./rumus_apalan_awal_bulan_dulkodah_abadi.ts";
+import * as Dulkijah from "./rumus_apalan_awal_bulan_dulkijah_abadi.ts";
 
 type KWMapType = Map<symbol, Object>;
 
