@@ -12,7 +12,6 @@
 <a href="https://bundlephobia.com/result?p=@kalenderjawa/pustaka"><img src="https://badgen.net/bundlephobia/minzip/@kalenderjawa/pustaka" alt="bundlephobia"></a> 
 </p>
 
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/kalenderjawa/pustaka?utm_source=oss&utm_medium=github&utm_campaign=kalenderjawa%2Fpustaka&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 ## Sejarah Penanggalan Jawa
 
 Menurut sejarahnya Penanggalan Jawa merupakan hasil olah para Wali dan para leluhur Jawa dan kemudian diwariskan terutama melalui rumus perhitungan dengan cara hafalan dan hebatnya rumus perhitungan ini bersifat abadi dan sangat akurat sampai hampir **1000 tahun**.
