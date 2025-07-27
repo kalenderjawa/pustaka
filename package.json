@@ -85,7 +85,7 @@
     "vitest": "^2.1.0"
   },
   "dependencies": {
-    "@kalenderjawa/pancawara": "^1.0.0",
-    "@kalenderjawa/saptawara": "^1.3.0"
+    "@kalenderjawa/pancawara": "^1.0.1",
+    "@kalenderjawa/saptawara": "^1.4.0"
   }
 }
