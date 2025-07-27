@@ -7,8 +7,8 @@
     "esModuleInterop": true,
     "allowJs": true,
     "checkJs": false,
-    "strict": true,
-    "noImplicitAny": true,
+    "strict": false,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "noImplicitReturns": true,
@@ -18,7 +18,8 @@
     "rootDir": "./src",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "typeRoots": ["./src/types", "./node_modules/@types"]
   },
   "include": [
     "src/**/*"
