@@ -12,8 +12,7 @@
       "import": "./lib/kalenderjawa.min.js",
       "browser": "./lib/kalenderjawa.browser.min.js"
     },
-    "./package.json": "./package.json",
-    "./": "./"
+    "./package.json": "./package.json"
   },
   "files": [
     "lib"
@@ -100,14 +99,17 @@
       "mjs"
     ],
     "transform": {
-      "^.+\\.ts$": ["ts-jest", {
-        "isolatedModules": true,
-        "tsconfig": {
-          "strict": false,
-          "noImplicitAny": false,
-          "skipLibCheck": true
+      "^.+\\.ts$": [
+        "ts-jest",
+        {
+          "isolatedModules": true,
+          "tsconfig": {
+            "strict": false,
+            "noImplicitAny": false,
+            "skipLibCheck": true
+          }
         }
-      }],
+      ],
       "^.+\\.m?js?$": "babel-jest"
     },
     "moduleNameMapper": {

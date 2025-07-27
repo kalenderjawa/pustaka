@@ -100,9 +100,12 @@ async function cariHariPasaranAwalBulanTahunJawa(w: string, t: number) {
     cariRumusAbadiAwalBulanTahunJawa(w, t),
   ]);
   const [kH, kP] = await Promise.all([
-    konversiHari(sengkalaRumus.rumus.dino, sengkalaTaun.kurup.dinten.urutan),
+    konversiHari(
+      "rumus" in sengkalaRumus! ? sengkalaRumus.rumus.dino : 0,
+      sengkalaTaun.kurup.dinten.urutan,
+    ),
     konversiPasaran(
-      sengkalaRumus.rumus.pasaran,
+      "rumus" in sengkalaRumus! ? sengkalaRumus.rumus.pasaran : 0,
       sengkalaTaun.kurup.pasaran.urutan,
     ),
   ]);
@@ -120,19 +123,24 @@ async function sasi(s: string, th: number) {
   ]);
   const _m = [];
   let i = 0;
-  let _x = kP.urutan;
-  let _s = kH.urutan;
+  let _x = (kP as any).urutan;
+  let _s = (kH as any).urutan;
 
   do {
     i = i + 1;
     const { ps, pn } = koreksiPasaran(_x);
-    _m.push({ [i]: { dinten: koreksiDino(_s), pasaran: ps, neptu: pn } });
+    (_m as any).push({
+      [i]: { dinten: koreksiDino(_s), pasaran: ps, neptu: pn },
+    });
     _x = _x + 1;
     _s = _s + 1;
-  } while (i < dat.wulan.cacah[0]);
+  } while (i < ("wulan" in dat! ? dat.wulan!.cacah[0] : 0));
 
   const sMap: Map<SasiKeyType, Array<Object>> = new Map();
-  const sKey: SasiKeyType = { sasi: dat.wulan.wulan, taun: th };
+  const sKey: SasiKeyType = {
+    sasi: "wulan" in dat! ? dat.wulan!.wulan : "",
+    taun: th,
+  };
   sMap.set(sKey, _m);
 
   // Map keys use ===

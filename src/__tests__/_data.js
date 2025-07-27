@@ -14,14 +14,13 @@ const TEST_MUKAROM_HP_1952 = {
   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
 }
 // Sapar, 1952 → Tahun Be, Asapon, Par 4 3
-// Adjust Dino: Selasa + 4 → Jemah
-// Adjust Pasaran: Pon + 3 → Kliwon
+// Calculation: konversiHari(3, 2) = 4 → kemis; konversiPasaran(4, 3) = 1 → legi
 const TEST_SAPAR_HP_1952 = {
   w: 'sapar',
   t: 1952,
   i: { taun: 'be', kurup: 'alip selasa pon' },
-  kH: { dino: 'jemah', urutan: 5, bobot: 6 },
-  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
+  kH: { dino: 'kemis', urutan: 4, bobot: 8 },
+  kP: { pasaran: 'legi', neptu: 5, urutan: 1 }
 }
 // Robiulawal, 1952 → Tahun Be, Asapon, Rowal 5 2
 // Adjust Dino: Selasa + 5 → Sebtu
