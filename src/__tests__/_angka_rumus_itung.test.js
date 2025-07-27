@@ -17,7 +17,7 @@ describe('Angka Rumus Itung Testing', () => {
 
   test('ANGKA_RUMUS_ITUNG Map contains all entries', () => {
     const angkaMap = AngkaRumus.ANGKA_RUMUS_ITUNG;
-    
+
     expect(angkaMap.size).toBe(7);
     expect(angkaMap.has('siji')).toBe(true);
     expect(angkaMap.has('loro')).toBe(true);
@@ -30,7 +30,7 @@ describe('Angka Rumus Itung Testing', () => {
 
   test('SIJI entry structure', () => {
     const siji = AngkaRumus.ANGKA_RUMUS_ITUNG.get('siji');
-    
+
     expect(siji).toBeDefined();
     expect(siji.angka).toBe('siji');
     expect(siji.celukan).toBe('ji');
@@ -39,7 +39,7 @@ describe('Angka Rumus Itung Testing', () => {
 
   test('LORO entry structure', () => {
     const loro = AngkaRumus.ANGKA_RUMUS_ITUNG.get('loro');
-    
+
     expect(loro).toBeDefined();
     expect(loro.angka).toBe('loro');
     expect(loro.celukan).toBe('ro');
@@ -48,7 +48,7 @@ describe('Angka Rumus Itung Testing', () => {
 
   test('TELU entry structure', () => {
     const telu = AngkaRumus.ANGKA_RUMUS_ITUNG.get('telu');
-    
+
     expect(telu).toBeDefined();
     expect(telu.angka).toBe('telu');
     expect(telu.celukan).toBe('lu');
@@ -57,7 +57,7 @@ describe('Angka Rumus Itung Testing', () => {
 
   test('PAPAT entry structure', () => {
     const papat = AngkaRumus.ANGKA_RUMUS_ITUNG.get('papat');
-    
+
     expect(papat).toBeDefined();
     expect(papat.angka).toBe('papat');
     expect(papat.celukan).toBe('pat');
@@ -66,7 +66,7 @@ describe('Angka Rumus Itung Testing', () => {
 
   test('LIMO entry structure', () => {
     const limo = AngkaRumus.ANGKA_RUMUS_ITUNG.get('limo');
-    
+
     expect(limo).toBeDefined();
     expect(limo.angka).toBe('limo');
     expect(limo.celukan).toBe('mo');
@@ -75,7 +75,7 @@ describe('Angka Rumus Itung Testing', () => {
 
   test('ENEM entry structure', () => {
     const enem = AngkaRumus.ANGKA_RUMUS_ITUNG.get('enem');
-    
+
     expect(enem).toBeDefined();
     expect(enem.angka).toBe('enem');
     expect(enem.celukan).toBe('nem');
@@ -84,7 +84,7 @@ describe('Angka Rumus Itung Testing', () => {
 
   test('PITU entry structure', () => {
     const pitu = AngkaRumus.ANGKA_RUMUS_ITUNG.get('pitu');
-    
+
     expect(pitu).toBeDefined();
     expect(pitu.angka).toBe('pitu');
     expect(pitu.celukan).toBe('tu');
@@ -100,11 +100,11 @@ describe('Angka Rumus Itung Testing', () => {
   test('All entries have correct sequential abot values', () => {
     const expectedSequence = [1, 2, 3, 4, 5, 6, 7];
     const actualSequence = [];
-    
+
     AngkaRumus.ANGKA_RUMUS_ITUNG.forEach(entry => {
       actualSequence.push(entry.abot);
     });
-    
+
     actualSequence.sort((a, b) => a - b);
     expect(actualSequence).toEqual(expectedSequence);
   });

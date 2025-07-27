@@ -8,7 +8,8 @@ import type {
   RumusSasiTaunType,
   TaunKurupType,
   SasiKeyType,
-  DateType,
+  PasaranType,
+  DintenType,
 } from './types.js';
 import {
   konversiHari,
@@ -101,11 +102,13 @@ async function cariHariPasaranAwalBulanTahunJawa(w: string, t: number) {
   ]);
   const [kH, kP] = await Promise.all([
     konversiHari(
-      'rumus' in sengkalaRumus! ? sengkalaRumus.rumus.dino : 0,
+      sengkalaRumus && 'rumus' in sengkalaRumus ? sengkalaRumus.rumus.dino : 0,
       sengkalaTaun.kurup.dinten.urutan
     ),
     konversiPasaran(
-      'rumus' in sengkalaRumus! ? sengkalaRumus.rumus.pasaran : 0,
+      sengkalaRumus && 'rumus' in sengkalaRumus
+        ? sengkalaRumus.rumus.pasaran
+        : 0,
       sengkalaTaun.kurup.pasaran.urutan
     ),
   ]);
@@ -121,24 +124,29 @@ async function sasi(s: string, th: number) {
     cariHariPasaranAwalBulanTahunJawa(s, th),
     cariRumusAbadiAwalBulanTahunJawa(s, th),
   ]);
-  const _m = [];
+  const _m: Array<{
+    [key: number]: { dinten: string; pasaran: string; neptu: number };
+  }> = [];
   let i = 0;
-  let _x = (kP as any).urutan;
-  let _s = (kH as any).urutan;
+  let _x = (kP as PasaranType).urutan;
+  let _s = (kH as DintenType).urutan;
 
   do {
     i = i + 1;
     const { ps, pn } = koreksiPasaran(_x);
-    (_m as any).push({
+    _m.push({
       [i]: { dinten: koreksiDino(_s), pasaran: ps, neptu: pn },
     });
     _x = _x + 1;
     _s = _s + 1;
-  } while (i < ('wulan' in dat! ? dat.wulan!.cacah[0] : 0));
+  } while (i < (dat && 'wulan' in dat && dat.wulan ? dat.wulan.cacah[0] : 0));
 
-  const sMap: Map<SasiKeyType, Array<object>> = new Map();
+  const sMap: Map<
+    SasiKeyType,
+    Array<{ [key: number]: { dinten: string; pasaran: string; neptu: number } }>
+  > = new Map();
   const sKey: SasiKeyType = {
-    sasi: 'wulan' in dat! ? dat.wulan!.wulan : '',
+    sasi: dat && 'wulan' in dat && dat.wulan ? dat.wulan.wulan : '',
     taun: th,
   };
   sMap.set(sKey, _m);
