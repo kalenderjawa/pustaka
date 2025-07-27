@@ -6,8 +6,8 @@ describe("ESM Browser", () => {
     const out = await page.goto(`${PATH}/index.html`, { waitUntil: "load" });
 
     page.on("console", (consoleObj) => {
-      for (let i = 0; i < msg.args().length; ++i)
-        console.log(`${i}: ${msg.args()[i]}`);
+      for (let i = 0; i < consoleObj.args().length; ++i)
+        console.log(`${i}: ${consoleObj.args()[i]}`);
     });
   });
 

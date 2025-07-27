@@ -13,9 +13,9 @@ import type {
 } from "./types.js";
 import { PASARAN } from "@kalenderjawa/pancawara";
 import { DINTEN } from "@kalenderjawa/saptawara";
-import { ARANING_WULAN_SETAUN, SASI_ARR } from "./sasi.ts";
-import { ARANING_TAHUN_SEWINDU } from "./taun.ts";
-import { SengkalaMap } from "./rupa_ati.ts";
+import { ARANING_WULAN_SETAUN, SASI_ARR } from "./sasi.js";
+import { ARANING_TAHUN_SEWINDU } from "./taun.js";
+import { SengkalaMap } from "./rupa_ati.js";
 
 /**
  *

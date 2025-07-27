@@ -64,7 +64,6 @@
     "@babel/core": "^7.28.0",
     "@babel/eslint-parser": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
-    "@babel/preset-flow": "^7.27.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^12.1.4",
@@ -77,16 +76,13 @@
     "babel-loader": "^8.4.1",
     "core-js": "^3.44.0",
     "cross-env": "^7.0.3",
-    "eslint-plugin-flowtype": "^8.0.3",
     "express": "^4.21.2",
-    "flow-bin": "^0.170.0",
     "fs-extra": "^10.1.0",
     "jest": "^27.5.1",
     "jest-puppeteer": "^6.2.0",
     "puppeteer": "^13.7.0",
     "regenerator-runtime": "^0.13.11",
     "rollup": "^2.79.2",
-    "rollup-plugin-flow": "^1.1.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "ts-jest": "^29.4.0",
@@ -104,8 +100,18 @@
       "mjs"
     ],
     "transform": {
-      "^.+\\.ts$": "ts-jest",
+      "^.+\\.ts$": ["ts-jest", {
+        "isolatedModules": true,
+        "tsconfig": {
+          "strict": false,
+          "noImplicitAny": false,
+          "skipLibCheck": true
+        }
+      }],
       "^.+\\.m?js?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
     },
     "preset": "jest-puppeteer",
     "globals": {

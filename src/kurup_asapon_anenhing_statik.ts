@@ -4,8 +4,8 @@
  * @desc Kurup A-Sa-Pon & Kurup A-Nen-Hing
  */
 
-import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.ts'
-import { ASAPON, ANENHING } from './kurup.ts'
+import { _ALIP, _EHE, _JIMAWAL, _JE, _DAL, _BE, _WAWU, _JIMAKIR, ARANING_TAHUN_SEWINDU } from './taun.js'
+import { ASAPON, ANENHING } from './kurup.js'
 import type { TaunKurupType } from './types.js'
 
 /**

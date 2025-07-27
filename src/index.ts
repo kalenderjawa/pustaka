@@ -3,7 +3,7 @@
 // 📁 index.ts
 // :ES6
 
-import * as Kurup from "./kurup_asapon_anenhing_statik.ts";
+import * as Kurup from "./kurup_asapon_anenhing_statik.js";
 import type {
   RumusSasiTaunType,
   TaunKurupType,
@@ -16,11 +16,11 @@ import {
   cariWulanRegistry,
   cariTaunRegistry,
   cariRumusWulanTaun,
-} from "./silpin.ts";
+} from "./silpin.js";
 import { DINTEN_ARR } from "@kalenderjawa/saptawara";
 import { PASARAN_ARR } from "@kalenderjawa/pancawara";
-import { SASI_ARR } from "./sasi.ts";
-import { TAHUN_ARR } from "./taun.ts";
+import { SASI_ARR } from "./sasi.js";
+import { TAHUN_ARR } from "./taun.js";
 import pkg from "../package.json";
 
 /**

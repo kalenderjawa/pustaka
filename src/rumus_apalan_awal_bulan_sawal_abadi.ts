@@ -6,7 +6,7 @@
  */
 
 import type { WulanTaunType } from "./types.js";
-import { _SAWAL, ARANING_WULAN_SETAUN } from "./sasi.ts";
+import { _SAWAL, ARANING_WULAN_SETAUN } from "./sasi.js";
 import {
   _ALIP,
   _EHE,
@@ -17,7 +17,7 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.ts";
+} from "./taun.js";
 
 // Registry Symbol untuk Sawal Sewindu
 

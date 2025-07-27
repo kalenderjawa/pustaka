@@ -4,7 +4,7 @@
  */
 
 import type { WulanTaunType } from "./types.js";
-import { _SAPAR, ARANING_WULAN_SETAUN } from "./sasi.ts";
+import { _SAPAR, ARANING_WULAN_SETAUN } from "./sasi.js";
 import {
   _ALIP,
   _EHE,
@@ -15,7 +15,7 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.ts";
+} from "./taun.js";
 
 // Registry
 const _PAR_ALIP = Symbol.for("par_alip");

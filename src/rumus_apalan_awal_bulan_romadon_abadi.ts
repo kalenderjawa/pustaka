@@ -4,7 +4,7 @@
  */
 
 import type { WulanTaunType } from "./types.js";
-import { _ROMADON, ARANING_WULAN_SETAUN } from "./sasi.ts";
+import { _ROMADON, ARANING_WULAN_SETAUN } from "./sasi.js";
 import {
   _ALIP,
   _EHE,
@@ -15,7 +15,7 @@ import {
   _WAWU,
   _JIMAKIR,
   ARANING_TAHUN_SEWINDU,
-} from "./taun.ts";
+} from "./taun.js";
 
 // Registry Wulan Romadon Sewindu (8 Taun)
 const _DON_ALIP = Symbol.for("don_alip");

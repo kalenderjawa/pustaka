@@ -1,5 +1,4 @@
 import json from "@rollup/plugin-json";
-import flow from "rollup-plugin-flow";
 import typescript from "@rollup/plugin-typescript";
 import { terser } from "rollup-plugin-terser";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
@@ -7,7 +6,7 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import pkg from "./package.json";
 
 export default {
-  input: "src/index.js",
+  input: "src/index.ts",
   plugins: [
     nodeResolve({ preferBuiltins: false }),
     typescript({
@@ -16,7 +15,6 @@ export default {
       declaration: false,
       noEmitOnError: false
     }),
-    flow(),
     json({ compact: true }),
     terser()
   ],
