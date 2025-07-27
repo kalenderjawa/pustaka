@@ -1,7 +1,7 @@
-import js from '@eslint/js'
-import typescript from '@typescript-eslint/eslint-plugin'
-import typescriptParser from '@typescript-eslint/parser'
-import prettier from 'eslint-plugin-prettier'
+import js from '@eslint/js';
+import typescript from '@typescript-eslint/eslint-plugin';
+import typescriptParser from '@typescript-eslint/parser';
+import prettier from 'eslint-plugin-prettier';
 
 export default [
   js.configs.recommended,
@@ -12,12 +12,12 @@ export default [
       parserOptions: {
         ecmaVersion: 2022,
         sourceType: 'module',
-        project: './tsconfig.json'
-      }
+        project: './tsconfig.json',
+      },
     },
     plugins: {
       '@typescript-eslint': typescript,
-      prettier
+      prettier,
     },
     rules: {
       ...typescript.configs.recommended.rules,
@@ -30,25 +30,25 @@ export default [
       'prettier/prettier': 'error',
       'no-console': 'warn',
       'prefer-const': 'error',
-      'no-var': 'error'
-    }
+      'no-var': 'error',
+    },
   },
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2022,
-      sourceType: 'module'
+      sourceType: 'module',
     },
     plugins: {
-      prettier
+      prettier,
     },
     rules: {
       'prettier/prettier': 'error',
       'no-console': 'warn',
       'prefer-const': 'error',
       'no-var': 'error',
-      'no-unused-vars': 'warn'
-    }
+      'no-unused-vars': 'warn',
+    },
   },
   {
     files: ['**/*.test.{ts,js}', '**/__tests__/**'],
@@ -65,22 +65,16 @@ export default [
         console: 'readonly',
         page: 'readonly',
         PATH: 'readonly',
-        KalenderJawa: 'readonly'
-      }
+        KalenderJawa: 'readonly',
+      },
     },
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       'no-console': 'off',
-      'no-undef': 'off'
-    }
+      'no-undef': 'off',
+    },
   },
   {
-    ignores: [
-      'lib/',
-      'docs/',
-      'node_modules/',
-      '*.config.js',
-      '*.config.ts'
-    ]
-  }
-]
+    ignores: ['docs/', 'node_modules/', '*.config.js', '*.config.ts'],
+  },
+];
