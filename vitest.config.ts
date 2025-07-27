@@ -24,6 +24,6 @@ export default defineConfig({
       ],
     },
     include: ['src/__tests__/**/*.{test,spec}.{js,ts}'],
-    exclude: ['node_modules/', 'dist/', 'src/**/__browser*.test.js'],
+    exclude: ['node_modules/', 'dist/'],
   },
 });

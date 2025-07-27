@@ -5,24 +5,24 @@
     "lib": ["ES2022", "DOM"],
     "module": "ESNext",
     "moduleResolution": "bundler",
-    
+
     // Emit
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./lib",
+    "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    
+
     // Interop Constraints
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": false,
-    
+
     // Type Checking
     "strict": true,
     "noImplicitAny": true,
@@ -41,15 +41,13 @@
     "noUncheckedIndexedAccess": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": false,
-    
+
     // Completeness
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "typeRoots": ["./src/types", "./node_modules/@types"]
   },
-  "include": [
-    "src/**/*"
-  ],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "lib",

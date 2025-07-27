@@ -8,9 +8,9 @@
   "browser": "dist/kalenderjawa.browser.min.js",
   "exports": {
     ".": {
-      "require": "./dist/kalenderjawa.min.cjs",
+      "browser": "./dist/kalenderjawa.browser.min.js",
       "import": "./dist/kalenderjawa.min.js",
-      "browser": "./dist/kalenderjawa.browser.min.js"
+      "require": "./dist/kalenderjawa.min.cjs"
     },
     "./package.json": "./package.json"
   },
@@ -34,6 +34,9 @@
     "format": "prettier --write \"src/**/*.{ts,js,json}\"",
     "doc": "typedoc src/index.ts --out docs",
     "serve": "vite preview",
+    "serve:examples": "vite --config vite.examples.config.ts --port 3113",
+    "copy:examples": "cp dist/*.js examples/ && cp dist/*.js.map examples/",
+    "build:examples": "npm run build && npm run copy:examples",
     "prepublishOnly": "npm run typecheck && npm run lint && npm run test && npm run build",
     "release": "np"
   },

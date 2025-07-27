@@ -63,9 +63,6 @@ export default [
         afterAll: 'readonly',
         it: 'readonly',
         console: 'readonly',
-        page: 'readonly',
-        PATH: 'readonly',
-        KalenderJawa: 'readonly',
       },
     },
     rules: {
