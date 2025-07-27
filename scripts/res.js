@@ -4,18 +4,18 @@
 import fs from 'fs-extra';
 import path from 'path';
 
-let js_browser_non_esm = path.join(
+const js_browser_non_esm = path.join(
   path.dirname('.'),
   'dist/kalenderjawa.browser.min.js'
 );
-let js_browser_esm = path.join(path.dirname('.'), 'dist/kalenderjawa.min.js');
+const js_browser_esm = path.join(path.dirname('.'), 'dist/kalenderjawa.min.js');
 
 // Source map files
-let js_browser_non_esm_map = path.join(
+const js_browser_non_esm_map = path.join(
   path.dirname('.'),
   'dist/kalenderjawa.browser.min.js.map'
 );
-let js_browser_esm_map = path.join(
+const js_browser_esm_map = path.join(
   path.dirname('.'),
   'dist/kalenderjawa.min.js.map'
 );
