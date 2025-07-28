@@ -1,11 +1,36 @@
-#https://hub.docker.com/_/node?tab=tags&page=1&name=12.16
-FROM node:12.16.3-stretch-slim
+# Use Node.js 20 LTS (current minimum requirement)
+FROM node:20-alpine
 
-# copy cjs library version to app dir
-COPY ./lib/kalenderjawa.min.cjs /app/kalenderjawa.min.cjs
-# copy test file index.js to app dir
-COPY ./examples/index.js /app/index.js
-
+# Set working directory
 WORKDIR /app
-# run 
-RUN node index.js
+
+# Copy package files for dependency installation
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci --only=production
+
+# Copy source code
+COPY src/ ./src/
+COPY tsconfig.json ./
+COPY vite.config.ts ./
+COPY eslint.config.js ./
+COPY vitest.config.ts ./
+
+# Copy example files
+COPY examples/ ./examples/
+
+# Install all dependencies (including dev dependencies for building)
+RUN npm ci
+
+# Build the project
+RUN npm run build
+
+# Copy built files to examples for testing
+RUN npm run copy:examples
+
+# Run tests to verify everything works
+RUN npm test
+
+# Default command to run the example
+CMD ["node", "examples/index.js"]
