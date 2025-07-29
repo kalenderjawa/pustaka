@@ -35,7 +35,7 @@
     "doc": "typedoc src/index.ts --out docs",
     "serve": "vite preview",
     "serve:examples": "vite --config vite.examples.config.ts --port 3113",
-    "copy:examples": "cp dist/*.js examples/ && cp dist/*.js.map examples/",
+    "copy:examples": "cp dist/*.js examples/ && cp dist/*.cjs examples/ && cp dist/*.js.map examples/ && cp dist/*.cjs.map examples/",
     "build:examples": "npm run build && npm run copy:examples",
     "prepublishOnly": "npm run typecheck && npm run lint && npm run test && npm run build",
     "release": "np"
