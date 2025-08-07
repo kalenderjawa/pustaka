@@ -60,7 +60,7 @@ async function cariRumusAbadiAwalBulanTahunJawa(
 
         // koreksi jumlah hari bulan dulkijah
         // berdasarkan tahun jawa
-        if (wulanMap !== undefined || wulanMap !== undefined) {
+        if (wulanMap !== undefined) {
           if (r.taun.cacah === 354) {
             const _correction = { cacah: [29] };
             if (wulanMap.urutan === 12) {
