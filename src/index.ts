@@ -58,22 +58,6 @@ async function cariRumusAbadiAwalBulanTahunJawa(
         const wulanMap = cariWulanRegistry(wulan);
         const taunMap = cariTaunRegistry(r.taun.taun);
 
-        // koreksi jumlah hari bulan dulkijah
-        // berdasarkan tahun jawa
-        if (wulanMap !== undefined) {
-          if (r.taun.cacah === 354) {
-            const _correction = { cacah: [29] };
-            if (wulanMap.urutan === 12) {
-              Object.assign(wulanMap, _correction);
-            }
-          } else {
-            const _correction = { cacah: [30] };
-            if (wulanMap.urutan === 12) {
-              Object.assign(wulanMap, _correction);
-            }
-          }
-        }
-
         if (wulanMap !== undefined && taunMap !== undefined) {
           const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`;
           const RWT = cariRumusWulanTaun(KEY_RUMUS, {
@@ -81,6 +65,15 @@ async function cariRumusAbadiAwalBulanTahunJawa(
             taun: taun,
           });
           if (RWT !== undefined) {
+            // Return an adjusted clone for Dulkijah without mutating registry
+            if (wulanMap.urutan === 12 && 'rumus' in RWT) {
+              const correctedWulan = {
+                ...wulanMap,
+                cacah: [r.taun.cacah === 354 ? 29 : 30],
+              };
+              resolve({ ...RWT, wulan: correctedWulan });
+              return;
+            }
             resolve(RWT);
           }
         }
