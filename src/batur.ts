@@ -15,7 +15,7 @@ interface BATASAN_TYPE {
 
 function periksaBatasan(t: number): BATASAN_TYPE {
   if (t < MIN_TAHUNJAWA || t > MAX_TAHUNJAWA) {
-    return { status: false, message: 'out of scoope' };
+    return { status: false, message: 'out of scope' };
   } else {
     return { status: true, message: '' };
   }

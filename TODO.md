@@ -1,7 +1,7 @@
 ### Actionable tasks to improve the project
 
 - **Accuracy and correctness**
-  - [ ] Standardize error message in `batur.ts`: change "out of scoope" → "out of scope"; update all tests expecting the old message.
+  - [x] Standardize error message in `batur.ts`: change "out of scoope" → "out of scope"; update all tests expecting the old message.
   - [ ] Add a shared `parseMonth` helper (`src/utils/parseMonth.ts`) to normalize input (trim + lowercase); use in `cariRumusAbadiAwalBulanTahunJawa`, `cariHariPasaranAwalBulanTahunJawa`, and `sasi`.
   - [ ] Freeze registries and items to avoid accidental mutation: export `ReadonlyMap` and `Object.freeze` for `SASI_ARR`, `TAHUN_ARR` and entries.
 

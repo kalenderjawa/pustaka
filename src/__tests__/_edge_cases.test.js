@@ -31,13 +31,13 @@ describe('Edge Cases and Error Scenarios', () => {
     // Test boundary conditions
     expect(periksaBatasan(1866)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(1867)).toEqual({ status: true, message: '' });
     expect(periksaBatasan(2106)).toEqual({ status: true, message: '' });
     expect(periksaBatasan(2107)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
   });
 

@@ -16,34 +16,34 @@ describe('Batur Testing', () => {
   test('Year below minimum range (< 1867)', () => {
     expect(periksaBatasan(1866)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(1800)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(1000)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(0)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
   });
 
   test('Year above maximum range (> 2106)', () => {
     expect(periksaBatasan(2107)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(2200)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(3000)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
   });
 
@@ -51,11 +51,11 @@ describe('Batur Testing', () => {
     // Just outside the range
     expect(periksaBatasan(1866)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(2107)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
 
     // Just inside the range
@@ -66,15 +66,15 @@ describe('Batur Testing', () => {
   test('Negative years', () => {
     expect(periksaBatasan(-1)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(-100)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(-1867)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
   });
 
@@ -82,11 +82,11 @@ describe('Batur Testing', () => {
     expect(periksaBatasan(1900.5)).toEqual({ status: true, message: '' });
     expect(periksaBatasan(1866.9)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(2106.1)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
   });
 });
