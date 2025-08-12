@@ -32,6 +32,16 @@ describe('Test Silpin.js', () => {
     expect(p.pasaran).toBe('legi');
   });
 
+  test('konversiHari handles large adjustment', async () => {
+    const result = await Silpin.konversiHari(20, 2);
+    expect(result.dino).toBe('akad');
+  });
+
+  test('konversiPasaran handles large adjustment', async () => {
+    const result = await Silpin.konversiPasaran(12, 3);
+    expect(result.pasaran).toBe('wage');
+  });
+
   /**
   test('Rumus Map', () => {
     expect(SengkalaMap.get(Romadon._DON_ALIP).wulan.wulan).toBe('romadon')
