@@ -16,6 +16,7 @@ const ASAPON: KurupType = {
   dinten: D.DINTEN.get(D._SELASA)!,
   pasaran: P.PASARAN.get(P._PON)!,
 };
+Object.freeze(ASAPON);
 
 /**
  * @constant
@@ -25,5 +26,6 @@ const ANENHING: KurupType = {
   dinten: D.DINTEN.get(D._SENEN)!,
   pasaran: P.PASARAN.get(P._PAHING)!,
 };
+Object.freeze(ANENHING);
 
 export { ASAPON, ANENHING };

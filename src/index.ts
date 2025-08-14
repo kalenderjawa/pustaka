@@ -23,6 +23,7 @@ import { PASARAN_ARR } from '@kalenderjawa/pancawara';
 import { SASI_ARR } from './sasi.js';
 import { TAHUN_ARR } from './taun.js';
 import pkg from '../package.json';
+import { filterWulan } from './utils/filterWulan.js';
 
 /**
  * Mencari Kurup dan Taun Jawa
@@ -55,13 +56,14 @@ async function cariRumusAbadiAwalBulanTahunJawa(
   return new Promise((resolve, reject) => {
     cariKurupTaun(taun)
       .then(r => {
-        const wulanMap = cariWulanRegistry(wulan);
+        const _wulan = filterWulan(wulan);
+        const wulanMap = cariWulanRegistry(_wulan);
         const taunMap = cariTaunRegistry(r.taun.taun);
 
         if (wulanMap !== undefined && taunMap !== undefined) {
           const KEY_RUMUS = `${wulanMap.celukan}_${taunMap.taun}`;
           const RWT = cariRumusWulanTaun(KEY_RUMUS, {
-            wulan: wulan,
+            wulan: _wulan,
             taun: taun,
           });
           if (RWT !== undefined) {
@@ -89,9 +91,10 @@ async function cariRumusAbadiAwalBulanTahunJawa(
  * @param t - 4 digit integer
  */
 async function cariHariPasaranAwalBulanTahunJawa(w: string, t: number) {
+  const _w = filterWulan(w);
   const [sengkalaTaun, sengkalaRumus] = await Promise.all([
     cariKurupTaun(t),
-    cariRumusAbadiAwalBulanTahunJawa(w, t),
+    cariRumusAbadiAwalBulanTahunJawa(_w, t),
   ]);
   const [kH, kP] = await Promise.all([
     konversiHari(
@@ -109,13 +112,14 @@ async function cariHariPasaranAwalBulanTahunJawa(w: string, t: number) {
     taun: sengkalaTaun.taun.taun,
     kurup: `${sengkalaTaun.kurup.taun} ${sengkalaTaun.kurup.dinten.dino} ${sengkalaTaun.kurup.pasaran.pasaran}`,
   };
-  return { w, t, i, kH, kP };
+  return { w: _w, t, i, kH, kP };
 }
 
 async function sasi(s: string, th: number) {
+  const sNorm = filterWulan(s);
   const [{ kH, kP }, dat] = await Promise.all([
-    cariHariPasaranAwalBulanTahunJawa(s, th),
-    cariRumusAbadiAwalBulanTahunJawa(s, th),
+    cariHariPasaranAwalBulanTahunJawa(sNorm, th),
+    cariRumusAbadiAwalBulanTahunJawa(sNorm, th),
   ]);
   const _m: Array<{
     [key: number]: { dinten: string; pasaran: string; neptu: number };

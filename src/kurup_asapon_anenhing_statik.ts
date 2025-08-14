@@ -30,6 +30,8 @@ const ALIP_ASAPON: TaunKurupType = {
     1963, 1971, 1979,
   ],
 };
+Object.freeze(ALIP_ASAPON.awal);
+Object.freeze(ALIP_ASAPON);
 
 const EHE_ASAPON: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_EHE)!,
@@ -39,6 +41,8 @@ const EHE_ASAPON: TaunKurupType = {
     1964, 1972, 1980,
   ],
 };
+Object.freeze(EHE_ASAPON.awal);
+Object.freeze(EHE_ASAPON);
 
 const JIMAWAL_ASAPON: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL)!,
@@ -48,6 +52,8 @@ const JIMAWAL_ASAPON: TaunKurupType = {
     1965, 1973, 1981,
   ],
 };
+Object.freeze(JIMAWAL_ASAPON.awal);
+Object.freeze(JIMAWAL_ASAPON);
 
 const JE_ASAPON: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_JE)!,
@@ -57,6 +63,8 @@ const JE_ASAPON: TaunKurupType = {
     1966, 1974, 1982,
   ],
 };
+Object.freeze(JE_ASAPON.awal);
+Object.freeze(JE_ASAPON);
 
 const DAL_ASAPON: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_DAL)!,
@@ -66,6 +74,8 @@ const DAL_ASAPON: TaunKurupType = {
     1967, 1975, 1983,
   ],
 };
+Object.freeze(DAL_ASAPON.awal);
+Object.freeze(DAL_ASAPON);
 
 const BE_ASAPON: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_BE)!,
@@ -75,6 +85,8 @@ const BE_ASAPON: TaunKurupType = {
     1968, 1976, 1984,
   ],
 };
+Object.freeze(BE_ASAPON.awal);
+Object.freeze(BE_ASAPON);
 
 const WAWU_ASAPON: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU)!,
@@ -84,6 +96,8 @@ const WAWU_ASAPON: TaunKurupType = {
     1969, 1977, 1985,
   ],
 };
+Object.freeze(WAWU_ASAPON.awal);
+Object.freeze(WAWU_ASAPON);
 
 const JIMAKIR_ASAPON: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR)!,
@@ -93,6 +107,8 @@ const JIMAKIR_ASAPON: TaunKurupType = {
     1970, 1978, 1986,
   ],
 };
+Object.freeze(JIMAKIR_ASAPON.awal);
+Object.freeze(JIMAKIR_ASAPON);
 
 /**
  * Kurup Alip Senen Pahing (A-NEN-HING)
@@ -106,6 +122,8 @@ const ALIP_ANENHING: TaunKurupType = {
     2083, 2091, 2099,
   ],
 };
+Object.freeze(ALIP_ANENHING.awal);
+Object.freeze(ALIP_ANENHING);
 
 const EHE_ANENHING: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_EHE)!,
@@ -115,6 +133,8 @@ const EHE_ANENHING: TaunKurupType = {
     2084, 2092, 2100,
   ],
 };
+Object.freeze(EHE_ANENHING.awal);
+Object.freeze(EHE_ANENHING);
 
 const JIMAWAL_ANENHING: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL)!,
@@ -124,6 +144,8 @@ const JIMAWAL_ANENHING: TaunKurupType = {
     2085, 2093, 2101,
   ],
 };
+Object.freeze(JIMAWAL_ANENHING.awal);
+Object.freeze(JIMAWAL_ANENHING);
 
 const JE_ANENHING: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_JE)!,
@@ -133,6 +155,8 @@ const JE_ANENHING: TaunKurupType = {
     2086, 2094, 2102,
   ],
 };
+Object.freeze(JE_ANENHING.awal);
+Object.freeze(JE_ANENHING);
 
 const DAL_ANENHING: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_DAL)!,
@@ -142,6 +166,8 @@ const DAL_ANENHING: TaunKurupType = {
     2087, 2095, 2103,
   ],
 };
+Object.freeze(DAL_ANENHING.awal);
+Object.freeze(DAL_ANENHING);
 
 const BE_ANENHING: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_BE)!,
@@ -151,6 +177,8 @@ const BE_ANENHING: TaunKurupType = {
     2088, 2096, 2104,
   ],
 };
+Object.freeze(BE_ANENHING.awal);
+Object.freeze(BE_ANENHING);
 
 const WAWU_ANENHING: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU)!,
@@ -160,6 +188,8 @@ const WAWU_ANENHING: TaunKurupType = {
     2089, 2097, 2105,
   ],
 };
+Object.freeze(WAWU_ANENHING.awal);
+Object.freeze(WAWU_ANENHING);
 
 const JIMAKIR_ANENHING: TaunKurupType = {
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR)!,
@@ -169,8 +199,10 @@ const JIMAKIR_ANENHING: TaunKurupType = {
     2090, 2098, 2106,
   ],
 };
+Object.freeze(JIMAKIR_ANENHING.awal);
+Object.freeze(JIMAKIR_ANENHING);
 
-const KURUP_ASAPON_ANENHING: TaunKurupType[] = [
+const KURUP_ASAPON_ANENHING: ReadonlyArray<TaunKurupType> = Object.freeze([
   ALIP_ASAPON,
   EHE_ASAPON,
   JIMAWAL_ASAPON,
@@ -187,6 +219,6 @@ const KURUP_ASAPON_ANENHING: TaunKurupType[] = [
   BE_ANENHING,
   WAWU_ANENHING,
   JIMAKIR_ANENHING,
-];
+]);
 
 export { KURUP_ASAPON_ANENHING };

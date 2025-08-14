@@ -2,8 +2,15 @@
 
 - **Accuracy and correctness**
   - [x] Standardize error message in `batur.ts`: change "out of scoope" → "out of scope"; update all tests expecting the old message.
-  - [ ] Add a shared `parseMonth` helper (`src/utils/parseMonth.ts`) to normalize input (trim + lowercase); use in `cariRumusAbadiAwalBulanTahunJawa`, `cariHariPasaranAwalBulanTahunJawa`, and `sasi`.
-  - [ ] Freeze registries and items to avoid accidental mutation: export `ReadonlyMap` and `Object.freeze` for `SASI_ARR`, `TAHUN_ARR` and entries.
+  - [x] Add a shared `parseMonth` helper (`src/utils/parseMonth.ts`) to normalize input (trim + lowercase); use in `cariRumusAbadiAwalBulanTahunJawa`, `cariHariPasaranAwalBulanTahunJawa`, and `sasi`.
+  - [x] Freeze registries and items to avoid accidental mutation:
+    - [x] `SASI_ARR` and monthly entries: freeze objects and `cacah` arrays; export `ARANING_WULAN_SETAUN` as `ReadonlyMap` and `SASI_ARR` as `ReadonlyArray`.
+    - [x] `TAHUN_ARR` and year entries: freeze objects; export `ARANING_TAHUN_SEWINDU` as `ReadonlyMap` and `TAHUN_ARR` as `ReadonlyArray`.
+    - [x] `ASAPON`/`ANENHING` in `kurup.ts`: freeze objects.
+    - [x] `kurup_asapon_anenhing_statik.ts`: freeze each entry and its `awal` array; export list as `ReadonlyArray`.
+    - [x] `ANGKA_RUMUS_ITUNG`: freeze items; export as `ReadonlyMap`.
+    - [x] `rupa_ati.ts`: export `SengkalaMap` as `ReadonlyMap`.
+    - [ ] Freeze rumus entries in all `src/rumus_apalan_awal_bulan_*.ts` and export each registry as `ReadonlyMap`.
 
 - **Public API and DX**
   - [ ] Add sync variants without Promise wrappers: `cariKurupTahunJawaSync`, `cariRumusAbadiAwalBulanTahunJawaSync`, `cariHariPasaranAwalBulanTahunJawaSync`, `sasiSync` (keep async wrappers delegating to sync).

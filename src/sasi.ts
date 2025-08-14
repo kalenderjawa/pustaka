@@ -28,89 +28,113 @@ const MUKAROM: WulanType = {
   urutan: 1,
   cacah: [30],
 };
+Object.freeze(MUKAROM.cacah);
+Object.freeze(MUKAROM);
 const SAPAR: WulanType = {
   wulan: 'sapar',
   celukan: 'par',
   urutan: 2,
   cacah: [29],
 };
+Object.freeze(SAPAR.cacah);
+Object.freeze(SAPAR);
 const ROBIULAWAL: WulanType = {
   wulan: 'robiulawal',
   celukan: 'rowal',
   urutan: 3,
   cacah: [30],
 };
+Object.freeze(ROBIULAWAL.cacah);
+Object.freeze(ROBIULAWAL);
 const ROBIULAKIR: WulanType = {
   wulan: 'robiulakir',
   celukan: 'rokir',
   urutan: 4,
   cacah: [29],
 };
+Object.freeze(ROBIULAKIR.cacah);
+Object.freeze(ROBIULAKIR);
 const JUMADILAWAL: WulanType = {
   wulan: 'jumadilawal',
   celukan: 'juwal',
   urutan: 5,
   cacah: [30],
 };
+Object.freeze(JUMADILAWAL.cacah);
+Object.freeze(JUMADILAWAL);
 const JUMADILAKIR: WulanType = {
   wulan: 'jumadilakir',
   celukan: 'jukir',
   urutan: 6,
   cacah: [29],
 };
+Object.freeze(JUMADILAKIR.cacah);
+Object.freeze(JUMADILAKIR);
 const ROJAB: WulanType = {
   wulan: 'rojab',
   celukan: 'jab',
   urutan: 7,
   cacah: [30],
 };
+Object.freeze(ROJAB.cacah);
+Object.freeze(ROJAB);
 const SAKBAN: WulanType = {
   wulan: 'sakban',
   celukan: 'ban',
   urutan: 8,
   cacah: [29],
 };
+Object.freeze(SAKBAN.cacah);
+Object.freeze(SAKBAN);
 const ROMADON: WulanType = {
   wulan: 'romadon',
   celukan: 'don',
   urutan: 9,
   cacah: [30],
 };
+Object.freeze(ROMADON.cacah);
+Object.freeze(ROMADON);
 const SAWAL: WulanType = {
   wulan: 'sawal',
   celukan: 'wal',
   urutan: 10,
   cacah: [29],
 };
+Object.freeze(SAWAL.cacah);
+Object.freeze(SAWAL);
 const DULKODAH: WulanType = {
   wulan: 'dulkodah',
   celukan: 'dah',
   urutan: 11,
   cacah: [30],
 };
+Object.freeze(DULKODAH.cacah);
+Object.freeze(DULKODAH);
 const DULKIJAH: WulanType = {
   wulan: 'dulkijah',
   celukan: 'jah',
   urutan: 12,
   cacah: [29, 30],
 };
+Object.freeze(DULKIJAH.cacah);
+Object.freeze(DULKIJAH);
 
-const ARANING_WULAN_SETAUN: Map<symbol, WulanType> = new Map();
+const _ARANING_WULAN_SETAUN: Map<symbol, WulanType> = new Map();
 
-ARANING_WULAN_SETAUN.set(_MUKAROM, MUKAROM);
-ARANING_WULAN_SETAUN.set(_SAPAR, SAPAR);
-ARANING_WULAN_SETAUN.set(_ROBIULAWAL, ROBIULAWAL);
-ARANING_WULAN_SETAUN.set(_ROBIULAKIR, ROBIULAKIR);
-ARANING_WULAN_SETAUN.set(_JUMADILAWAL, JUMADILAWAL);
-ARANING_WULAN_SETAUN.set(_JUMADILAKIR, JUMADILAKIR);
-ARANING_WULAN_SETAUN.set(_ROJAB, ROJAB);
-ARANING_WULAN_SETAUN.set(_SAKBAN, SAKBAN);
-ARANING_WULAN_SETAUN.set(_ROMADON, ROMADON);
-ARANING_WULAN_SETAUN.set(_SAWAL, SAWAL);
-ARANING_WULAN_SETAUN.set(_DULKODAH, DULKODAH);
-ARANING_WULAN_SETAUN.set(_DULKIJAH, DULKIJAH);
+_ARANING_WULAN_SETAUN.set(_MUKAROM, MUKAROM);
+_ARANING_WULAN_SETAUN.set(_SAPAR, SAPAR);
+_ARANING_WULAN_SETAUN.set(_ROBIULAWAL, ROBIULAWAL);
+_ARANING_WULAN_SETAUN.set(_ROBIULAKIR, ROBIULAKIR);
+_ARANING_WULAN_SETAUN.set(_JUMADILAWAL, JUMADILAWAL);
+_ARANING_WULAN_SETAUN.set(_JUMADILAKIR, JUMADILAKIR);
+_ARANING_WULAN_SETAUN.set(_ROJAB, ROJAB);
+_ARANING_WULAN_SETAUN.set(_SAKBAN, SAKBAN);
+_ARANING_WULAN_SETAUN.set(_ROMADON, ROMADON);
+_ARANING_WULAN_SETAUN.set(_SAWAL, SAWAL);
+_ARANING_WULAN_SETAUN.set(_DULKODAH, DULKODAH);
+_ARANING_WULAN_SETAUN.set(_DULKIJAH, DULKIJAH);
 
-const SASI_ARR: WulanType[] = [
+const SASI_ARR: ReadonlyArray<WulanType> = Object.freeze([
   MUKAROM,
   SAPAR,
   ROBIULAWAL,
@@ -123,7 +147,9 @@ const SASI_ARR: WulanType[] = [
   SAWAL,
   DULKODAH,
   DULKIJAH,
-];
+]);
+
+const ARANING_WULAN_SETAUN: ReadonlyMap<symbol, WulanType> = _ARANING_WULAN_SETAUN;
 
 export {
   _MUKAROM,

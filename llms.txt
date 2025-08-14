@@ -1,0 +1,54 @@
+# Pustaka Kalender Jawa
+
+> Pustaka JavaScript untuk perhitungan, pengkonversian dan penanggalan Kalender Jawa Abadi - A JavaScript library for calculation, conversion and dating of the eternal Javanese calendar system.
+
+Pustaka Kalender Jawa (@kalenderjawa/pustaka) is a specialized JavaScript/TypeScript library that provides calculations, information, and conversions for the Javanese calendar system. According to its history, the Javanese calendar is the result of work by Javanese ancestors and Islamic saints (Wali), inherited through memorized calculation formulas that are eternal and highly accurate for almost 1000 years.
+
+Key features and important notes:
+
+- Written in JavaScript (ES6/ECMAScript 2015) using ES Modules
+- Provides three build outputs: ESM for modern environments, CommonJS for older Node.js, and browser bundles
+- Includes comprehensive API for Javanese calendar calculations including days (dinten), market days (pasaran), months (sasi), and years (taun)
+- Handles the complex Kurup system for calendar corrections
+- Supports both Node.js and browser environments
+- Full TypeScript support with type definitions
+- Includes constants for Javanese calendar elements (days, pasaran, months, years)
+
+## Docs
+
+- [README](https://github.com/kalenderjawa/pustaka/blob/master/README.md): Main documentation with installation instructions and basic usage
+- [API Documentation](https://github.com/kalenderjawa/pustaka/blob/master/docs/API.md): Complete API reference for all functions and constants
+- [Contributing Guide](https://github.com/kalenderjawa/pustaka/blob/master/BERKONTRIBUSI.md): Guidelines for contributing to the project
+- [Build Instructions](https://github.com/kalenderjawa/pustaka/blob/master/BUILD.md): Instructions for building the library
+- [Testing Guide](https://github.com/kalenderjawa/pustaka/blob/master/TESTING.md): Information about running tests
+- [Migration Guide](https://github.com/kalenderjawa/pustaka/blob/master/MIGRATION.md): Guide for migrating between versions
+
+## Examples
+
+- [ES Module Example](https://github.com/kalenderjawa/pustaka/blob/master/examples/index.js): Modern JavaScript usage with import syntax
+- [CommonJS Example](https://github.com/kalenderjawa/pustaka/blob/master/examples/index.cjs): Traditional Node.js usage with require
+- [Browser Example](https://github.com/kalenderjawa/pustaka/blob/master/examples/index.html): Browser usage with ES modules
+- [Browser Legacy Example](https://github.com/kalenderjawa/pustaka/blob/master/examples/index-no-esm.html): Browser usage without ES module support
+- [API Examples JavaScript](https://github.com/kalenderjawa/pustaka/blob/master/examples/api-examples.js): Comprehensive JavaScript examples for all API functions
+- [API Examples TypeScript](https://github.com/kalenderjawa/pustaka/blob/master/examples/api-examples.ts): TypeScript examples with full type safety
+
+## API Functions
+
+- [cariKurupTahunJawa](https://github.com/kalenderjawa/pustaka/blob/master/src/index.ts): Find Kurup and Javanese year information
+- [cariRumusAbadiAwalBulanTahunJawa](https://github.com/kalenderjawa/pustaka/blob/master/src/index.ts): Find eternal calculation formula for month start
+- [cariHariPasaranAwalBulanTahunJawa](https://github.com/kalenderjawa/pustaka/blob/master/src/index.ts): Find day and pasaran at month start
+- [sasi](https://github.com/kalenderjawa/pustaka/blob/master/src/index.ts): Get complete month calendar data
+
+## Constants
+
+- [araningPasaran](https://github.com/kalenderjawa/pustaka/blob/master/src/index.ts): Array of 5 Javanese market days (Pasaran)
+- [araningDinten](https://github.com/kalenderjawa/pustaka/blob/master/src/index.ts): Array of 7 Javanese days (Dinten/Saptawara)
+- [araningSasi](https://github.com/kalenderjawa/pustaka/blob/master/src/index.ts): Array of 12 Javanese months (Sasi)
+- [tahunJawa](https://github.com/kalenderjawa/pustaka/blob/master/src/index.ts): Array of 8 Javanese year cycles (Windu)
+
+## Optional
+
+- [Website Kalender Jawa](https://kalenderjawa.dev): Official website with interactive calendar and documentation
+- [Sengkala App](https://app.kalenderjawa.dev): Example web application using this library
+- [NPM Package](https://www.npmjs.com/package/@kalenderjawa/pustaka): NPM package page with installation instructions
+- [GitHub Issues](https://github.com/kalenderjawa/pustaka/issues): Report bugs or suggest features

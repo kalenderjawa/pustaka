@@ -34,6 +34,7 @@ function _SengkalaMap(): KWMapType {
   ]);
 }
 
-const SengkalaMap = _SengkalaMap();
+const _SengkalaMapInstance = _SengkalaMap();
+const SengkalaMap: ReadonlyMap<symbol, object> = _SengkalaMapInstance;
 
 export { SengkalaMap };
