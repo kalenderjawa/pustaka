@@ -96,7 +96,8 @@ Pengetestan memakai *headless chrome* dari [Puppeteer](https://pptr.dev/).
 
 ## API
 
-Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
+- Online documentation and interactive demo: https://kalenderjawa.dev/api
+- Local reference in this repo: docs/API.md
 
 ## Berkontribusi
 
