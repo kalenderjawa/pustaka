@@ -10,7 +10,7 @@
     - [x] `kurup_asapon_anenhing_statik.ts`: freeze each entry and its `awal` array; export list as `ReadonlyArray`.
     - [x] `ANGKA_RUMUS_ITUNG`: freeze items; export as `ReadonlyMap`.
     - [x] `rupa_ati.ts`: export `SengkalaMap` as `ReadonlyMap`.
-    - [ ] Freeze rumus entries in all `src/rumus_apalan_awal_bulan_*.ts` and export each registry as `ReadonlyMap`.
+    - [x] Freeze rumus entries in all `src/rumus_apalan_awal_bulan_*.ts` and export each registry as `ReadonlyMap`.
 
 - **Public API and DX**
   - [ ] Add sync variants without Promise wrappers: `cariKurupTahunJawaSync`, `cariRumusAbadiAwalBulanTahunJawaSync`, `cariHariPasaranAwalBulanTahunJawaSync`, `sasiSync` (keep async wrappers delegating to sync).
@@ -61,5 +61,3 @@
   - [ ] Prefer relative paths in `examples/index.html` (`./kalenderjawa.min.js`) to avoid root-path assumptions.
   - [ ] Add error codes in a centralized `error.ts` and use consistently across throws.
   - [ ] Optionally export an aggregated API object alongside named exports for ergonomics.
-
-
