@@ -86,13 +86,22 @@ dan kode berikut untuk browser yang mendukung ES Module
 
 ## Testing
 
-Untuk menjalankan *testing*. Silahkan pakai command berikut:
+Untuk menjalankan pengujian gunakan perintah:
 
 ```shell
-npm run test
+npm run test        # menjalankan sekali dengan laporan cakupan
+npm run test:watch  # menjalankan ulang saat berkas berubah
 ```
 
-Pengetestan memakai *headless chrome* dari [Puppeteer](https://pptr.dev/).
+Pengujian menggunakan [Vitest](https://vitest.dev) sehingga tidak memerlukan Chrome atau Puppeteer. Contoh ringkasan cakupan:
+
+```text
+% Coverage report from v8
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   92.13 |    88.88 |      80 |   92.13 |
+```
 
 ## API
 
