@@ -27,20 +27,15 @@ async function konversiHari(
   dn: number
 ): Promise<DintenType | string> {
   const _xH = dn + h - 1;
-  let xH = 0;
-
-  if (_xH > 7) {
-    xH = _xH - 7;
-  } else {
-    xH = _xH;
-  }
+  const xH = ((_xH - 1) % 7) + 1;
 
   return new Promise((resolve, reject) => {
-    DINTEN.forEach((value, key, map) => {
+    for (const value of DINTEN.values()) {
       if (value.urutan === xH) {
         resolve(value);
+        return;
       }
-    });
+    }
     reject(new Error('Error konversiHari'));
   });
 }
@@ -50,21 +45,16 @@ async function konversiPasaran(
   ps: number
 ): Promise<PasaranType | string> {
   const _xP = ps + p - 1;
-  let xP = 0;
-
-  if (_xP > 5) {
-    xP = _xP - 5;
-  } else {
-    xP = _xP;
-  }
+  const xP = ((_xP - 1) % 5) + 1;
 
   return new Promise((resolve, reject) => {
-    PASARAN.forEach((value, key, map) => {
+    for (const value of PASARAN.values()) {
       // Hanya mengambil value sekali, gak perlu reject selama xP masih dalam range 1-5
       if (value.urutan === xP) {
         resolve(value);
+        return;
       }
-    });
+    }
     reject(new Error('Error konversiPasaran'));
   });
 }
