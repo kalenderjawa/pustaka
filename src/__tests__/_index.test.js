@@ -204,12 +204,16 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 1881', () => {
   });
 
   test('Mukarom, 2000', async () => {
-    // await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2000)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1881)
-    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2000).then(
-      d => {
-        console.log(d);
-      }
-    );
+    const expected = {
+      w: 'mukarom',
+      t: 2000,
+      i: { taun: 'be', kurup: 'alip senen pahing' },
+      kH: { dino: 'selasa', urutan: 2, bobot: 3 },
+      kP: { pasaran: 'wage', neptu: 4, urutan: 4 },
+    };
+    await expect(
+      KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2000)
+    ).resolves.toStrictEqual(expected);
   });
 });
 
