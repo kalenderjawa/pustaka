@@ -34,11 +34,13 @@ async function cariKurupTaun(_q: number): Promise<TaunKurupType> {
   const _qi = parseInt(_q.toString());
   return new Promise((resolve, reject) => {
     for (const _kurup of Kurup.KURUP_ASAPON_ANENHING) {
-      _kurup.awal.find(query => {
-        if (query === _qi) resolve(_kurup);
-      });
+      for (const query of _kurup.awal) {
+        if (query === _qi) {
+          resolve(_kurup);
+          return;
+        }
+      }
     }
-
     reject(new Error('Error cariKurupTaun'));
   });
 }
