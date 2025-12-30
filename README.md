@@ -2,9 +2,6 @@
 <p align="center">Pustaka Kalender Jawa</p>
 <p align="center"><img src="https://raw.githubusercontent.com/kalenderjawa/pustaka/master/images/kj_v2.png" width="80%" alt="sengkala"></p>
 </h2>
-<h2>
-
-</h2>
 <p align="center">
 <a href="https://actions-badge.atrox.dev/kalenderjawa/pustaka/goto?ref=master"><img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fkalenderjawa%2Fpustaka%2Fbadge%3Fref%3Dmaster&style=flat" /></a>
 <a href="https://bundlephobia.com/result?p=@kalenderjawa/pustaka"><img src="https://badgen.net/bundlephobia/minzip/@kalenderjawa/pustaka" alt="bundlephobia"></a> 
