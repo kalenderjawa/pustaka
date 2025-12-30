@@ -106,9 +106,6 @@ Dokumentasi dan demo API ada di [sini](https://kalenderjawa.dev/api).
 
 Untuk berkontribusi silahkan lihat dokumen [CARA BERKONTRIBUSI](BERKONTRIBUSI.md).
 
-## Demo Kalender
-
-Contoh aplikasi web yang memakai Pustaka ini adalah [Sengkala](https://app.kalenderjawa.dev). Proyek ini open-source jadi anda bisa melihat potensi dari pemakaian Pustaka ini.
 
 [ck]: https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
 
