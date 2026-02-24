@@ -47,7 +47,7 @@ describe('Testing cariKurupTahunJawa', () => {
 
   test('cariKurupTahunJawa 9999 - skenario error', () => {
     return KalenderJawa.cariKurupTahunJawa(9999).catch(e => {
-      expect(e.message).toBe('Error cariKurupTaun');
+      expect(e.message).toBe('out of scope');
     });
   });
 });
@@ -204,12 +204,9 @@ describe('Testing cariHariPasaranAwalBulanTahunJawa, 1881', () => {
   });
 
   test('Mukarom, 2000', async () => {
-    // await expect(KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2000)).resolves.toStrictEqual(DAT.TEST_DULKIJAH_HP_1881)
-    return KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2000).then(
-      d => {
-        console.log(d);
-      }
-    );
+    await expect(
+      KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 2000)
+    ).resolves.toStrictEqual(DAT.TEST_MUKAROM_HP_2000);
   });
 });
 

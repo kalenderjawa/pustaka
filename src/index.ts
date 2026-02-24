@@ -18,6 +18,7 @@ import {
   cariTaunRegistry,
   cariRumusWulanTaun,
 } from './silpin.js';
+import { periksaBatasan } from './batur.js';
 import { DINTEN_ARR } from '@kalenderjawa/saptawara';
 import { PASARAN_ARR } from '@kalenderjawa/pancawara';
 import { SASI_ARR } from './sasi.js';
@@ -32,6 +33,10 @@ import pkg from '../package.json';
 
 async function cariKurupTaun(_q: number): Promise<TaunKurupType> {
   const _qi = parseInt(_q.toString());
+  const batasan = periksaBatasan(_qi);
+  if (!batasan.status) {
+    throw new Error(batasan.message);
+  }
   return new Promise((resolve, reject) => {
     for (const _kurup of Kurup.KURUP_ASAPON_ANENHING) {
       for (const query of _kurup.awal) {

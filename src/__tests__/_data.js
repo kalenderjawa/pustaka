@@ -13,14 +13,15 @@ const TEST_MUKAROM_HP_1952 = {
   kH: { dino: 'rebo', urutan: 3, bobot: 7 },
   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 },
 };
-// Sapar, 1952 → Tahun Be, Asapon, Par 4 3
-// Calculation: konversiHari(3, 2) = 4 → kemis; konversiPasaran(4, 3) = 1 → legi
+// Sapar, 1952 → Tahun Be, Asapon, Par Pat Lu (4, 3)
+// konversiHari(4, 2): 2 + 4 - 1 = 5 → Jemah
+// konversiPasaran(3, 3): 3 + 3 - 1 = 5 → Kliwon
 const TEST_SAPAR_HP_1952 = {
   w: 'sapar',
   t: 1952,
   i: { taun: 'be', kurup: 'alip selasa pon' },
-  kH: { dino: 'kemis', urutan: 4, bobot: 8 },
-  kP: { pasaran: 'legi', neptu: 5, urutan: 1 },
+  kH: { dino: 'jemah', urutan: 5, bobot: 6 },
+  kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 },
 };
 // Robiulawal, 1952 → Tahun Be, Asapon, Rowal 5 2
 // Adjust Dino: Selasa + 5 → Sebtu
@@ -143,6 +144,17 @@ const TEST_MUKAROM_HP_2077 = {
   kP: { pasaran: 'legi', neptu: 5, urutan: 1 },
 };
 
+// Mukarom, 2000 → Tahun Be, Anenhing, Rom 2 3
+// konversiHari(2, 1): 1 + 2 - 1 = 2 → Selasa
+// konversiPasaran(3, 2): 2 + 3 - 1 = 4 → Wage
+const TEST_MUKAROM_HP_2000 = {
+  w: 'mukarom',
+  t: 2000,
+  i: { taun: 'be', kurup: 'alip senen pahing' },
+  kH: { dino: 'selasa', urutan: 2, bobot: 3 },
+  kP: { pasaran: 'wage', neptu: 4, urutan: 4 },
+};
+
 const _TESTDAT_5 = {
   wulan: { wulan: 'dulkijah', celukan: 'jah', urutan: 12, cacah: [29] },
   taun: { taun: 'be', neptu: 2, urutan: 6, cacah: 354 },
@@ -169,5 +181,6 @@ export {
   TEST_DULKODAH_HP_1881,
   TEST_DULKIJAH_HP_1881,
   TEST_MUKAROM_HP_2077,
+  TEST_MUKAROM_HP_2000,
   _TESTDAT_5 as TESTDAT5,
 };

@@ -28,52 +28,53 @@ const _PAR_WAWU = Symbol.for('par_wawu');
 const _PAR_JIMAKIR = Symbol.for('par_jimakir');
 
 // Rumus abadi Sapar
-const PAR_RO_RO = {
+// REF: https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat/5/
+const PAR_LU_JI = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
-  dino: 2,
-  pasaran: 2,
-};
-
-const PAR_NEM_JI = {
-  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
-  dino: 6,
+  dino: 3,
   pasaran: 1,
 };
 
-const PAR_PAT_JI = {
+const PAR_TU_MO = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
-  dino: 4,
-  pasaran: 1,
-};
-
-const PAR_JI_MO = {
-  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
-  dino: 1,
+  dino: 7,
   pasaran: 5,
 };
 
-const PAR_MO_PAT = {
+const PAR_MO_MO = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   dino: 5,
+  pasaran: 5,
+};
+
+const PAR_RO_PAT = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  dino: 2,
   pasaran: 4,
 };
 
-const PAR_LU_PAT = {
+const PAR_NEM_LU = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
-  dino: 3,
-  pasaran: 4,
-};
-
-const PAR_TU_LU = {
-  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
-  dino: 7,
+  dino: 6,
   pasaran: 3,
 };
 
-const PAR_PAT_RO = {
+const PAR_PAT_LU = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   dino: 4,
+  pasaran: 3,
+};
+
+const PAR_JI_RO = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  dino: 1,
   pasaran: 2,
+};
+
+const PAR_MO_JI = {
+  wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
+  dino: 5,
+  pasaran: 1,
 };
 
 // Kunci Sapar - Sewindu
@@ -81,49 +82,49 @@ const PAR_PAT_RO = {
 const PAR_ALIP: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   taun: ARANING_TAHUN_SEWINDU.get(_ALIP),
-  rumus: PAR_RO_RO,
+  rumus: PAR_LU_JI,
 };
 
 const PAR_EHE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   taun: ARANING_TAHUN_SEWINDU.get(_EHE),
-  rumus: PAR_NEM_JI,
+  rumus: PAR_TU_MO,
 };
 
 const PAR_JIMAWAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAWAL),
-  rumus: PAR_PAT_JI,
+  rumus: PAR_MO_MO,
 };
 
 const PAR_JE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   taun: ARANING_TAHUN_SEWINDU.get(_JE),
-  rumus: PAR_JI_MO,
+  rumus: PAR_RO_PAT,
 };
 
 const PAR_DAL: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   taun: ARANING_TAHUN_SEWINDU.get(_DAL),
-  rumus: PAR_MO_PAT,
+  rumus: PAR_NEM_LU,
 };
 
 const PAR_BE: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   taun: ARANING_TAHUN_SEWINDU.get(_BE),
-  rumus: PAR_LU_PAT,
+  rumus: PAR_PAT_LU,
 };
 
 const PAR_WAWU: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   taun: ARANING_TAHUN_SEWINDU.get(_WAWU),
-  rumus: PAR_TU_LU,
+  rumus: PAR_JI_RO,
 };
 
 const PAR_JIMAKIR: WulanTaunType = {
   wulan: ARANING_WULAN_SETAUN.get(_SAPAR),
   taun: ARANING_TAHUN_SEWINDU.get(_JIMAKIR),
-  rumus: PAR_PAT_RO,
+  rumus: PAR_MO_JI,
 };
 
 // Mapping Rumus abadi Sapar dengan Registry
