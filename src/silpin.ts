@@ -36,12 +36,16 @@ async function konversiHari(
   }
 
   return new Promise((resolve, reject) => {
-    DINTEN.forEach((value, key, map) => {
-      if (value.urutan === xH) {
+    let found = false;
+    DINTEN.forEach((value) => {
+      if (!found && value.urutan === xH) {
+        found = true;
         resolve(value);
       }
     });
-    reject(new Error('Error konversiHari'));
+    if (!found) {
+      reject(new Error('Error konversiHari'));
+    }
   });
 }
 
@@ -59,13 +63,16 @@ async function konversiPasaran(
   }
 
   return new Promise((resolve, reject) => {
-    PASARAN.forEach((value, key, map) => {
-      // Hanya mengambil value sekali, gak perlu reject selama xP masih dalam range 1-5
-      if (value.urutan === xP) {
+    let found = false;
+    PASARAN.forEach((value) => {
+      if (!found && value.urutan === xP) {
+        found = true;
         resolve(value);
       }
     });
-    reject(new Error('Error konversiPasaran'));
+    if (!found) {
+      reject(new Error('Error konversiPasaran'));
+    }
   });
 }
 

@@ -7,9 +7,9 @@ import { periksaBatasan } from '../batur.ts';
 
 describe('Edge Cases and Error Scenarios', () => {
   test('cariKurupTahunJawa with invalid year (error scenario)', async () => {
-    // Test year that should trigger error
+    // Test year that should trigger boundary error
     await expect(KalenderJawa.cariKurupTahunJawa(9999)).rejects.toThrow(
-      'Error cariKurupTaun'
+      'out of scope'
     );
   });
 
@@ -21,29 +21,29 @@ describe('Edge Cases and Error Scenarios', () => {
   });
 
   test('cariRumusAbadiAwalBulanTahunJawa with valid month but invalid year', async () => {
-    // Test with valid month but year that causes kurup error
+    // Test with valid month but year that causes boundary error
     await expect(
       KalenderJawa.cariRumusAbadiAwalBulanTahunJawa('mukarom', 9999)
-    ).rejects.toThrow('Error cariKurupTaun');
+    ).rejects.toThrow('out of scope');
   });
 
   test('batur periksaBatasan function edge cases', () => {
     // Test boundary conditions
     expect(periksaBatasan(1866)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
     expect(periksaBatasan(1867)).toEqual({ status: true, message: '' });
     expect(periksaBatasan(2106)).toEqual({ status: true, message: '' });
     expect(periksaBatasan(2107)).toEqual({
       status: false,
-      message: 'out of scoope',
+      message: 'out of scope',
     });
   });
 
   test('Test function with negative year', async () => {
     await expect(KalenderJawa.cariKurupTahunJawa(-100)).rejects.toThrow(
-      'Error cariKurupTaun'
+      'out of scope'
     );
   });
 
@@ -56,11 +56,11 @@ describe('Edge Cases and Error Scenarios', () => {
   test('Test with year at edge of valid range', async () => {
     // Test with years just outside supported range
     await expect(KalenderJawa.cariKurupTahunJawa(1800)).rejects.toThrow(
-      'Error cariKurupTaun'
+      'out of scope'
     );
 
     await expect(KalenderJawa.cariKurupTahunJawa(2200)).rejects.toThrow(
-      'Error cariKurupTaun'
+      'out of scope'
     );
   });
 

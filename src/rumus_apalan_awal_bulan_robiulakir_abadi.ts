@@ -60,7 +60,7 @@ const ROKIR_RO_RO = {
 
 const ROKIR_TU_RO = {
   wulan: ARANING_WULAN_SETAUN.get(_ROBIULAKIR),
-  dino: 1,
+  dino: 7,
   pasaran: 2,
 };
 
