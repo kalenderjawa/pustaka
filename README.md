@@ -4,7 +4,7 @@
 </h2>
 <p align="center">
 <a href="https://actions-badge.atrox.dev/kalenderjawa/pustaka/goto?ref=master"><img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fkalenderjawa%2Fpustaka%2Fbadge%3Fref%3Dmaster&style=flat" /></a>
-<a href="https://bundlephobia.com/result?p=@kalenderjawa/pustaka"><img src="https://badgen.net/bundlephobia/minzip/@kalenderjawa/pustaka" alt="bundlephobia"></a> 
+<a href="https://bundlephobia.com/result?p=@kalenderjawa/pustaka"><img src="https://badgen.net/bundlephobia/minzip/@kalenderjawa/pustaka" alt="bundlephobia"></a>
 </p>
 
 ## Sejarah Penanggalan Jawa
@@ -19,25 +19,34 @@ Silahkan membaca lebih lanjut tentang Penanggalan Jawa di [Website Kalender Jawa
 
 Pustaka Kalender Jawa ini merupakan pustaka khusus yang menyediakan perhitungan, informasi dan pengkonversian Penanggalan atau Kalender Jawa, dengan maksud dan tujuan supaya Penanggalan Jawa lebih mudah dikenal dan dipakai secara umum, khususnya buat para pengembang.
 
-> Pustaka Kalender Jawa ini ditulis memakai bahasa JavaScript (ECMAScript 2015 atau ES6) dan memakai ES Module.
+> Pustaka Kalender Jawa ini ditulis memakai bahasa TypeScript dan memakai ES Module. Membutuhkan Node.js >= 20.0.0.
+
+### Cakupan
+
+Pustaka ini mencakup perhitungan Kalender Jawa Abadi untuk kurun waktu **tahun 1867 - 2106 Jawa**, meliputi dua kurup:
+
+| Kurup | Periode | Keterangan |
+|---|---|---|
+| **Asapon** | 1867 - 1986 | Alip Selasa Pon |
+| **Anenhing** | 1987 - 2106 | Alip Senen Pahing |
+
+Perhitungan mencakup 12 bulan (sasi) dan 8 tahun dalam siklus windu (Alip, Ehe, Jimawal, Je, Dal, Be, Wawu, Jimakir).
+
+### Referensi Rumus
+
+Rumus perhitungan abadi yang dipakai pada pustaka ini bersumber dari [Kalender Jowo Digowo, Kalender Arab Digarap, Kalender Barat Diruwat][ck] ([halaman rumus][ck5]).
 
 ## Hasil Build
 
-Ada 3 hasil build dan default adalah build untuk Node.js ataupun browser yang mendukung ES Module (ESM).
+Ada 3 hasil build pada direktori `dist/` dan default adalah build untuk Node.js ataupun browser yang mendukung ES Module (ESM).
 
-### Browser yang tidak mendukung ESM
+| Berkas | Keterangan |
+|---|---|
+| `dist/kalenderjawa.min.js` | Node.js & browser yang mendukung ESM (default) |
+| `dist/kalenderjawa.min.cjs` | Node.js yang tidak mendukung ESM |
+| `dist/kalenderjawa.browser.min.js` | Browser yang tidak mendukung ESM |
 
-`kalenderjawa.browser.min.js`
-
-### Node.js yang tidak mendukung ESM (sebelum Node.js 12.17.0)
-
-`kalenderjawa.min.cjs`
-
-### Node.js & browser yang mendukung ESM
-
-`kalenderjawa.min.js`
-
-Contoh penggunaan hasil build diatas ada pada direktori `examples`
+Contoh penggunaan hasil build diatas ada pada direktori `examples/`
 
 ## Instalasi
 
@@ -57,7 +66,7 @@ import * as KalenderJawa from "@kalenderjawa/pustaka";
 KalenderJawa.cariKurupTahunJawa(1881).then(/**...*/);
 ```
 
-Untuk Node.js yang belum mendukung ES Module (Node.js sebelum v12.17.0) silahkan memakai berkas `kalenderjawa.min.cjs` pada direktori `lib`.
+Untuk Node.js yang belum mendukung ESM silahkan memakai berkas `kalenderjawa.min.cjs` pada direktori `dist`.
 
 ### Browser
 
@@ -66,7 +75,7 @@ Jika anda memakai browser Pustaka ini bisa di ambil melalui CDN (_Content Delive
 Kode berikut akan mengambil pustaka untuk browser yang tidak mendukung ES Module.
 
 ```html
-<script src="https://unpkg.com/@kalenderjawa/pustaka/lib/kalenderjawa.browser.min.js" />
+<script src="https://unpkg.com/@kalenderjawa/pustaka/dist/kalenderjawa.browser.min.js"></script>
 ```
 
 dan kode berikut untuk browser yang mendukung ES Module
@@ -77,6 +86,41 @@ dan kode berikut untuk browser yang mendukung ES Module
 
   console.log(KalenderJawa);
 </script>
+```
+
+## Contoh Penggunaan
+
+### Mencari kurup dan tahun Jawa
+
+```js
+const result = await KalenderJawa.cariKurupTahunJawa(1959);
+// {
+//   taun: { taun: 'dal', neptu: 4, urutan: 5, cacah: 355 },
+//   kurup: { taun: 'alip', dinten: { dino: 'selasa', ... }, pasaran: { pasaran: 'pon', ... } }
+// }
+```
+
+### Mencari hari dan pasaran awal bulan
+
+```js
+const result = await KalenderJawa.cariHariPasaranAwalBulanTahunJawa('mukarom', 1959);
+// {
+//   w: 'mukarom', t: 1959,
+//   i: { taun: 'dal', kurup: 'alip selasa pon' },
+//   kH: { dino: 'jemah', urutan: 5, bobot: 6 },
+//   kP: { pasaran: 'kliwon', neptu: 8, urutan: 5 }
+// }
+// → 1 Mukarom 1959 = Jemah Kliwon (Jumat Kliwon)
+```
+
+### Menampilkan kalender satu bulan penuh
+
+```js
+const result = await KalenderJawa.sasi('mukarom', 1959);
+// Menghasilkan 30 hari lengkap dengan dinten, pasaran, dan neptu
+// { 1: { dinten: 'jemah', pasaran: 'kliwon', neptu: 11 } }
+// { 2: { dinten: 'sebtu', pasaran: 'legi', neptu: 11 } }
+// ... dst
 ```
 
 ## Testing
@@ -108,6 +152,7 @@ Untuk berkontribusi silahkan lihat dokumen [CARA BERKONTRIBUSI](BERKONTRIBUSI.md
 
 
 [ck]: https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat
+[ck5]: https://www.caknun.com/2019/kalender-jowo-digowo-kalender-arab-digarap-kalender-barat-diruwat/5/
 
 ## Lisensi
 
@@ -115,4 +160,4 @@ Untuk berkontribusi silahkan lihat dokumen [CARA BERKONTRIBUSI](BERKONTRIBUSI.md
 
 ---
 
-[kalenderjawa.dev](https://kalenderjawa.dev) © (2019 - 2024)
+[kalenderjawa.dev](https://kalenderjawa.dev) © (2019 - 2025)
